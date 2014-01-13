@@ -20,6 +20,8 @@ Section: libdevel
 Architecture: any
 Depends: liblognorm0 (= ${binary:Version}), ${misc:Depends},
     libee-dev, libestr-dev
+Replaces: liblognorm1-dev
+Breaks: liblognorm1-dev
 Description: Log normalizing library
  Liblognorm is a event and log normalization library that is capable of
  real-time processing. It provides the capability to normalize events to
@@ -31,6 +33,8 @@ Package: liblognorm0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: liblognorm1
+Breaks: liblognorm1
 Description: Log normalizing library
  Liblognorm is a event and log normalization library that is capable of
  real-time processing. It provides the capability to normalize events to

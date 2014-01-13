@@ -1,3 +1,9 @@
+liblognorm (0.3.7-0adiscon3) saucy; urgency=low
+
+  * Added conflict for liblognorm1
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 10 Dec 2013 11:23:15 +0100
+
 liblognorm (0.3.7-0adiscon1) saucy; urgency=low
 
   * Latest version from old liblognorm branch
