@@ -2,7 +2,7 @@
 TARGZFILES=`ls *.dsc`
 PLATFORM="precise saucy"
 ARCHTECT="amd64 i386"
-BRANCHES="v7-stable v7-devel"
+BRANCHES="v7-stable v7-devel v8-devel"
 
 echo "-------------------------------------"
 echo "--- RPMMaker                      ---"
