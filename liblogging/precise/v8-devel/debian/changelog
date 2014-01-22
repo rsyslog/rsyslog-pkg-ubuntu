@@ -1,0 +1,12 @@
+liblogging (1.0.0-0adiscon2) precise; urgency=low
+
+  * repacked
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 22 Jan 2014 11:53:35 +0100
+
+liblogging (1.0.0-0adiscon1) precise; urgency=low
+
+  * Initial Build for liblogging stdlog.
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 21 Jan 2014 14:01:47 +0100
+

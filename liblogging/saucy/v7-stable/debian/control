@@ -1,0 +1,32 @@
+Source: liblogging
+Priority: extra
+Maintainer: Andre Lorbach <alorbach@adiscon.com>
+Build-Depends: debhelper (>= 8),
+    autotools-dev,
+    pkg-config,
+    libxml2-dev,
+    hardening-wrapper
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://www.liblogging.org/
+
+Package: liblogging-stdlog-dev
+Section: libdevel
+Architecture: any
+Depends: liblogging-stdlog0 (= ${binary:Version}), 
+	${misc:Depends}
+Description: LibLogging stdlog library
+ Libstdlog component is used for standard logging (syslog replacement)
+ purposes via multiple channels (driver support is planned)
+ .
+ This package contains the development files.
+
+Package: liblogging-stdlog0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: LibLogging stdlog library
+ Libstdlog component is used for standard logging (syslog replacement)
+ purposes via multiple channels (driver support is planned)
+ .
+ This package contains the shared library.

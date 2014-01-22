@@ -1,3 +1,9 @@
+rsyslog (7.5.8-0adiscon2) precise; urgency=low
+
+  * repacked to use propper librelp version
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 21 Jan 2014 10:59:51 +0100
+
 rsyslog (7.5.8-0adiscon1) precise; urgency=low
 
   * Updated debs for RSyslog v7-devel 7.5.8

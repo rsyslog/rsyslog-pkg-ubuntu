@@ -1,3 +1,9 @@
+rsyslog (7.4.9-0adiscon1) saucy; urgency=low
+
+  * Updated debs for RSyslog v7-devel 7.4.9
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 22 Jan 2014 13:39:45 +0100
+
 rsyslog (7.4.8-0adiscon1) saucy; urgency=low
 
   * Updated debs for RSyslog v7-devel 7.4.8
