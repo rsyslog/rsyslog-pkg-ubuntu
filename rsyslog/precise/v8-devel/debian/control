@@ -27,6 +27,7 @@ Build-Depends: debhelper (>= 8),
 	       bison,
 	       libgt-dev,
 	       python-docutils,
+	       liblogging-stdlog-dev,
 	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -48,6 +49,7 @@ Depends: ${shlibs:Depends},
          ucf,
 	 libjson0,
 	 libjemalloc1,
+	 liblogging-stdlog0,
 	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,

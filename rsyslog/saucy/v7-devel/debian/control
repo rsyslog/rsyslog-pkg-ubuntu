@@ -26,6 +26,7 @@ Build-Depends: debhelper (>= 8),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       libgt-dev,
+	       liblogging-stdlog-dev,
 	       python-docutils
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -45,6 +46,7 @@ Depends: ${shlibs:Depends},
          initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
+	 liblogging-stdlog0,
 	 libjson0
 #	 libgt0
 Recommends: logrotate

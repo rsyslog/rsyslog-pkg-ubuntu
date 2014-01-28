@@ -1,3 +1,9 @@
+rsyslog (8.1.5-0adiscon1) saucy; urgency=low
+
+  * Build new debs for RSyslog v8-devel 8.1.5
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 24 Jan 2014 11:49:58 +0100
+
 rsyslog (8.1.4-0adiscon1) saucy; urgency=low
 
   * Build new debs for RSyslog v8-devel 8.1.4
