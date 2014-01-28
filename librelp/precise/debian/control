@@ -1,7 +1,7 @@
 Source: librelp
 Section: libs
 Priority: optional
-Maintainer: Michael Biebl <biebl@debian.org>
+Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Build-Depends: cdbs, debhelper (>= 7), autotools-dev
 Standards-Version: 3.8.3
 Vcs-Git: git://git.debian.org/git/collab-maint/librelp.git

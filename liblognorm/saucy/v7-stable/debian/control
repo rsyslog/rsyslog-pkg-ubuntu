@@ -1,6 +1,6 @@
 Source: liblognorm
 Priority: extra
-Maintainer: Pierre Chifflier <pollux@debian.org>
+Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Build-Depends: debhelper (>= 8),
     autotools-dev,
     pkg-config,
