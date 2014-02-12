@@ -1,3 +1,9 @@
+librelp (1.2.2-0adiscon2) saucy; urgency=low
+
+  * Repacked 
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 30 Jan 2014 16:30:56 +0100
+
 librelp (1.2.2-0adiscon1) saucy; urgency=low
 
   * New upstream release for 1.2.2

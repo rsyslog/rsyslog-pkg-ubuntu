@@ -47,7 +47,7 @@ Depends: ${shlibs:Depends},
          adduser,
          ucf,
 	 libjson0,
-	 liblogging-stdlog0
+	 liblogging-stdlog1
 #	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
@@ -59,7 +59,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
           apparmor (>= 2.3)
-Description: reliable system and kernel logging daemon
+Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
  providing support for message logging), with features that include:
   * reliable syslog over TCP, SSL/TLS and RELP

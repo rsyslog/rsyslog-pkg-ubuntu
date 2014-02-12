@@ -1,3 +1,9 @@
+liblogging (1.0.1-0adiscon2) saucy; urgency=low
+
+  * new debs
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 04 Feb 2014 12:26:02 +0100
+
 liblogging (1.0.0-0adiscon2) saucy; urgency=low
 
   * repacked

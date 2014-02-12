@@ -1,3 +1,9 @@
+liblogging (1.0.1-0adiscon1) precise; urgency=low
+
+  * New debs for 1.0.1
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 04 Feb 2014 08:40:19 +0100
+
 liblogging (1.0.0-0adiscon1) precise; urgency=low
 
   * Initial Build for liblogging stdlog.

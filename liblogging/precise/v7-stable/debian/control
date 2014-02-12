@@ -13,7 +13,7 @@ Homepage: http://www.liblogging.org/
 Package: liblogging-stdlog-dev
 Section: libdevel
 Architecture: any
-Depends: liblogging-stdlog0 (= ${binary:Version}), 
+Depends: liblogging-stdlog1 (= ${binary:Version}), 
 	${misc:Depends}
 Description: LibLogging stdlog library
  Libstdlog component is used for standard logging (syslog replacement)
@@ -21,7 +21,7 @@ Description: LibLogging stdlog library
  .
  This package contains the development files.
 
-Package: liblogging-stdlog0
+Package: liblogging-stdlog1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
