@@ -1,8 +1,8 @@
 #!/bin/bash
+# Definitions common to these scripts
+source $(dirname "$0")/config.sh
+
 TARGZFILES=`ls *.dsc`
-PLATFORM="precise saucy"
-ARCHTECT="amd64 i386"
-BRANCHES="v7-stable v7-devel v8-devel"
 
 echo "-------------------------------------"
 echo "--- RPMMaker                      ---"

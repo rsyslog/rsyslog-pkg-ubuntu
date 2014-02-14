@@ -1,7 +1,8 @@
 #!/bin/bash
+# Definitions common to these scripts
+source $(dirname "$0")/config.sh
+
 TARGZFILES=` ls -d */`
-BRANCHES="v7-stable v7-devel v8-devel"
-PLATFORM="precise saucy"
 
 echo "-------------------------------------"
 echo "--- Prepare Release               ---"
@@ -35,8 +36,7 @@ done
 cp -r $szPlatform/$szBranch/debian $szPrepareDir
 cd $szPrepareDir
 dch -D $szPlatform -i
-# debuild -S -rfakeroot -kAEF0CF8E
-debuild -S -rfakeroot -kF6A93574
+debuild -S -rfakeroot -k"$KEY_ID"
 
 # Save Changes back now
 cd ..

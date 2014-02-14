@@ -1,7 +1,8 @@
 #!/bin/sh
+# Definitions common to these scripts
+source $(dirname "$0")/config.sh
+
 TARGZFILES=`ls *.dsc`
-PLATFORM="precise quantal"
-ARCHTECT="amd64 i386"
 
 echo "-------------------------------------"
 echo "--- RPMMaker                      ---"

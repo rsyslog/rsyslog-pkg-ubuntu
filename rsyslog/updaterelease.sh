@@ -1,4 +1,7 @@
 #!/bin/bash
+# Definitions common to these scripts
+source $(dirname "$0")/config.sh
+
 TARGZFILES=`ls -d rsyslog*/ | xargs -l basename`
 
 echo "-------------------------------------"
@@ -14,6 +17,5 @@ done
 
 cd $szSourceBase
 dch -i
-# debuild -S -rfakeroot -kAEF0CF8E
-debuild -S -rfakeroot -kF6A93574
+debuild -S -rfakeroot -k"$KEY_ID"
 
