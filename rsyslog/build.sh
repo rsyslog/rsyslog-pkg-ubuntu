@@ -1,4 +1,4 @@
-!#/bin/sh
+#!/bin/bash
 TARGZFILES=`ls *.dsc`
 PLATFORM="precise saucy"
 ARCHTECT="amd64 i386"

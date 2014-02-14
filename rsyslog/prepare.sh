@@ -1,4 +1,4 @@
-!#/bin/sh
+#!/bin/bash
 TARGZFILES=` ls -d */`
 BRANCHES="v7-stable v7-devel v8-devel"
 PLATFORM="precise saucy"
@@ -35,7 +35,8 @@ done
 cp -r $szPlatform/$szBranch/debian $szPrepareDir
 cd $szPrepareDir
 dch -D $szPlatform -i
-debuild -S -rfakeroot -kAEF0CF8E
+# debuild -S -rfakeroot -kAEF0CF8E
+debuild -S -rfakeroot -kF6A93574
 
 # Save Changes back now
 cd ..

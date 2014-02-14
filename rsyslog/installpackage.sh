@@ -1,4 +1,4 @@
-!#/bin/sh
+#!/bin/sh
 
 pbuilder-dist precise update
 pbuilder-dist precise login
