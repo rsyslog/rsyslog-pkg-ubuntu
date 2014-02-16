@@ -11,3 +11,5 @@ Currently, packages are available at
 ... but we plan to move to PPAs.
 
 Contributors and co-maintainers are welcome.
+
+Script descriptions are in INSTALL
