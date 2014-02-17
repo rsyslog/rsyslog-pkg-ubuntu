@@ -1,0 +1,39 @@
+Installation instructions (or something close to that)
+
+Scripts -------------------------------------------
+config.sh  
+   Global configs that are common to all/most of the scripts. Among other
+things, it identifies you (GPG Key) so you can sign your package. Edit to 
+customize this installation for your needs; the other scripts should 
+be left alone.
+
+repack.sh 
+   Converts the original package-release.tar.gz filename to 
+package_release.orig.tar.gz
+   Creates the package_release directory
+
+   Sample run:
+
+./repack.sh 
+-------------------------------------
+--- DEBMaker                      ---
+-------------------------------------
+1) rsyslog-7.4.10.tar.gz
+2) rsyslog-7.4.9.tar.gz
+#? 
+
+[You then type 1 or 2 to select the tar
+
+prepare.sh
+   Edits the changelog file and creates
+
+build.sh
+
+installpackage.sh
+install.sh
+putarchive.sh
+results.sh
+reupload.sh
+updaterelease.sh
+
+Creating package ----------------------------------
