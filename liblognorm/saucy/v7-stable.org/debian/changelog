@@ -1,0 +1,79 @@
+liblognorm (0.3.7-0adiscon2saucy1) saucy; urgency=low
+
+  * Latest version from old liblognorm branch
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 27 Nov 2013 10:37:47 +0100
+
+liblognorm (1.0.0-0adiscon2) saucy; urgency=low
+
+  * rebuild
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 25 Nov 2013 16:15:26 +0100
+
+liblognorm (1.0.0-0adiscon1) saucy; urgency=low
+
+  * Imported Upstream version 1.0.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 25 Nov 2013 13:56:41 +0100
+
+liblognorm (0.3.6-0adiscon3) saucy; urgency=low
+
+  * Initial Packages for saucy
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 18 Oct 2013 17:45:57 +0200
+
+liblognorm (0.3.6-0adiscon2) precise; urgency=low
+
+  * repacked
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 12 Jun 2013 14:04:01 +0200
+
+liblognorm (0.3.6-0adiscon1) precise; urgency=low
+
+  * Imported Upstream version 0.3.6
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 21 Mar 2013 06:31:03 -0700
+
+liblognorm (0.3.2-1) unstable; urgency=low
+
+  * Imported Upstream version 0.3.2
+  * Convert to DH version 8
+  * Update symbols file
+
+ -- Pierre Chifflier <pollux@debian.org>  Mon, 05 Dec 2011 21:24:01 +0100
+
+liblognorm (0.3.0-2) unstable; urgency=low
+
+  * Acknowledge NMU, thanks Luk (Closes: #631466)
+  * Enable hardening wrapper
+  * Bump Standards Version to 3.9.2
+
+ -- Pierre Chifflier <pollux@debian.org>  Tue, 12 Jul 2011 08:31:32 +0200
+
+liblognorm (0.3.0-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Version build dependency on libee-dev (Closes: #621714).
+  * Don't ship .la files (Closes: #621685).
+
+ -- Luk Claes <luk@debian.org>  Fri, 24 Jun 2011 08:10:00 +0200
+
+liblognorm (0.3.0-1) unstable; urgency=low
+
+  * Imported Upstream version 0.3.0
+  * Add watch file
+  * Add symbols file
+
+ -- Pierre Chifflier <pollux@debian.org>  Thu, 07 Apr 2011 10:29:22 +0200
+
+liblognorm (0.1.0-2) unstable; urgency=low
+
+  * Add pkg-config and libxml2-dev to build-deps
+
+ -- Pierre Chifflier <pollux@debian.org>  Sun, 13 Feb 2011 22:00:41 +0100
+
+liblognorm (0.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #606750)
+
+ -- Pierre Chifflier <pollux@debian.org>  Sat, 11 Dec 2010 11:53:53 +0100
