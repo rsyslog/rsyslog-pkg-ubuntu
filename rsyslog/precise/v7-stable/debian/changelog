@@ -1,50 +1,32 @@
-rsyslog (7.4.10-0adiscon2) precise; urgency=low
+rsyslog (7.6.0-0adiscon2precise3) precise; urgency=low
 
-  * Updated debs 
+  * Repackaged for PPA
 
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 12 Feb 2014 14:58:20 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 19:51:03 +0100
 
-rsyslog (7.4.10-0adiscon1) precise; urgency=low
+rsyslog (7.5.8-0adiscon2) precise; urgency=low
 
-  * Updated debs for RSyslog v7-stable 7.4.10
+  * repacked to use propper librelp version
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 04 Feb 2014 11:02:24 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 21 Jan 2014 10:59:51 +0100
 
-rsyslog (7.4.9-0adiscon1) precise; urgency=low
+rsyslog (7.5.8-0adiscon1) precise; urgency=low
 
-  * Updated debs for RSyslog v7-stable 7.4.9
+  * Updated debs for RSyslog v7-devel 7.5.8
 
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 22 Jan 2014 11:25:46 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 09 Jan 2014 13:17:33 +0100
 
-rsyslog (7.4.8-0adiscon1) precise; urgency=low
+rsyslog (7.5.7-0adiscon1) precise; urgency=low
 
-  * Updated debs for RSyslog v7-stable 7.4.8
+  * Updated debs for RSyslog v7-devel 7.5.7
 
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 08 Jan 2014 13:15:22 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 25 Nov 2013 10:21:43 +0100
 
-rsyslog (7.4.7-0adiscon1) precise; urgency=low
+rsyslog (7.5.6-0adiscon2) precise; urgency=low
 
-  * Updated debs for RSyslog v7-stable 7.4.7
+  * Added mmsequence into base package
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 10 Dec 2013 10:13:05 +0100
-
-rsyslog (7.4.6-0adiscon1) precise; urgency=low
-
-  * Updated debs for RSyslog v7-stable 7.4.6
-
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 31 Oct 2013 10:54:35 +0100
-
-rsyslog (7.4.5-0adiscon2) precise; urgency=low
-
-  * repackaged 
-
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 23 Oct 2013 11:23:32 +0200
-
-rsyslog (7.4.5-0adiscon1) precise; urgency=low
-
-  * Updated debs for RSyslog v7-devel 7.4.5
-
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 22 Oct 2013 11:31:41 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 30 Oct 2013 12:37:48 +0100
 
 rsyslog (7.5.5-0adiscon2) precise; urgency=low
 

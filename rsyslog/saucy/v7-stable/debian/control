@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 8),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
                libee-dev (>= 0.4.0),
-               liblognorm-dev (>= 0.3.1),
+               liblognorm0-dev (>= 0.3.1),
 	       libjson0-dev, 
 	       libmongo-client-dev, 
 	       libglib2.0-dev,
@@ -46,8 +46,8 @@ Depends: ${shlibs:Depends},
          initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
-	 libjson0,
-	 liblogging-stdlog1
+	 liblogging-stdlog1,
+	 libjson0
 #	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
@@ -221,14 +221,14 @@ Description: IP Address Anonimization Module (mmanon).
  so after calling mmanon, the original message can no longer be obtained. 
  Note that anonymization will break digital signatures on the message, if they exist. 
 
-#Package: rsyslog-mmfields
-#Architecture: any
-#Priority: extra
-#Depends: ${shlibs:Depends},
-#         ${misc:Depends},
-#         rsyslog (= ${binary:Version}),
-#         liblognorm0
-#Description: Parse all fields of the message into structured data inside the JSON tree.
+Package: rsyslog-mmfields
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         liblognorm0
+Description: Parse all fields of the message into structured data inside the JSON tree.
 
 #Package: rsyslog-zmq
 #Architecture: any

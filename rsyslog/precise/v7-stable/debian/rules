@@ -35,10 +35,11 @@ override_dh_auto_configure:
 		--enable-ommongodb \
 		--enable-guardtime \
 		--enable-mmfields \
+		--enable-mmpstrucdata \
+		--enable-mmsequence \
 		--disable-testbench \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
-#                --enable-mmpstrucdata \
 #                --enable-guardtime \
 #                --enable-ommongodb \
 #                --enable-mmnormalize \

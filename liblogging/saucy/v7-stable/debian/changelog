@@ -1,3 +1,9 @@
+liblogging (1.0.1-0adiscon2saucy1) saucy; urgency=low
+
+  * Repackaged for PPA
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 11:23:58 +0100
+
 liblogging (1.0.1-0adiscon1) saucy; urgency=low
 
   * new debs for 1.0.1

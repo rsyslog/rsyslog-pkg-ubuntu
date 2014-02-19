@@ -1,3 +1,9 @@
+liblogging (1.0.1-0adiscon2precise1) precise; urgency=low
+
+  * Repackaged for PPA
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 11:23:18 +0100
+
 liblogging (1.0.1-0adiscon1) precise; urgency=low
 
   * New debs for 1.0.1

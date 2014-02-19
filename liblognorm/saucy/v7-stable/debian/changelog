@@ -1,8 +1,44 @@
-liblognorm (0.3.7-0adiscon3) saucy; urgency=low
+liblognorm (1.0.0-0adiscon8saucy2) saucy; urgency=low
 
-  * Added conflict for liblognorm1
+  * finally
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 10 Dec 2013 11:23:15 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 19:32:14 +0100
+
+liblognorm (1.0.0-0adiscon8saucy1) saucy; urgency=low
+
+  * Repackaged for PPA
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 17:47:03 +0100
+
+liblognorm (1.0.0-0adiscon7) saucy; urgency=low
+
+  * Fixed typo
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 29 Nov 2013 08:42:44 +0100
+
+liblognorm (1.0.0-0adiscon6) saucy; urgency=low
+
+  * Fix for conflicting files with liblognorm0 package
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 29 Nov 2013 07:58:49 +0100
+
+liblognorm (1.0.0-0adiscon5) saucy; urgency=low
+
+  * Final Final build for liblognorm 1.0.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 28 Nov 2013 14:54:24 +0100
+
+liblognorm (1.0.0-0adiscon4) saucy; urgency=low
+
+  * Final build for liblognorm 1.0.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 28 Nov 2013 11:53:32 +0100
+
+liblognorm (1.0.0-0adiscon3) saucy; urgency=low
+
+  * Build new major version for liblognorm
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 27 Nov 2013 11:28:43 +0100
 
 liblognorm (0.3.7-0adiscon1) saucy; urgency=low
 
