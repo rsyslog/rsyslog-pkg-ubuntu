@@ -1,3 +1,21 @@
+liblogging (1.0.1.adiscon-0adiscon3saucy3) saucy; urgency=low
+
+  * new
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 15:22:48 +0100
+
+liblogging (1.0.1-0adiscon3saucy2) saucy; urgency=low
+
+  * new build
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 14:33:39 +0100
+
+liblogging (1.0.1-0adiscon3saucy1) saucy; urgency=low
+
+  * Updated source
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 14:27:24 +0100
+
 liblogging (1.0.1-0adiscon2saucy1) saucy; urgency=low
 
   * Repackaged for PPA

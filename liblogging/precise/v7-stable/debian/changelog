@@ -1,3 +1,27 @@
+liblogging (1.0.1.adiscon-0adiscon3precise4) precise; urgency=low
+
+  * new
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 15:22:15 +0100
+
+liblogging (1.0.1-0adiscon3precise3) precise; urgency=low
+
+  * new build
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 15:05:25 +0100
+
+liblogging (1.0.1-0adiscon3precise2) precise; urgency=low
+
+  * new build
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 14:32:56 +0100
+
+liblogging (1.0.1-0adiscon3precise1) precise; urgency=low
+
+  * Upgraded source
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 14:26:47 +0100
+
 liblogging (1.0.1-0adiscon2precise1) precise; urgency=low
 
   * Repackaged for PPA

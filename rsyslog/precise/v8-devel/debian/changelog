@@ -1,3 +1,21 @@
+rsyslog (8.1.6-0adiscon1precise1) precise; urgency=low
+
+  * New packages for V8-Devel
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 20 Feb 2014 10:37:00 +0100
+
+rsyslog (8.1.5-0adiscon2precise2) precise; urgency=low
+
+  * new try
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 13:34:18 +0100
+
+rsyslog (8.1.5-0adiscon2precise1) precise; urgency=low
+
+  * Repackaged for PPA
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 10:19:30 +0100
+
 rsyslog (8.1.5-0adiscon1) precise; urgency=low
 
   * Build new debs for RSyslog v8-devel 8.1.5
