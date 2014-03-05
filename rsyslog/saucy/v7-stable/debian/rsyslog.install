@@ -22,6 +22,9 @@ debian/tmp/usr/lib/rsyslog/omprog.so
 debian/tmp/usr/lib/rsyslog/omruleset.so
 debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
 debian/tmp/usr/lib/rsyslog/mmsequence.so
+debian/tmp/usr/lib/rsyslog/lmnsd_gtls.so
+debian/tmp/usr/lib/rsyslog/lmcry_gcry
+debian/tmp/usr/lib/rsyslog/lmsig_gt
 debian/tmp/usr/lib/rsyslog/pm*.so
 debian/tmp/lib/systemd/system/rsyslog.service
 debian/usr.sbin.rsyslogd etc/apparmor.d/
