@@ -1,6 +1,7 @@
 debian/rsyslog.conf /etc/
 debian/50-default.conf /usr/share/rsyslog
 debian/tmp/usr/sbin/
+debian/tmp/usr/bin/ 
 debian/tmp/usr/share/man/
 debian/tmp/usr/lib/rsyslog/imfile.so
 debian/tmp/usr/lib/rsyslog/imklog.so
@@ -24,7 +25,7 @@ debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
 debian/tmp/usr/lib/rsyslog/mmsequence.so
 debian/tmp/usr/lib/rsyslog/pm*.so
 debian/tmp/usr/lib/rsyslog/lmnsd_gtls.so
-debian/tmp/usr/lib/rsyslog/lmcry_gcry
-debian/tmp/usr/lib/rsyslog/lmsig_gt
+debian/tmp/usr/lib/rsyslog/lmcry_gcry.so
+debian/tmp/usr/lib/rsyslog/lmsig_gt.so
 debian/tmp/lib/systemd/system/rsyslog.service
 debian/usr.sbin.rsyslogd etc/apparmor.d/

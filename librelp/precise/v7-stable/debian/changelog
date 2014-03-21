@@ -1,3 +1,21 @@
+librelp (1.2.5-0adiscon1precise1) precise; urgency=low
+
+  * New build for librelp 1.2.5
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 21 Mar 2014 13:47:59 +0100
+
+librelp (1.2.4-0adiscon1precise1) precise; urgency=low
+
+  * New build for librelp 1.2.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 17 Mar 2014 10:56:18 +0100
+
+librelp (1.2.3-0adiscon1precise1) precise; urgency=low
+
+  * New build for librelp 1.2.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 13 Mar 2014 15:38:36 +0100
+
 librelp (1.2.2-0adiscon2precise5) precise; urgency=low
 
   * Added missing depends for gnutls
