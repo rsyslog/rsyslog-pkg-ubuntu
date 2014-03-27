@@ -1,3 +1,9 @@
+rsyslog (8.1.6-0adiscon2precise4) precise; urgency=low
+
+  * Removed jemalloc support
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 26 Mar 2014 14:46:47 +0100
+
 rsyslog (8.1.6-0adiscon2precise3) precise; urgency=low
 
   * Added userutils
