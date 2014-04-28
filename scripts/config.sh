@@ -1,6 +1,6 @@
-PLATFORM="precise saucy"
+PLATFORM="precise saucy trusty"
 ARCHTECT="amd64 i386"
-BRANCHES="v7-stable v7-devel v8-devel"
+BRANCHES="v7-stable v8-stable v8-devel"
 # GPG KEY
 KEY_ID=AEF0CF8E
 # Mine

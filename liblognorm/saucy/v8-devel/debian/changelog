@@ -1,3 +1,9 @@
+liblognorm (1.0.1-0adiscon1saucy1) saucy; urgency=low
+
+  * New debs for liblognorm 1.0.1
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 11 Apr 2014 15:37:51 +0200
+
 liblognorm (1.0.0-0adiscon7) saucy; urgency=low
 
   * Fixed typo

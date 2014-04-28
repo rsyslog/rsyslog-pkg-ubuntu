@@ -1,3 +1,21 @@
+liblogging (1.0.4-0adiscon1saucy2) saucy; urgency=low
+
+  * removed journal
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 03 Apr 2014 08:57:25 +0200
+
+liblogging (1.0.4-0adiscon1saucy1) saucy; urgency=low
+
+  * new debs for 1.0.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 02 Apr 2014 15:16:06 +0200
+
+liblogging (1.0.3-0adiscon1saucy1) saucy; urgency=low
+
+  * new debs for 1.0.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 02 Apr 2014 14:28:26 +0200
+
 liblogging (1.0.1.adiscon-0adiscon3saucy3) saucy; urgency=low
 
   * new

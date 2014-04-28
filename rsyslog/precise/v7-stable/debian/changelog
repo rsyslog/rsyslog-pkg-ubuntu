@@ -1,3 +1,9 @@
+rsyslog (7.6.3-0adiscon1precise1) precise; urgency=low
+
+  * Updated debs for RSyslog v7-stable 7.6.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 27 Mar 2014 12:29:28 +0100
+
 rsyslog (7.6.2-0adiscon1precise3) precise; urgency=low
 
   * Added bin folder

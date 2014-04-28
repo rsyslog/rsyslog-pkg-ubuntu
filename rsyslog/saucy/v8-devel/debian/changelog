@@ -1,3 +1,21 @@
+rsyslog (8.3.1-0adiscon1saucy1) saucy; urgency=low
+
+  * New packages for version 8.3.1
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 24 Apr 2014 10:37:03 +0200
+
+rsyslog (8.3.0.adiscon-0adiscon2saucy1) saucy; urgency=low
+
+  * Rebuild
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 11 Apr 2014 07:40:30 +0200
+
+rsyslog (8.3.0-0adiscon1saucy1) saucy; urgency=low
+
+  * New packages for version 8.3.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 10 Apr 2014 14:53:03 +0200
+
 rsyslog (8.1.6-0adiscon2saucy3) saucy; urgency=low
 
   * Added userutils

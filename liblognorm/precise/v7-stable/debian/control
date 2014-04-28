@@ -4,6 +4,7 @@ Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Build-Depends: debhelper (>= 8),
     autotools-dev,
     pkg-config,
+    python-sphinx,
     libxml2-dev,
     libestr-dev,
     libee-dev (>= 0.3.2),
