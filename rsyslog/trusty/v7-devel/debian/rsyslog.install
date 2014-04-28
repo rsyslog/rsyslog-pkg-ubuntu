@@ -1,0 +1,27 @@
+debian/rsyslog.conf /etc/
+debian/50-default.conf /usr/share/rsyslog
+debian/tmp/usr/sbin/
+debian/tmp/usr/share/man/
+debian/tmp/usr/lib/rsyslog/imfile.so
+debian/tmp/usr/lib/rsyslog/imklog.so
+debian/tmp/usr/lib/rsyslog/immark.so
+debian/tmp/usr/lib/rsyslog/impstats.so
+debian/tmp/usr/lib/rsyslog/imtcp.so
+debian/tmp/usr/lib/rsyslog/imudp.so
+debian/tmp/usr/lib/rsyslog/imuxsock.so
+debian/tmp/usr/lib/rsyslog/lmnet.so
+debian/tmp/usr/lib/rsyslog/lmnetstrms.so
+debian/tmp/usr/lib/rsyslog/lmnsd_ptcp.so
+debian/tmp/usr/lib/rsyslog/lmregexp.so
+debian/tmp/usr/lib/rsyslog/lmstrmsrv.so
+debian/tmp/usr/lib/rsyslog/lmtcpclt.so
+debian/tmp/usr/lib/rsyslog/lmtcpsrv.so
+debian/tmp/usr/lib/rsyslog/lmzlibw.so
+debian/tmp/usr/lib/rsyslog/ommail.so
+debian/tmp/usr/lib/rsyslog/omprog.so
+debian/tmp/usr/lib/rsyslog/omruleset.so
+debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
+debian/tmp/usr/lib/rsyslog/mmsequence.so
+debian/tmp/usr/lib/rsyslog/pm*.so
+debian/tmp/lib/systemd/system/rsyslog.service
+debian/usr.sbin.rsyslogd etc/apparmor.d/

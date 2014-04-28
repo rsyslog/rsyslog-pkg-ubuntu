@@ -1,3 +1,9 @@
+rsyslog (8.3.1-0adiscon1precise4) precise; urgency=low
+
+  * Added mmexternal plugin
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 28 Apr 2014 12:15:54 +0200
+
 rsyslog (8.3.1-0adiscon1precise3) precise; urgency=low
 
   * Fixed cflags

@@ -1,0 +1,115 @@
+librelp (1.2.5-0adiscon1saucy1) saucy; urgency=low
+
+  * New build for librelp 1.2.5
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 21 Mar 2014 13:48:28 +0100
+
+librelp (1.2.4-0adiscon1saucy1) saucy; urgency=low
+
+  * New build for librelp 1.2.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 17 Mar 2014 10:57:00 +0100
+
+librelp (1.2.3-0adiscon1saucy1) saucy; urgency=low
+
+  * New build for librelp 1.2.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 13 Mar 2014 15:39:24 +0100
+
+librelp (1.2.2-0adiscon2saucy2) saucy; urgency=low
+
+  * Fixed dependencies
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 12:24:26 +0100
+
+librelp (1.2.2-0adiscon2saucy1) saucy; urgency=low
+
+  * Repackaged for PPA
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 11:21:52 +0100
+
+librelp (1.2.2-0adiscon2) saucy; urgency=low
+
+  * Repacked 
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 30 Jan 2014 16:30:56 +0100
+
+librelp (1.2.2-0adiscon1) saucy; urgency=low
+
+  * New upstream release for 1.2.2
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 07 Jan 2014 13:33:39 +0100
+
+librelp (1.2.0-0adiscon2) saucy; urgency=low
+
+  * Initial build for Ubuntu Saucy
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 18 Oct 2013 18:08:04 +0200
+
+librelp (1.2.0-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.2.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 15 Jul 2013 09:38:10 +0200
+
+librelp (1.1.5-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.1.5
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 05 Jul 2013 10:47:20 +0200
+
+librelp (1.1.4-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.1.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 03 Jul 2013 13:27:53 +0200
+
+librelp (1.1.3-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.1.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 26 Jun 2013 16:29:48 +0200
+
+librelp (1.1.1-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.1.1 including TLS Support
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 11 Jun 2013 13:19:28 +0200
+
+librelp (1.0.6-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.0.6
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 07 May 2013 10:42:30 +0200
+
+librelp (1.0.3-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.0.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 10 Apr 2013 23:47:52 -0700
+
+librelp (1.0.2-0adiscon1) precise; urgency=low
+
+  * New upstream release for 1.0.2
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 15 Mar 2013 03:07:48 -0700
+
+librelp (1.0.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release for 1.0.1
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 29 Nov 2012 02:57:50 -0800
+
+librelp (1.0.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control
+    - Bump Standards-Version to 3.8.3. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 10 Dec 2009 17:03:02 +0100
+
+librelp (0.1.3-1) unstable; urgency=low
+
+  * New upstream release. Closes: #497613
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 10 Feb 2009 20:43:37 +0100
