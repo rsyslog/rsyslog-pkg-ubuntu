@@ -23,6 +23,7 @@ debian/tmp/usr/lib/rsyslog/omprog.so
 # debian/tmp/usr/lib/rsyslog/omruleset.so
 debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
 debian/tmp/usr/lib/rsyslog/mmsequence.so
+debian/tmp/usr/lib/rsyslog/mmexternal.so
 debian/tmp/usr/lib/rsyslog/pm*.so
 debian/tmp/usr/lib/rsyslog/lmnsd_gtls.so
 debian/tmp/usr/lib/rsyslog/lmcry_gcry.so
