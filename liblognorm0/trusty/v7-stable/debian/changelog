@@ -1,3 +1,9 @@
+liblognorm0 (0.3.7-2adiscon1trusty1) trusty; urgency=low
+
+  * repack for higher version
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 29 Apr 2014 11:29:16 +0200
+
 liblognorm0 (0.3.7-0adiscon3trusty1) trusty; urgency=low
 
   * Initial build for Ubuntu trusty

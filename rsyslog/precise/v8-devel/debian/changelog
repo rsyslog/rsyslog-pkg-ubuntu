@@ -1,3 +1,21 @@
+rsyslog (8.3.4-0adiscon1precise1) precise; urgency=low
+
+  * New packages for version 8.3.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 11 Jul 2014 15:42:10 +0200
+
+rsyslog (8.3.3-0adiscon1precise1) precise; urgency=low
+
+  * New packages for version 8.3.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 26 Jun 2014 14:49:54 +0200
+
+rsyslog (8.3.2-0adiscon1precise1) precise; urgency=low
+
+  * New packages for version 8.3.2
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 02 May 2014 13:52:18 +0200
+
 rsyslog (8.3.1-0adiscon1precise4) precise; urgency=low
 
   * Added mmexternal plugin

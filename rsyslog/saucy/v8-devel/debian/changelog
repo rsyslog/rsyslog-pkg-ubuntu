@@ -1,3 +1,27 @@
+rsyslog (8.3.4.adiscon-0adiscon1saucy2) saucy; urgency=low
+
+  * repack
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 11 Jul 2014 18:55:45 +0200
+
+rsyslog (8.3.4-0adiscon1saucy1) saucy; urgency=low
+
+  * New packages for version 8.3.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 11 Jul 2014 15:43:34 +0200
+
+rsyslog (8.3.3-0adiscon1saucy1) saucy; urgency=low
+
+  * New packages for version 8.3.3
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 26 Jun 2014 15:06:01 +0200
+
+rsyslog (8.3.2-0adiscon1saucy2) saucy; urgency=low
+
+  * New packages for version 8.3.2
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 02 May 2014 14:20:54 +0200
+
 rsyslog (8.3.1-0adiscon1saucy2) saucy; urgency=low
 
   * Added mmexternal plugin
