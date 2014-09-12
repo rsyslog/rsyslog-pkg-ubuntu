@@ -1,3 +1,16 @@
+rsyslog (8.4.0-0adiscon2trusty1) trusty; urgency=low
+
+  * Fixed gnutls package issue 
+    https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/12
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 16:52:51 +0200
+
+rsyslog (8.4.0-0adiscon1trusty1) trusty; urgency=low
+
+  * New packages for 8.4.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 14:45:25 +0200
+
 rsyslog (8.2.2-0adiscon1trusty1) trusty; urgency=low
 
   * New packages for 8.2.2

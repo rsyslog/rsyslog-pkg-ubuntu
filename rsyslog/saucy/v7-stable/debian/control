@@ -52,7 +52,6 @@ Depends: ${shlibs:Depends},
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
-          rsyslog-gnutls,
           rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
@@ -141,17 +140,6 @@ Description: GSSAPI authentication and encryption support for rsyslog
  These plugins allow rsyslog to write and/or receive GSSAPI authenticated and
  encrypted syslog messages. GSSAPI is commonly used for Kerberos
  authentication.
-
-Package: rsyslog-gnutls
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version})
-Suggests: gnutls-bin
-Description: TLS protocol support for rsyslog
- This netstream plugin allows rsyslog to send and receive encrypted syslog
- messages via the upcoming syslog-transport-tls IETF standard protocol.
 
 Package: rsyslog-relp
 Architecture: any

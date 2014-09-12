@@ -28,9 +28,9 @@ override_dh_auto_configure:
 		--enable-pmrfc3164sd \
 		--enable-pmsnare \
 		--enable-omprog \
-                --enable-elasticsearch \
-                --enable-mmjsonparse \
-                --enable-imptcp \
+		--enable-elasticsearch \
+		--enable-mmjsonparse \
+		--enable-imptcp \
 		--enable-mmnormalize \
 		--enable-mmanon \
 		--enable-ommongodb \
@@ -38,9 +38,10 @@ override_dh_auto_configure:
 		--enable-mmfields \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
-                --enable-usertools \
+		--enable-pmciscoios \
+		--enable-usertools \
 		--disable-testbench \
-                --with-systemdsystemunitdir=/lib/systemd/system
+		--with-systemdsystemunitdir=/lib/systemd/system
 
 # unstable	                --enable-jemalloc \
 #                --enable-gssapi-krb5 \

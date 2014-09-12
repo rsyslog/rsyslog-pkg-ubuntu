@@ -54,13 +54,12 @@ Depends: ${shlibs:Depends},
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
-          rsyslog-gnutls,
           rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
-	  gnutls-bin, 
+          rsyslog-gnutls,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -221,6 +220,25 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          liblognorm1
 Description: Parse all fields of the message into structured data inside the JSON tree.
+
+Package: rsyslog-pmciscoios
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Parser module which supports various Cisco IOS formats. 
+
+Package: rsyslog-gnutls
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: gnutls-bin
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
 
 #Package: rsyslog-zmq
 #Architecture: any

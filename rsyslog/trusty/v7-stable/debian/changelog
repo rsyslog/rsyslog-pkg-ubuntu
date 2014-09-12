@@ -1,3 +1,16 @@
+rsyslog (7.6.4-0adiscon1trusty1) trusty; urgency=low
+
+  * Updated debs for RSyslog v7-stable 7.6.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 12 Sep 2014 13:06:34 +0200
+
+rsyslog (7.6.3-0adiscon2trusty1) trusty; urgency=low
+
+  * Fixed gnutls package issue 
+    https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/12
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 16:40:29 +0200
+
 rsyslog (7.6.3-0adiscon1trusty1) trusty; urgency=low
 
   * Initial build for Ubuntu Trusty

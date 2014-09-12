@@ -52,12 +52,12 @@ Depends: ${shlibs:Depends},
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
-          rsyslog-gnutls,
           rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+          rsyslog-gnutls,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -142,17 +142,6 @@ Description: GSSAPI authentication and encryption support for rsyslog
  encrypted syslog messages. GSSAPI is commonly used for Kerberos
  authentication.
 
-Package: rsyslog-gnutls
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version})
-Suggests: gnutls-bin
-Description: TLS protocol support for rsyslog
- This netstream plugin allows rsyslog to send and receive encrypted syslog
- messages via the upcoming syslog-transport-tls IETF standard protocol.
-
 Package: rsyslog-relp
 Architecture: any
 Priority: extra
@@ -229,6 +218,17 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          liblognorm0
 Description: Parse all fields of the message into structured data inside the JSON tree.
+
+Package: rsyslog-gnutls
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: gnutls-bin
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
 
 #Package: rsyslog-zmq
 #Architecture: any

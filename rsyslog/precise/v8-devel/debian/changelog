@@ -1,3 +1,9 @@
+rsyslog (8.3.5-0adiscon1precise1) precise; urgency=low
+
+  * New packages for version 8.3.5
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 05 Aug 2014 12:38:53 +0200
+
 rsyslog (8.3.4-0adiscon1precise1) precise; urgency=low
 
   * New packages for version 8.3.4

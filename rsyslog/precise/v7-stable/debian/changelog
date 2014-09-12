@@ -1,3 +1,16 @@
+rsyslog (7.6.4-0adiscon1precise1) precise; urgency=low
+
+  * Updated debs for RSyslog v7-stable 7.6.4
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 12 Sep 2014 13:04:54 +0200
+
+rsyslog (7.6.3-0adiscon2precise1) precise; urgency=low
+
+  * Fixed gnutls package issue 
+    https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/12
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 16:15:09 +0200
+
 rsyslog (7.6.3-0adiscon1precise1) precise; urgency=low
 
   * Updated debs for RSyslog v7-stable 7.6.3

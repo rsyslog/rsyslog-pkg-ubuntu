@@ -1,3 +1,15 @@
+rsyslog (8.3.5-0adiscon1saucy2) saucy; urgency=low
+
+  * Test again
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 05 Aug 2014 17:15:02 +0200
+
+rsyslog (8.3.5-0adiscon1saucy1) saucy; urgency=low
+
+  * New packages for version 8.3.5
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 05 Aug 2014 12:41:01 +0200
+
 rsyslog (8.3.4.adiscon-0adiscon1saucy2) saucy; urgency=low
 
   * repack
