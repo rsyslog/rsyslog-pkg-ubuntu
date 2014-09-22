@@ -1,3 +1,9 @@
+rsyslog (7.6.5-0adiscon1precise1) precise; urgency=low
+
+  * Updated debs for RSyslog v7-stable 7.6.5
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 17 Sep 2014 16:28:06 +0200
+
 rsyslog (7.6.4-0adiscon1precise1) precise; urgency=low
 
   * Updated debs for RSyslog v7-stable 7.6.4
