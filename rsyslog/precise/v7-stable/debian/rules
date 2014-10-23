@@ -1,7 +1,10 @@
 #!/usr/bin/make -f
 
+<<<<<<< HEAD
 export DEB_CFLAGS_MAINT_APPEND = -std=c99
 
+=======
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
@@ -37,12 +40,19 @@ override_dh_auto_configure:
 		--enable-ommongodb \
 		--enable-guardtime \
 		--enable-mmfields \
+<<<<<<< HEAD
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
 		--enable-usertools \
 		--disable-testbench \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
+=======
+		--disable-testbench \
+                --with-systemdsystemunitdir=/lib/systemd/system
+
+#                --enable-mmpstrucdata \
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 #                --enable-guardtime \
 #                --enable-ommongodb \
 #                --enable-mmnormalize \

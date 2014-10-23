@@ -1,7 +1,10 @@
 debian/rsyslog.conf /etc/
 debian/50-default.conf /usr/share/rsyslog
 debian/tmp/usr/sbin/
+<<<<<<< HEAD
 debian/tmp/usr/bin/ 
+=======
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 debian/tmp/usr/share/man/
 debian/tmp/usr/lib/rsyslog/imfile.so
 debian/tmp/usr/lib/rsyslog/imklog.so
@@ -21,11 +24,15 @@ debian/tmp/usr/lib/rsyslog/lmzlibw.so
 debian/tmp/usr/lib/rsyslog/ommail.so
 debian/tmp/usr/lib/rsyslog/omprog.so
 debian/tmp/usr/lib/rsyslog/omruleset.so
+<<<<<<< HEAD
 debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
 debian/tmp/usr/lib/rsyslog/mmsequence.so
 debian/tmp/usr/lib/rsyslog/lmnsd_gtls.so
 debian/tmp/usr/lib/rsyslog/lmcry_gcry.so
 debian/tmp/usr/lib/rsyslog/lmsig_gt.so
+=======
+# debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 debian/tmp/usr/lib/rsyslog/pm*.so
 debian/tmp/lib/systemd/system/rsyslog.service
 debian/usr.sbin.rsyslogd etc/apparmor.d/

@@ -21,7 +21,10 @@
 /var/log/user.log
 /var/log/lpr.log
 /var/log/cron.log
+<<<<<<< HEAD
 /var/log/rsyslog.log
+=======
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 /var/log/debug
 /var/log/messages
 {

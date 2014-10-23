@@ -1,10 +1,17 @@
 Source: liblognorm
 Priority: extra
+<<<<<<< HEAD
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Build-Depends: debhelper (>= 8),
     autotools-dev,
     pkg-config,
     python-sphinx,
+=======
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Build-Depends: debhelper (>= 8),
+    autotools-dev,
+    pkg-config,
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
     libxml2-dev,
     libestr-dev,
     libee-dev (>= 0.3.2),
@@ -16,6 +23,7 @@ Homepage: http://www.liblognorm.com/
 #Vcs-Git: git://git.debian.org/collab-maint/liblognorm.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/liblognorm.git;a=summary
 
+<<<<<<< HEAD
 Package: liblognorm1-dev
 Section: libdevel
 Architecture: any
@@ -23,6 +31,15 @@ Depends: liblognorm1 (= ${binary:Version}), ${misc:Depends},
     libee-dev, libestr-dev
 Replaces: liblognorm-dev 
 Breaks: liblognorm-dev
+=======
+Package: liblognorm-dev
+Section: libdevel
+Architecture: any
+Depends: liblognorm0 (= ${binary:Version}), ${misc:Depends},
+    libee-dev, libestr-dev
+Replaces: liblognorm1-dev
+Breaks: liblognorm1-dev
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 Description: Log normalizing library
  Liblognorm is a event and log normalization library that is capable of
  real-time processing. It provides the capability to normalize events to
@@ -30,12 +47,21 @@ Description: Log normalizing library
  .
  This package contains the development files.
 
+<<<<<<< HEAD
 Package: liblognorm1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: liblognorm0
 Breaks: liblognorm0
+=======
+Package: liblognorm0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: liblognorm1
+Breaks: liblognorm1
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 Description: Log normalizing library
  Liblognorm is a event and log normalization library that is capable of
  real-time processing. It provides the capability to normalize events to

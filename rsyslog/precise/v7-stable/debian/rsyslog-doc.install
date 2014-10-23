@@ -1,4 +1,8 @@
 doc/*.html usr/share/doc/rsyslog-doc/html/
+<<<<<<< HEAD
 #doc/*.jpg usr/share/doc/rsyslog-doc/html/
+=======
+doc/*.jpg usr/share/doc/rsyslog-doc/html/
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 doc/*.png usr/share/doc/rsyslog-doc/html/
 doc/*.conf usr/share/doc/rsyslog-doc/html/

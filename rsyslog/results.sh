@@ -1,1 +1,1 @@
-../scripts/results.sh
+/var/cache/pbuilder/result

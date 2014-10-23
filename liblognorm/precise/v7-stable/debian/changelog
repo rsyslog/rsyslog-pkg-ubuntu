@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 liblognorm (1.0.0-0adiscon8precise4) precise; urgency=low
 
   * finally
@@ -39,6 +40,13 @@ liblognorm (1.0.0-0adiscon3) precise; urgency=low
   * Build new major version for liblognorm 
 
  -- Andre Lorbach <alorbach@adiscon.com>  Wed, 27 Nov 2013 11:22:18 +0100
+=======
+liblognorm (0.3.7-0adiscon2) precise; urgency=low
+
+  * Added handling for higher liblognorm versions
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 10 Dec 2013 10:25:44 +0100
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 
 liblognorm (0.3.7-0adiscon1) precise; urgency=low
 

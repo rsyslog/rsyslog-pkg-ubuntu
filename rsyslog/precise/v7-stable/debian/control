@@ -14,7 +14,11 @@ Build-Depends: debhelper (>= 8),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
                libee-dev (>= 0.4.0),
+<<<<<<< HEAD
                liblognorm0-dev (>= 0.3.1),
+=======
+               liblognorm-dev (>= 0.3.1),
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 	       libjson0-dev, 
 	       libmongo-client-dev, 
 	       libglib2.0-dev,
@@ -26,7 +30,10 @@ Build-Depends: debhelper (>= 8),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       libgt-dev,
+<<<<<<< HEAD
 	       liblogging-stdlog-dev,
+=======
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 	       python-docutils
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -46,20 +53,34 @@ Depends: ${shlibs:Depends},
          initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
+<<<<<<< HEAD
 	 libjson0,
 	 liblogging-stdlog1, 
 	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
+=======
+	 libjson0
+#	 libgt0
+Recommends: logrotate
+Suggests: rsyslog-mysql | rsyslog-pgsql,
+          rsyslog-doc,
+          rsyslog-gnutls,
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
           rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+<<<<<<< HEAD
           rsyslog-gnutls,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
+=======
+          apparmor (>= 2.3)
+Description: reliable system and kernel logging daemon
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
  providing support for message logging), with features that include:
   * reliable syslog over TCP, SSL/TLS and RELP
@@ -142,6 +163,20 @@ Description: GSSAPI authentication and encryption support for rsyslog
  encrypted syslog messages. GSSAPI is commonly used for Kerberos
  authentication.
 
+<<<<<<< HEAD
+=======
+Package: rsyslog-gnutls
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: gnutls-bin
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
+
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 Package: rsyslog-relp
 Architecture: any
 Priority: extra
@@ -210,6 +245,7 @@ Description: IP Address Anonimization Module (mmanon).
  so after calling mmanon, the original message can no longer be obtained. 
  Note that anonymization will break digital signatures on the message, if they exist. 
 
+<<<<<<< HEAD
 Package: rsyslog-mmfields
 Architecture: any
 Priority: extra
@@ -229,6 +265,16 @@ Suggests: gnutls-bin
 Description: TLS protocol support for rsyslog
  This netstream plugin allows rsyslog to send and receive encrypted syslog
  messages via the upcoming syslog-transport-tls IETF standard protocol.
+=======
+#Package: rsyslog-mmfields
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}),
+#         liblognorm0
+#Description: Parse all fields of the message into structured data inside the JSON tree.
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 
 #Package: rsyslog-zmq
 #Architecture: any

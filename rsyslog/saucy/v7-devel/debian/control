@@ -26,7 +26,10 @@ Build-Depends: debhelper (>= 8),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       libgt-dev,
+<<<<<<< HEAD
 	       liblogging-stdlog-dev,
+=======
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 	       python-docutils
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -46,7 +49,10 @@ Depends: ${shlibs:Depends},
          initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
+<<<<<<< HEAD
 	 liblogging-stdlog1,
+=======
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 	 libjson0
 #	 libgt0
 Recommends: logrotate
@@ -59,7 +65,11 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
           apparmor (>= 2.3)
+<<<<<<< HEAD
 Description: a rocket-fast system for log processing
+=======
+Description: reliable system and kernel logging daemon
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
  providing support for message logging), with features that include:
   * reliable syslog over TCP, SSL/TLS and RELP

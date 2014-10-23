@@ -9,7 +9,10 @@ start on filesystem
 stop on runlevel [06]
 
 expect fork
+<<<<<<< HEAD
 kill timeout 30
+=======
+>>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 respawn
 
 pre-start script
