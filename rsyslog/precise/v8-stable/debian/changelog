@@ -1,3 +1,9 @@
+rsyslog (8.4.2-0adiscon1precise1) precise; urgency=low
+
+  * New packages for 8.4.2
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 02 Oct 2014 08:20:40 +0200
+
 rsyslog (8.4.0-0adiscon2precise1) precise; urgency=low
 
   * Fixed gnutls package issue 

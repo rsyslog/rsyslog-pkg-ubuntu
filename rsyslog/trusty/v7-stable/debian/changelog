@@ -1,3 +1,15 @@
+rsyslog (7.6.7-0adiscon1trusty2) trusty; urgency=low
+
+  * new build
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 02 Oct 2014 08:16:11 +0200
+
+rsyslog (7.6.7-0adiscon1trusty1) trusty; urgency=low
+
+  * Updated debs for RSyslog v7-stable 7.6.7
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 02 Oct 2014 08:07:07 +0200
+
 rsyslog (7.6.5-0adiscon1trusty1) trusty; urgency=low
 
   * Updated debs for RSyslog v7-stable 7.6.5
