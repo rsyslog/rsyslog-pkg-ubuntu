@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 rsyslog (8.3.5-0adiscon1precise1) precise; urgency=low
 
   * New packages for version 8.3.5
@@ -107,8 +106,6 @@ rsyslog (8.1.5-0adiscon1) precise; urgency=low
 
  -- Andre Lorbach <alorbach@adiscon.com>  Fri, 24 Jan 2014 11:04:21 +0100
 
-=======
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 rsyslog (8.1.4-0adiscon1) precise; urgency=low
 
   * Build new debs for RSyslog v8-devel 8.1.4

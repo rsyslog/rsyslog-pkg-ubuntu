@@ -1,10 +1,6 @@
 Source: libestr
 Priority: extra
-<<<<<<< HEAD
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
-=======
-Maintainer: Pierre Chifflier <pollux@debian.org>
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 Build-Depends: debhelper (>= 7.0.50~),
     autotools-dev,
     hardening-wrapper

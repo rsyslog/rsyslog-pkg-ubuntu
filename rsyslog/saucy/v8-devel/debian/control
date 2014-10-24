@@ -27,10 +27,7 @@ Build-Depends: debhelper (>= 8),
 	       bison,
 	       libgt-dev,
 	       python-docutils,
-<<<<<<< HEAD
 	       liblogging-stdlog-dev,
-=======
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -52,29 +49,18 @@ Depends: ${shlibs:Depends},
          ucf,
 	 libjson0,
 	 libjemalloc1,
-<<<<<<< HEAD
 	 liblogging-stdlog1,
-=======
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
-<<<<<<< HEAD
-=======
-          rsyslog-gnutls,
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
           rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
           apparmor (>= 2.3)
-<<<<<<< HEAD
 Description: a rocket-fast system for log processing
-=======
-Description: reliable system and kernel logging daemon
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
  providing support for message logging), with features that include:
   * reliable syslog over TCP, SSL/TLS and RELP
@@ -157,20 +143,6 @@ Description: MongoDB output plugin for rsyslog
 # encrypted syslog messages. GSSAPI is commonly used for Kerberos
 # authentication.
 
-<<<<<<< HEAD
-=======
-Package: rsyslog-gnutls
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version})
-Suggests: gnutls-bin
-Description: TLS protocol support for rsyslog
- This netstream plugin allows rsyslog to send and receive encrypted syslog
- messages via the upcoming syslog-transport-tls IETF standard protocol.
-
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 Package: rsyslog-relp
 Architecture: any
 Priority: extra
@@ -248,7 +220,6 @@ Depends: ${shlibs:Depends},
          liblognorm1
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
-<<<<<<< HEAD
 Package: rsyslog-pmciscoios
 Architecture: any
 Priority: extra
@@ -257,8 +228,6 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Parser module which supports various Cisco IOS formats. 
 
-=======
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 #Package: rsyslog-zmq
 #Architecture: any
 #Priority: extra

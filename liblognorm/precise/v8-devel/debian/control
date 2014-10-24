@@ -1,17 +1,10 @@
 Source: liblognorm
 Priority: extra
-<<<<<<< HEAD
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Build-Depends: debhelper (>= 8),
     autotools-dev,
     pkg-config,
     python-sphinx,
-=======
-Maintainer: Pierre Chifflier <pollux@debian.org>
-Build-Depends: debhelper (>= 8),
-    autotools-dev,
-    pkg-config,
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
     libxml2-dev,
     libestr-dev,
     libee-dev (>= 0.3.2),

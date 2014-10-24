@@ -23,11 +23,8 @@ debian/tmp/usr/lib/rsyslog/omruleset.so
 debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
 debian/tmp/usr/lib/rsyslog/mmsequence.so
 debian/tmp/usr/lib/rsyslog/pm*.so
-<<<<<<< HEAD
 debian/tmp/usr/lib/rsyslog/lmnsd_gtls.so
 debian/tmp/usr/lib/rsyslog/lmcry_gcry.so
 debian/tmp/usr/lib/rsyslog/lmsig_gt.so
-=======
->>>>>>> 8a6424d1c08cd9f1231c506f5bc99b935cd97664
 debian/tmp/lib/systemd/system/rsyslog.service
 debian/usr.sbin.rsyslogd etc/apparmor.d/
