@@ -1,3 +1,9 @@
+rsyslog (7.6.6-0adiscon1trusty1) trusty; urgency=medium
+
+  * Updated debs for RSyslog v7-stable 7.6.6
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 30 Sep 2014 10:57:00 +0200
+
 rsyslog (7.6.5-0adiscon1trusty1) trusty; urgency=low
 
   * Updated debs for RSyslog v7-stable 7.6.5
