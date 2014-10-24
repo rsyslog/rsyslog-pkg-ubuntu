@@ -1,3 +1,9 @@
+rsyslog (8.5.0-0adiscon1trusty2) trusty; urgency=low
+
+  * Disabled jemalloc, repack
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 24 Oct 2014 16:48:21 +0200
+
 rsyslog (8.5.0-0adiscon1trusty1) trusty; urgency=low
 
   * New packages for version 8.5.0

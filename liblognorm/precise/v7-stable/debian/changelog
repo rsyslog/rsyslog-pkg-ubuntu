@@ -40,6 +40,12 @@ liblognorm (1.0.0-0adiscon3) precise; urgency=low
 
  -- Andre Lorbach <alorbach@adiscon.com>  Wed, 27 Nov 2013 11:22:18 +0100
 
+liblognorm (0.3.7-0adiscon2) precise; urgency=low
+
+  * Added handling for higher liblognorm versions
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 10 Dec 2013 10:25:44 +0100
+
 liblognorm (0.3.7-0adiscon1) precise; urgency=low
 
   * Packaged latest version from old liblognorm branch
