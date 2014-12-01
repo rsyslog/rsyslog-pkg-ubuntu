@@ -1,3 +1,15 @@
+rsyslog (8.6.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.6.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 01 Dec 2014 17:42:58 +0100
+
+rsyslog (8.4.2.ad1-0adiscon1trusty1) trusty; urgency=low
+
+  * Packages for 8.4.2.ad1
+
+ -- Florian Riedl <friedl@adiscon.com>  Wed, 12 Nov 2014 17:14:09 +0100
+
 <<<<<<< HEAD
 rsyslog (8.4.1-0adiscon2trusty1) trusty; urgency=medium
 
