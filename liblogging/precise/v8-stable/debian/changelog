@@ -1,3 +1,9 @@
+liblogging (1.0.5-0adiscon1ubuntu1) precise; urgency=medium
+
+  * New debs
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 09 Dec 2014 15:40:58 +0100
+
 liblogging (1.0.1-0adiscon2) precise; urgency=low
 
   * New debs

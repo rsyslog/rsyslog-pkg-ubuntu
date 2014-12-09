@@ -1,3 +1,9 @@
+rsyslog (8.6.0.r1-0adiscon2trusty1) trusty; urgency=medium
+
+  * re-release of 8.6.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 02 Dec 2014 11:41:54 +0100
+
 rsyslog (8.6.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.6.0
@@ -10,19 +16,17 @@ rsyslog (8.4.2.ad1-0adiscon1trusty1) trusty; urgency=low
 
  -- Florian Riedl <friedl@adiscon.com>  Wed, 12 Nov 2014 17:14:09 +0100
 
-<<<<<<< HEAD
-rsyslog (8.4.1-0adiscon2trusty1) trusty; urgency=medium
-
-  * New packages for 8.4.1
-
- -- Florian Riedl <friedl@adiscon.com>  Tue, 30 Sep 2014 11:04:06 +0200
-=======
 rsyslog (8.4.2-0adiscon1trusty1) trusty; urgency=low
 
   * New packages for 8.4.2
 
  -- Andre Lorbach <alorbach@adiscon.com>  Thu, 02 Oct 2014 08:21:27 +0200
->>>>>>> f4c74c00d405dfd1da1e632038149641c9648de5
+
+rsyslog (8.4.1-0adiscon2trusty1) trusty; urgency=medium
+
+  * New packages for 8.4.1
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 30 Sep 2014 11:04:06 +0200
 
 rsyslog (8.4.0-0adiscon2trusty1) trusty; urgency=low
 

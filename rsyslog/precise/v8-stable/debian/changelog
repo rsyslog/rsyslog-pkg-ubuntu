@@ -1,3 +1,9 @@
+rsyslog (8.6.0.r1-0adiscon2precise1) precise; urgency=medium
+
+  * re-release of 8.6.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 02 Dec 2014 11:52:25 +0100
+
 rsyslog (8.6.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.6.0
