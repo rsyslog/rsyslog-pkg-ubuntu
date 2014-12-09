@@ -1,10 +1,10 @@
-libestr (0.1.10-0adiscon1precise1) precise; urgency=medium
+libestr (0.1.9-0adiscon4trusty1) trusty; urgency=low
 
-  * Updated package to 0.1.10
+  * Initial build for trusty
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 09 Dec 2014 17:05:58 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 25 Apr 2014 15:19:34 +0200
 
-libestr (0.1.9-0adiscon3precise1) precise; urgency=low
+libestr (0.1.9-0adiscon3saucy1) saucy; urgency=low
 
   * Repackaged for PPA
 

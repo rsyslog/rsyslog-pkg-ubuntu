@@ -1,3 +1,9 @@
+libestr (0.1.10-0adiscon1trusty1) trusty; urgency=medium
+
+  * Updated package to 0.1.10
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 09 Dec 2014 17:07:10 +0100
+
 libestr (0.1.9-0adiscon4trusty1) trusty; urgency=low
 
   * Initial build for trusty
