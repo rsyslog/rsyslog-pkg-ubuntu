@@ -1,3 +1,9 @@
+libestr (0.1.9-0adiscon3precise1) precise; urgency=low
+
+  * Repackaged for PPA
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 11:06:17 +0100
+
 libestr (0.1.9-0adiscon2) saucy; urgency=low
 
   * Repackaged
