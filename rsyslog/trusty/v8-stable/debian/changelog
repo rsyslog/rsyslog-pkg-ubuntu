@@ -1,3 +1,9 @@
+rsyslog (8.6.0.r2-0adiscon4trusty1) trusty; urgency=low
+
+  * added package for rsyslog-mmutf8fix
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 18 Dec 2014 15:02:10 +0100
+
 rsyslog (8.6.0.r1-0adiscon2trusty1) trusty; urgency=medium
 
   * re-release of 8.6.0
