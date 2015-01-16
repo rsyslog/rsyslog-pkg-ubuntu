@@ -36,8 +36,8 @@ done
 
 read -p "Generate Changelog entry for $szPlatform/$szBranch/$szDebian (y/n)? " RESULT
 cd $szPrepareDir
+cp -r $szPlatform/$szBranch/debian $szPrepareDir
 if [ "$RESULT" == "y" ]; then
-	cp -r $szPlatform/$szBranch/debian $szPrepareDir
 	dch -D $szPlatform -i
 fi
 
