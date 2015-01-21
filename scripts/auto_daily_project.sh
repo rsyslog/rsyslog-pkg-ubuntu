@@ -8,14 +8,17 @@
 szPlatform=$1
 szBranch=$2
 
-# GPG KEY
-PACKAGE_SIGNING_KEY_ID=E8724174
-
 # only a single .tar.gz must exist at any time
 szSourceFile=`ls *.tar.gz`
 szSourceBase=`basename $szSourceFile .tar.gz`
 VERSION=`echo $szSourceBase|cut -d- -f2`
 szReplaceFile=`echo $szSourceBase | sed 's/-/_/'`
+
+if [ "$VERSION" == "`cat LAST_VERSION.$szPlatform`" ]; then
+	echo "version $VERSION already built, exiting"
+	exit 0
+fi
+
 tar xfz $szSourceFile
 mv $szSourceFile $szReplaceFile.orig.tar.gz
 
@@ -39,5 +42,7 @@ cd ..
 dput -f ppa:adiscon/$szBranch `ls *.changes`
 
 #cleanup
-exit # do this for testing
+echo $VERSION >LAST_VERSION.$szPlatform
+#exit # do this for testing
 rm -rf $szSourceBase
+rm -v $szReplaceFile*.dsc $szReplaceFile*.build $szReplaceFile*.changes $szReplaceFile*.upload *.tar.gz
