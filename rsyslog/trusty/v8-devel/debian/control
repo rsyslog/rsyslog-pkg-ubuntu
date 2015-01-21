@@ -13,7 +13,6 @@ Build-Depends: debhelper (>= 8),
 	       libmongo-client-dev (>= 0.1.4),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
-               libee-dev (>= 0.4.0),
                liblognorm1-dev (>= 1.0.0),
 	       libjson0-dev, 
 	       libmongo-client-dev, 
@@ -28,7 +27,6 @@ Build-Depends: debhelper (>= 8),
 	       libgt-dev,
 	       python-docutils,
 	       liblogging-stdlog-dev,
-	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -48,7 +46,6 @@ Depends: ${shlibs:Depends},
          adduser,
          ucf,
 	 libjson0,
-	 libjemalloc1,
 	 liblogging-stdlog1,
 	 libgt0
 Recommends: logrotate
