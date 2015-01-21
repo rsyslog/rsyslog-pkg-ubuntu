@@ -1,5 +1,0 @@
-/etc/rsyslog.d/
-/etc/apparmor.d/force-complain/
-/etc/apparmor.d/disable/
-/etc/apparmor.d/local/
-/var/spool/rsyslog/
