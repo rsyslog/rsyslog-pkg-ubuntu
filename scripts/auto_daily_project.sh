@@ -24,8 +24,10 @@ VERSION=`echo $szSourceBase|cut -d- -f2`
 LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`.`date +%Y%m%d%H%M%S`
 PROJECT=`echo $szSourceBase | cut -d- -f1`
 szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
+VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
+echo VERSION_FILE $VERSION_FILE
 
-if [ "$VERSION" == "`cat LAST_VERSION.$szPlatform`" ]; then
+if [ "$VERSION" == "`cat $VERSION_FILE`" ]; then
 	echo "version $VERSION already built, exiting"
 	exit 0
 fi
@@ -57,7 +59,7 @@ cd ..
 dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
 
 #cleanup
-echo $VERSION >LAST_VERSION.$szPlatform
+echo $VERSION >$VERSION_FILE
 #exit # do this for testing
 rm -rf $LAUNCHPAD_VERSION
 rm -v $szReplaceFile*.dsc $szReplaceFile*.build $szReplaceFile*.changes $szReplaceFile*.upload *.tar.gz
