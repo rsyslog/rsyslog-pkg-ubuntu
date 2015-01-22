@@ -34,6 +34,7 @@ fi
 
 tar xfz $szSourceFile
 mv $szSourceFile $szReplaceFile.orig.tar.gz
+rm *.changes # clean up old cruft
 
 mv $szSourceBase $LAUNCHPAD_VERSION
 cd $LAUNCHPAD_VERSION
@@ -50,14 +51,21 @@ echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `da
 
 # Build Source package now!
 debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+if [ $? -ne 0 ]; then
+	debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID" |& mutt -s "$PROJECT daily build failed!" rgerhards@adiscon.com
+        exit 1
+fi
 
 # we now need to climb out of the working tree, all distributable
 # files are generated in the home directory.
 cd ..
 
 # Upload changes to PPA now!
-dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
-
+dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changesX`
+if [ $? -ne 0 ]; then
+	dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changesX` |& mutt -s "$PROJECT daily build failed!" rgerhards@adiscon.com
+        exit 1
+fi
 #cleanup
 echo $VERSION >$VERSION_FILE
 #exit # do this for testing
