@@ -1,5 +1,6 @@
 #!/bin/bash
 echo build all daily packages
+date
 
 #libestr
 cd ~/proj/rsyslog-pkg-ubuntu/libestr
@@ -60,3 +61,5 @@ cp -v ~/proj/rsyslog/*.tar.gz .
 ~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
 cp -v ~/proj/rsyslog/*.tar.gz .
 ~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master
+
+date
