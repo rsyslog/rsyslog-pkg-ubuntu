@@ -55,8 +55,8 @@ cp -v ~/proj/libgt/*.tar.gz .
 cd ~/proj/rsyslog-pkg-ubuntu/rsyslog
 rm -fv *.tar.gz
 cp -v ~/proj/rsyslog/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel v8-devel
+~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
 cp -v ~/proj/rsyslog/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel v8-devel
+~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
 cp -v ~/proj/rsyslog/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel v8-devel
+~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master
