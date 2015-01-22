@@ -34,7 +34,13 @@ fi
 
 tar xfz $szSourceFile
 mv $szSourceFile $szReplaceFile.orig.tar.gz
-rm *.changes # clean up old cruft
+
+# clean up any old cruft
+rm $PROJECT_*.changes
+rm $PROJECT_*.dsc
+rm $PROJECT_*.build
+rm $PROJECT_*.debian.tar.gz
+rm $PROJECT_*.orig.tar.gz
 
 mv $szSourceBase $LAUNCHPAD_VERSION
 cd $LAUNCHPAD_VERSION
@@ -52,7 +58,7 @@ echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `da
 # Build Source package now!
 debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
 if [ $? -ne 0 ]; then
-	debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID" |& mutt -s "$PROJECT daily build failed!" rgerhards@adiscon.com
+	echo "fail in debuild" | mutt -s "$PROJECT daily build failed!" adiscon-pkg-maintainers@adiscon.com
         exit 1
 fi
 
@@ -61,9 +67,9 @@ fi
 cd ..
 
 # Upload changes to PPA now!
-dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changesX`
+dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
 if [ $? -ne 0 ]; then
-	dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changesX` |& mutt -s "$PROJECT daily build failed!" rgerhards@adiscon.com
+	 echo "fail in dput" | mutt -s "$PROJECT daily build failed!" adiscon-pkg-maintainers@adiscon.com
         exit 1
 fi
 #cleanup
