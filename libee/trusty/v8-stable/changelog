@@ -1,8 +1,20 @@
-libee (0.4.2-0ubuntu2) precise; urgency=low
+libee (0.4.2-0adiscon3trusty1) trusty; urgency=low
 
-  * Repackaged 0.4.2
+  * Initial build for trusty
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 15 Nov 2013 14:00:39 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 25 Apr 2014 16:28:08 +0200
+
+libee (0.4.2-0adiscon3precise2) precise; urgency=low
+
+  * Repacked for PPA
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 18 Feb 2014 11:16:34 +0100
+
+libee (0.4.2-0adiscon2) saucy; urgency=low
+
+  * Initial packages for debian saucy
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 18 Oct 2013 17:38:33 +0200
 
 libee (0.4.1-0ubuntu1) precise; urgency=low
 
