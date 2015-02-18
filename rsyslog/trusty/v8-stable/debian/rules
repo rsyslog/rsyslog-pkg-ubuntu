@@ -39,12 +39,12 @@ override_dh_auto_configure:
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
 		--enable-pmciscoios \
-		--enable-jemalloc \
 		--enable-mmutf8fix \
                 --enable-usertools \
 		--disable-testbench \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
+# unstable	                --enable-jemalloc \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
 #                --enable-ommongodb \
