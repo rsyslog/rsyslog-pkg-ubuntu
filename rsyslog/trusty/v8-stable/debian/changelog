@@ -1,3 +1,9 @@
+rsyslog (8.8.0-0adiscon1trusty1) trusty; urgency=low
+
+  * Packages for 8.8.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 25 Feb 2015 08:56:36 +0100
+
 rsyslog (8.7.0-1adiscon1trusty1) trusty; urgency=medium
 
   * Updates packages with missing mmutf8fix

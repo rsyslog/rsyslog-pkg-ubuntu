@@ -34,9 +34,9 @@ done
 #tar xfz $szSourceFile 
 #mv $szSourceFile $szReplaceFile.orig.tar.gz
 
-read -p "Generate Changelog entry for $szPlatform/$szBranch/$szDebian (y/n)? " RESULT
-cd $szPrepareDir
+read -p "Generate Changelog entry for $szPlatform/$szBranch (y/n)? " RESULT
 cp -r $szPlatform/$szBranch/debian $szPrepareDir
+cd $szPrepareDir
 if [ "$RESULT" == "y" ]; then
 	dch -D $szPlatform -i
 fi
