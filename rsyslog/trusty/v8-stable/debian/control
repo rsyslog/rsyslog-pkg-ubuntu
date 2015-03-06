@@ -27,7 +27,8 @@ Build-Depends: debhelper (>= 8),
 	       bison,
 	       libgt-dev,
 	       python-docutils,
-	       liblogging-stdlog-dev
+	       liblogging-stdlog-dev,
+	       libnet-dev
 #	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -60,6 +61,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
           rsyslog-gnutls,
+	  rsyslog-udpspoof,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -250,6 +252,15 @@ Suggests: gnutls-bin
 Description: TLS protocol support for rsyslog
  This netstream plugin allows rsyslog to send and receive encrypted syslog
  messages via the upcoming syslog-transport-tls IETF standard protocol.
+
+Package: rsyslog-udpspoof
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libnet-dev
+Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
 
 #Package: rsyslog-zmq
 #Architecture: any

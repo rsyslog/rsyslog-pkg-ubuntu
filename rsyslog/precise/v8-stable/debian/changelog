@@ -1,3 +1,15 @@
+rsyslog (8.8.0.ad1-0adiscon3precise1) precise; urgency=low
+
+  * Re-Package of 8.8.0.ad1 to include omudpspoof
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 06 Mar 2015 14:34:59 +0100
+
+rsyslog (8.8.0.ad1-0adiscon2precise1) precise; urgency=low
+
+  * Re-Package of 8.8.0.ad1 to include omudpspoof
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 06 Mar 2015 14:14:59 +0100
+
 rsyslog (8.8.0.ad1-0adiscon1precise1) precise; urgency=low
 
   * Packages for 8.8.0.ad1
