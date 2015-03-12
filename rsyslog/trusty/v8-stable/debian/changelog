@@ -1,3 +1,9 @@
+rsyslog (8.8.0.ad1-0adiscon3trusty1) trusty; urgency=low
+
+  * Re-Package of 8.8.0.ad1 to use liblognorm 1.1.1
+
+ -- Florian Riedl <friedl@adiscon.com>  Thu, 12 Mar 2015 12:03:33 +0100
+
 rsyslog (8.8.0.ad1-0adiscon2trusty1) trusty; urgency=low
 
   * Re-Package of 8.8.0.ad1 to include omudpspoof
