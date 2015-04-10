@@ -43,6 +43,7 @@ override_dh_auto_configure:
                 --enable-usertools \
 		--enable-omudpspoof \
 		--enable-omkafka \
+		--enable-omhiredis \
 		--disable-testbench \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
