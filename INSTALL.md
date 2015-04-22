@@ -1,6 +1,10 @@
+--------
 Installation instructions (or something close to that)
+--------
 
-Scripts to execute-------------------------------------------
+--------
+Scripts to execute
+--------
 
 repack.sh 
    Converts the original package-release.tar.gz filename to package_release.orig.tar.gz
@@ -8,6 +12,7 @@ repack.sh
 
 
 ./uploadppa.sh 
+```
 --------------------------------------
 --- Prep Release and Upload to PPA ---
 --------------------------------------
@@ -15,31 +20,37 @@ repack.sh
 2) rsyslog-8.4.1/      5) rsyslog-8.6.0.r1/   8) rsyslog-8.9.0/
 3) rsyslog-8.4.2.ad1/  6) rsyslog-8.7.0/
 #? 
-
+```
    You then type the number to select the version you want to package.
 
+```
 Select BRANCH:
 1) v7-stable
 2) v8-stable
 3) v8-devel
 #? 
-
+```
    Again, type the number for the branch. Usually 2) v8-stable.
 
+```
 Select Ubuntu DIST:
 1) precise
 2) trusty
 #? 
-
+```
    Select the Ubuntu DIST the package is for. If both, you need to repeat the whole process.
 
+```
 Generate Changelog entry for trusty/v8-stable (y/n)? 
+```
 
    Usually (y). An editor will open the .dsc file for the package version and dist. Enter your Changelog content here. Save and close.
 
+```
 -------------------------------------
 --- Select change file for upload ---
 -------------------------------------
+```
 
    Select the change file for the release to upload to launchpad. There the package will be built according to the specifications.
 
