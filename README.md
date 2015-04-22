@@ -10,4 +10,4 @@ See: http://www.rsyslog.com/ubuntu-repository/
 
 Contributors and co-maintainers are welcome.
 
-Script descriptions are in INSTALL
+Script descriptions are in [INSTALL](INSTALL).
