@@ -9,7 +9,7 @@
 # this works sufficiently good, even when the source code has the
 # "right" (hash-based) version number.
 
-# set -o xtrace
+#set -o xtrace
 
 # params
 szPlatform=$1  # trusty, utopic, ...
@@ -26,21 +26,26 @@ PROJECT=`echo $szSourceBase | cut -d- -f1`
 szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
 VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
 
+# $VERSION_FILE must not exist. If it does not exist, an
+# error message is emitted (this is OK) and the build is
+# done. So you can delete it to trigger a new build.
 if [ "$VERSION" == "`cat $VERSION_FILE`" ]; then
 	echo "version $VERSION already built, exiting"
 	rm *.tar.gz
 	exit 0
 fi
 
+# clean up any old cruft (if it exists)
+rm -f $PROJECT_*.changes
+rm -f $PROJECT_*.dsc
+rm -f $PROJECT_*.build
+rm -f $PROJECT_*.debian.tar.gz
+rm -f $PROJECT_*.orig.tar.gz
+
+# BEGIN ACTUAL BUILD PROCESS
+
 tar xfz $szSourceFile
 mv $szSourceFile $szReplaceFile.orig.tar.gz
-
-# clean up any old cruft
-rm $PROJECT_*.changes
-rm $PROJECT_*.dsc
-rm $PROJECT_*.build
-rm $PROJECT_*.debian.tar.gz
-rm $PROJECT_*.orig.tar.gz
 
 mv $szSourceBase $LAUNCHPAD_VERSION
 cd $LAUNCHPAD_VERSION
@@ -56,6 +61,7 @@ echo "" >> debian/changelog
 echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `date -R`" >> debian/changelog 
 
 # Build Source package now!
+ls *.tar.gz
 debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
 if [ $? -ne 0 ]; then
 	echo "fail in debuild" | mutt -s "$PROJECT daily build failed!" adiscon-pkg-maintainers@adiscon.com
