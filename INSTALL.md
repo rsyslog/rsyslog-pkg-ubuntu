@@ -67,20 +67,14 @@ Important Notes
 ---------
 Important Files
 ---------
-config.sh  
-   Global configs that are common to all/most of the scripts. Among other things, it identifies you (GPG Key) so you can sign your package. Edit to customize this installation for your needs; the other scripts should be left alone.
+config.sh: Global configs that are common to all/most of the scripts. Among other things, it identifies you (GPG Key) so you can sign your package. Edit to customize this installation for your needs; the other scripts should be left alone.
 
-control
-   Determines how the packages are built and names specific dependencies for the packages
+control: Determines how the packages are built and names specific dependencies for the packages
 
-rsyslog.install
-   File locations for modules to be installed
+rsyslog.install: File locations for modules to be installed
 
-rsyslog-*.install
-   Specific module locations for separate packages
+rsyslog-*.install: Specific module locations for separate packages
 
-rsyslog.conf
-   Default configuration file to be included in packages
+rsyslog.conf: Default configuration file to be included in packages
 
-rules
-   Build parameters
+rules: Build parameters
