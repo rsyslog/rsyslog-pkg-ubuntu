@@ -46,7 +46,7 @@ once a day if there has been change since the previous build.
 Packages Provided
 -----------------
 Packages are to be provided for the full rsyslog infrastructure. This
-includes libraries thightly coupled into the rsyslog infrastructure and
+includes libraries tightly coupled into the rsyslog infrastructure and
 essentially maintained by the same team. Examples for these are librelp
 and liblognorm.
 
