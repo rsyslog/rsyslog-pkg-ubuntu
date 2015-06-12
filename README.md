@@ -40,8 +40,8 @@ rsyslog release.
 
 In order to facilitate "leading edge users" daily builds shall
 provide the most current available rsyslog software. They base on
-the project's git master branch. They will be build once a day if there
-has been change since the previous build.
+the project's git master branch. They will be build automatically
+once a day if there has been change since the previous build.
 
 Packages Provided
 -----------------
