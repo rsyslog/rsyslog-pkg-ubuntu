@@ -64,7 +64,7 @@ echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `da
 ls *.tar.gz
 debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
 if [ $? -ne 0 ]; then
-	echo "fail in debuild" | mutt -s "$PROJECT daily build failed!" adiscon-pkg-maintainers@adiscon.com
+	echo "fail in debuild" | mutt -s "$PROJECT daily build failed!" $RSI_NOTIFY_EMAIL
         exit 1
 fi
 
@@ -75,7 +75,7 @@ cd ..
 # Upload changes to PPA now!
 dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
 if [ $? -ne 0 ]; then
-	 echo "fail in dput" | mutt -s "$PROJECT daily build failed!" adiscon-pkg-maintainers@adiscon.com
+	 echo "fail in dput" | mutt -s "$PROJECT daily build failed!" $RSI_NOTIFY_EMAIL
         exit 1
 fi
 #cleanup
