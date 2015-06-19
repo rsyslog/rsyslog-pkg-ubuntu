@@ -13,77 +13,69 @@ cp -v $INFRAHOME/repo/libestr/*.tar.gz .
 $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
 cp -v $INFRAHOME/repo/libestr/*.tar.gz .
 $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
-
-
-
-exit 1
-
-
-
-
 cp -v $INFRAHOME/repo/libestr/*.tar.gz .
 $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
 cp -v $INFRAHOME/repo/libestr/*.tar.gz .
 $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
 
 #liblogging
-cd ~/proj/rsyslog-pkg-ubuntu/liblogging
+cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/liblogging
 rm -fv *.tar.gz
-cp -v ~/proj/liblogging/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
-cp -v ~/proj/liblogging/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
-cp -v ~/proj/liblogging/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
-cp -v ~/proj/liblogging/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
+cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
+cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
+cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
+cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
 
 #librelp
-cd ~/proj/rsyslog-pkg-ubuntu/librelp
+cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/librelp
 rm -fv *.tar.gz
-cp -v ~/proj/librelp/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
-cp -v ~/proj/librelp/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
-cp -v ~/proj/librelp/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
-cp -v ~/proj/librelp/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
+cp -v $INFRAHOME/repo/librelp/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
+cp -v $INFRAHOME/repo/librelp/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
+cp -v $INFRAHOME/repo/librelp/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
+cp -v $INFRAHOME/repo/librelp/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
 
 #liblognorm
-cd ~/proj/rsyslog-pkg-ubuntu/liblognorm
+cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/liblognorm
 rm -fv *.tar.gz
-cp -v ~/proj/liblognorm/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
-cp -v ~/proj/liblognorm/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
-cp -v ~/proj/liblognorm/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
-cp -v ~/proj/liblognorm/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
+cp -v $INFRAHOME/repo/liblognorm/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
+cp -v $INFRAHOME/repo/liblognorm/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
+cp -v $INFRAHOME/repo/liblognorm/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
+cp -v $INFRAHOME/repo/liblognorm/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
 
 #libgt
-cd ~/proj/rsyslog-pkg-ubuntu/libgt
+cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/libgt
 rm -fv *.tar.gz
-cp -v ~/proj/libgt/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
-cp -v ~/proj/libgt/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
-cp -v ~/proj/libgt/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
-cp -v ~/proj/libgt/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
+cp -v $INFRAHOME/repo/libgt/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
+cp -v $INFRAHOME/repo/libgt/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
+cp -v $INFRAHOME/repo/libgt/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
+cp -v $INFRAHOME/repo/libgt/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
 
 #rsyslog
-cd ~/proj/rsyslog-pkg-ubuntu/rsyslog
+cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/rsyslog
 rm -fv *.tar.gz
-cp -v ~/proj/rsyslog/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
-cp -v ~/proj/rsyslog/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
-cp -v ~/proj/rsyslog/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master
-cp -v ~/proj/rsyslog/*.tar.gz .
-~/proj/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master
+cp -v $INFRAHOME/repo/rsyslog/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
+cp -v $INFRAHOME/repo/rsyslog/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh utopic v8-devel master
+cp -v $INFRAHOME/repo/rsyslog/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master
+cp -v $INFRAHOME/repo/rsyslog/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master
 
 date
