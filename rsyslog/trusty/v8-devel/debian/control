@@ -27,6 +27,7 @@ Build-Depends: debhelper (>= 8),
 	       libgt-dev,
 	       python-docutils,
 	       liblogging-stdlog-dev,
+               librdkafka-dev,	
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -56,6 +57,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+          rsyslog-kafka,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -224,6 +226,15 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 Description: Parser module which supports various Cisco IOS formats. 
+
+Package: rsyslog-kafka
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends}, 
+         rsyslog (= ${binary:Version}),
+         librdkafka-dev
+Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 #Package: rsyslog-zmq
 #Architecture: any
