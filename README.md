@@ -62,7 +62,7 @@ packages current.
 
 File System Structure
 ---------------------
-
+```
  .                 our "home directory"
   scripts          contains all scripts to use
   project          files to build project-specific package
@@ -75,6 +75,7 @@ File System Structure
                    note that "branch" may not exist if not needed
 		   (e.g. common contains everything necessary to build
 		   the package)
+```
 
 
 Overall idea of the build Process
