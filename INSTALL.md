@@ -1,3 +1,8 @@
+NOTE: This documentation is currently not fully up to date and
+will (hopefully) be updated in the not so distant future. Use it with
+caution. Also, see README.md for more up-to-date information.
+
+
 --------
 Installation instructions (or something close to that)
 --------
