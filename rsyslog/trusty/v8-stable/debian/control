@@ -273,6 +273,14 @@ Depends: ${shlibs:Depends},
          librdkafka-dev
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
+Package: rsyslog-omhiredis
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libhiredis-dev
+Description: This module implements Redis support, permitting ryslog to write to redis
 
 #Package: rsyslog-zmq
 #Architecture: any
