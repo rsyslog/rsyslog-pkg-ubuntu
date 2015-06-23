@@ -123,3 +123,19 @@ the policy layed out here.
 The build process currently has the PPA system "in mind". That means all
 scripts generate the necessary control files and load them up to launchpad.
 The actual build is then performed by launchpad.
+
+
+What to do on new Ubuntu Release?
+---------------------------------
+Let's assume vivid is the current release and wily the next one.
+
+For all projects, do
+
+- create new "wily" subdirectory in project dir
+- cp -r vivid wily
+- make adaptions to wily files, if necessary
+
+--> this procedure ensures we start with the latest version. It's most
+likely that this will work on the newer version as well.
+
+Next, update all scripts, namely auto_daily.sh to include the "wily" release.
