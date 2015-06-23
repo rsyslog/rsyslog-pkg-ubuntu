@@ -9,7 +9,10 @@
 # this works sufficiently good, even when the source code has the
 # "right" (hash-based) version number.
 
-#set -o xtrace
+#set -o xtrace  # useful for debugging
+
+echo package build for `pwd` $1/$2/$3
+date
 
 # params
 szPlatform=$1  # trusty, utopic, ...
@@ -17,7 +20,9 @@ UPLOAD_PPA=$2  # path of the ppa (e.g. v8-devel)
 szBranch=$3    # branch to use (e.g. master)
 	       # Note: this must match the tarball branch
 
+rm -fv *.orig.tar.gz # clean up if left over, temporary work file!
 # only a single .tar.gz must exist at any time
+ls -l *.tar.gz # debug output
 szSourceFile=`ls *.tar.gz`
 szSourceBase=`basename $szSourceFile .tar.gz`
 VERSION=`echo $szSourceBase|cut -d- -f2`
@@ -49,7 +54,7 @@ mv $szSourceFile $szReplaceFile.orig.tar.gz
 
 mv $szSourceBase $LAUNCHPAD_VERSION
 cd $LAUNCHPAD_VERSION
-cp -r ../common/$szBranch/debian .
+#cp -r ../common/$szBranch/debian .
 # now overwrite with platform-specific stuff (if any)
 cp -r ../$szPlatform/$szBranch/debian .
 
@@ -61,10 +66,9 @@ echo "" >> debian/changelog
 echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `date -R`" >> debian/changelog 
 
 # Build Source package now!
-ls *.tar.gz
 debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
 if [ $? -ne 0 ]; then
-	echo "fail in debuild" | mutt -s "$PROJECT daily build failed!" $RSI_NOTIFY_EMAIL
+	echo "fail in debuild" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
 
@@ -75,7 +79,7 @@ cd ..
 # Upload changes to PPA now!
 dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
 if [ $? -ne 0 ]; then
-	 echo "fail in dput" | mutt -s "$PROJECT daily build failed!" $RSI_NOTIFY_EMAIL
+	 echo "fail in dput" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
 #cleanup
