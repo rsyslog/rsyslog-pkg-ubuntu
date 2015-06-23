@@ -1,3 +1,9 @@
+libestr (0.1.10-0adiscon1wily1) wily; urgency=medium
+
+  * initial version for wily
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Tue, 23 Jun 2015 09:02:38 -0400
+
 libestr (0.1.10-0adiscon1trusty1) trusty; urgency=medium
 
   * Updated package to 0.1.10
