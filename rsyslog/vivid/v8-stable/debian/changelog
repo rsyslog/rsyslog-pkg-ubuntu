@@ -1,201 +1,273 @@
-rsyslog (8.7.0-0adiscon1trusty1) trusty; urgency=low
+rsyslog (8.10.0-0adiscon2vivid1) vivid; urgency=medium
+
+  * initial release for vivid
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 23 Jun 2015 13:00:04 -0400
+
+rsyslog (8.10.0-0adiscon1trusty1) trusty; urgency=low
+
+  * Packages for 8.10.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 19 May 2015 16:10:04 +0200
+
+rsyslog (8.9.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.9.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 07 Apr 2015 16:28:01 +0200
+
+rsyslog (8.8.0.ad1-0adiscon4trusty1) trusty; urgency=low
+
+  * Enabled omkafka for trusty
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 16 Mar 2015 16:19:42 +0100
+
+rsyslog (8.8.0.ad1-0adiscon3trusty1) trusty; urgency=low
+
+  * Re-Package of 8.8.0.ad1 to use liblognorm 1.1.1
+
+ -- Florian Riedl <friedl@adiscon.com>  Thu, 12 Mar 2015 12:03:33 +0100
+
+rsyslog (8.8.0.ad1-0adiscon2trusty1) trusty; urgency=low
+
+  * Re-Package of 8.8.0.ad1 to include omudpspoof
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 06 Mar 2015 15:15:59 +0100
+
+rsyslog (8.8.0.ad1-0adiscon1trusty1) trusty; urgency=low
+
+  * Packages for 8.8.0.ad1
+
+ -- Florian Riedl <friedl@adiscon.com>  Thu, 05 Mar 2015 12:06:55 +0100
+
+rsyslog (8.8.0-0adiscon1trusty1) trusty; urgency=low
+
+  * Packages for 8.8.0
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 25 Feb 2015 08:56:36 +0100
+
+rsyslog (8.7.0-1adiscon1trusty1) trusty; urgency=medium
+
+  * Updates packages with missing mmutf8fix
+
+ -- Florian Riedl <friedl@adiscon.com>  Wed, 18 Feb 2015 14:29:09 +0100
+
+rsyslog (8.7.0-0adiscon1precise1) precise; urgency=low
 
   * Packages for 8.7.0
 
- -- Florian Riedl <friedl@adiscon.com>  Mon, 12 Jan 2015 17:41:19 +0100
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 12 Jan 2015 17:38:46 +0100
 
-rsyslog (8.6.0.r2-0adiscon4trusty1) trusty; urgency=low
+rsyslog (8.6.0.r2-0adiscon4precise1) precise; urgency=low
 
-  * added package for rsyslog-mmutf8fix
+  * Added rsyslog-mmutf8fix package
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 18 Dec 2014 15:02:10 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 18 Dec 2014 15:01:12 +0100
 
-rsyslog (8.6.0.r1-0adiscon2trusty1) trusty; urgency=medium
+rsyslog (8.6.0.r1-0adiscon2precise1) precise; urgency=medium
 
   * re-release of 8.6.0
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 02 Dec 2014 11:41:54 +0100
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 02 Dec 2014 11:52:25 +0100
 
-rsyslog (8.6.0-0adiscon1trusty1) trusty; urgency=medium
+rsyslog (8.6.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.6.0
 
- -- Florian Riedl <friedl@adiscon.com>  Mon, 01 Dec 2014 17:42:58 +0100
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 01 Dec 2014 17:40:19 +0100
 
-rsyslog (8.4.2.ad1-0adiscon1trusty1) trusty; urgency=low
+rsyslog (8.4.2.ad1-0adiscon1precise1) precise; urgency=low
 
   * Packages for 8.4.2.ad1
 
- -- Florian Riedl <friedl@adiscon.com>  Wed, 12 Nov 2014 17:14:09 +0100
+ -- Florian Riedl <friedl@adiscon.com>  Wed, 12 Nov 2014 17:12:32 +0100
 
-rsyslog (8.4.2-0adiscon1trusty1) trusty; urgency=low
+rsyslog (8.4.2-0adiscon1precise1) precise; urgency=low
 
   * New packages for 8.4.2
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 02 Oct 2014 08:21:27 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 02 Oct 2014 08:20:40 +0200
 
-rsyslog (8.4.1-0adiscon2trusty1) trusty; urgency=medium
+rsyslog (8.4.1-0adiscon2precise1) precise; urgency=medium
 
   * New packages for 8.4.1
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 30 Sep 2014 11:04:06 +0200
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 30 Sep 2014 11:03:01 +0200
 
-rsyslog (8.4.0-0adiscon2trusty1) trusty; urgency=low
+rsyslog (8.4.0-0adiscon2precise1) precise; urgency=low
 
   * Fixed gnutls package issue 
     https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/12
 
- -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 16:52:51 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 16:52:05 +0200
 
-rsyslog (8.4.0-0adiscon1trusty1) trusty; urgency=low
+rsyslog (8.4.0-0adiscon1precise2) precise; urgency=low
+
+  * Compiling with std=gnu99 now
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 14:54:07 +0200
+
+rsyslog (8.4.0-0adiscon1precise1) precise; urgency=low
 
   * New packages for 8.4.0
 
- -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 14:45:25 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 18 Aug 2014 14:44:30 +0200
 
-rsyslog (8.2.2-0adiscon1trusty1) trusty; urgency=low
+rsyslog (8.2.2-0adiscon1precise1) precise; urgency=low
 
   * New packages for 8.2.2
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 05 Jun 2014 16:48:32 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 05 Jun 2014 15:43:46 +0200
 
-rsyslog (8.2.1-0adiscon1trusty1) trusty; urgency=low
-
-  * Initial build for Ubuntu Trusty
-
- -- Andre Lorbach <alorbach@adiscon.com>  Mon, 28 Apr 2014 14:42:23 +0200
-
-rsyslog (8.2.1-0adiscon1saucy3) saucy; urgency=low
+rsyslog (8.2.1-0adiscon1precise3) precise; urgency=low
 
   * New packages for 8.2.1
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 22 Apr 2014 14:29:12 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 22 Apr 2014 13:56:00 +0200
 
-rsyslog (8.2.0-0adiscon1saucy4) saucy; urgency=low
+rsyslog (8.2.0-0adiscon1precise4) precise; urgency=low
 
   * Removed obselete gnutls sub-package
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 08 Apr 2014 08:39:38 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 08 Apr 2014 08:38:40 +0200
 
-rsyslog (8.2.0-0adiscon1saucy3) saucy; urgency=low
+rsyslog (8.2.0-0adiscon1precise3) precise; urgency=low
 
-  * Fixed doc install
+  * Fixed DOC install
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 04 Apr 2014 09:38:19 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 04 Apr 2014 09:37:25 +0200
 
-rsyslog (8.2.0-0adiscon1saucy2) saucy; urgency=low
+rsyslog (8.2.0-0adiscon1precise2) precise; urgency=low
 
   * Fixed dependency settings
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 04 Apr 2014 08:37:01 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 04 Apr 2014 08:34:54 +0200
 
-rsyslog (8.2.0-0adiscon1saucy1) saucy; urgency=low
+rsyslog (8.2.0-0adiscon1precise1) precise; urgency=low
 
   * Initial release for rsyslog V8-Stable
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 03 Apr 2014 12:15:54 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 03 Apr 2014 12:14:36 +0200
 
-rsyslog (8.1.6-0adiscon2saucy3) saucy; urgency=low
+rsyslog (8.1.6-0adiscon2precise4) precise; urgency=low
+
+  * Removed jemalloc support
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 26 Mar 2014 14:46:47 +0100
+
+rsyslog (8.1.6-0adiscon2precise3) precise; urgency=low
 
   * Added userutils
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 21 Mar 2014 13:46:38 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 21 Mar 2014 13:45:48 +0100
 
-rsyslog (8.1.6-0adiscon2saucy2) saucy; urgency=low
+rsyslog (8.1.6-0adiscon2precise2) precise; urgency=low
 
-  * Fixed libs
+  * Fixed libs #2
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 06 Mar 2014 09:06:47 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 06 Mar 2014 09:03:54 +0100
 
-rsyslog (8.1.6-0adiscon2saucy1) saucy; urgency=low
+rsyslog (8.1.6-0adiscon2precise1) precise; urgency=low
 
-  * Added missing Guardtime libs
+  * Added missing guardtime libs
 
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 05 Mar 2014 15:54:02 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 05 Mar 2014 15:53:03 +0100
 
-rsyslog (8.1.6-0adiscon1saucy1) saucy; urgency=low
+rsyslog (8.1.6-0adiscon1precise1) precise; urgency=low
 
-  * New packages for V8-devel
+  * New packages for V8-Devel
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 20 Feb 2014 10:38:26 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 20 Feb 2014 10:37:00 +0100
 
-rsyslog (8.1.5-0adiscon2saucy1) saucy; urgency=low
+rsyslog (8.1.5-0adiscon2precise2) precise; urgency=low
+
+  * new try
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 13:34:18 +0100
+
+rsyslog (8.1.5-0adiscon2precise1) precise; urgency=low
 
   * Repackaged for PPA
 
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 10:20:16 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 19 Feb 2014 10:19:30 +0100
 
-rsyslog (8.1.5-0adiscon1) saucy; urgency=low
+rsyslog (8.1.5-0adiscon1) precise; urgency=low
 
   * Build new debs for RSyslog v8-devel 8.1.5
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 24 Jan 2014 11:49:58 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 24 Jan 2014 11:04:21 +0100
 
-rsyslog (8.1.4-0adiscon1) saucy; urgency=low
+rsyslog (8.1.4-0adiscon1) precise; urgency=low
 
   * Build new debs for RSyslog v8-devel 8.1.4
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 10 Jan 2014 17:03:38 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 10 Jan 2014 15:39:35 +0100
 
-rsyslog (8.1.3-0adiscon1) saucy; urgency=low
+rsyslog (8.1.3-0adiscon1) precise; urgency=low
 
   * Build new debs for RSyslog v8-devel 8.1.3
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 06 Dec 2013 12:07:50 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 06 Dec 2013 11:56:34 +0100
 
-rsyslog (8.1.2-0adiscon4) saucy; urgency=low
-
-  * Just a rebuild
-
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 29 Nov 2013 10:31:57 +0100
-
-rsyslog (8.1.2-0adiscon3) saucy; urgency=low
+rsyslog (8.1.2-0adiscon4) precise; urgency=low
 
   * added dependency for libgt0
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 29 Nov 2013 10:31:11 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 29 Nov 2013 10:14:56 +0100
 
-rsyslog (8.1.2-0adiscon2) saucy; urgency=low
+rsyslog (8.1.2-0adiscon3) precise; urgency=low
 
   * Build new debs for RSyslog v8-devel 8.1.2
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 28 Nov 2013 16:28:50 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 28 Nov 2013 15:02:11 +0100
 
-rsyslog (8.1.1-0adiscon1) saucy; urgency=low
+rsyslog (8.1.1-0adiscon2) precise; urgency=low
 
-  * Updated debs for RSyslog v8-devel 8.1.1
+  * test trash
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 19 Nov 2013 13:31:25 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 21 Nov 2013 14:45:57 +0100
 
-rsyslog (8.1.0-0adiscon2) saucy; urgency=low
+rsyslog (8.1.1-0adiscon1) precise; urgency=low
+
+  * Build new debs for RSyslog v8-devel 8.1.1
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 19 Nov 2013 13:16:24 +0100
+
+rsyslog (8.1.0-0adiscon5) precise; urgency=low
 
   * Final release packages for v8-devel 8.1.0
 
- -- Andre Lorbach <alorbach@adiscon.com>  Fri, 15 Nov 2013 13:29:21 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 15 Nov 2013 13:16:11 +0100
 
-rsyslog (8.1.0-0adiscon1) saucy; urgency=low
+rsyslog (8.1.0-0adiscon4) precise; urgency=low
 
-  * Initial build for RSyslog v8-devel
+  * rebuild packages
 
- -- Andre Lorbach <alorbach@adiscon.com>  Thu, 14 Nov 2013 09:25:32 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 14 Nov 2013 11:16:31 +0100
 
-rsyslog (7.5.6-0adiscon2) saucy; urgency=low
+rsyslog (8.1.0-0adiscon3) precise; urgency=low
 
-  * Added mmsequence modul into base package
+  * Removed gssapi support again
 
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 30 Oct 2013 12:44:36 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 14 Nov 2013 08:40:11 +0100
 
-rsyslog (7.5.6-0adiscon1) saucy; urgency=low
+rsyslog (8.1.0-0adiscon2) precise; urgency=low
 
-  * Updated debs for RSyslog v7-devel 7.5.6
+  * Removed gssapi support
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 29 Oct 2013 15:21:22 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 13 Nov 2013 15:46:12 +0100
 
-rsyslog (7.5.5-0adiscon3) saucy; urgency=low
+rsyslog (8.1.0-0adiscon1) precise; urgency=low
 
-  * Initial Packages for Ubuntu Saucy
+  * Initial build for RSyslog v8 devel
 
- -- Andre Lorbach <alorbach@adiscon.com>  Mon, 21 Oct 2013 12:43:33 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 13 Nov 2013 14:39:56 +0100
+
+rsyslog (7.5.6-0adiscon2) precise; urgency=low
+
+  * Added mmsequence into base package
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 30 Oct 2013 12:37:48 +0100
 
 rsyslog (7.5.5-0adiscon2) precise; urgency=low
 

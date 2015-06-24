@@ -1,3 +1,9 @@
+libestr (0.1.10-0adiscon1ivivid1) vivid; urgency=medium
+
+  * initial release for vivid
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 23 Jun 2015 10:18:17 -0400
+
 libestr (0.1.10-0adiscon1trusty1) trusty; urgency=medium
 
   * Updated package to 0.1.10

@@ -1,3 +1,9 @@
+libestr (0.1.10-0adiscon1utopic1) utopic; urgency=medium
+
+  * initial release for utopic
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 23 Jun 2015 10:17:15 -0400
+
 libestr (0.1.10-0adiscon1trusty1) trusty; urgency=medium
 
   * Updated package to 0.1.10

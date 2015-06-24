@@ -14,7 +14,7 @@ if [ `echo $TARGZFILES | wc -l` -ne 1 ]; then
 fi
 
 # clean any left-overs from previous runs
-rm -v *.changes *.debian.tar.gz
+rm -fv *.changes *.debian.tar.gz
 
 echo "-------------------------------------------"
 echo "--- Prep Release for $TARGZFILES"
@@ -49,6 +49,7 @@ fi
 
 # Build Source package now!
 debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+chmod -f g+w *
 
 if [ "$RESULT" == "y" ]; then
 	# Save Changes back now
@@ -80,3 +81,4 @@ dput -f ppa:adiscon/$szBranch $szChangeFile
 
 # cleanup
 rm -v *.changes *.debian.tar.gz
+chmod -f g+w *
