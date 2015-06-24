@@ -1,5 +1,5 @@
 #!/bin/bash
-TARGZFILES=`ls -d librelp*/ | xargs -l basename`
+TARGZFILES=`ls -d libgt*/ | xargs -l basename`
 
 echo "-------------------------------------"
 echo "--- DEBMaker                      ---"
