@@ -28,6 +28,7 @@ Build-Depends: debhelper (>= 8),
 	       libgt-dev,
 	       python-docutils,
 	       liblogging-stdlog-dev,
+	       libgcrypt-dev,
 	       libnet-dev
 #	       libjemalloc-dev
 Standards-Version: 3.9.2

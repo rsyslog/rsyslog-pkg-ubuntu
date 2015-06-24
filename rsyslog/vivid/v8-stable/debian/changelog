@@ -1,9 +1,3 @@
-rsyslog (8.10.0-0adiscon2vivid1) vivid; urgency=medium
-
-  * initial release for vivid
-
- -- Florian Riedl <friedl@adiscon.com>  Tue, 23 Jun 2015 13:00:04 -0400
-
 rsyslog (8.10.0-0adiscon1trusty1) trusty; urgency=low
 
   * Packages for 8.10.0

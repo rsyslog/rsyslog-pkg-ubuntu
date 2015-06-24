@@ -1,8 +1,8 @@
-rsyslog (8.10.0-0adiscon2utopic1) utopic; urgency=medium
+rsyslog (8.10.0-0adiscon4utopic1) utopic; urgency=medium
 
   * initial release for utopic
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 23 Jun 2015 12:58:44 -0400
+ -- Florian Riedl <friedl@adiscon.com>  Wed, 24 Jun 2015 06:40:31 -0400
 
 rsyslog (8.10.0-0adiscon1trusty1) trusty; urgency=low
 
