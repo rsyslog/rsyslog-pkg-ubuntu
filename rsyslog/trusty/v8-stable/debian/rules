@@ -43,7 +43,8 @@ override_dh_auto_configure:
                 --enable-usertools \
 		--enable-omudpspoof \
 		--enable-omkafka \
-		--disable-testbench \
+		--enable-gt-ksi \
+                --disable-testbench \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
 # unstable	                --enable-jemalloc \

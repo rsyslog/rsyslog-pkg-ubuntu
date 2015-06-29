@@ -29,7 +29,8 @@ Build-Depends: debhelper (>= 8),
 	       python-docutils,
 	       liblogging-stdlog-dev,
 	       libnet-dev,
-	       librdkafka-dev
+	       librdkafka-dev,
+	       libksi-dev
 #	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git

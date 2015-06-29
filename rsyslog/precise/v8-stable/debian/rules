@@ -42,6 +42,7 @@ override_dh_auto_configure:
 		--enable-mmutf8fix \
                 --enable-usertools \
 		--enable-omudpspoof \
+		--enable-gt-ksi \
 		--disable-testbench \
                 --with-systemdsystemunitdir=/lib/systemd/system
 

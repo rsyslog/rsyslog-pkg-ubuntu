@@ -1,3 +1,9 @@
+rsyslog (8.11.0-0adiscon1wily1) wily; urgency=medium
+
+  * Packages for 8.11.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 29 Jun 2015 09:25:38 -0400
+
 rsyslog (8.10.0-0adiscon2wily1) wily; urgency=medium
 
   * initial release for wily
