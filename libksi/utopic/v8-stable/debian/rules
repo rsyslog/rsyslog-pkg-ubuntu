@@ -1,4 +1,8 @@
 #!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
 # -*- makefile -*-
 # Sample debian/rules that uses debhelper.
 # This file was originally written by Joey Hess and Craig Small.
@@ -12,4 +16,4 @@ export DH_VERBOSE=1
 export DEB_BUILD_HARDENING=1
 
 %:
-	dh $@ 
+	dh $@ --with autoreconf 
