@@ -2,11 +2,14 @@ Source: libksi
 Priority: extra
 Maintainer: Florian Riedl <friedl@adiscon.com>
 Build-Depends: debhelper (>= 7.0.50~),
-    autotools-dev,
-    dh-autoreconf,
-    hardening-wrapper,
-    libssl-dev,
-    libcurl4-openssl-dev
+	dpkg-dev (>= 1.6.1),
+	autotools-dev (>= 20100122.1),
+	dh-autoreconf,
+	dh-apparmor,
+	pkg-config,
+	hardening-wrapper,
+	libssl-dev,
+	libcurl4-openssl-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: https://github.com/rsyslog/libksi
