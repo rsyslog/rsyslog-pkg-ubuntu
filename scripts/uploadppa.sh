@@ -2,7 +2,7 @@
 # Definitions common to these scripts
 source $(dirname "$0")/config.sh
 
-set -o xtrace  # use for debugging
+#set -o xtrace  # use for debugging
 
 # If we assume the directory is named after the package,
 PACKAGENAME=$(basename `readlink -f .`)
