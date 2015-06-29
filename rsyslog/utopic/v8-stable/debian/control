@@ -30,6 +30,7 @@ Build-Depends: debhelper (>= 8),
 	       liblogging-stdlog-dev,
 	       libnet-dev,
 	       librdkafka-dev,
+	       libgcrypt-dev,
 	       libksi-dev
 #	       libjemalloc-dev
 Standards-Version: 3.9.2
