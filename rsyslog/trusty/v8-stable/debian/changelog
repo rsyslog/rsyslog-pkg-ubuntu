@@ -1,3 +1,9 @@
+rsyslog (8.11.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Repack for omkafka
+
+ -- Florian Riedl <friedl@adiscon.com>  Thu, 09 Jul 2015 09:40:06 -0400
+
 rsyslog (8.11.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.11.0
