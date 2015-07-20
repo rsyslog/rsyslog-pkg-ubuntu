@@ -1,3 +1,9 @@
+liblognorm (1.1.2-0adiscon1wily1) wily; urgency=medium
+
+  * New debs for liblognorm 1.1.2
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 20 Jul 2015 15:12:36 +0000
+
 liblognorm (1.1.1-0adiscon1wily1) wily; urgency=medium
 
   * initial release for wily

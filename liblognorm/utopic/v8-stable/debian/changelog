@@ -1,3 +1,9 @@
+liblognorm (1.1.2-0adiscon1utopic1) utopic; urgency=medium
+
+  * New debs for liblognorm 1.1.2
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 20 Jul 2015 15:11:37 +0000
+
 liblognorm (1.1.1-0adiscon1utopic1) utopic; urgency=medium
 
   * initial release for utopic
