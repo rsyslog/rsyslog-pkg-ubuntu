@@ -66,11 +66,12 @@ echo "" >> debian/changelog
 echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `date -R`" >> debian/changelog 
 
 # Build Source package now!
-debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID" > debuild.log
 if [ $? -ne 0 ]; then
-	echo "fail in debuild" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -a debuild.log -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
+rm debuild.log
 
 # we now need to climb out of the working tree, all distributable
 # files are generated in the home directory.
@@ -79,7 +80,7 @@ cd ..
 # Upload changes to PPA now!
 dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
 if [ $? -ne 0 ]; then
-	 echo "fail in dput" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+	 echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
 #cleanup

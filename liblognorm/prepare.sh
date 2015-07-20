@@ -1,7 +1,7 @@
 !#/bin/sh
 TARGZFILES=` ls -d */`
-BRANCHES="v7-stable v7-devel v8-devel"
-PLATFORM="precise saucy"
+BRANCHES="v8-stable v8-devel"
+PLATFORM="precise trusty utopic vivid wily"
 
 echo "-------------------------------------"
 echo "--- Prepare Release               ---"
