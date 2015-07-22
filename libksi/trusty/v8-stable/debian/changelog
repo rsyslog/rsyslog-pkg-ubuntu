@@ -1,0 +1,5 @@
+libksi (3.2.2.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Initial release of libksi for Ubtuntu trusty
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 29 Jun 2015 05:26:14 -0400

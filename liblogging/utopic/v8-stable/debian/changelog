@@ -1,0 +1,36 @@
+liblogging (1.0.5-0adiscon1utopic1) utopic; urgency=medium
+
+  * initial release for utopic
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 23 Jun 2015 11:40:09 -0400
+
+liblogging (1.0.5-0adiscon1trusty1) trusty; urgency=medium
+
+  * New debs
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 09 Dec 2014 15:42:23 +0100
+
+liblogging (1.0.4-0adiscon1trusty1) trusty; urgency=low
+
+  * Initial build for Ubuntu trusty
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 28 Apr 2014 13:04:37 +0200
+
+liblogging (1.0.1-0adiscon2) saucy; urgency=low
+
+  * new debs
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 04 Feb 2014 12:26:02 +0100
+
+liblogging (1.0.0-0adiscon2) saucy; urgency=low
+
+  * repacked
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 22 Jan 2014 12:06:34 +0100
+
+liblogging (1.0.0-0adiscon1) precise; urgency=low
+
+  * Initial Build for liblogging stdlog.
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 21 Jan 2014 14:01:47 +0100
+
