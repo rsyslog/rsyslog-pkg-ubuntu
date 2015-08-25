@@ -1,4 +1,4 @@
-PLATFORM="precise trusty utopic vivid wily"
+PLATFORM="precise trusty vivid wily"
 ARCHTECT="amd64 i386"
 BRANCHES="v7-stable v8-stable"
 # GPG KEY

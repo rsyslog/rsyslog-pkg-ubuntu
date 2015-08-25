@@ -15,7 +15,7 @@ echo package build for `pwd` $1/$2/$3
 date
 
 # params
-szPlatform=$1  # trusty, utopic, ...
+szPlatform=$1  # trusty, vivid, ...
 UPLOAD_PPA=$2  # path of the ppa (e.g. v8-devel)
 szBranch=$3    # branch to use (e.g. master)
 	       # Note: this must match the tarball branch
