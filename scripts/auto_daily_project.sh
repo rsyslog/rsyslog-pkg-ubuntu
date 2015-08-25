@@ -31,6 +31,10 @@ PROJECT=`echo $szSourceBase | cut -d- -f1`
 szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
 VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
 
+echo PROJECT $PROJECT
+echo VERSION $VERSION
+echo Platform $szPlatform
+
 # $VERSION_FILE must not exist. If it does not exist, an
 # error message is emitted (this is OK) and the build is
 # done. So you can delete it to trigger a new build.
@@ -66,12 +70,11 @@ echo "" >> debian/changelog
 echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `date -R`" >> debian/changelog 
 
 # Build Source package now!
-debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID" > debuild.log
+debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
 if [ $? -ne 0 ]; then
-	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -a debuild.log -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
-rm debuild.log
 
 # we now need to climb out of the working tree, all distributable
 # files are generated in the home directory.
