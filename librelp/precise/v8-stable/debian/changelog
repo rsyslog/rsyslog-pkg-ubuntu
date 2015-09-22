@@ -1,3 +1,9 @@
+librelp (1.2.8-0adiscon2precise1) precise; urgency=medium
+
+  * New upstream release for 1.2.8
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 07 Sep 2015 13:13:02 +0000
+
 librelp (1.2.2-0adiscon1) precise; urgency=low
 
   * New upstream release for 1.2.2
