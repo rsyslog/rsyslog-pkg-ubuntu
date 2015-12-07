@@ -1,3 +1,9 @@
+libksi (3.2.2.0-0adiscon3vivid1) vivid; urgency=medium
+
+  * Updated lib package needed for next rsyslog release
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 07 Dec 2015 11:54:52 +0100
+
 libksi (3.2.2.0-0adiscon2vivid1) vivid; urgency=medium
 
   * Initial release of libksi for Ubtuntu vivid

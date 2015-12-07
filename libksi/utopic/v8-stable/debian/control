@@ -20,6 +20,8 @@ Package: libksi-dev
 Section: libdevel
 Architecture: any
 Depends: libksi0 (= ${binary:Version}), ${misc:Depends}
+Replaces: libksi1-dev
+Breaks: libksi1-dev
 Description: Development files for the 'libksi0' package
  The libksi-devel package contains the header files and libraries 
  needed to develop applications using libksi.
@@ -30,6 +32,8 @@ Package: libksi0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: libksi1
+Breaks: libksi1
 Description: LibKSI - GuardTime client library
  The 'libksi' library contains the 
  GuardTime client library
