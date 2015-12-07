@@ -16,24 +16,24 @@ Homepage: https://github.com/rsyslog/libksi
 #Vcs-Git: git://git.debian.org/collab-maint/libestr.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/libestr.git;a=summary
 
-Package: libksi1-dev
+Package: libksi-dev
 Section: libdevel
 Architecture: any
-Depends: libksi1 (= ${binary:Version}), ${misc:Depends}
-Replaces: libksi-dev  
-Breaks: libksi-dev 
+Depends: libksi0 (= ${binary:Version}), ${misc:Depends}
+Replaces: libksi1-dev
+Breaks: libksi1-dev
 Description: Development files for the 'libksi0' package
  The libksi-devel package contains the header files and libraries 
  needed to develop applications using libksi.
  .
  This package contains the development files.
 
-Package: libksi1
+Package: libksi0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: libksi0
-Breaks: libksi0
+Replaces: libksi1
+Breaks: libksi1
 Description: LibKSI - GuardTime client library
  The 'libksi' library contains the 
  GuardTime client library
