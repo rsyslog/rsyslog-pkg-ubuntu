@@ -1,44 +1,50 @@
-librelp (1.2.9-0adiscon4precise1) precise; urgency=medium
+librelp (1.2.9-0adiscon1trusty1) trusty; urgency=medium
 
-  * Repack for 1.2.9
+  * New build for librelp 1.2.9
 
- -- Florian Riedl <friedl@adiscon.com>  Thu, 17 Dec 2015 10:49:04 +0000
+ -- Florian Riedl <friedl@adiscon.com>  Thu, 17 Dec 2015 10:58:05 +0000
 
-librelp (1.2.9-0adiscon3precise1) precise; urgency=medium
+librelp (1.2.7-0adiscon1trusty1) trusty; urgency=low
 
-  * Repack for 1.2.9
+  * New build for librelp 1.2.7
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 15 Dec 2015 15:40:05 +0000
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 02 May 2014 13:13:06 +0200
 
-librelp (1.2.9-0adiscon2precise1) precise; urgency=medium
+librelp (1.2.5-0adiscon1trusty3) trusty; urgency=low
 
-  * Repack for 1.2.9
+  * Rebuild 
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 15 Dec 2015 15:26:24 +0000
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 28 Apr 2014 13:28:35 +0200
 
-librelp (1.2.9-0adiscon1precise1) precise; urgency=medium
+librelp (1.2.5-0adiscon1trusty2) trusty; urgency=low
 
-  * New upstream release for 1.2.9
+  * added gnutls dependency
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 15 Dec 2015 15:19:38 +0000
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 28 Apr 2014 13:18:14 +0200
 
-librelp (1.2.8-0adiscon2precise1) precise; urgency=medium
+librelp (1.2.5-0adiscon1trusty1) trusty; urgency=low
 
-  * New upstream release for 1.2.8
+  * Initial build for Ubuntu trusty
 
- -- Florian Riedl <friedl@adiscon.com>  Mon, 07 Sep 2015 13:13:02 +0000
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 28 Apr 2014 13:08:56 +0200
 
-librelp (1.2.2-0adiscon1) precise; urgency=low
+librelp (1.2.2-0adiscon2) saucy; urgency=low
+
+  * Repacked 
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Thu, 30 Jan 2014 16:30:56 +0100
+
+librelp (1.2.2-0adiscon1) saucy; urgency=low
 
   * New upstream release for 1.2.2
 
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 07 Jan 2014 13:22:21 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 07 Jan 2014 13:33:39 +0100
 
-librelp (1.2.0-0adiscon3) precise; urgency=low
+librelp (1.2.0-0adiscon2) saucy; urgency=low
 
-  * Repackaged
+  * Initial build for Ubuntu Saucy
 
- -- Andre Lorbach <alorbach@adiscon.com>  Wed, 23 Oct 2013 09:52:17 +0200
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 18 Oct 2013 18:08:04 +0200
 
 librelp (1.2.0-0adiscon1) precise; urgency=low
 

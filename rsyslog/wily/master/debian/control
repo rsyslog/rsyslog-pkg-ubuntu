@@ -28,6 +28,7 @@ Build-Depends: debhelper (>= 8),
 	       libgt-dev,
 	       python-docutils,
 	       libsystemd-dev,
+	       libksi1-dev,
 	       liblogging-stdlog-dev,
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git

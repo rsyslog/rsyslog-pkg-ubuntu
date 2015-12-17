@@ -13,6 +13,7 @@ Build-Depends: debhelper (>= 8),
 	       libmongo-client-dev (>= 0.1.4),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
+               libee-dev (>= 0.4.0),
                liblognorm1-dev (>= 1.0.0),
 	       libjson0-dev, 
 	       libmongo-client-dev, 
@@ -24,10 +25,13 @@ Build-Depends: debhelper (>= 8),
                dh-apparmor,
 	       libcurl4-gnutls-dev,
 	       bison,
-	       libgcrypt-dev,
 	       libgt-dev,
 	       python-docutils,
 	       liblogging-stdlog-dev,
+	       libnet-dev,
+	       librdkafka-dev,
+	       libksi1-dev
+#	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -47,6 +51,7 @@ Depends: ${shlibs:Depends},
          adduser,
          ucf,
 	 libjson0,
+	 libjemalloc1,
 	 liblogging-stdlog1,
 	 libgt0
 Recommends: logrotate
@@ -57,6 +62,9 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+          rsyslog-gnutls,
+	  rsyslog-udpspoof,
+	  rsyslog-kafka,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -218,6 +226,17 @@ Depends: ${shlibs:Depends},
          liblognorm1
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
+Package: rsyslog-mmutf8fix
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: The mmutf8fix module permits to fix invalid UTF-8 sequences. Most often, 
+ such invalid sequences result from syslog sources sending in non-UTF character sets, 
+ e.g. ISO 8859. As syslog does not have a way to convey the character set information, 
+ these sequences are not properly handled.
+
 Package: rsyslog-pmciscoios
 Architecture: any
 Priority: extra
@@ -225,6 +244,36 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 Description: Parser module which supports various Cisco IOS formats. 
+
+Package: rsyslog-gnutls
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: gnutls-bin
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
+
+Package: rsyslog-udpspoof
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libnet-dev
+Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
+
+Package: rsyslog-kafka
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         librdkafka-dev
+Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
+
 
 #Package: rsyslog-zmq
 #Architecture: any

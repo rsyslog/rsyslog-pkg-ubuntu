@@ -1,3 +1,9 @@
+rsyslog (8.15.0-0adiscon1wily1) wily; urgency=medium
+
+  * Packages for 8.15.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 15 Dec 2015 14:56:30 +0000
+
 rsyslog (8.14.0-0adiscon2wily1) wily; urgency=medium
 
   * Repack for 8.14.0

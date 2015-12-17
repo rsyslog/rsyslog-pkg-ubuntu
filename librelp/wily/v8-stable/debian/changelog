@@ -1,3 +1,9 @@
+librelp (1.2.9-0adiscon1wily1) wily; urgency=medium
+
+  * New build for librelp 1.2.9
+
+ -- Florian Riedl <friedl@adiscon.com>  Thu, 17 Dec 2015 10:59:16 +0000
+
 librelp (1.2.7-1adiscon1wily1) wily; urgency=medium
 
   * initial release for wily
