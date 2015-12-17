@@ -1,8 +1,8 @@
-libksi (3.4.0.5.adiscon1-0adiscon1trusty1) trusty; urgency=medium
+libksi (3.2.2.0-0adiscon3trusty1) trusty; urgency=medium
 
   * Updated lib package needed for next rsyslog release
 
- -- Andre Lorbach <alorbach@adiscon.com>  Mon, 07 Dec 2015 15:00:12 +0100
+ -- Andre Lorbach <alorbach@adiscon.com>  Mon, 07 Dec 2015 11:54:15 +0100
 
 libksi (3.2.2.0-0adiscon1trusty1) trusty; urgency=medium
 
