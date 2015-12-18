@@ -1,0 +1,5 @@
+libfastjson (0.99.0-0adiscon2precise1) precise; urgency=medium
+
+  * Initial package release of libfastjson for Ubtuntu precise
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 18 Dec 2015 14:20:55 +0000
