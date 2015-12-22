@@ -9,7 +9,8 @@ Build-Depends: cdbs, debhelper (>= 7.0.50~),
 	pkg-config,
 	hardening-wrapper,
 	libssl-dev,
-	libcurl4-openssl-dev
+	libcurl4-openssl-dev, 
+	ca-certificates
 Standards-Version: 3.9.2
 Section: libs
 Homepage: https://github.com/rsyslog/libksi
