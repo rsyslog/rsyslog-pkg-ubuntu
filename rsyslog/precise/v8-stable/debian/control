@@ -29,6 +29,7 @@ Build-Depends: debhelper (>= 8),
 	       python-docutils,
 	       liblogging-stdlog-dev,
 	       libnet-dev,
+	       librdkafka-dev,
 	       libksi1-dev
 #	       libjemalloc-dev
 Standards-Version: 3.9.2
@@ -262,6 +263,28 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          libnet-dev
 Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
+
+Package: rsyslog-utils
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}), 
+         rsyslog-ksi, 
+	 rsyslog-gnutls
+Description: rsyslog utilities
+ Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
+
+Package: rsyslog-ksi
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}), 
+         libksi1
+Suggests: gnutls-bin
+Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+ Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 #Package: rsyslog-zmq
 #Architecture: any

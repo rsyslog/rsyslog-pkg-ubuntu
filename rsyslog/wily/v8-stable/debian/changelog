@@ -1,3 +1,10 @@
+rsyslog (8.15.0-0adiscon1wily2) wily; urgency=medium
+
+  * Moved utilities into own package to remove libksi dependency from 
+    main package.
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 06 Jan 2016 10:19:44 +0100
+
 rsyslog (8.15.0-0adiscon1wily1) wily; urgency=medium
 
   * Packages for 8.15.0

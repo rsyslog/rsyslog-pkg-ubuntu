@@ -1,7 +1,6 @@
 debian/rsyslog.conf /etc/
 debian/50-default.conf /usr/share/rsyslog
 debian/tmp/usr/sbin/
-debian/tmp/usr/bin/ 
 debian/tmp/usr/share/man/
 debian/tmp/usr/lib/rsyslog/imfile.so
 debian/tmp/usr/lib/rsyslog/imklog.so

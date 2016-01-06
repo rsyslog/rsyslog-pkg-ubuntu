@@ -228,6 +228,28 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Parser module which supports various Cisco IOS formats. 
 
+Package: rsyslog-utils
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}), 
+         rsyslog-ksi, 
+	 rsyslog-gnutls
+Description: rsyslog utilities
+ Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
+
+Package: rsyslog-ksi
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}), 
+         libksi1
+Suggests: gnutls-bin
+Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+ Allows signing log records using guardtime Keyless Signature Infrastructure. 
+
 #Package: rsyslog-zmq
 #Architecture: any
 #Priority: extra

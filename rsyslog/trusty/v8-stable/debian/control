@@ -274,6 +274,27 @@ Depends: ${shlibs:Depends},
          librdkafka-dev
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
+Package: rsyslog-utils
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}), 
+         rsyslog-ksi, 
+	 rsyslog-gnutls
+Description: rsyslog utilities
+ Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
+
+Package: rsyslog-ksi
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}), 
+         libksi1
+Suggests: gnutls-bin
+Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+ Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 #Package: rsyslog-zmq
 #Architecture: any
