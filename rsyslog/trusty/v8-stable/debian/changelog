@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 rsyslog (8.16.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.16.0
 
  -- Florian Riedl <friedl@adiscon.com>  Tue, 26 Jan 2016 16:05:32 +0000
+=======
+rsyslog (8.15.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Moved utilities into own package to remove libksi dependency from 
+    main package. 
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 06 Jan 2016 10:14:16 +0100
+>>>>>>> 3e8d6805423332ebfbc136977f1d84b6b7dcb08c
 
 rsyslog (8.15.0-0adiscon1trusty1) trusty; urgency=medium
 

@@ -1,8 +1,22 @@
+<<<<<<< HEAD
 rsyslog (8.16.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.16.0
 
  -- Florian Riedl <friedl@adiscon.com>  Tue, 26 Jan 2016 15:50:53 +0000
+=======
+rsyslog (8.15.0-0adiscon5precise1) precise; urgency=medium
+
+  * Tools are now in utils package 
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 06 Jan 2016 10:04:58 +0100
+
+rsyslog (8.15.0-0adiscon4precise1) precise; urgency=medium
+
+  * Extracted KSI component into own package
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Wed, 06 Jan 2016 09:38:56 +0100
+>>>>>>> 3e8d6805423332ebfbc136977f1d84b6b7dcb08c
 
 rsyslog (8.15.0-0adiscon3precise1) precise; urgency=medium
 
