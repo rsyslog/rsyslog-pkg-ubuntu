@@ -6,6 +6,19 @@
 echo build all daily packages
 date
 
+#libfastjson
+cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/libfastjson
+rm -fv *.tar.gz
+cp -v $INFRAHOME/repo/libfastjson/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
+cp -v $INFRAHOME/repo/libfastjson/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master
+cp -v $INFRAHOME/repo/libfastjson/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master
+cp -v $INFRAHOME/repo/libfastjson/*.tar.gz .
+$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh wily v8-devel master
+
+
 #libestr
 cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/libestr
 rm -fv *.tar.gz
