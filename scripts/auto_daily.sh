@@ -7,20 +7,6 @@ echo build all daily packages
 date
 
 
-#liblogging
-cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/liblogging
-rm -fv *.tar.gz
-#cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
-#$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh precise v8-devel master
-cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
-$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh trusty v8-devel master 
-#cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
-#$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
-#cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
-#$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh wily v8-devel master 
-
-break
-
 #libfastjson
 cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/libfastjson
 rm -fv *.tar.gz
@@ -46,6 +32,7 @@ $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel 
 cp -v $INFRAHOME/repo/libestr/*.tar.gz .
 $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh wily v8-devel master 
 
+
 #liblogging
 cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/liblogging
 rm -fv *.tar.gz
@@ -57,6 +44,7 @@ cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
 $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh vivid v8-devel master 
 cp -v $INFRAHOME/repo/liblogging/*.tar.gz .
 $INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh wily v8-devel master 
+
 
 #librelp
 cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/librelp
