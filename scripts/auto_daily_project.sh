@@ -80,14 +80,17 @@ fi
 # files are generated in the home directory.
 cd ..
 
-# Upload changes to PPA now!
-dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
-if [ $? -ne 0 ]; then
-	 echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
-        exit 1
+if [ -v KEY_ID ]; then
+        # This only works on bash >4.2 note no $ before the variable name
+        # If there is a key defined, upload changes to PPA now!
+        dput -f $PPA/$UPLOAD_PPA `ls *.changes`
+        if [ $? -ne 0 ]; then
+	         echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+                exit 1
+        fi
+        #cleanup
+        echo $VERSION >$VERSION_FILE
+        #exit # do this for testing
+        rm -rf $LAUNCHPAD_VERSION
+        rm -v $szReplaceFile*.dsc $szReplaceFile*.build $szReplaceFile*.changes $szReplaceFile*.upload *.tar.gz
 fi
-#cleanup
-echo $VERSION >$VERSION_FILE
-#exit # do this for testing
-rm -rf $LAUNCHPAD_VERSION
-rm -v $szReplaceFile*.dsc $szReplaceFile*.build $szReplaceFile*.changes $szReplaceFile*.upload *.tar.gz
