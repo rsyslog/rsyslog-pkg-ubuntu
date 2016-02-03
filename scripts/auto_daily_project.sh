@@ -26,7 +26,7 @@ ls -l *.tar.gz # debug output
 szSourceFile=`ls *.tar.gz`
 szSourceBase=`basename $szSourceFile .tar.gz`
 VERSION=`echo $szSourceBase|cut -d- -f2`
-LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`.`date +%Y%m%d%H%M%S`
+LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`'~'`date +%Y%m%d%H%M%S`
 PROJECT=`echo $szSourceBase | cut -d- -f1`
 szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
 VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
