@@ -70,7 +70,11 @@ echo "" >> debian/changelog
 echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `date -R`" >> debian/changelog 
 
 # Build Source package now!
-debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+if [ -v PACKAGE_SIGNING_KEY_ID ]; then
+        debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+else
+        debuild -S -sa -rfakeroot -us -uc
+fi
 if [ $? -ne 0 ]; then
 	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
