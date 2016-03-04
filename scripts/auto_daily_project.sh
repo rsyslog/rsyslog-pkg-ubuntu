@@ -26,7 +26,7 @@ ls -l *.tar.gz # debug output
 szSourceFile=`ls *.tar.gz`
 szSourceBase=`basename $szSourceFile .tar.gz`
 VERSION=`echo $szSourceBase|cut -d- -f2`
-LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`.`date +%Y%m%d%H%M%S`
+LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`'~'`date +%Y%m%d%H%M%S`
 PROJECT=`echo $szSourceBase | cut -d- -f1`
 szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
 VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
@@ -70,7 +70,11 @@ echo "" >> debian/changelog
 echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `date -R`" >> debian/changelog 
 
 # Build Source package now!
-debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+if [ -v PACKAGE_SIGNING_KEY_ID ]; then
+        debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+else
+        debuild -S -sa -rfakeroot -us -uc
+fi
 if [ $? -ne 0 ]; then
 	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
@@ -80,14 +84,17 @@ fi
 # files are generated in the home directory.
 cd ..
 
-# Upload changes to PPA now!
-dput -f ppa:adiscon/$UPLOAD_PPA `ls *.changes`
-if [ $? -ne 0 ]; then
-	 echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
-        exit 1
+if [ -v KEY_ID ]; then
+        # This only works on bash >4.2 note no $ before the variable name
+        # If there is a key defined, upload changes to PPA now!
+        dput -f $PPA/$UPLOAD_PPA `ls *.changes`
+        if [ $? -ne 0 ]; then
+	         echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+                exit 1
+        fi
+        #cleanup
+        echo $VERSION >$VERSION_FILE
+        #exit # do this for testing
+        rm -rf $LAUNCHPAD_VERSION
+        rm -v $szReplaceFile*.dsc $szReplaceFile*.build $szReplaceFile*.changes $szReplaceFile*.upload *.tar.gz
 fi
-#cleanup
-echo $VERSION >$VERSION_FILE
-#exit # do this for testing
-rm -rf $LAUNCHPAD_VERSION
-rm -v $szReplaceFile*.dsc $szReplaceFile*.build $szReplaceFile*.changes $szReplaceFile*.upload *.tar.gz

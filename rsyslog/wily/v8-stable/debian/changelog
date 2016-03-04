@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 rsyslog (8.16.0-0adiscon1wily1) wily; urgency=medium
 
   * Packages for 8.16.0
@@ -11,7 +10,6 @@ rsyslog (8.15.0-0adiscon1wily2) wily; urgency=medium
     main package.
 
  -- Andre Lorbach <alorbach@adiscon.com>  Wed, 06 Jan 2016 10:19:44 +0100
->>>>>>> 3e8d6805423332ebfbc136977f1d84b6b7dcb08c
 
 rsyslog (8.15.0-0adiscon1wily1) wily; urgency=medium
 
