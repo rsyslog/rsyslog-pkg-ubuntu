@@ -50,8 +50,8 @@ do
 	#echo "$szDscFile $szDscFileBase";
 	#exit;
 
-	#pbuilder-dist precise create
+	#pbuilder-dist $szBranch create
 	APPENDSUFFIX="_$szArchitect.changes"
 	pbuilder-dist $szPlatform $szArchitect build $szDscFile 
-	dput $szBranch ../pbuilder/$szPlatform$szAddArch\_result/$szDscFileBase$APPENDSUFFIX
+	#dput $szBranch ../pbuilder/$szPlatform$szAddArch\_result/$szDscFileBase$APPENDSUFFIX
 done;
