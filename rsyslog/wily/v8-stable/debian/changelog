@@ -1,9 +1,21 @@
+rsyslog (8.17.0-0adiscon2wily1) wily; urgency=medium
+
+  * Re-Pack for 8.17.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Wed, 09 Mar 2016 13:45:56 +0000
+
+rsyslog (8.17.0-0adiscon1wily1) wily; urgency=medium
+
+  * Packages for 8.17.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Wed, 09 Mar 2016 11:15:07 +0000
+
 rsyslog (8.16.0-0adiscon1wily1) wily; urgency=medium
 
   * Packages for 8.16.0
 
  -- Florian Riedl <friedl@adiscon.com>  Tue, 26 Jan 2016 16:06:48 +0000
-=======
+
 rsyslog (8.15.0-0adiscon1wily2) wily; urgency=medium
 
   * Moved utilities into own package to remove libksi dependency from 
