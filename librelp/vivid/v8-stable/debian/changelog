@@ -1,3 +1,9 @@
+librelp (1.2.10-0adiscon1vivid1) vivid; urgency=medium
+
+  * New upstream release for 1.2.10
+
+ -- Florian Riedl <friedl@adiscon.com>  Wed, 30 Mar 2016 15:18:10 +0000
+
 librelp (1.2.9-0adiscon1vivid1) vivid; urgency=medium
 
   * New build for librelp 1.2.9
