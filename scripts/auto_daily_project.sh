@@ -71,12 +71,17 @@ echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `da
 
 # Build Source package now!
 if [ -v PACKAGE_SIGNING_KEY_ID ]; then
-        debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+#	script -e -q -c "
+	debuild -S -sa -rfakeroot -k\"$PACKAGE_SIGNING_KEY_ID\"
+#" tmp.output
 else
-        debuild -S -sa -rfakeroot -us -uc
+#        script -e -q -c "
+	debuild -S -sa -rfakeroot -us -uc
+#" tmp.output
 fi
 if [ $? -ne 0 ]; then
 	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+# -a tmp.output ## vor $RS_NOTIFY_EMAIL
         exit 1
 fi
 
