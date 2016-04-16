@@ -9,7 +9,9 @@
 # this works sufficiently good, even when the source code has the
 # "right" (hash-based) version number.
 
-#set -o xtrace  # useful for debugging
+set -o xtrace  # useful for debugging
+set -v
+
 
 echo package build for `pwd` $1/$2/$3
 date
@@ -61,6 +63,9 @@ cd $LAUNCHPAD_VERSION
 #cp -r ../common/$szBranch/debian .
 # now overwrite with platform-specific stuff (if any)
 cp -r ../$szPlatform/$szBranch/debian .
+pwd
+ls -l
+env
 
 # create dummy changelog entry
 echo "$PROJECT ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low" > debian/changelog
@@ -75,8 +80,9 @@ if [ -v PACKAGE_SIGNING_KEY_ID ]; then
 else
         debuild -S -sa -rfakeroot -us -uc
 fi
+env
 if [ $? -ne 0 ]; then
-	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+	echo "fail in debuild for $PROJECT $VERSION on $szPlatform - check cron mail for details" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
 
@@ -84,7 +90,7 @@ fi
 # files are generated in the home directory.
 cd ..
 
-if [ -v KEY_ID ]; then
+if [ -v PACKAGE_SIGNING_KEY_ID ]; then
         # This only works on bash >4.2 note no $ before the variable name
         # If there is a key defined, upload changes to PPA now!
         dput -f $PPA/$UPLOAD_PPA `ls *.changes`
