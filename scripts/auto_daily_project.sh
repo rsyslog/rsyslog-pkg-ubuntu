@@ -71,7 +71,7 @@ echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `da
 
 # Build Source package now!
 if [ -v PACKAGE_SIGNING_KEY_ID ]; then
-	debuild -S -sa -rfakeroot -k\"$PACKAGE_SIGNING_KEY_ID\"
+	debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
 else
         debuild -S -sa -rfakeroot -us -uc
 fi
