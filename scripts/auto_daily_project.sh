@@ -78,9 +78,11 @@ mv $szSourceFile $szReplaceFile.orig.tar.gz
 
 mv $szSourceBase $LAUNCHPAD_VERSION
 cd $LAUNCHPAD_VERSION
-#cp -r ../common/$szBranch/debian .
-# now overwrite with platform-specific stuff (if any)
-cp -r ../$szPlatform/$szBranch/debian .
+ls -l ..
+ls -l ../$szPlatform
+ls -l ../$szPlatform/$szBranch
+ls -l ../$szPlatform/$szBranch/debian
+cp -rv ../$szPlatform/$szBranch/debian .
 pwd
 ls -l
 env
