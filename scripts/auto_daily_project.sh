@@ -38,6 +38,23 @@ echo VERSION $VERSION
 echo Platform $szPlatform
 echo PPA $PPA
 
+if [ -z "$PROJECT" ]; then
+	echo "variable PROJECT is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+if [ -z "$VERSION" ]; then
+	echo "variable VERSION is unsetn" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+if [ -z "$szPlatform" ]; then
+	echo "variable szPlatform is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+if [ -z "$PPA" ]; then
+	echo "variable PPA is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+
 # $VERSION_FILE must not exist. If it does not exist, an
 # error message is emitted (this is OK) and the build is
 # done. So you can delete it to trigger a new build.
