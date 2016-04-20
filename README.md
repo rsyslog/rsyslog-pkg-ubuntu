@@ -123,3 +123,60 @@ the policy layed out here.
 The build process currently has the PPA system "in mind". That means all
 scripts generate the necessary control files and load them up to launchpad.
 The actual build is then performed by launchpad.
+
+
+What to do on new Ubuntu Release?
+---------------------------------
+Let's assume vivid is the current release and wily the next one.
+
+For all projects, do
+
+- create new "wily" subdirectory in project dir
+- cp -r vivid/* wily
+- make adaptions to wily files, if necessary
+- git add wily
+
+--> this procedure ensures we start with the latest version. It's most
+likely that this will work on the newer version as well.
+
+Next, update all scripts, namely auto_daily.sh to include the "wily" release.
+
+
+What to do if a new package for an existing project is to be added?
+===================================================================
+In general, this should happen only for new functionality. However,
+if we need to enable something in older builds, that's of course
+possible, but requires more editing work.
+
+In general, control files in all Ubuntu versions need to be edited for
+all versions we maintain. For the current build, with rsyslog, this
+usually means you need to edit v8-stable and master, as well as 
+v7-stable, as long as we maintain it for the platform. As v7-stable
+will not receive updates any longer, you usually do not need to look
+at that. If a new feature is added to master, you can edit it only
+there, for obvious reasons. When this feature becomes released, you
+can simply copy the master control files to v8-stable and are
+(hopefully) set. 
+
+If, however, something was forgotten (or we just discovered we could already
+have done it), you need to edit all control files along all versions
+supported. If there are e.g. 5 Ubuntu platforms and there are master,
+v8-stable and v7-stable for all of them, that unfortunately means you 
+need to apply the same edit 15 times in the case of rsyslog.
+That's ugly, but the way it currently is. We are open to contributions
+that make this easier (but please contribute code, not "just" ideas -
+that's because we have many good ideas ourselfs, but no time to
+code them up ;)).
+
+
+How to generate an official release?
+====================================
+- cd to rsyslog-pkg-ubuntu/<project>
+- ./repack.sh <release tarball url>
+- ./uploadppa.sh
+- select repository
+- select platform
+- make changelog entry (more detail instructions, pls)
+- copy back?
+- upload?
+-
