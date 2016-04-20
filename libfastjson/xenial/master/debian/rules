@@ -18,3 +18,9 @@ export DEB_BUILD_HARDENING=1
 %:
 # not needed
 	dh $@ --with autoreconf 
+
+override_dh_auto_test:
+ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	make check || ( cat tests/test-suite.log; exit 1; )
+endif
+
