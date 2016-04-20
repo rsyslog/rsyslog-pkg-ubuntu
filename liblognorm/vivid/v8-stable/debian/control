@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 8),
     libxml2-dev,
     libestr-dev,
     libee-dev (>= 0.3.2),
-    libjson0-dev,
+    libfastjson-dev,
     hardening-wrapper
 Standards-Version: 3.9.2
 Section: libs

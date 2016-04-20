@@ -15,7 +15,7 @@ Build-Depends: debhelper (>= 8),
                libestr-dev (>= 0.1.2),
                libee-dev (>= 0.4.0),
                liblognorm1-dev (>= 1.0.0),
-	       libjson0-dev, 
+	       libfastjson-dev, 
 	       libmongo-client-dev, 
 	       libglib2.0-dev,
                uuid-dev,
@@ -51,7 +51,7 @@ Depends: ${shlibs:Depends},
          initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
-	 libjson0,
+	 libfastjson,
 	 libjemalloc1,
 	 liblogging-stdlog1,
 	 libgt0
@@ -179,7 +179,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 	 liblognorm1, 
-	 libjson0
+	 libfastjson
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON

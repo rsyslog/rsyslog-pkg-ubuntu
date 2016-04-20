@@ -9,17 +9,19 @@
 # this works sufficiently good, even when the source code has the
 # "right" (hash-based) version number.
 
-#set -o xtrace  # useful for debugging
+set -o xtrace  # useful for debugging
+set -v
+
 
 echo package build for `pwd` $1/$2/$3
 date
+
 
 # params
 szPlatform=$1  # trusty, vivid, ...
 UPLOAD_PPA=$2  # path of the ppa (e.g. v8-devel)
 szBranch=$3    # branch to use (e.g. master)
 	       # Note: this must match the tarball branch
-
 rm -fv *.orig.tar.gz # clean up if left over, temporary work file!
 # only a single .tar.gz must exist at any time
 ls -l *.tar.gz # debug output
@@ -34,6 +36,24 @@ VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
 echo PROJECT $PROJECT
 echo VERSION $VERSION
 echo Platform $szPlatform
+echo PPA $PPA
+
+if [ -z "$PROJECT" ]; then
+	echo "variable PROJECT is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+if [ -z "$VERSION" ]; then
+	echo "variable VERSION is unsetn" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+if [ -z "$szPlatform" ]; then
+	echo "variable szPlatform is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+if [ -z "$PPA" ]; then
+	echo "variable PPA is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
 
 # $VERSION_FILE must not exist. If it does not exist, an
 # error message is emitted (this is OK) and the build is
@@ -58,9 +78,14 @@ mv $szSourceFile $szReplaceFile.orig.tar.gz
 
 mv $szSourceBase $LAUNCHPAD_VERSION
 cd $LAUNCHPAD_VERSION
-#cp -r ../common/$szBranch/debian .
-# now overwrite with platform-specific stuff (if any)
-cp -r ../$szPlatform/$szBranch/debian .
+ls -l ..
+ls -l ../$szPlatform
+ls -l ../$szPlatform/$szBranch
+ls -l ../$szPlatform/$szBranch/debian
+cp -rv ../$szPlatform/$szBranch/debian .
+pwd
+ls -l
+env
 
 # create dummy changelog entry
 echo "$PROJECT ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low" > debian/changelog
@@ -75,8 +100,9 @@ if [ -v PACKAGE_SIGNING_KEY_ID ]; then
 else
         debuild -S -sa -rfakeroot -us -uc
 fi
+env
 if [ $? -ne 0 ]; then
-	echo "fail in debuild for $PROJECT $VERSION on $szPlatform" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+	echo "fail in debuild for $PROJECT $VERSION on $szPlatform - check cron mail for details" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
 
@@ -84,7 +110,7 @@ fi
 # files are generated in the home directory.
 cd ..
 
-if [ -v KEY_ID ]; then
+if [ -v PACKAGE_SIGNING_KEY_ID ]; then
         # This only works on bash >4.2 note no $ before the variable name
         # If there is a key defined, upload changes to PPA now!
         dput -f $PPA/$UPLOAD_PPA `ls *.changes`
