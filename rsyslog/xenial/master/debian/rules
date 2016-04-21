@@ -8,7 +8,7 @@ include /usr/share/dpkg/buildflags.mk
 unexport LDFLAGS
 
 %:
-	dh $@ --with autoreconf 
+	dh $@ --with autoreconf
 #org	dh $@ --with autotools_dev
 
 override_dh_auto_configure:
@@ -61,6 +61,10 @@ override_dh_compress:
 
 override_dh_installinit:
 	dh_apparmor --profile-name=usr.sbin.rsyslogd -prsyslog
-	dh_installinit -R -- start 10 2 3 4 5 . start 30 0 6 . stop 90 1 .
-	dh_installinit --upstart-only --name=dmesg --no-start
+	dh_installinit -R
+
+override_dh_auto_test:
+ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	make check || ( cat tests/test-suite.log; exit 1; )
+endif
 

@@ -1,1 +1,4 @@
 LAST_VERSION.*
+*.diff.gz
+*.upload
+*~[0-9]*
