@@ -1,3 +1,9 @@
+libestr (0.1.10-0adiscon1ixenial1) xenial; urgency=medium
+
+  * Initial Package for Xenial
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 22 Apr 2016 07:40:26 +0000
+
 libestr (0.1.10-0adiscon1ivivid1) vivid; urgency=medium
 
   * initial release for vivid

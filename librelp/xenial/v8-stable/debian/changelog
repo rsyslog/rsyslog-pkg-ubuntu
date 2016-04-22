@@ -1,3 +1,9 @@
+librelp (1.2.10-0adiscon1xenial1) xenial; urgency=medium
+
+  * Initial package for Xenial
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 22 Apr 2016 07:47:04 +0000
+
 librelp (1.2.10-0adiscon1vivid1) vivid; urgency=medium
 
   * New upstream release for 1.2.10

@@ -1,3 +1,9 @@
+liblogging (1.0.5-0adiscon1xenial1) xenial; urgency=medium
+
+  * Initial package for Xenial
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 22 Apr 2016 07:45:14 +0000
+
 liblogging (1.0.5-0adiscon1vivid1) vivid; urgency=medium
 
   * initial release for vivid
