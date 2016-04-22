@@ -1,8 +1,9 @@
 #!/bin/bash
 # Definitions common to these scripts
 source $(dirname "$0")/config.sh
+export DEBEMAIL="adiscon-pkg-maintainers@adiscon.com"
 
-set -o xtrace  # use for debugging
+#set -o xtrace  # use for debugging
 
 # If we assume the directory is named after the package,
 PACKAGENAME=$(basename `readlink -f .`)
@@ -41,7 +42,7 @@ done
 #mv $szSourceFile $szReplaceFile.orig.tar.gz
 
 read -p "Generate Changelog entry for $szPlatform/$szBranch (y/n)? " RESULT
-cp -r $szPlatform/$szBranch/debian $szPrepareDir
+cp -r $szPlatform/$szBranch/debian $szPrepareDir || exit 1
 cd $szPrepareDir
 if [ "$RESULT" == "y" ]; then
 	dch -D $szPlatform -i
