@@ -1,3 +1,15 @@
+libfastjson (0.99.2-0adiscon2xenial1) xenial; urgency=medium
+
+  * Re-pack for libfastjson 0.99.2
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Jul 2016 13:30:30 +0000
+
+libfastjson (0.99.2-0adiscon1xenial1) xenial; urgency=medium
+
+  * Initial Xenial Package
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 22 Apr 2016 07:31:51 +0000
+
 libfastjson (0.99.2-0adiscon1wily1) wily; urgency=medium
 
   * Package for libfastjson 0.99.2

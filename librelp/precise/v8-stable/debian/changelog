@@ -6,9 +6,15 @@ librelp (1.2.12-0adiscon2precise1) precise; urgency=medium
 
 librelp (1.2.11-0adiscon2precise1) precise; urgency=medium
 
+  * Re-pack for 1.2.11
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Jul 2016 13:33:59 +0000
+
+librelp (1.2.11-0adiscon1precise1) precise; urgency=medium
+
   * New upstream release for 1.2.11
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 23 Jun 2016 09:23:21 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 23 Jun 2016 07:41:07 +0000
 
 librelp (1.2.10-0adiscon1precise1) precise; urgency=medium
 

@@ -1,3 +1,21 @@
+rsyslog (8.19.0-0adisconatrusty4) trusty; urgency=medium
+
+  * Re-pack for 8.19.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Jul 2016 14:25:35 +0000
+
+rsyslog (8.19.0-0adisconatrusty2) trusty; urgency=medium
+
+  * Re-Pack for 8.19.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Jul 2016 09:01:47 +0000
+
+rsyslog (8.19.0-0adisconatrusty1) trusty; urgency=medium
+
+  * Packages for 8.19.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 31 May 2016 13:45:27 +0000
+
 rsyslog (8.18.0-0adisconatrusty1) trusty; urgency=medium
 
   * Packages for 8.18.0

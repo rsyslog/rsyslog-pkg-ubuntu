@@ -1,3 +1,15 @@
+rsyslog (8.19.0-0adiscon3vivid1) vivid; urgency=medium
+
+  * Re-pack for 8.19.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Jul 2016 14:23:57 +0000
+
+rsyslog (8.19.0-0adiscon1vivid1) vivid; urgency=medium
+
+  * Packages for 8.19.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 31 May 2016 13:46:06 +0000
+
 rsyslog (8.18.0-0adiscon1vivid1) vivid; urgency=medium
 
   * Packages for 8.18.0
