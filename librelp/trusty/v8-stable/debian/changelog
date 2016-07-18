@@ -1,3 +1,15 @@
+librelp (1.2.12-0adiscon2trusty1) trusty; urgency=medium
+
+  * New upstream release for 1.2.12
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 Jul 2016 09:34:36 +0000
+
+librelp (1.2.11-0adiscon2trusty1) precise; urgency=medium
+
+  * New upstream release for 1.2.11
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 23 Jun 2016 09:23$
+
 librelp (1.2.10-0adiscon1trusty1) trusty; urgency=medium
 
   * New upstream release for 1.2.10
