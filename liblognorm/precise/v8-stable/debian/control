@@ -33,7 +33,8 @@ Description: Log normalizing library
 Package: liblognorm1
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+	libfastjson4
 Replaces: liblognorm0
 Breaks: liblognorm0
 Description: Log normalizing library

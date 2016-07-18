@@ -13,8 +13,17 @@
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
-export DEB_BUILD_HARDENING=1
+#export DEB_BUILD_HARDENING=1
+
+CFLAGS+=-fPIC
 
 %:
 # not needed
 	dh $@ --with autoreconf 
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-silent-rules
+
+override_dh_install:
+	dh_install -X.la --list-missing

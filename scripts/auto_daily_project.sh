@@ -9,7 +9,7 @@
 # this works sufficiently good, even when the source code has the
 # "right" (hash-based) version number.
 
-set -o xtrace  # useful for debugging
+#set -o xtrace  # useful for debugging
 #set -v
 
 
@@ -31,7 +31,7 @@ VERSION=`echo $szSourceBase|cut -d- -f2`
 LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`'~'`date +%Y%m%d%H%M%S`
 PROJECT=`echo $szSourceBase | cut -d- -f1`
 PROJECT_SONAME=$PROJECT`cat CURR_LIBSONAME`
-szReplaceFile="${PROJECT_SONAME}_$LAUNCHPAD_VERSION"
+szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
 VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
 
 echo PROJECT $PROJECT
@@ -97,7 +97,7 @@ pwd
 ls -l
 
 # create dummy changelog entry
-echo "$PROJECT_SONAME ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low" > debian/changelog
+echo "$PROJECT ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low" > debian/changelog
 echo "" >> debian/changelog
 echo "  * daily build" >> debian/changelog
 echo "" >> debian/changelog
