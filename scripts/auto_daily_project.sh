@@ -10,7 +10,7 @@
 # "right" (hash-based) version number.
 
 set -o xtrace  # useful for debugging
-set -v
+#set -v
 
 
 echo package build for `pwd` $1/$2/$3
@@ -30,16 +30,22 @@ szSourceBase=`basename $szSourceFile .tar.gz`
 VERSION=`echo $szSourceBase|cut -d- -f2`
 LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`'~'`date +%Y%m%d%H%M%S`
 PROJECT=`echo $szSourceBase | cut -d- -f1`
-szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
+PROJECT_SONAME=$PROJECT`cat CURR_LIBSONAME`
+szReplaceFile="${PROJECT_SONAME}_$LAUNCHPAD_VERSION"
 VERSION_FILE="LAST_VERSION.$szBranch.$szPlatform"
 
 echo PROJECT $PROJECT
+echo PROJECT_SONAME $PROJECT_SONAME
 echo VERSION $VERSION
 echo Platform $szPlatform
 echo PPA $PPA
 
 if [ -z "$PROJECT" ]; then
 	echo "variable PROJECT is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
+	exit
+fi
+if [ -z "$PROJECT_SONAME" ]; then
+	echo "variable PROJECT_SONAME is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
 	exit
 fi
 if [ -z "$VERSION" ]; then
@@ -74,6 +80,10 @@ rm -f $PROJECT_*.orig.tar.gz
 # BEGIN ACTUAL BUILD PROCESS
 
 tar xfz $szSourceFile
+if [ $? -ne 0 ]; then
+	echo error extracting source tarball
+	exit 1
+fi
 mv $szSourceFile $szReplaceFile.orig.tar.gz
 
 mv $szSourceBase $LAUNCHPAD_VERSION
@@ -85,10 +95,9 @@ ls -l ../$szPlatform/$szBranch/debian
 cp -rv ../$szPlatform/$szBranch/debian .
 pwd
 ls -l
-env
 
 # create dummy changelog entry
-echo "$PROJECT ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low" > debian/changelog
+echo "$PROJECT_SONAME ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low" > debian/changelog
 echo "" >> debian/changelog
 echo "  * daily build" >> debian/changelog
 echo "" >> debian/changelog
@@ -100,9 +109,8 @@ if [ -v PACKAGE_SIGNING_KEY_ID ]; then
 else
         debuild -S -sa -rfakeroot -us -uc
 fi
-env
 if [ $? -ne 0 ]; then
-	echo "fail in debuild for $PROJECT $VERSION on $szPlatform - check cron mail for details" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+	echo "fail in debuild for $PROJECT_SONAME $VERSION on $szPlatform - check cron mail for details" | mutt -s "$PROJECT_SONAME daily build failed!" $RS_NOTIFY_EMAIL
         exit 1
 fi
 
@@ -115,7 +123,7 @@ if [ -v PACKAGE_SIGNING_KEY_ID ]; then
         # If there is a key defined, upload changes to PPA now!
         dput -f $PPA/$UPLOAD_PPA `ls *.changes`
         if [ $? -ne 0 ]; then
-	         echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT daily build failed!" $RS_NOTIFY_EMAIL
+	         echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT_SONAME daily build failed!" $RS_NOTIFY_EMAIL
                 exit 1
         fi
         #cleanup
