@@ -7,8 +7,7 @@ Build-Depends: debhelper (>= 8),
     python-sphinx,
     libxml2-dev,
     libestr-dev,
-    libee-dev (>= 0.3.2),
-    libfastjson-dev,
+    libfastjson-dev (> 0.99.2),
     hardening-wrapper
 Standards-Version: 3.9.2
 Section: libs
@@ -16,13 +15,13 @@ Homepage: http://www.liblognorm.com/
 #Vcs-Git: git://git.debian.org/collab-maint/liblognorm.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/liblognorm.git;a=summary
 
-Package: liblognorm1-dev
+Package: liblognorm-dev
 Section: libdevel
 Architecture: any
-Depends: liblognorm1 (= ${binary:Version}), ${misc:Depends},
+Depends: liblognorm5 (= ${binary:Version}), ${misc:Depends},
     libee-dev, libestr-dev
-Replaces: liblognorm-dev
-Breaks: liblognorm-dev
+Replaces: liblognorm1-dev
+Breaks: liblognorm1-dev
 Description: Log normalizing library
  Liblognorm is a event and log normalization library that is capable of
  real-time processing. It provides the capability to normalize events to
@@ -30,12 +29,13 @@ Description: Log normalizing library
  .
  This package contains the development files.
 
-Package: liblognorm1
+Package: liblognorm5
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: liblognorm0
-Breaks: liblognorm0
+Depends: ${shlibs:Depends}, ${misc:Depends},
+	libfastjson4 (> 0.99.2)
+#Replaces: liblognorm0
+#Breaks: liblognorm0
 Description: Log normalizing library
  Liblognorm is a event and log normalization library that is capable of
  real-time processing. It provides the capability to normalize events to

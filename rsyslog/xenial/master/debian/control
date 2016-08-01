@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 8),
 	       libmongo-client-dev (>= 0.1.4),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
-               liblognorm1-dev (>= 1.0.0),
+               liblognorm-dev (>= 1.0.0),
 	       libfastjson-dev,
 	       libmongo-client-dev, 
 	       libglib2.0-dev,
@@ -171,7 +171,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 liblognorm1, 
+	 liblognorm5, 
 	 libfastjson4
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
@@ -195,7 +195,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-         liblognorm1
+         liblognorm5
 Description: The rsyslog-mmnormalize package provides log normalization 
  by using the liblognorm and it's Rulebase format. 
 
@@ -217,7 +217,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-         liblognorm1
+         liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
 Package: rsyslog-pmciscoios
