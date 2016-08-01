@@ -11,16 +11,18 @@ Homepage: https://github.com/rsyslog/libfastjson
 Package: libfastjson-dev
 Section: libdevel
 Architecture: any
-Depends: libfastjson (= ${binary:Version}), ${misc:Depends}
+Depends: libfastjson4 (= ${binary:Version}), ${misc:Depends}
 Replaces: libfastjson-dev  
 Breaks: libfastjson-dev 
-Description: Development files for the 'libfastjson' package
+Description: Development files for the 'libfastjson4' package
  The libfastjson-dev package contains the header files and libraries 
  needed to develop applications using libksi.
  .
  This package contains the development files.
 
-Package: libfastjson
+Package: libfastjson4
+Replaces: libfastjson
+Breaks: libfastjson
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}

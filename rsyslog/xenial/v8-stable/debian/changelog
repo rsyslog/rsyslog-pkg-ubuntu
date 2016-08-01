@@ -1,3 +1,9 @@
+rsyslog (8.18.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Initial package for Xenial
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 May 2016 14:52:12 +0000
+
 rsyslog (8.17.0-0adiscon2vivid1) vivid; urgency=medium
 
   * Re-Pack for 8.17.0

@@ -1,3 +1,9 @@
+libfastjson (0.99.3-0adiscon1trusty1) trusty; urgency=medium
+
+  * Package for libfastjson 0.99.3
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 11 Jul 2016 09:23:23 +0000
+
 libfastjson (0.99.2-0adiscon1trusty1) trusty; urgency=medium
 
   * Package for libfastjson 0.99.2
