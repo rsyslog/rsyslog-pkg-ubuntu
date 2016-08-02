@@ -1,3 +1,9 @@
+rsyslog (8.20.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * rebuild for libfastjson 0.99.3, liblognorm 2.0.1
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 10:21:33 +0000
+
 rsyslog (8.20.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.20.0

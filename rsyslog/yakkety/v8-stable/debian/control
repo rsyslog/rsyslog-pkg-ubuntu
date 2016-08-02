@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 8),
 	       libmongo-client-dev (>= 0.1.4),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
-               liblognorm1-dev (>= 1.0.0),
+               liblognorm-dev (>= 1.0.0),
 	       libfastjson-dev,
 	       libmongo-client-dev, 
 	       libglib2.0-dev,
@@ -25,11 +25,10 @@ Build-Depends: debhelper (>= 8),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       libgcrypt-dev,
-	       libgt-dev,
 	       python-docutils,
 	       libsystemd-dev,
-	       libksi1-dev,
-	       liblogging-stdlog-dev,
+	       liblogging-stdlog-dev
+#	       libksi1-dev,
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -48,9 +47,8 @@ Depends: ${shlibs:Depends},
          initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
-	 libfastjson,
-	 liblogging-stdlog1,
-	 libgt0
+	 libfastjson4,
+	 liblogging-stdlog1
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
@@ -171,8 +169,8 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 liblognorm1, 
-	 libfastjson
+	 liblognorm5, 
+	 libfastjson4
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON
@@ -195,7 +193,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-         liblognorm1
+         liblognorm5
 Description: The rsyslog-mmnormalize package provides log normalization 
  by using the liblognorm and it's Rulebase format. 
 
@@ -217,7 +215,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-         liblognorm1
+         liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
 Package: rsyslog-pmciscoios
@@ -239,16 +237,16 @@ Depends: ${shlibs:Depends},
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
 
-Package: rsyslog-ksi
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}), 
-         libksi1
-Suggests: gnutls-bin
-Description: KSI (Keyless Signature Infrastructure) support for rsyslog
- Allows signing log records using guardtime Keyless Signature Infrastructure. 
+#Package: rsyslog-ksi
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}), 
+#         libksi1
+#Suggests: gnutls-bin
+#Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+# Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 #Package: rsyslog-zmq
 #Architecture: any

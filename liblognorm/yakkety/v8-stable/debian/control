@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8),
     python-sphinx,
     libxml2-dev,
     libestr-dev,
-    libfastjson-dev (> 0.99.2),
+    libfastjson-dev (>> 0.99.2),
     hardening-wrapper
 Standards-Version: 3.9.2
 Section: libs
@@ -19,7 +19,7 @@ Package: liblognorm-dev
 Section: libdevel
 Architecture: any
 Depends: liblognorm5 (= ${binary:Version}), ${misc:Depends},
-    libee-dev, libestr-dev
+    libestr-dev
 Replaces: liblognorm1-dev
 Breaks: liblognorm1-dev
 Description: Log normalizing library
@@ -33,7 +33,7 @@ Package: liblognorm5
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-	libfastjson4 (> 0.99.2)
+	libfastjson4 (>> 0.99.2)
 #Replaces: liblognorm0
 #Breaks: liblognorm0
 Description: Log normalizing library

@@ -1,3 +1,15 @@
+libfastjson (0.99.3-0adiscon3xenial1) xenial; urgency=medium
+
+  * fix packaging issue
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 08:05:50 +0000
+
+libfastjson (0.99.3-0adiscon1xenial2) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 05:55:27 +0000
+
 libfastjson (0.99.2-0adiscon2xenial1) xenial; urgency=medium
 
   * Re-pack for libfastjson 0.99.2

@@ -1,8 +1,14 @@
-libfastjson (0.99.3-0adiscon1precise1) precise; urgency=medium
+libfastjson (0.99.3-adiscon4precise1) precise; urgency=medium
 
-  * Package for libfastjson 0.99.3
+  * fix packaging
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 11 Jul 2016 09:22:45 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 08:26:27 +0000
+
+libfastjson (0.99.3-adiscon1) precise; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 05:24:28 +0000
 
 libfastjson (0.99.2-0adiscon1precise1) precise; urgency=medium
 

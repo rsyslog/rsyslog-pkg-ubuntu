@@ -1,3 +1,9 @@
+rsyslog (8.20.0-0adiscon4precise1) precise; urgency=medium
+
+  * rebuild to support new libfastjson 0.99.3, liblognorm 2.0.1 packages
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 12:12:42 +0000
+
 rsyslog (8.20.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.20.0
