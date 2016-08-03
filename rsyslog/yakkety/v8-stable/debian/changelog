@@ -1,3 +1,9 @@
+rsyslog (8.20.0-0adiscon5yakkety1) yakkety; urgency=medium
+
+  * fix dependencies
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 08:20:34 +0000
+
 rsyslog (8.20.0-0adiscon4yakkety1) yakkety; urgency=medium
 
   * fix apparmor rules that could prevent startup

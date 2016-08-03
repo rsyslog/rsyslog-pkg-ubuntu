@@ -1,3 +1,9 @@
+libfastjson (0.99.4-0adiscon1yakkety1) yakkety; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 09:20:53 +0000
+
 libfastjson (0.99.3-0adiscon3yakkety1) yakkety; urgency=medium
 
   * new upstream release
