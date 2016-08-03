@@ -1,3 +1,10 @@
+rsyslog (8.20.0-0adiscon5precise1) precise; urgency=medium
+
+  * fix apparmor rules, which could prevent rsyslog startup
+    see also https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/48
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 06:51:46 +0000
+
 rsyslog (8.20.0-0adiscon4precise1) precise; urgency=medium
 
   * rebuild to support new libfastjson 0.99.3, liblognorm 2.0.1 packages

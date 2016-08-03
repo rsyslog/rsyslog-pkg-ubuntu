@@ -22,7 +22,6 @@
   /etc/rsyslog.conf r,
   /etc/rsyslog.d/ r,
   /etc/rsyslog.d/** r,
-  /{,var/}run/rsyslogd.pid rwk,
   /var/spool/rsyslog/ r,
   /var/spool/rsyslog/** rwk,
 

@@ -1,3 +1,10 @@
+rsyslog (8.20.0-0adiscon7xenial1) xenial; urgency=medium
+
+  * fix apparmor rules which prevented rsyslog startup
+    see also https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/48
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 06:29:55 +0000
+
 rsyslog (8.20.0-0adiscon6xenial1) xenial; urgency=medium
 
   * new upstream release

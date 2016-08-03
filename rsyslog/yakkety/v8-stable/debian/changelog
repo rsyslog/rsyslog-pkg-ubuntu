@@ -1,3 +1,18 @@
+rsyslog (8.20.0-0adiscon5yakkety1) yakkety; urgency=medium
+
+  * fix dependencies
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 08:20:34 +0000
+
+rsyslog (8.20.0-0adiscon4yakkety1) yakkety; urgency=medium
+
+  * fix apparmor rules that could prevent startup
+    see also https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/48
+  * yakkety seems to no longer provide libgnutls-dev but libgnutls28-dev
+    instead. Adjusted build dependency.
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 06:38:34 +0000
+
 rsyslog (8.20.0-0adiscon3yakket1) yakkety; urgency=medium
 
   * initial release for yakkety
