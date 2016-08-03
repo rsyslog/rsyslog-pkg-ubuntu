@@ -22,14 +22,14 @@ Build-Depends: debhelper (>= 8),
                libgnutls28-dev,
                pkg-config,
                dh-apparmor,
+               dh-systemd (>= 1.4),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       libgcrypt-dev,
-	       libgt-dev,
 	       python-docutils,
-	       libsystemd-dev,
-	       libksi1-dev,
-	       liblogging-stdlog-dev,
+	       libsystemd-dev  (>= 209) [linux-any],
+	       liblogging-stdlog-dev
+#	       libksi1-dev,
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -45,12 +45,10 @@ Provides: system-log-daemon,
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          lsb-base (>= 3.2-14),
-         initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
-	 libfastjson,
-	 liblogging-stdlog1,
-	 libgt0
+	 libfastjson4,
+	 liblogging-stdlog1
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
@@ -172,7 +170,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 	 liblognorm5, 
-	 libfastjson
+	 libfastjson4
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON
@@ -239,16 +237,16 @@ Depends: ${shlibs:Depends},
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
 
-Package: rsyslog-ksi
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}), 
-         libksi1
-Suggests: gnutls-bin
-Description: KSI (Keyless Signature Infrastructure) support for rsyslog
- Allows signing log records using guardtime Keyless Signature Infrastructure. 
+#Package: rsyslog-ksi
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}), 
+#         libksi1
+#Suggests: gnutls-bin
+#Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+# Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 #Package: rsyslog-zmq
 #Architecture: any
