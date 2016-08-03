@@ -7,7 +7,9 @@ export DEBEMAIL="adiscon-pkg-maintainers@adiscon.com"
 
 # If we assume the directory is named after the package,
 PACKAGENAME=$(basename `readlink -f .`)
+#PACKAGENAME="$PACKAGENAME`cat CURR_LIBSONAME`"
 TARGZFILES=` ls -d */ | grep $PACKAGENAME`
+echo TARG: $TARGZFILES
 
 if [ `echo $TARGZFILES | wc -l` -ne 1 ]; then 
    echo only a single source tar file is supported

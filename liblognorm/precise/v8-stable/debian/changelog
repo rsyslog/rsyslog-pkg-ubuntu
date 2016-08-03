@@ -1,3 +1,15 @@
+liblognorm (2.0.1-0adiscon4precise1) precise; urgency=medium
+
+  * rebuild for fixed libfastjson 0.99.3 package 
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 11:11:24 +0000
+
+liblognorm (2.0.1-0adiscon1precise1) precise; urgency=medium
+
+  *  new upstream release
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 06:26:15 +0000
+
 liblognorm (1.1.3-0adiscon1precise1) precise; urgency=medium
 
   * New debs for liblognorm 1.1.3

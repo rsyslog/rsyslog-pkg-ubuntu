@@ -32,7 +32,6 @@ override_dh_auto_configure:
 		--enable-mmnormalize \
 		--enable-mmanon \
 		--enable-ommongodb \
-		--enable-guardtime \
 		--enable-mmfields \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
@@ -40,10 +39,11 @@ override_dh_auto_configure:
 		--enable-usertools \
 		--enable-imjournal \
 		--enable-omjournal \
-		--enable-gt-ksi \
 		--disable-testbench \
 		--with-systemdsystemunitdir=/lib/systemd/system
 
+#		 --enable-guardtime \
+#		 --enable-gt-ksi \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
 #                --enable-ommongodb \

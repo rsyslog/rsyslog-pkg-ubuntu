@@ -1,0 +1,23 @@
+libfastjson (0.99.3-0adiscon1trusty1) trusty; urgency=medium
+
+  * Package for libfastjson 0.99.3
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 26 Jul 2016 10:25:07 +0000
+
+libfastjson (0.99.2-0adiscon1trusty1) trusty; urgency=medium
+
+  * Package for libfastjson 0.99.2
+
+ -- Florian Riedl <friedl@adiscon.com>  Mon, 07 Mar 2016 16:08:18 +0000
+
+libfastjson (0.99.0.adiscon1-0adiscon4trusty1) trusty; urgency=medium
+
+  * Repacked
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Tue, 22 Dec 2015 14:46:39 +0100
+
+libfastjson (0.99.0-0adiscon2precise1) precise; urgency=medium
+
+  * Initial package release of libfastjson for Ubtuntu precise
+
+ -- Florian Riedl <friedl@adiscon.com>  Fri, 18 Dec 2015 14:20:55 +0000

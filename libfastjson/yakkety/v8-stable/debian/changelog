@@ -1,14 +1,8 @@
-libfastjson (0.99.2-0adiscon1xenial1) xenial; urgency=medium
+libfastjson (0.99.3-0adiscon3yakkety1) yakkety; urgency=medium
 
-  * Initial Xenial Package
+  * new upstream release
 
- -- Florian Riedl <friedl@adiscon.com>  Fri, 22 Apr 2016 07:31:51 +0000
-
-libfastjson (0.99.2-0adiscon1wily1) wily; urgency=medium
-
-  * Package for libfastjson 0.99.2
-
- -- Florian Riedl <friedl@adiscon.com>  Mon, 07 Mar 2016 16:09:23 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 10:33:41 +0000
 
 libfastjson (0.99.0.adiscon1-0adiscon3wily) wily; urgency=medium
 
