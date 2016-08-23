@@ -1,3 +1,9 @@
+libfastjson (0.99.4-0adiscon2yakkety1) yakkety; urgency=medium
+
+  * Package fix
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 22 Aug 2016 09:52:50 +0000
+
 libfastjson (0.99.4-0adiscon1yakkety1) yakkety; urgency=medium
 
   * new upstream release
