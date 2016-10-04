@@ -1,3 +1,24 @@
+rsyslog (8.22.0-0adiscon1precise1) precise; urgency=medium
+
+  * Packages for 8.22.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Oct 2016 15:00:24 +0000
+
+rsyslog (8.21.0-0adiscon2precise1) precise; urgency=medium
+
+  * newer libgnutls28 is not available on precise
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Aug 2016 13:30:12 +0000
+
+rsyslog (8.21.0-0adiscon1precise1) precise; urgency=medium
+
+  * new upstream release
+  * switch the newer libgnutls28
+  * disable liblogging-stdlog
+    We currently want to log by default by the syslog() API
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Aug 2016 13:24:53 +0000
+
 rsyslog (8.20.0-0adiscon5precise1) precise; urgency=medium
 
   * fix apparmor rules, which could prevent rsyslog startup

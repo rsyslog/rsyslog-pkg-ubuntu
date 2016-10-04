@@ -1,3 +1,17 @@
+rsyslog (8.22.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * New packages for 8.22.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Oct 2016 15:02:30 +0000
+
+rsyslog (8.21.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * new upstream release
+  * disable liblogging-stdlog
+    We currently want to log by default by the syslog() API
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Aug 2016 14:42:49 +0000
+
 rsyslog (8.20.0-0adiscon7xenial1) xenial; urgency=medium
 
   * fix apparmor rules which prevented rsyslog startup

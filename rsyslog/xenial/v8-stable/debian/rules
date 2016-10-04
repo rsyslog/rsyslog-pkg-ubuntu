@@ -40,6 +40,7 @@ override_dh_auto_configure:
 		--enable-imjournal \
 		--enable-omjournal \
 		--disable-testbench \
+		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
 
 #		 --enable-guardtime \
