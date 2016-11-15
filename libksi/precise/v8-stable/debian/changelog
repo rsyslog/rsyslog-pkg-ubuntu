@@ -1,3 +1,9 @@
+libksi (3.4.0.7-0adiscon1precise1) precise; urgency=medium
+
+  * Updated lib package needed for next rsyslog release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 15:57:41 +0000
+
 libksi (3.4.0.5-0adiscon1precise1ubuntu1) precise; urgency=medium
 
   * Updated lib package needed for next rsyslog release

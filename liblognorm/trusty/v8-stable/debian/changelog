@@ -1,3 +1,9 @@
+liblognorm (2.0.2-1adiscon3trusty1) trusty; urgency=medium
+
+  * new upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 16:08:20 +0000
+
 liblognorm (2.0.1-1adiscon3trusty1) trusty; urgency=medium
 
   * rebuild due to libfastjson packaging issues (now resolved)

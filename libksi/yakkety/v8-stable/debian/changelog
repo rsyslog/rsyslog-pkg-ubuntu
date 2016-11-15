@@ -1,3 +1,9 @@
+libksi (3.4.0.7-0adiscon1yakkety1) yakkety; urgency=medium
+
+  * Initial package for Yakkety needed for next rsyslog release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 16:02:53 +0000
+
 libksi (3.4.0.5-0adiscon1xenial1) xenial; urgency=medium
 
   * Initial package for Xenial

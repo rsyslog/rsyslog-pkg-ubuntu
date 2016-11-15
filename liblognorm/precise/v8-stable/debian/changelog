@@ -1,3 +1,9 @@
+liblognorm (2.0.2-0adiscon4precise1) precise; urgency=medium
+
+  * new upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 16:07:28 +0000
+
 liblognorm (2.0.1-0adiscon4precise1) precise; urgency=medium
 
   * rebuild for fixed libfastjson 0.99.3 package 
