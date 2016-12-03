@@ -1,0 +1,31 @@
+Source: libfastjson
+Priority: extra
+Maintainer: Florian Riedl <friedl@adiscon.com>
+Build-Depends: cdbs, debhelper (>= 7), autotools-dev, pkg-config, dh-apparmor, dh-autoreconf
+Standards-Version: 3.9.2
+Section: libs
+Homepage: https://github.com/rsyslog/libfastjson
+#Vcs-Git: git://git.debian.org/collab-maint/libestr.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/libestr.git;a=summary
+
+Package: libfastjson-dev
+Section: libdevel
+Architecture: any
+Depends: libfastjson (= ${binary:Version}), ${misc:Depends}
+Replaces: libfastjson-dev  
+Breaks: libfastjson-dev 
+Description: Development files for the 'libfastjson' package
+ The libfastjson-dev package contains the header files and libraries 
+ needed to develop applications using libksi.
+ .
+ This package contains the development files.
+
+Package: libfastjson
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: LibFastJSON
+ The 'libfastjson' library contains the 
+ a modified json-c library with better performance
+ .
+ This package contains the shared library.

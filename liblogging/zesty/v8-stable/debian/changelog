@@ -1,0 +1,5 @@
+liblogging (1.0.5-0adiscon1yakkety1) yakkety; urgency=medium
+
+  * Initial release for yakkety
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 08:23:16 +0000

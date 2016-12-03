@@ -1,0 +1,5 @@
+libestr (0.1.10-0adiscon1yakkety1) yakkety; urgency=medium
+
+  * initial release for Yakkety
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 08:27:44 +0000
