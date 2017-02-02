@@ -1,3 +1,9 @@
+rsyslog (8.24.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Added separate package for new module mmrm1stspace
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Feb 2017 16:43:15 +0000
+
 rsyslog (8.24.0-0adiscon1xenial1) xenial; urgency=medium
 
   * Packages for 8.24.0

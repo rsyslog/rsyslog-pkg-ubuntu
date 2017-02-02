@@ -258,7 +258,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 Description: The mmrm1stspace module permits to strip the leading space from
-the msg property.
+ the msg property.
 
 #Package: rsyslog-zmq
 #Architecture: any
