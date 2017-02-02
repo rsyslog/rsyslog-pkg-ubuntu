@@ -44,6 +44,7 @@ override_dh_auto_configure:
 		--enable-omudpspoof \
 		--enable-omkafka \
 		--enable-gt-ksi \
+		--enable-mmrm1stspace \
                 --disable-testbench \
                 --disable-liblogging-stdlog \
                 --with-systemdsystemunitdir=/lib/systemd/system

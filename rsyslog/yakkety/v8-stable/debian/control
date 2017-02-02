@@ -57,6 +57,9 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+          rsyslog-gnutls,
+	  rsyslog-udpspoof,
+	  rsyslog-mmrm1stspace,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -247,6 +250,15 @@ Description: rsyslog utilities
 #Suggests: gnutls-bin
 #Description: KSI (Keyless Signature Infrastructure) support for rsyslog
 # Allows signing log records using guardtime Keyless Signature Infrastructure. 
+
+Package: rsyslog-mmrm1stspace
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: The mmrm1stspace module permits to strip the leading space from
+the msg property.
 
 #Package: rsyslog-zmq
 #Architecture: any
