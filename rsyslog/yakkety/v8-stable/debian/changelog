@@ -1,3 +1,9 @@
+rsyslog (8.25.0-0adiscon1yakkety1) yakkety; urgency=medium
+
+  * Packages for 8.25.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 21 Feb 2017 16:01:17 +0000
+
 rsyslog (8.24.0-0adiscon2yakkety1) yakkety; urgency=medium
 
   * Added separate package for new module mmrm1stspace
