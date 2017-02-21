@@ -1,3 +1,9 @@
+librelp (1.2.13-0adiscon1yakkety1) yakkety; urgency=medium
+
+  * New upstream release for 1.2.13
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 21 Feb 2017 15:02:01 +0000
+
 librelp (1.2.12-0adiscon2yakkety1) yakkety; urgency=medium
 
   * Initial package for Yakkety
