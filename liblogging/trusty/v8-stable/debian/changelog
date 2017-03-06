@@ -1,3 +1,9 @@
+liblogging (1.0.6-0adiscon1trusty1) trusty; urgency=medium
+
+  * New debs for 1.0.6
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Mar 2017 11:43:17 +0000
+
 liblogging (1.0.5-0adiscon1trusty1) trusty; urgency=medium
 
   * New debs
