@@ -1,3 +1,9 @@
+liblognorm (2.0.3-0adiscon1zesty1) zesty; urgency=medium
+
+  * new upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 22 Mar 2017 11:26:51 +0000
+
 liblognorm (2.0.2-0adiscon1yakkety1) yakkety; urgency=medium
 
   * new upstream release

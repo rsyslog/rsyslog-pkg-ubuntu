@@ -1,3 +1,9 @@
+rsyslog (8.26.0-0adiscon1zesty1) zesty; urgency=medium
+
+  * Packages for 8.26.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Apr 2017 13:10:26 +0000
+
 rsyslog (8.25.0-0adiscon1zesty1) zesty; urgency=medium
 
   * Packages for 8.25.0
