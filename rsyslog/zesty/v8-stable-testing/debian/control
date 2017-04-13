@@ -29,6 +29,7 @@ Build-Depends: debhelper (>= 8),
 	       python-docutils,
 	       libsystemd-dev,
 	       libksi1-dev,
+	       librdkafka-dev,
 	       liblogging-stdlog-dev,
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -59,6 +60,8 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+	  rsyslog-kafka,
+	  rsyslog-pmnull,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -249,6 +252,23 @@ Depends: ${shlibs:Depends},
 Suggests: gnutls-bin
 Description: KSI (Keyless Signature Infrastructure) support for rsyslog
  Allows signing log records using guardtime Keyless Signature Infrastructure. 
+
+Package: rsyslog-kafka
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         librdkafka-dev
+Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
+
+Package: rsyslog-pmnull
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: Parser module which populates property values with a NULL value. 
 
 #Package: rsyslog-zmq
 #Architecture: any

@@ -39,6 +39,8 @@ override_dh_auto_configure:
 		--enable-usertools \
 		--enable-imjournal \
 		--enable-omjournal \
+		--enable-omkafka \
+		--enable-pmnull \
 		--disable-testbench \
 		--with-systemdsystemunitdir=/lib/systemd/system
 

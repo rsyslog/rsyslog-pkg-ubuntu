@@ -63,6 +63,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-gnutls,
 	  rsyslog-udpspoof,
 	  rsyslog-kafka,
+	  rsyslog-pmnull,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -293,6 +294,14 @@ Depends: ${shlibs:Depends},
 Suggests: gnutls-bin
 Description: KSI (Keyless Signature Infrastructure) support for rsyslog
  Allows signing log records using guardtime Keyless Signature Infrastructure. 
+
+Package: rsyslog-pmnull
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Parser module which populates property values with a NULL value. 
 
 #Package: rsyslog-zmq
 #Architecture: any

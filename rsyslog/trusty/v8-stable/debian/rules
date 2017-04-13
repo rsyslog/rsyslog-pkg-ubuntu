@@ -43,6 +43,7 @@ override_dh_auto_configure:
                 --enable-usertools \
 		--enable-omudpspoof \
 		--enable-omkafka \
+		--enable-pmnull \
 		--enable-gt-ksi \
 		--enable-mmrm1stspace \
                 --disable-testbench \
