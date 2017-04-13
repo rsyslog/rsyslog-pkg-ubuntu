@@ -1,3 +1,9 @@
+rsyslog (8.26.0-0adiscon2yakkety1) yakkety; urgency=medium
+
+  * Added modules pmnull and omkafka to the packages
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 13 Apr 2017 14:20:07 +0000
+
 rsyslog (8.26.0-0adiscon1yakkety1) yakkety; urgency=medium
 
   * Packages for 8.26.0

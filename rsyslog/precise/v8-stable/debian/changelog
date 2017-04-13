@@ -1,3 +1,9 @@
+rsyslog (8.26.0-0adiscon2precise1) precise; urgency=medium
+
+  * Added module pmnull to the packages
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 13 Apr 2017 14:06:18 +0000
+
 rsyslog (8.26.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.26.0
