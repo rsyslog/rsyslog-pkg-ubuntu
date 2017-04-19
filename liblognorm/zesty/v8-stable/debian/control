@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 8),
     libxml2-dev,
     libestr-dev,
     libfastjson-dev (>> 0.99.2),
-    hardening-wrapper
+    dpkg-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://www.liblognorm.com/
