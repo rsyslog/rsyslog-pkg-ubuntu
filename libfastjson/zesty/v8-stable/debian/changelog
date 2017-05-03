@@ -1,29 +1,6 @@
-libfastjson (0.99.4-0adiscon2yakkety1) yakkety; urgency=medium
+libfastjson (0.99.5-0adiscon1zesty1) zesty; urgency=medium
 
-  * Package fix
+  * Initial package for zesty
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 22 Aug 2016 09:52:50 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 May 2017 14:58:45 +0000
 
-libfastjson (0.99.4-0adiscon1yakkety1) yakkety; urgency=medium
-
-  * new upstream release
-
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 09:20:53 +0000
-
-libfastjson (0.99.3-0adiscon3yakkety1) yakkety; urgency=medium
-
-  * new upstream release
-
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 10:33:41 +0000
-
-libfastjson (0.99.0.adiscon1-0adiscon3wily) wily; urgency=medium
-
-  * Repacked
-
- -- Andre Lorbach <alorbach@adiscon.com>  Tue, 22 Dec 2015 14:54:25 +0100
-
-libfastjson (0.99.0-0adiscon2precise1) precise; urgency=medium
-
-  * Initial package release of libfastjson for Ubtuntu precise
-
- -- Florian Riedl <friedl@adiscon.com>  Fri, 18 Dec 2015 14:20:55 +0000
