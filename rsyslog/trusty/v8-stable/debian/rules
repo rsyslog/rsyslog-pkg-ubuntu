@@ -42,7 +42,7 @@ override_dh_auto_configure:
 		--enable-mmutf8fix \
                 --enable-usertools \
 		--enable-omudpspoof \
-		--enable-omkafka \
+#		--enable-omkafka \
 		--enable-pmnull \
 		--enable-gt-ksi \
 		--enable-mmrm1stspace \
