@@ -42,7 +42,6 @@ override_dh_auto_configure:
 		--enable-mmutf8fix \
                 --enable-usertools \
 		--enable-omudpspoof \
-#		--enable-omkafka \
 		--enable-pmnull \
 		--enable-gt-ksi \
 		--enable-mmrm1stspace \
@@ -50,7 +49,9 @@ override_dh_auto_configure:
                 --disable-liblogging-stdlog \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
-# unstable	                --enable-jemalloc \
+# unstable	 
+#		--enable-omkafka \               
+#		 --enable-jemalloc \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
 #                --enable-ommongodb \
