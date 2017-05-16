@@ -1,3 +1,9 @@
+rsyslog (8.27.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Fixed broken configure rules
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:49:43 +0000
+
 rsyslog (8.27.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.27.0

@@ -1,3 +1,9 @@
+rsyslog (8.27.0-0adiscon2yakkety1) yakkety; urgency=medium
+
+  * Fixed disabled rules
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:57:07 +0000
+
 rsyslog (8.27.0-0adiscon1yakkety1) yakkety; urgency=medium
 
   * Packages for 8.27.0
