@@ -45,12 +45,13 @@ override_dh_auto_configure:
 		--enable-pmnull \
 		--enable-gt-ksi \
 		--enable-mmrm1stspace \
+		--enable-omkafka \ 
                 --disable-testbench \
                 --disable-liblogging-stdlog \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
 # unstable	 
-#		--enable-omkafka \               
+#		              
 #		 --enable-jemalloc \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
