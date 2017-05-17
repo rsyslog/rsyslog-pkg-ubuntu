@@ -1,3 +1,9 @@
+rsyslog (8.27.0-0adiscon4yakkety1) yakkety; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 14:40:57 +0000
+
 rsyslog (8.27.0-0adiscon3yakkety1) yakkety; urgency=medium
 
   * Re-enabled omkafka

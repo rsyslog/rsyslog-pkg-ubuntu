@@ -1,3 +1,15 @@
+rsyslog (8.27.0-0adiscon5trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 15:36:29 +0000
+
+rsyslog (8.27.0-0adiscon4trusty1) trusty; urgency=medium
+
+  * Repackage
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 13:43:17 +0000
+
 rsyslog (8.27.0-0adiscon3trusty1) trusty; urgency=medium
 
   * Re-enabled omkafka module
