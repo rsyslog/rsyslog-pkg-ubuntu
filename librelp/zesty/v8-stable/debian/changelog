@@ -1,3 +1,9 @@
+librelp (1.2.14-0adiscon1zesty1) zesty; urgency=medium
+
+  * New upstream release for 1.2.14
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 29 May 2017 14:13:48 +0000
+
 librelp (1.2.13-0adiscon2zesty1) zesty; urgency=medium
 
   * Fixed libgnutls-dev dependency
