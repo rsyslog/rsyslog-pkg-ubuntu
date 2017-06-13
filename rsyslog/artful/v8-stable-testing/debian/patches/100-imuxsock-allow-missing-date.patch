@@ -1,0 +1,34 @@
+From: Rainer Gerhards <rgerhards@adiscon.com>
+Date: Tue, 20 Dec 2011 15:39:39 +0000 (+0100)
+Subject: bugfix: imuxsock did truncate part of received message if it did not contain a proper... 
+X-Git-Url: http://git.adiscon.com/?p=rsyslog.git;a=commitdiff_plain;h=f112b51b8d6c358b87ac608112d393adb047ea0f
+
+bugfix: imuxsock did truncate part of received message if it did not contain a proper date.
+
+The truncation occured because we removed that part of the messages
+that was expected to be the date.
+closes: http://bugzilla.adiscon.com/show_bug.cgi?id=295
+
+Origin: upstream, http://git.adiscon.com/?p=rsyslog.git;a=commitdiff_plain;h=f112b51b8d6c358b87ac608112d393adb047ea0f
+Bug: http://bugzilla.adiscon.com/show_bug.cgi?id=295
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/rsyslog/+bug/905419
+---
+
+diff --git a/plugins/imuxsock/imuxsock.c b/plugins/imuxsock/imuxsock.c
+index 2697c48..feddb20 100644
+--- a/plugins/imuxsock/imuxsock.c
++++ b/plugins/imuxsock/imuxsock.c
+@@ -565,8 +565,11 @@ SubmitMsg(uchar *pRcv, int lenRcv, lstn_t *pLstn, struct ucred *cred)
+ 	parse++; lenMsg--; /* '>' */
+ 
+ 	if((pLstn->flags & IGNDATE)) {
+-		parse += 16; /* just skip timestamp */
+-		lenMsg -= 16;
++		/* in this case, we still need to find out if we have a valid
++		 * datestamp or not .. and advance the parse pointer accordingly.
++		 */
++		struct syslogTime dummy;
++		datetime.ParseTIMESTAMP3164(&dummy, &parse, &lenMsg);
+ 	} else {
+ 		if(datetime.ParseTIMESTAMP3164(&(pMsg->tTIMESTAMP), &parse, &lenMsg) != RS_RET_OK) {
+ 			DBGPRINTF("we have a problem, invalid timestamp in msg!\n");

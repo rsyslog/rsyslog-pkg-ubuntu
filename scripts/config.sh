@@ -1,4 +1,4 @@
-PLATFORM="precise trusty xenial yakkety zesty"
+PLATFORM="precise trusty xenial yakkety zesty artful"
 ARCHTECT="amd64 i386"
 BRANCHES="v8-stable v8-stable-testing"
 # GPG KEY
