@@ -1,3 +1,15 @@
+liblognorm (2.0.3-0adiscon2zesty1) zesty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Jul 2017 15:18:20 +0000
+
+liblognorm (2.0.3-0adiscon1zesty1) zesty; urgency=medium
+
+  * Dependency build for testing
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Jul 2017 14:25:54 +0000
+
 liblognorm (1.1.4-0adiscon1xenial1) xenial; urgency=medium
 
   * Testing

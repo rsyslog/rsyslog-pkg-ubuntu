@@ -1,3 +1,9 @@
+librelp (1.2.14-0adiscon2zesty1) zesty; urgency=medium
+
+  * Testing Repo Dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Jul 2017 14:29:28 +0000
+
 librelp (1.2.14-0adiscon1zesty1) zesty; urgency=medium
 
   * New upstream release for 1.2.14
