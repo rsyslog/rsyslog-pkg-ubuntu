@@ -28,7 +28,9 @@ Build-Depends: debhelper (>= 8),
 	       libgcrypt-dev,
 	       python-docutils,
 	       libsystemd-dev  (>= 209) [linux-any],
-	       adisconhelper-lrdk-dev,
+	       librdkafka-dev,
+	       liblz4-dev,
+	       libsasl2-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
 Standards-Version: 3.9.2
