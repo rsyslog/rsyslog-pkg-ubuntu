@@ -28,7 +28,7 @@ Build-Depends: debhelper (>= 8),
 	       libgcrypt-dev,
 	       python-docutils,
 	       libsystemd-dev  (>= 209) [linux-any],
-	       librdkafka-dev,
+	       adisconhelper-lrdk-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
 Standards-Version: 3.9.2
@@ -269,7 +269,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 librdkafka-dev,
+	 adisconhelper-lrdk-dev,
 	 lz4-dev
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
