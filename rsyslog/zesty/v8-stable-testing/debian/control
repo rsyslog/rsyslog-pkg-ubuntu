@@ -271,9 +271,14 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
+<<<<<<< HEAD
 	 librdkafka-dev,
 	 liblz4,
 	 cyrus-sasl2
+=======
+	 adisconhelper-lrdk-dev,
+	 lz4-dev
+>>>>>>> 474fae90881173a3d526e6a4c7c44d1697d4a796
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-pmnull
