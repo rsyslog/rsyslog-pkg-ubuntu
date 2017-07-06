@@ -1,5 +1,0 @@
-adisconbuild-librdkafka (0.9.5-1) wheezy; urgency=low
-
-  * Initial librdkafka package for rsyslog package building
-
- -- Florian Riedl <friedl@adiscon.com>  Tue, 27 Jun 2017 15:23:32 +0200
