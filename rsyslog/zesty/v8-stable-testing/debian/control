@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 8),
 	       libmongo-client-dev (>= 0.1.4),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
-               liblognorm-dev (>= 2.0.3),
+               liblognorm-dev (>= 1.0.0),
 	       libfastjson-dev,
 	       libmongo-client-dev, 
 	       libglib2.0-dev,
@@ -28,9 +28,10 @@ Build-Depends: debhelper (>= 8),
 	       libgcrypt-dev,
 	       python-docutils,
 	       libsystemd-dev  (>= 209) [linux-any],
-	       adisconhelper-lrdk-dev,
+	       adisconhelperlrdk-dev,
 	       liblz4-dev,
 	       libsasl2-dev,
+	       libssl-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
 Standards-Version: 3.9.2
@@ -240,7 +241,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-         rsyslog-ksi, 
+#         rsyslog-ksi, 
 	 rsyslog-gnutls
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
@@ -272,7 +273,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 	 liblz4,
-	 cyrus-sasl2
+ 	 libsasl2-2	
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-pmnull

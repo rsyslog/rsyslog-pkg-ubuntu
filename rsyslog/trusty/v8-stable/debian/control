@@ -24,12 +24,12 @@ Build-Depends: debhelper (>= 8),
                dh-apparmor,
 	       libcurl4-gnutls-dev,
 	       bison,
-	       libgt-dev,
 	       python-docutils,
 	       liblogging-stdlog-dev,
 	       libnet-dev,
-	       librdkafka-dev,
-	       libksi1-dev
+#	       librdkafka-dev,
+#	       libgt-dev,
+#	       libksi1-dev
 #	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -51,7 +51,7 @@ Depends: ${shlibs:Depends},
          ucf,
 	 libfastjson4,
 	 liblogging-stdlog1,
-	 libgt0
+#	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
@@ -62,9 +62,8 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-imptcp,
           rsyslog-gnutls,
 	  rsyslog-udpspoof,
-	  rsyslog-kafka,
 	  rsyslog-mmrm1stspace,
-	  rsyslog-kafka,
+#	  rsyslog-kafka,
 	  rsyslog-pmnull,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
@@ -266,14 +265,14 @@ Depends: ${shlibs:Depends},
          libnet-dev
 Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
 
-Package: rsyslog-kafka
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-         librdkafka-dev
-Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
+#Package: rsyslog-kafka
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}),
+#         librdkafka-dev
+#Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-utils
 Architecture: any
@@ -281,21 +280,21 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-         rsyslog-ksi, 
 	 rsyslog-gnutls
+#         rsyslog-ksi, 
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
 
-Package: rsyslog-ksi
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}), 
-         libksi1
-Suggests: gnutls-bin
-Description: KSI (Keyless Signature Infrastructure) support for rsyslog
- Allows signing log records using guardtime Keyless Signature Infrastructure. 
+#Package: rsyslog-ksi
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}), 
+#         libksi1
+#Suggests: gnutls-bin
+#Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+# Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 Package: rsyslog-mmrm1stspace
 Architecture: any

@@ -40,12 +40,12 @@ override_dh_auto_configure:
 		--enable-usertools \
 		--enable-imjournal \
 		--enable-omjournal \
-		--enable-gt-ksi \
 		--enable-omkafka \
 		--enable-pmnull \
 		--disable-testbench \
 		--with-systemdsystemunitdir=/lib/systemd/system
 
+#		--enable-gt-ksi \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
 #                --enable-ommongodb \

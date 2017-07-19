@@ -1,38 +1,20 @@
-rsyslog (8.28.0-0adiscon6zesty1) zesty; urgency=medium
+rsyslog (8.28.0-0adiscon1zesty1) zesty; urgency=medium
 
-  * Repack for dependency
+  * Repack for Testing
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 05 Jul 2017 14:25:15 +0000
-
-rsyslog (8.28.0-0adiscon5zesty1) zesty; urgency=medium
-
-  * Repack for Dependency
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 05 Jul 2017 14:19:58 +0000
-
-rsyslog (8.28.0-0adiscon4zesty1) zesty; urgency=medium
-
-  * Repack for Dependency
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 05 Jul 2017 14:09:44 +0000
-
-rsyslog (8.28.0-0adiscon3zesty1) zesty; urgency=medium
-
-  * Repack
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 05 Jul 2017 13:22:47 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 08:18:27 +0000
 
 rsyslog (8.28.0-0adiscon2zesty1) zesty; urgency=medium
 
-  * Repack
+  * Enabled imkafka/omkafka
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Jul 2017 15:46:19 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 08:07:15 +0000
 
 rsyslog (8.28.0-0adiscon1zesty1) zesty; urgency=medium
 
-  * Kafka test package for 8.28.0
+  * package for 8.28.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Jul 2017 14:17:14 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 12:31:57 +0000
 
 rsyslog (8.27.0-0adiscon4zesty1) zesty; urgency=medium
 

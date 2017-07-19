@@ -1,5 +1,17 @@
-adisconhelperlrdk (0.9.5-0adiscon1zesty1) zesty; urgency=low
+adisconhelperlrdk (0.9.5-0adiscon3zesty1) zesty; urgency=medium
 
   * Adiscon Helper Package
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 07 Jul 2017 15:23:32 +0200
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 06 Jul 2017 15:03:58 +0000
+
+adisconhelperlrdk (0.9.5-0adiscon2zesty1) zesty; urgency=medium
+
+  * Adiscon Helper Package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 06 Jul 2017 14:41:12 +0000
+
+adisconhelperlrdk (0.9.5-0adiscon1zesty1) zesty; urgency=medium
+
+  * Adiscon Helper Package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 06 Jul 2017 14:32:02 +0000

@@ -1,5 +1,5 @@
-adisconbuild-librdkafka (0.9.5-1) wheezy; urgency=low
+adisconhelperlrdk (0.9.5-0adiscon1zesty1) zesty; urgency=medium
 
-  * Initial librdkafka package for rsyslog package building
+  * Adiscon Helper Package
 
- -- Florian Riedl <friedl@adiscon.com>  Tue, 27 Jun 2017 15:23:32 +0200
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 14:26:35 +0000

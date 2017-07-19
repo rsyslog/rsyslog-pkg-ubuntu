@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8),
     python-sphinx,
     libxml2-dev,
     libestr-dev,
-    libfastjson-dev (>> 0.99.2),
+    libfastjson-dev (>= 0.99.5),
     dpkg-dev
 Standards-Version: 3.9.2
 Section: libs
