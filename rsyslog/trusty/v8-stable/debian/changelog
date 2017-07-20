@@ -1,3 +1,33 @@
+rsyslog (8.28.0-0adiscon11trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 09:15:53 +0000
+
+rsyslog (8.28.0-0adiscon10trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 09:00:40 +0000
+
+rsyslog (8.28.0-0adiscon9trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:41:32 +0000
+
+rsyslog (8.28.0-0adiscon8trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:32:01 +0000
+
+rsyslog (8.28.0-0adiscon7trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:07:54 +0000
+
 rsyslog (8.28.0-0adiscon6trusty1) trusty; urgency=medium
 
   * Repack

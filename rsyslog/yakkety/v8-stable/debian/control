@@ -272,7 +272,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 liblz4,
+	 liblz4-1,
 	 libsasl2-2
 Description: The omkafka plug-in implements an Apache Kafka producer, 
  permitting rsyslog to write data to Kafka.
