@@ -39,9 +39,13 @@ override_dh_auto_configure:
 		--enable-usertools \
 		--enable-imjournal \
 		--enable-omjournal \
+		--enable-mmrm1stspace \
+		--enable-pmnull \
 		--disable-testbench \
+		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
 
+#		--enable-omkafka \
 #		 --enable-guardtime \
 #		 --enable-gt-ksi \
 #                --enable-gssapi-krb5 \

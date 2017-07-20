@@ -24,13 +24,14 @@ Build-Depends: debhelper (>= 8),
                dh-apparmor,
 	       libcurl4-gnutls-dev,
 	       bison,
-	       libgt-dev,
 	       python-docutils,
-	       liblogging-stdlog-dev,
+	       adisconhelperlrdk-dev,
+	       liblz4-dev,
+	       libsasl2-dev,
+	       libssl-dev,
 	       libnet-dev,
-	       librdkafka-dev,
-	       libksi1-dev
-#	       libjemalloc-dev
+	       liblogging-stdlog-dev
+#	       libksi1-dev,
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -46,12 +47,10 @@ Provides: system-log-daemon,
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          lsb-base (>= 3.2-14),
-         initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
 	 libfastjson4,
-	 liblogging-stdlog1,
-	 libgt0
+	 liblogging-stdlog1
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
@@ -62,6 +61,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-imptcp,
           rsyslog-gnutls,
 	  rsyslog-udpspoof,
+	  rsyslog-mmrm1stspace,
 	  rsyslog-kafka,
 	  rsyslog-pmnull,
           apparmor (>= 2.3)
@@ -114,7 +114,6 @@ Package: rsyslog-pgsql
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
-         ${misc:Depends},
          rsyslog (= ${binary:Version}),
          dbconfig-common,
          ucf
@@ -225,17 +224,6 @@ Depends: ${shlibs:Depends},
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
-Package: rsyslog-mmutf8fix
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-Description: The mmutf8fix module permits to fix invalid UTF-8 sequences. Most often, 
- such invalid sequences result from syslog sources sending in non-UTF character sets, 
- e.g. ISO 8859. As syslog does not have a way to convey the character set information, 
- these sequences are not properly handled.
-
 Package: rsyslog-pmciscoios
 Architecture: any
 Priority: extra
@@ -264,36 +252,46 @@ Depends: ${shlibs:Depends},
          libnet-dev
 Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
 
-Package: rsyslog-kafka
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-         librdkafka-dev
-Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
-
 Package: rsyslog-utils
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-         rsyslog-ksi, 
+#         rsyslog-ksi, 
 	 rsyslog-gnutls
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
 
-Package: rsyslog-ksi
+#Package: rsyslog-ksi
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}), 
+#         libksi1
+#Suggests: gnutls-bin
+#Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+# Allows signing log records using guardtime Keyless Signature Infrastructure. 
+
+Package: rsyslog-mmrm1stspace
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         rsyslog (= ${binary:Version}), 
-         libksi1
-Suggests: gnutls-bin
-Description: KSI (Keyless Signature Infrastructure) support for rsyslog
- Allows signing log records using guardtime Keyless Signature Infrastructure. 
+         rsyslog (= ${binary:Version}),
+Description: The mmrm1stspace module permits to strip the leading space from
+ the msg property.
+
+Package: rsyslog-kafka
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+	 liblz4-1,
+ 	 libsasl2-2	
+Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-pmnull
 Architecture: any

@@ -1,3 +1,176 @@
+rsyslog (8.28.0-0adiscon11trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 09:15:53 +0000
+
+rsyslog (8.28.0-0adiscon10trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 09:00:40 +0000
+
+rsyslog (8.28.0-0adiscon9trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:41:32 +0000
+
+rsyslog (8.28.0-0adiscon8trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:32:01 +0000
+
+rsyslog (8.28.0-0adiscon7trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:07:54 +0000
+
+rsyslog (8.28.0-0adiscon6trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 13:05:59 +0000
+
+rsyslog (8.28.0-0adiscon5trusty1) trusty; urgency=medium
+
+  * Enabled omkafka/imkafka build
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 12:46:49 +0000
+
+rsyslog (8.28.0-0adiscon4trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 11:02:07 +0000
+
+rsyslog (8.28.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 10:48:42 +0000
+
+rsyslog (8.28.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Disabled Kafka
+  * Disabled KSI
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 10:26:21 +0000
+
+rsyslog (8.28.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.28.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 10:11:54 +0000
+
+rsyslog (8.27.0-0adiscon5trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 15:36:29 +0000
+
+rsyslog (8.27.0-0adiscon4trusty1) trusty; urgency=medium
+
+  * Repackage
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 13:43:17 +0000
+
+rsyslog (8.27.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Re-enabled omkafka module
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 10:19:57 +0000
+
+rsyslog (8.27.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Fixed broken configure rules
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:49:43 +0000
+
+rsyslog (8.27.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.27.0
+  * Removed Kafka package for re-work
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:37:34 +0000
+
+rsyslog (8.26.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Added module pmnull to the packages
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 13 Apr 2017 14:12:38 +0000
+
+rsyslog (8.26.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.26.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Apr 2017 13:07:45 +0000
+
+rsyslog (8.25.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.25.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 21 Feb 2017 15:59:40 +0000
+
+rsyslog (8.24.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.24.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 10 Jan 2017 13:28:48 +0000
+
+rsyslog (8.23.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.23.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 16:50:14 +0000
+
+rsyslog (8.22.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.22.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Oct 2016 15:01:22 +0000
+
+rsyslog (8.21.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * new upstream release
+  * disable liblogging-stdlog
+    We currently want to log by default by the syslog() API
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Aug 2016 13:13:59 +0000
+
+rsyslog (8.20.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * fix apparmor rules, which could prevent rsyslog startup
+    see also https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/48 
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 06:49:55 +0000
+
+rsyslog (8.20.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * rebuild for libfastjson 0.99.3, liblognorm 2.0.1
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 10:21:33 +0000
+
+rsyslog (8.20.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.20.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 Jul 2016 14:37:15 +0000
+
+rsyslog (8.19.0-0adiscon4trusty1) trusty; urgency=medium
+
+  * Packages for 8.19.0
+
+-- Florian Riedl <adiscon-pkg-maintainers@adiscon.com> Tue, 31 May 2016 13:38:12 +0000
+
+rsyslog (8.18.0-0adisconatrusty1) trusty; urgency=medium
+
+  * Packages for 8.18.0
+
+ -- Florian Riedl <friedl@adiscon.com>  Tue, 19 Apr 2016 07:58:17 +0000
+
 rsyslog (8.17.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Re-Pack for 8.17.0

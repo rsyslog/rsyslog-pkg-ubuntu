@@ -34,7 +34,6 @@ override_dh_auto_configure:
 		--enable-mmnormalize \
 		--enable-mmanon \
 		--enable-ommongodb \
-		--enable-guardtime \
 		--enable-mmfields \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
@@ -42,13 +41,20 @@ override_dh_auto_configure:
 		--enable-mmutf8fix \
                 --enable-usertools \
 		--enable-omudpspoof \
-		--enable-omkafka \
 		--enable-pmnull \
-		--enable-gt-ksi \
+		--enable-mmrm1stspace \
+		--enable-omkafka \
+		--enable-imkafka \
+		--enable-kafka-static \
                 --disable-testbench \
+                --disable-liblogging-stdlog \
                 --with-systemdsystemunitdir=/lib/systemd/system
 
-# unstable	                --enable-jemalloc \
+# unstable	
+#		--enable-guardtime \
+#		--enable-gt-ksi \ 
+#		              
+#		 --enable-jemalloc \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
 #                --enable-ommongodb \

@@ -28,7 +28,10 @@ Build-Depends: debhelper (>= 8),
 	       libgcrypt-dev,
 	       python-docutils,
 	       libsystemd-dev  (>= 209) [linux-any],
-	       librdkafka-dev,
+	       adisconhelperlrdk-dev,
+	       liblz4-dev,
+	       libsasl2-dev,
+	       libssl-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
 Standards-Version: 3.9.2
@@ -58,6 +61,9 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+          rsyslog-gnutls,
+	  rsyslog-udpspoof,
+	  rsyslog-mmrm1stspace,
 	  rsyslog-kafka,
 	  rsyslog-pmnull,
           apparmor (>= 2.3)
@@ -235,27 +241,10 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-         rsyslog-ksi, 
+#         rsyslog-ksi, 
 	 rsyslog-gnutls
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
-
-Package: rsyslog-kafka
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-         librdkafka-dev
-Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
-
-Package: rsyslog-pmnull
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version})
-Description: Parser module which populates property values with a NULL value. 
 
 #Package: rsyslog-ksi
 #Architecture: any
@@ -267,6 +256,33 @@ Description: Parser module which populates property values with a NULL value.
 #Suggests: gnutls-bin
 #Description: KSI (Keyless Signature Infrastructure) support for rsyslog
 # Allows signing log records using guardtime Keyless Signature Infrastructure. 
+
+Package: rsyslog-mmrm1stspace
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: The mmrm1stspace module permits to strip the leading space from
+ the msg property.
+
+Package: rsyslog-kafka
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+	 liblz4-1,
+ 	 libsasl2-2	
+Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
+
+Package: rsyslog-pmnull
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Parser module which populates property values with a NULL value. 
 
 #Package: rsyslog-zmq
 #Architecture: any
