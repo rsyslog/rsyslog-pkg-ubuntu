@@ -1,3 +1,9 @@
+rsyslog (8.29.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.29.0
+ 
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 09 Aug 2017 08:48:12 +0000
+
 rsyslog (8.28.0-0adiscon11trusty1) trusty; urgency=medium
 
   * Repack
