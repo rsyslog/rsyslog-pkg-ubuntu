@@ -62,6 +62,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-gnutls,
 	  rsyslog-udpspoof,
 	  rsyslog-mmrm1stspace,
+	  rsyslog-mmutf8fix,
 	  rsyslog-kafka,
 	  rsyslog-pmnull,
           apparmor (>= 2.3)
@@ -223,6 +224,14 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
+
+Package: rsyslog-mmutf8fix
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: The mmutf8fix module permits to fix invalid UTF-8 sequences. Most often, such invalid sequences result from syslog sources sending in non-UTF character sets, e.g. ISO 8859. As syslog does not have a way to convey the character set information, these sequences are not properly handled.
 
 Package: rsyslog-pmciscoios
 Architecture: any

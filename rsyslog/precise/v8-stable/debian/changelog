@@ -1,3 +1,27 @@
+rsyslog (8.29.0-0adiscon5precise1) precise; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 21 Aug 2017 13:26:00 +0000
+
+rsyslog (8.29.0-0adiscon4precise1) precise; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 21 Aug 2017 13:12:07 +0000
+
+rsyslog (8.29.0-0adiscon3precise1) precise; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 21 Aug 2017 12:55:53 +0000
+
+rsyslog (8.29.0-0adiscon2precise1) precise; urgency=medium
+
+  * Repackaged and disabled everything related to KSI
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 21 Aug 2017 12:47:53 +0000
+
 rsyslog (8.29.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.29.0

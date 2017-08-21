@@ -34,7 +34,6 @@ override_dh_auto_configure:
 		--enable-mmnormalize \
 		--enable-mmanon \
 		--enable-ommongodb \
-		--enable-guardtime \
 		--enable-mmfields \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
@@ -42,7 +41,6 @@ override_dh_auto_configure:
 		--enable-mmutf8fix \
                 --enable-usertools \
 		--enable-omudpspoof \
-		--enable-gt-ksi \
 		--enable-mmrm1stspace \
 		--enable-pmnull \
 		--disable-testbench \
@@ -50,7 +48,9 @@ override_dh_auto_configure:
                 --with-systemdsystemunitdir=/lib/systemd/system
 
 # unstable	                --enable-jemalloc \
-#                --enable-gssapi-krb5 \
+#               
+#		--enable-gt-ksi \
+# --enable-gssapi-krb5 \
 #                --enable-guardtime \
 #                --enable-ommongodb \
 #                --enable-mmnormalize \

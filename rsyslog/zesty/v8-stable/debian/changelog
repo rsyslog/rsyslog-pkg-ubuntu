@@ -1,3 +1,9 @@
+rsyslog (8.29.0-0adiscon2zesty1) zesty; urgency=medium
+
+  * Re-enabled mmutf8fix
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 21 Aug 2017 12:35:44 +0000
+
 rsyslog (8.29.0-0adiscon1zesty1) zesty; urgency=medium
 
   * Packages for 8.29.0

@@ -24,11 +24,11 @@ Build-Depends: debhelper (>= 8),
                dh-apparmor,
 	       libcurl4-gnutls-dev,
 	       bison,
-	       libgt-dev,
+#	       libgt-dev,
 	       python-docutils,
 	       liblogging-stdlog-dev,
-	       libnet-dev,
-	       libksi1-dev
+	       libnet-dev
+#	       libksi1-dev
 #	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -51,7 +51,7 @@ Depends: ${shlibs:Depends},
 	 libfastjson4,
 	 libjemalloc1,
 	 liblogging-stdlog1,
-	 libgt0
+#	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
@@ -270,21 +270,21 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-         rsyslog-ksi, 
+#         rsyslog-ksi, 
 	 rsyslog-gnutls
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
 
-Package: rsyslog-ksi
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}), 
-         libksi1
-Suggests: gnutls-bin
-Description: KSI (Keyless Signature Infrastructure) support for rsyslog
- Allows signing log records using guardtime Keyless Signature Infrastructure. 
+#Package: rsyslog-ksi
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}), 
+#         libksi1
+#Suggests: gnutls-bin
+#Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+# Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 Package: rsyslog-mmrm1stspace
 Architecture: any
