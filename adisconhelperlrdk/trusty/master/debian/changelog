@@ -1,0 +1,11 @@
+adisconhelperlrdk (0.9.5-0adiscon2trusty1) trusty; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 12:35:18 +0000
+
+adisconhelperlrdk (0.9.5-0adiscon1trusty1) trusty; urgency=medium
+
+  * Adiscon Helper Package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 09:46:40 +0000
