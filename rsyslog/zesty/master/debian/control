@@ -28,12 +28,12 @@ Build-Depends: debhelper (>= 8),
 	       libgcrypt-dev,
 	       python-docutils,
 	       libsystemd-dev  (>= 209) [linux-any],
-	       adisconhelperlrdk-dev,
 	       liblz4-dev,
 	       libsasl2-dev,
 	       libssl-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
+#	       adisconhelperlrdk-dev,
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -266,15 +266,15 @@ Depends: ${shlibs:Depends},
 Description: The mmrm1stspace module permits to strip the leading space from
  the msg property.
 
-Package: rsyslog-kafka
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-	 liblz4-1,
- 	 libsasl2-2	
-Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
+#Package: rsyslog-kafka
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}),
+#	 liblz4-1,
+# 	 libsasl2-2	
+#Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-pmnull
 Architecture: any

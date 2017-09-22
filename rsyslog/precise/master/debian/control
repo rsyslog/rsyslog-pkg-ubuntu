@@ -24,11 +24,11 @@ Build-Depends: debhelper (>= 8),
                dh-apparmor,
 	       libcurl4-gnutls-dev,
 	       bison,
-	       libgt-dev,
 	       python-docutils,
 	       liblogging-stdlog-dev,
-	       libnet-dev,
-	       libksi1-dev
+	       libnet-dev
+#	       libksi1-dev
+#	       libgt-dev,
 #	       libjemalloc-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -159,6 +159,7 @@ Description: RELP protocol support for rsyslog
  RELP protocol. RELP ensures reliable transport over the network even on
  connection loss or if a peer becomes unavailable.
 
+
 Package: rsyslog-elasticsearch
 Architecture: any
 Priority: extra
@@ -269,21 +270,21 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-         rsyslog-ksi, 
+#         rsyslog-ksi, 
 	 rsyslog-gnutls
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
 
-Package: rsyslog-ksi
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}), 
-         libksi1
-Suggests: gnutls-bin
-Description: KSI (Keyless Signature Infrastructure) support for rsyslog
- Allows signing log records using guardtime Keyless Signature Infrastructure. 
+#Package: rsyslog-ksi
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}), 
+#         libksi1
+#Suggests: gnutls-bin
+#Description: KSI (Keyless Signature Infrastructure) support for rsyslog
+# Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 Package: rsyslog-pmnull
 Architecture: any
