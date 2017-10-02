@@ -1,3 +1,9 @@
+adisconhelperlrdk (0.11.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Adiscon Helper Package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 02 Oct 2017 14:28:19 +0000
+
 adisconhelperlrdk (0.9.5-0adiscon2xenial1) xenial; urgency=medium
 
   * Repack
