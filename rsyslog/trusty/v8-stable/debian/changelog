@@ -1,3 +1,9 @@
+rsyslog (8.29.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Repack for new liblognorm version
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 14:58:41 +0000
+
 rsyslog (8.29.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Re-enabled mmutf8fix

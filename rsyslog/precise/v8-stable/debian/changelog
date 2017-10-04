@@ -1,3 +1,9 @@
+rsyslog (8.29.0-0adiscon6precise1) precise; urgency=medium
+
+  * Repack for new liblognorm version
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 14:55:43 +0000
+
 rsyslog (8.29.0-0adiscon5precise1) precise; urgency=medium
 
   * Repack
