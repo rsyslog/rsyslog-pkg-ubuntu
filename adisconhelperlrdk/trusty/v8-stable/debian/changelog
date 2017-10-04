@@ -1,3 +1,9 @@
+adisconhelperlrdk (0.11.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Repack for SSL support
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 10:21:56 +0000
+
 adisconhelperlrdk (0.11.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Adiscon Helper Package
