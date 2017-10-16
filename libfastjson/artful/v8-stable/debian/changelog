@@ -1,0 +1,6 @@
+libfastjson (0.99.7-0adiscon1artful1ubuntu1) artful; urgency=medium
+
+  * Initial package for artful
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 16 Oct 2017 14:29:16 +0000
+
