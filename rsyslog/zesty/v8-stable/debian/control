@@ -293,6 +293,15 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Parser module which populates property values with a NULL value. 
 
+Package: rsyslog-redis
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libhiredis-dev
+Description: This module implements Redis support, permitting ryslog to write to redis.
+
 #Package: rsyslog-zmq
 #Architecture: any
 #Priority: extra
