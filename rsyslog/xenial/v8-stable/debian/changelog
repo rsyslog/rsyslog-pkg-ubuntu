@@ -1,3 +1,9 @@
+rsyslog (8.30.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.30.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 17 Oct 2017 09:54:23 +0000
+
 rsyslog (8.29.0-0adiscon3xenial1) xenial; urgency=medium
 
   * Repack for new liblognorm version
