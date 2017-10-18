@@ -1,3 +1,9 @@
+rsyslog (8.30.0-0adiscon2artful1) artful; urgency=medium
+
+  * Dependency fix
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 18 Oct 2017 14:42:31 +0000
+
 rsyslog (8.30.0-0adiscon1artful1) artful; urgency=medium
 
   * Packages for 8.30.0
