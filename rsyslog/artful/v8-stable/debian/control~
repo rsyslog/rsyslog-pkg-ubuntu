@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 8),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
                liblognorm-dev (>= 1.0.0),
-	       libfastjson-dev,
+	       libfastjson-dev (>= 0.99.7),
 	       libmongo-client-dev, 
 	       libglib2.0-dev,
                uuid-dev,
@@ -28,7 +28,10 @@ Build-Depends: debhelper (>= 8),
 	       libgcrypt-dev,
 	       python-docutils,
 	       libsystemd-dev  (>= 209) [linux-any],
-	       librdkafka-dev,
+	       adisconhelperlrdk-dev,
+	       liblz4-dev,
+	       libsasl2-dev,
+	       libssl-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
 Standards-Version: 3.9.2
@@ -48,7 +51,7 @@ Depends: ${shlibs:Depends},
          lsb-base (>= 3.2-14),
          adduser,
          ucf,
-	 libfastjson4,
+	 libfastjson4 (>= 0.99.7),
 	 liblogging-stdlog1
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
@@ -176,7 +179,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 	 liblognorm5, 
-	 libfastjson4
+	 libfastjson4 (>= 0.99.7)
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON
@@ -238,7 +241,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-         rsyslog-ksi, 
+#         rsyslog-ksi,
 	 rsyslog-gnutls
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
@@ -269,7 +272,8 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 librdkafka-dev
+	 liblz4-1,
+	 libsasl2-2
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-pmnull
