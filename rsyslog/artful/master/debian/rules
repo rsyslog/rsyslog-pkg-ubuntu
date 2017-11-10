@@ -35,6 +35,7 @@ override_dh_auto_configure:
 		--enable-mmfields \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
+		--enable-mmutf8fix \
 		--enable-pmciscoios \
 		--enable-usertools \
 		--enable-imjournal \
