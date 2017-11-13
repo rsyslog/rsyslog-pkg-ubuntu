@@ -1,0 +1,23 @@
+os: linux
+
+language: c
+
+compiler: gcc
+
+before_install:
+  - sudo add-apt-repository ppa:adiscon/v8-devel -y
+
+notifications:
+  email:
+    - rsyslog-release-team@adiscon.com
+
+script:
+- echo "stock rsyslog is"
+- rsyslogd -v
+- sudo apt update -y
+- apt-cache search rsyslog
+- apt-cache showpkg "rsyslog*"
+- sudo apt install rsyslog -y
+- rsyslogd -v
+- sudo service rsyslog restart
+- sudo apt install rsyslog-kafka
