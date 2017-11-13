@@ -64,10 +64,10 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-gnutls,
 	  rsyslog-udpspoof,
 	  rsyslog-mmrm1stspace,
+	  rsyslog-kafka,
 	  rsyslog-mmutf8fix,
 	  rsyslog-pmnull,
           apparmor (>= 2.3)
-#	  rsyslog-kafka,
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
  providing support for message logging), with features that include:
