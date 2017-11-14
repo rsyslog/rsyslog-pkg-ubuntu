@@ -41,16 +41,16 @@ override_dh_auto_configure:
 		--enable-imjournal \
 		--enable-omjournal \
 		--enable-mmrm1stspace \
+		--enable-omkafka \
+	        --enable-imkafka \
+	 	--enable-kafka-static \
 		--enable-pmnull \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
 
 #
-#		 --enable-omkafka \
-#	 	--enable-kafka-static \
 #		 --enable-guardtime \
-#	         --enable-imkafka \
 #		 --enable-gt-ksi \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
