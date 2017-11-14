@@ -29,8 +29,8 @@ Build-Depends: debhelper (>= 8),
 	       libsasl2-dev,
 	       libssl-dev,
 	       libnet-dev,
-	       liblogging-stdlog-dev
 	       adisconhelperlrdk-dev,
+	       liblogging-stdlog-dev
 #	       libksi1-dev,
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
