@@ -31,6 +31,7 @@ Build-Depends: debhelper (>= 8),
 	       liblz4-dev,
 	       libsasl2-dev,
 	       libssl-dev,
+	       adisconhelperlrdk-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
 	       adisconhelperlrdk-dev,
@@ -272,7 +273,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 	 liblz4-1,
-	 libsasl2-2
+ 	 libsasl2-2	
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 #Package: rsyslog-zmq

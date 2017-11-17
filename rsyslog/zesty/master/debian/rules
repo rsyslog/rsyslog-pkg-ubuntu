@@ -43,7 +43,7 @@ override_dh_auto_configure:
 		--enable-mmrm1stspace \
 		--enable-omkafka \
 	        --enable-imkafka \
-		--enable-kafka-static \
+	 	--enable-kafka-static \
 		--enable-pmnull \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
