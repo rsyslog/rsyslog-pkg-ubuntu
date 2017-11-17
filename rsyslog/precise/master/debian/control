@@ -55,7 +55,7 @@ Depends: ${shlibs:Depends},
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
-          rsyslog-gssapi,
+#          rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
@@ -63,7 +63,6 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-gnutls,
 	  rsyslog-udpspoof,
 	  rsyslog-mmutf8fix,
-	  rsyslog-pmnull,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -237,14 +236,6 @@ Description: The mmutf8fix module permits to fix invalid UTF-8 sequences. Most o
  e.g. ISO 8859. As syslog does not have a way to convey the character set information, 
  these sequences are not properly handled.
 
-Package: rsyslog-pmciscoios
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-Description: Parser module which supports various Cisco IOS formats. 
-
 Package: rsyslog-gnutls
 Architecture: any
 Priority: extra
@@ -286,14 +277,6 @@ Description: rsyslog utilities
 #Suggests: gnutls-bin
 #Description: KSI (Keyless Signature Infrastructure) support for rsyslog
 # Allows signing log records using guardtime Keyless Signature Infrastructure. 
-
-Package: rsyslog-pmnull
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-Description: Parser module which populates property values with a NULL value. 
 
 #Package: rsyslog-zmq
 #Architecture: any
