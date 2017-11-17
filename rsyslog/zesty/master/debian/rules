@@ -45,6 +45,7 @@ override_dh_auto_configure:
 	        --enable-imkafka \
 	 	--enable-kafka-static \
 		--enable-pmnull \
+		--enable-omhiredis \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
