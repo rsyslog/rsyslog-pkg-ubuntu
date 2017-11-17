@@ -34,7 +34,5 @@ script:
 - sudo apt install rsyslog-mmanon
 - sudo apt install rsyslog-mmfields
 - sudo apt install rsyslog-mmutf8fix
-- sudo apt install rsyslog-pmciscoios
 - sudo apt install rsyslog-utils
 - sudo apt install rsyslog-mmrm1stspace
-- sudo apt install rsyslog-pmnull
