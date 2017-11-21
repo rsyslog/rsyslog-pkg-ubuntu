@@ -276,6 +276,15 @@ Depends: ${shlibs:Depends},
 	 libsasl2-2
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
+Package: rsyslog-redis
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libhiredis-dev
+Description: This module implements Redis support, permitting ryslog to write to redis.
+
 #Package: rsyslog-zmq
 #Architecture: any
 #Priority: extra
