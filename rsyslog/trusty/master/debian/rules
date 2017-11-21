@@ -1,6 +1,8 @@
 #!/usr/bin/make -f
 
-export DEB_CFLAGS_MAINT_APPEND = -std=c99
+#export DEB_CFLAGS_MAINT_APPEND = -std=c99
+export DEB_CFLAGS_MAINT_APPEND = -std=c99 -g -fsanitize=address
+#export CC=clang
 
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
