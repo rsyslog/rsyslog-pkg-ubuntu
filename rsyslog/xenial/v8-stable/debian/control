@@ -10,12 +10,11 @@ Build-Depends: debhelper (>= 8),
                zlib1g-dev,
                libmysqlclient-dev,
                libpq-dev,
-	       libmongo-client-dev (>= 0.1.4),
+	       libmongoc-dev (>= 1.3.1),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
                liblognorm-dev (>= 1.0.0),
 	       libfastjson-dev (>= 0.99.7),
-	       libmongo-client-dev, 
 	       libglib2.0-dev,
                uuid-dev,
                libkrb5-dev,
@@ -133,7 +132,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 libmongo-client0
+	 libmongoc-1.0
 Recommends: mongodb-server
 Description: MongoDB output plugin for rsyslog
  This plugin allows rsyslog to write the syslog messages to MongoDB, a

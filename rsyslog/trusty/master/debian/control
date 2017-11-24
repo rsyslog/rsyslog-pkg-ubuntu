@@ -10,12 +10,12 @@ Build-Depends: debhelper (>= 8),
                zlib1g-dev,
                libmysqlclient-dev,
                libpq-dev,
-	       libmongo-client-dev (>= 0.1.4),
+#	       libmongo-client-dev (>= 0.1.4),
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
                liblognorm-dev (>= 1.0.0),
 	       libfastjson-dev,
-	       libmongo-client-dev, 
+#	       libmongo-client-dev, 
 	       libglib2.0-dev,
                uuid-dev,
                libkrb5-dev,
@@ -124,17 +124,17 @@ Description: PostgreSQL output plugin for rsyslog
  This plugin allows rsyslog to write the syslog messages into a PostgreSQL
  database.
 
-Package: rsyslog-mongodb
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-	 libmongo-client0
-Recommends: mongodb-server
-Description: MongoDB output plugin for rsyslog
- This plugin allows rsyslog to write the syslog messages to MongoDB, a
- scalable, high-performance, open source NoSQL database.
+#Package: rsyslog-mongodb
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}),
+#	 libmongo-client0
+#Recommends: mongodb-server
+#Description: MongoDB output plugin for rsyslog
+# This plugin allows rsyslog to write the syslog messages to MongoDB, a
+# scalable, high-performance, open source NoSQL database.
 
 #Package: rsyslog-gssapi
 #Architecture: any
