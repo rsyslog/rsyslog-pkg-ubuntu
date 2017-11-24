@@ -32,6 +32,7 @@ Build-Depends: debhelper (>= 8),
 	       liblz4-dev,
 	       libsasl2-dev,
 	       libssl-dev,
+	       libhiredis-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
 Standards-Version: 3.9.2
@@ -56,7 +57,7 @@ Depends: ${shlibs:Depends},
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
-          rsyslog-gssapi,
+#          rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
@@ -66,7 +67,6 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
 	  rsyslog-mmrm1stspace,
 	  rsyslog-mmutf8fix,
 	  rsyslog-kafka,
-	  rsyslog-pmnull,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -236,14 +236,6 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: The mmutf8fix module permits to fix invalid UTF-8 sequences. Most often, such invalid sequences result from syslog sources sending in non-UTF character sets, e.g. ISO 8859. As syslog does not have a way to convey the character set information, these sequences are not properly handled.
 
-Package: rsyslog-pmciscoios
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-Description: Parser module which supports various Cisco IOS formats. 
-
 Package: rsyslog-utils
 Architecture: any
 Priority: extra
@@ -285,13 +277,14 @@ Depends: ${shlibs:Depends},
  	 libsasl2-2	
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
-Package: rsyslog-pmnull
+Package: rsyslog-redis
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-Description: Parser module which populates property values with a NULL value. 
+         libhiredis-dev
+Description: This module implements Redis support, permitting ryslog to write to redis.
 
 #Package: rsyslog-zmq
 #Architecture: any

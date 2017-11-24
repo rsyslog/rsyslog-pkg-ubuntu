@@ -32,6 +32,7 @@ Build-Depends: debhelper (>= 8),
 	       adisconhelperlrdk-dev,
 	       liblz4-dev,
 	       libsasl2-dev,
+	       libhiredis-dev,
 	       libssl-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -282,7 +283,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-         libhiredis-dev
+         libhiredis0.10
 Description: This module implements Redis support, permitting ryslog to write to redis.
 
 #Package: rsyslog-zmq

@@ -31,6 +31,7 @@ Build-Depends: debhelper (>= 8),
 	       liblz4-dev,
 	       libsasl2-dev,
 	       libssl-dev,
+	       libhiredis-dev,
 	       adisconhelperlrdk-dev,
 	       liblogging-stdlog-dev
 #	       libksi1-dev,
@@ -281,7 +282,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-         libhiredis-dev
+         libhiredis0.10
 Description: This module implements Redis support, permitting ryslog to write to redis.
 
 #Package: rsyslog-zmq
