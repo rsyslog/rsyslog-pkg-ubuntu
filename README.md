@@ -31,8 +31,8 @@ PPA Structure
 -------------
 We intend to maintain two different sets of PPAs:
 
-1. regular release builds
-2. daily builds
+1. regular release builds (v8-stable)
+2. daily builds (v8-devel)
 
 The regular release builds are just that: for each release, we want
 to create packages for all current Ubuntu platforms very close to the
@@ -40,7 +40,7 @@ rsyslog release.
 
 In order to facilitate "leading edge users" daily builds shall
 provide the most current available rsyslog software. They base on
-the project's git master branch. They will be build automatically
+the project's git master branch. They will be built automatically
 once a day if there has been change since the previous build.
 
 Packages Provided
@@ -58,6 +58,49 @@ monitoring this "external" software. As such, we can grant and exception
 of the general rule if and only if a member of such third-party software
 is also a member of rsyslog's release team AND commits to keeping the
 packages current.
+
+Currently available
+-------------------
+Supporting libraries:
+- libfastjson
+- liblogging
+- liblognorm
+- librelp
+
+Sub-packages for rsyslog to provide specific functionality:
+- rsyslog (base package, always needed)
+- rsyslog-doc
+- rsyslog-elasticsearch
+- rsyslog-imptcp
+- rsyslog-kafka (>=14.04)
+- rsyslog-mmanon
+- rsyslog-mmfields
+- rsyslog-mmjsonparse
+- rsyslog-mmnormalize
+- rsyslog-mmrm1stspace
+- rsyslog-mmutf8fix
+- rsyslog-mongodb (>=16.04)
+- rsyslog-mysql
+- rsyslog-pgsql
+- rsyslog-relp
+- rsyslog-utils
+
+How to install
+--------------
+
+1. Open a Terminal
+2. Enter the following command:
+```
+sudo add-apt-repository ppa:adiscon/v8-stable 
+```
+3. Then update your apt cache:
+```
+sudo apt-get update
+```
+4. Finally install the new rsyslog version:
+```
+sudo apt-get install rsyslog
+```
 
 
 File System Structure
