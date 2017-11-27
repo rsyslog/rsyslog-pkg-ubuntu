@@ -24,7 +24,6 @@ script:
 - sudo apt install rsyslog-doc
 - sudo apt install rsyslog-mysql
 - sudo apt install rsyslog-pgsql
-- sudo apt install rsyslog-mongodb
 - sudo apt install rsyslog-relp
 - sudo apt install rsyslog-elasticsearch
 - sudo apt install rsyslog-mmjsonparse
@@ -35,5 +34,9 @@ script:
 - sudo apt install rsyslog-mmutf8fix
 - sudo apt install rsyslog-utils
 - sudo apt install rsyslog-mmrm1stspace
-- sudo apt install rsyslog-hiredis
 
+# Redis disabled, because it is not built on Trusty
+# Enable again when Travis platform is updated
+# - sudo apt install rsyslog-hiredis
+# Mongodb disabled because it is not built on Trusty
+# - sudo apt install rsyslog-mongodb
