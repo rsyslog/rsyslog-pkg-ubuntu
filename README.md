@@ -43,6 +43,9 @@ provide the most current available rsyslog software. They base on
 the project's git master branch. They will be built automatically
 once a day if there has been change since the previous build.
 
+All other branches are explicitely to be considered experimental and
+are not to be used for productive environments.
+
 Packages Provided
 -----------------
 Packages are to be provided for the full rsyslog infrastructure. This
