@@ -1,3 +1,18 @@
+rsyslog (8.31.0-0adiscon2zesty1) zesty; urgency=medium
+
+  * Updated Kafka library
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 10:25:14 +0000
+
+rsyslog (8.31.0-0adiscon1zesty1) zesty; urgency=medium
+
+  * Packages for 8.31.0
+  * Changed dependency for MongoDB
+  * Enabled Redis package
+  * Changed logrotate script postrotate command
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 09:48:58 +0000
+
 rsyslog (8.30.0-0adiscon2zesty1) zesty; urgency=medium
 
   * Dependency fix

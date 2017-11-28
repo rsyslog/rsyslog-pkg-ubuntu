@@ -1,3 +1,16 @@
+rsyslog (8.31.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Updated Kafka library
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 10:24:03 +0000
+
+rsyslog (8.31.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.31.0
+  * Disabled MongoDB package because of dependency change
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 09:45:09 +0000
+
 rsyslog (8.30.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Dependency fix
