@@ -1,3 +1,9 @@
+rsyslog (8.31.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Fixed error in logrotate script
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 29 Nov 2017 16:35:31 +0000
+
 rsyslog (8.31.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Updated Kafka library
