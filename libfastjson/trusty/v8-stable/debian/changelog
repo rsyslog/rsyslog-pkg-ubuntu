@@ -1,3 +1,9 @@
+libfastjson (0.99.8-adiscon1trusty1) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 Dec 2017 16:24:47 +0000
+
 libfastjson (0.99.7-adiscon1trusty1) trusty; urgency=medium
 
   * New upstream release
