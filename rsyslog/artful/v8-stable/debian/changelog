@@ -1,3 +1,10 @@
+rsyslog (8.32.0-0adiscon1artful1) artful; urgency=medium
+
+  * Packages for 8.32.0
+  * New sub-package for omstdout
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 12 Jan 2018 11:31:26 +0000
+
 rsyslog (8.31.0-0adiscon2artful1) artful; urgency=medium
 
   * Updated Kafka library

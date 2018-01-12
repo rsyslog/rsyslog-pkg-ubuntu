@@ -1,3 +1,10 @@
+rsyslog (8.32.0-0adiscon1precise1) precise; urgency=medium
+
+  * Packages for 8.32.0
+  * New sub-package omstdout
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 12 Jan 2018 11:28:24 +0000
+
 rsyslog (8.31.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.31.0
