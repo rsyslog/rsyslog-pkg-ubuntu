@@ -35,6 +35,7 @@ override_dh_auto_configure:
 		--enable-mmfields \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
+		--enable-mmutf8fix \
 		--enable-pmciscoios \
 		--enable-usertools \
 		--enable-imjournal \
@@ -44,6 +45,7 @@ override_dh_auto_configure:
 		--enable-omkafka \
 		--enable-imkafka \
 		--enable-kafka-static \
+		--enable-omhiredis \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
