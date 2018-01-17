@@ -1,3 +1,11 @@
+rsyslog (8.32.0-0adiscon2zesty1) zesty; urgency=medium
+
+  * Added patches for json processing in rainerscript and jsonmesg
+    fixes: https://github.com/rsyslog/rsyslog/issues/2391
+    fixes: https://github.com/rsyslog/rsyslog/issues/2396
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 Jan 2018 16:43:28 +0000
+
 rsyslog (8.32.0-0adiscon1zesty1) zesty; urgency=medium
 
   * Packages for 8.32.0
