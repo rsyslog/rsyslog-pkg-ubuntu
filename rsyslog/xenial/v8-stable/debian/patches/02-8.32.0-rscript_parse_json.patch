@@ -1,0 +1,13 @@
+diff --git a/grammar/rainerscript.c b/grammar/rainerscript.c
+index fa8c35a..56fe259 100644
+--- a/grammar/rainerscript.c
++++ b/grammar/rainerscript.c
+@@ -2511,6 +2511,8 @@ doFuncCall(struct cnffunc *__restrict__ const func, struct svar *__restrict__ co
+ 		ret->d.n = doFunc_parse_json(str, str2, (smsg_t*) usrptr, pWti);
+ 		if(bMustFree) free(str);
+ 		if(bMustFree2) free(str2);
++		varFreeMembers(&r[0]);
++		varFreeMembers(&r[1]);
+ 		break;
+ 	case CNFFUNC_HTTP_REQUEST:
+ 		cnfexprEval(func->expr[0], &r[0], usrptr, pWti);
