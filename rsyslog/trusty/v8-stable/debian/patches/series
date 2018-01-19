@@ -2,6 +2,7 @@
 01-dont_create_db.patch
 02-8.32.0-rscript_parse_json.patch
 03-8.32.0-jsonmesg-assert.patch
+04-8.32.0-external-cmd-parser.patch
 # 0001-build-link-omelasticsearch-against-lm.patch
 # Ubuntu patches for rsyslog
 # 100-imuxsock-allow-missing-date.patch
