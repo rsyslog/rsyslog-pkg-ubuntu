@@ -1,3 +1,10 @@
+rsyslog (8.32.0-0adiscon3precise1) precise; urgency=medium
+
+  * Added patch for external cmd parser
+    ref: https://github.com/rsyslog/rsyslog/pull/2410
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 19 Jan 2018 11:59:14 +0000
+
 rsyslog (8.32.0-0adiscon2precise1) precise; urgency=medium
 
   * Added patches for json processing in rainerscript and jsonmesg
