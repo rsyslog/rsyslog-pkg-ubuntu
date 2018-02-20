@@ -1,3 +1,11 @@
+rsyslog (8.33.0-0adiscon1artful1) artful; urgency=medium
+
+  * Packages for 8.33.0
+  * Removed patches from previous build
+  * Included the missing rsyslog-gnutls sub-package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Feb 2018 12:46:51 +0000
+
 rsyslog (8.32.0-0adiscon3artful1) artful; urgency=medium
 
   * Added patch for external cmd parser

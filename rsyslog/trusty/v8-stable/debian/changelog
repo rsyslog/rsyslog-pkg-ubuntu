@@ -1,3 +1,10 @@
+rsyslog (8.33.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.33.0
+  * Removed patches from previous build
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Feb 2018 12:44:57 +0000
+
 rsyslog (8.32.0-0adiscon3trusty1) trusty; urgency=medium
 
   * Added patch for external cmd parser
