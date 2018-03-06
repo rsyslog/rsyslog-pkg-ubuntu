@@ -1,3 +1,9 @@
+rsyslog (8.33.1-0adiscon1precise1) precise; urgency=medium
+
+  * Packages for 8.33.1
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 06 Mar 2018 11:38:39 +0000
+
 rsyslog (8.33.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.33.0
