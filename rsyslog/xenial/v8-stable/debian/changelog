@@ -1,3 +1,9 @@
+rsyslog (8.33.1-0adiscon2xenial1) xenial; urgency=medium
+
+  * New librelp dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 21 Mar 2018 15:44:02 +0000
+
 rsyslog (8.33.1-0adiscon1xenial1) xenial; urgency=medium
 
   * Packages for 8.33.1

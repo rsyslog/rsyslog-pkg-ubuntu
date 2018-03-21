@@ -1,3 +1,9 @@
+librelp (1.2.15-0adiscon1trusty1) trusty; urgency=medium
+
+  * New upstream release for librelp 1.2.15
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 21 Mar 2018 15:16:09 +0000
+
 librelp (1.2.14-0adiscon1trusty1) trusty; urgency=medium
 
   * New upstream release for 1.2.14
