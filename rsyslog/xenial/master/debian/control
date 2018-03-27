@@ -295,7 +295,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-         libhiredis0.10
+         libhiredis0.13
 Description: This module implements Redis support, permitting ryslog to write to redis.
 
 Package: rsyslog-omstdout
