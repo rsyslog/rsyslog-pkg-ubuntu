@@ -1,3 +1,10 @@
+rsyslog (8.33.1-0adiscon4xenial1) xenial; urgency=medium
+
+  * Rebuild for libhiredis dependency update
+    Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/pull/77
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 28 Mar 2018 10:54:08 +0000
+
 rsyslog (8.33.1-0adiscon3xenial1) xenial; urgency=medium
 
   * Changed install file definitions for gnutls
