@@ -1,3 +1,11 @@
+rsyslog (8.33.1-0adiscon3artful1) artful; urgency=medium
+
+  * Changed install file definitions for gnutls
+    Fixes: https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/57
+
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 28 Mar 2018 10:05:19 +0000
+
 rsyslog (8.33.1-0adiscon2artful1) artful; urgency=medium
 
   * New librelp dependency
