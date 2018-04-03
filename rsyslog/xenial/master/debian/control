@@ -306,6 +306,22 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: This module provides omstdout functionality.
 
+Package: rsyslog-fmhttp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Function module for rainerscript function http_request.
+
+Package: rsyslog-mmkubernetes
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Message modification module to add Kubernetes metadata to a messages.
+
 #Package: rsyslog-zmq
 #Architecture: any
 #Priority: extra
