@@ -1,3 +1,11 @@
+rsyslog (8.34.0-0adiscon1artful1) artful; urgency=medium
+
+  * Packages for 8.34.0
+  * Added package rsyslog-mmkubernetes
+  * Added package rsyslog-fmhttp
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 03 Apr 2018 15:17:12 +0000
+
 rsyslog (8.33.1-0adiscon4artful1) artful; urgency=medium
 
   * Rebuild for libhiredis dependency update

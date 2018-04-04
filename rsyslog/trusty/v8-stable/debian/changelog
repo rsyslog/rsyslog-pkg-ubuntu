@@ -1,3 +1,17 @@
+rsyslog (8.34.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 03 Apr 2018 15:15:52 +0000
+
+rsyslog (8.34.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.34.0
+  * Added package rsyslog-mmkubernetes
+  * Added package rsyslog-fmhttp
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 03 Apr 2018 15:12:28 +0000
+
 rsyslog (8.33.1-0adiscon2trusty1) trusty; urgency=medium
 
   * New librelp dependency
