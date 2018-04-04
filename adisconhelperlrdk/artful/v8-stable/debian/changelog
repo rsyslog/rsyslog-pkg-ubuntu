@@ -1,3 +1,9 @@
+adisconhelperlrdk (0.11.4-0adiscon1artful1) artful; urgency=medium
+
+  * Adiscon Helper Package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Apr 2018 10:02:41 +0000
+
 adisconhelperlrdk (0.11.3-0adiscon1artful1) artful; urgency=medium
 
   * Adiscon Helper Package
