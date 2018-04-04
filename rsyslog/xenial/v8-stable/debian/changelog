@@ -1,3 +1,9 @@
+rsyslog (8.34.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Rebuild for updated Kafka support library
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Apr 2018 12:17:22 +0000
+
 rsyslog (8.34.0-0adiscon1xenial1) xenial; urgency=medium
 
   * Packages for 8.34.0
