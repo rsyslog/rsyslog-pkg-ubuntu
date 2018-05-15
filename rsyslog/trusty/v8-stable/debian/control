@@ -320,6 +320,14 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Function module for rainerscript function http_request.
 
+Package: rsyslog-fmhash
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Function module for rainerscript function hash.
+
 Package: rsyslog-mmkubernetes
 Architecture: any
 Priority: extra
