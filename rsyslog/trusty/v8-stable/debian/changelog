@@ -1,3 +1,16 @@
+rsyslog (8.35.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild for missing control information
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 May 2018 10:43:22 +0000
+
+rsyslog (8.35.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.35.0
+  * Added package rsyslog-fmhash
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 May 2018 10:40:20 +0000
+
 rsyslog (8.34.0-0adiscon3trusty1) trusty; urgency=medium
 
   * Rebuild of rsyslog 8.34.0 for updated Kafka support library

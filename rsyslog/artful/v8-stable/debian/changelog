@@ -1,3 +1,10 @@
+rsyslog (8.35.0-0adiscon1artful1) artful; urgency=medium
+
+  * Packages for 8.35.0
+  * Added package rsyslog-fmhash
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 May 2018 10:44:41 +0000
+
 rsyslog (8.34.0-0adiscon2artful1) artful; urgency=medium
 
   * Rebuild for updated Kafka support library
