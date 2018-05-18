@@ -1,3 +1,9 @@
+rsyslog (8.35.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Rebuild for imrelp patch
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 18 May 2018 14:40:39 +0000
+
 rsyslog (8.35.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Rebuild for missing control information

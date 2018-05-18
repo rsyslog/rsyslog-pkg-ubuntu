@@ -1,3 +1,9 @@
+rsyslog (8.35.0-0adiscon2artful1) artful; urgency=medium
+
+  * Rebuild for imrelp patch
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 18 May 2018 14:41:46 +0000
+
 rsyslog (8.35.0-0adiscon1artful1) artful; urgency=medium
 
   * Packages for 8.35.0
