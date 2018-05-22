@@ -1,35 +1,5 @@
-adisconhelperlrdk (0.11.4-0adiscon1artful1) artful; urgency=medium
+adisconhelperlrdk (0.11.4-0adiscon1bionic1) bionic; urgency=medium
 
-  * Adiscon Helper Package
+  * Initial helper package release for Ubuntu 18.04
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Apr 2018 10:02:41 +0000
-
-adisconhelperlrdk (0.11.3-0adiscon1artful1) artful; urgency=medium
-
-  * Adiscon Helper Package
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 09 Jan 2018 08:53:25 +0000
-
-adisconhelperlrdk (0.11.1-0adiscon1artful1) artful; urgency=medium
-
-  * Adiscon Helper Package
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 10:07:13 +0000
-
-adisconhelperlrdk (0.11.0-0adiscon2artful1) artful; urgency=medium
-
-  * Repack for SSL support
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 10:24:04 +0000
-
-adisconhelperlrdk (0.11.0-0adiscon1artful1) artful; urgency=medium
-
-  * Adiscon Helper Package
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 02 Oct 2017 14:29:36 +0000
-
-adisconhelperlrdk (0.9.5-0adiscon1artful1) artful; urgency=medium
-
-  * Adiscon Helper Package
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 09:52:45 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 May 2018 13:55:30 +0000

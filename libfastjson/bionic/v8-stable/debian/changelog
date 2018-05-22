@@ -1,12 +1,6 @@
-libfastjson (0.99.8-0adiscon1artful1) artful; urgency=medium
+libfastjson (0.99.8-0adiscon1bionic1) bionic; urgency=medium
 
-  * New upstream release
+  * Initial build for Ubuntu 18.04
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 Dec 2017 16:25:57 +0000
-
-libfastjson (0.99.7-0adiscon1artful1ubuntu1) artful; urgency=medium
-
-  * Initial package for artful
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 16 Oct 2017 14:29:16 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 May 2018 14:09:25 +0000
 

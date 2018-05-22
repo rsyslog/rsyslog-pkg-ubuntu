@@ -1,5 +1,5 @@
-liblognorm (2.0.4-0adiscon1artful1) artful; urgency=medium
+liblognorm (2.0.4-0adiscon1bionic1) bionic; urgency=medium
 
-  * Initial package for artful
+  * Initial build for Ubuntu 18.04
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 13:15:25 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 May 2018 14:13:46 +0000

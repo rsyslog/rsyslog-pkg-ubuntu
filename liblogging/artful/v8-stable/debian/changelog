@@ -1,0 +1,6 @@
+liblogging (1.0.6-0adiscon1artful1) artful; urgency=medium
+
+  * Initial build for Ubuntu 17.10
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 May 2018 14:06:32 +0000
+
