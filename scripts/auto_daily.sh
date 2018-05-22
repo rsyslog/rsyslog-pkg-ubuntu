@@ -13,7 +13,7 @@ set -x
 for PROJECT in libfastjson libestr liblogging \
                librelp liblognorm libgt libksi rsyslog
 do
-	for PLATFORM in precise trusty xenial artful
+	for PLATFORM in precise trusty xenial artful bionic
 	do
 		cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/$PROJECT
 		rm -fv *.tar.gz

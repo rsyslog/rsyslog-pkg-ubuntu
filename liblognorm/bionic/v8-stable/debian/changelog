@@ -1,0 +1,5 @@
+liblognorm (2.0.4-0adiscon1artful1) artful; urgency=medium
+
+  * Initial package for artful
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 13:15:25 +0000
