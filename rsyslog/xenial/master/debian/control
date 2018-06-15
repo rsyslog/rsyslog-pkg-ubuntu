@@ -134,7 +134,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 libmongoc-1.0
+	 libmongoc-1.0-0
 Recommends: mongodb-server
 Description: MongoDB output plugin for rsyslog
  This plugin allows rsyslog to write the syslog messages to MongoDB, a
