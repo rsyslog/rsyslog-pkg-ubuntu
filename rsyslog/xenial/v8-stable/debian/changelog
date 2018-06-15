@@ -1,3 +1,11 @@
+rsyslog (8.35.0-0adiscon3xenial1) xenial; urgency=medium
+
+  * Added patch for systemd, so a pid file will be generated again
+    ref: #79
+  * Fixed libmongoc dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 15 Jun 2018 09:07:30 +0000
+
 rsyslog (8.35.0-0adiscon2xenial1) xenial; urgency=medium
 
   * Rebuild for imrelp patch
