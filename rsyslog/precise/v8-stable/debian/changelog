@@ -1,3 +1,10 @@
+rsyslog (8.36.0-0adiscon1precise1) precise; urgency=medium
+
+  * Packages for 8.36.0
+  * Removed imrelp patch
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 26 Jun 2018 10:55:16 +0000
+
 rsyslog (8.35.0-0adiscon3precise1) precise; urgency=medium
 
   * Rebuild for imrelp patch

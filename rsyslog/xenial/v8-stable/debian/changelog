@@ -1,3 +1,11 @@
+rsyslog (8.36.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.36.0
+  * Removed imrelp patch
+  * Fixed systemd patch. ref: #81
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 26 Jun 2018 10:56:38 +0000
+
 rsyslog (8.35.0-0adiscon3xenial1) xenial; urgency=medium
 
   * Added patch for systemd, so a pid file will be generated again
