@@ -61,6 +61,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
           rsyslog-gnutls,
+	  rsyslog-openssl,
 	  rsyslog-udpspoof,
 	  rsyslog-mmrm1stspace,
 	  rsyslog-mmutf8fix,
@@ -253,6 +254,17 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          libnet-dev
 Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
+
+Package: rsyslog-openssl
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: openssl
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
 
 Package: rsyslog-utils
 Architecture: any

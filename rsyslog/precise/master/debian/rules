@@ -43,6 +43,7 @@ override_dh_auto_configure:
 		--enable-pmnull \
 		--enable-omstdout \
 		--enable-mmkubernetes \
+		--enable-openssl \
 		--disable-testbench \
                 --with-systemdsystemunitdir=/lib/systemd/system
 

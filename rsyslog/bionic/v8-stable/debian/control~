@@ -133,7 +133,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 libmongoc-1.0
+	 libmongoc-1.0-0
 Recommends: mongodb-server
 Description: MongoDB output plugin for rsyslog
  This plugin allows rsyslog to write the syslog messages to MongoDB, a
@@ -243,6 +243,17 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version})
 Suggests: gnutls-bin
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
+
+Package: rsyslog-openssl
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: openssl
 Description: TLS protocol support for rsyslog
  This netstream plugin allows rsyslog to send and receive encrypted syslog
  messages via the upcoming syslog-transport-tls IETF standard protocol.
