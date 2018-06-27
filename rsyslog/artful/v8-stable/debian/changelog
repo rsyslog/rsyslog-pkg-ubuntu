@@ -1,3 +1,9 @@
+rsyslog (8.36.0-0adiscon2artful1) artful; urgency=medium
+
+  * Added sub-package rsyslog-openssl for OpenSSL TLS support
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 27 Jun 2018 14:35:56 +0000
+
 rsyslog (8.36.0-0adiscon1artful1) artful; urgency=medium
 
   * Packages for 8.36.0
