@@ -1,3 +1,9 @@
+librelp (1.2.16-0adiscon2bionic1) bionic; urgency=medium
+
+  * Rebuild for ARM packages
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 20 Jul 2018 12:43:06 +0000
+
 librelp (1.2.16-0adiscon1bionic1) bionic; urgency=medium
 
   * Initial build for Ubuntu 18.04
