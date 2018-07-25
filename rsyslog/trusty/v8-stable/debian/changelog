@@ -1,3 +1,9 @@
+rsyslog (8.36.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Rebuilt packages for updated Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 25 Jul 2018 08:46:44 +0000
+
 rsyslog (8.36.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Added sub-package rsyslog-openssl for OpenSSL TLS support
