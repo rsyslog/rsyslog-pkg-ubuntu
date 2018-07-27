@@ -1,8 +1,8 @@
-adisconhelperlrdk (0.11.5-0adiscon1bionic1) bionic; urgency=medium
+adisconhelperlrdk (0.11.4-0adiscon3bionic1) bionic; urgency=medium
 
-  * Adiscon Helper Package
+  * Rebuild for clean up of unsuccessful version upgrade
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 25 Jul 2018 08:25:12 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 27 Jul 2018 12:54:39 +0000
 
 adisconhelperlrdk (0.11.4-0adiscon1bionic1) bionic; urgency=medium
 
