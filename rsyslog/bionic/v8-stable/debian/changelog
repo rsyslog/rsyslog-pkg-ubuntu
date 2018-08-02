@@ -1,3 +1,10 @@
+rsyslog (8.36.0-0adiscon5bionic1) bionic; urgency=medium
+
+  * Updated librelp dependency
+  * Updated Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 13:03:15 +0000
+
 rsyslog (8.36.0-0adiscon4bionic1) bionic; urgency=medium
 
   * Rebuilt packages to undo new Kafka dependency

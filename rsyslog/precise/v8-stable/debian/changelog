@@ -1,3 +1,9 @@
+rsyslog (8.36.0-0adiscon3precise1) precise; urgency=medium
+
+  * Updated librelp dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 13:01:28 +0000
+
 rsyslog (8.36.0-0adiscon2precise1) precise; urgency=medium
 
   * Added sub-package rsyslog-openssl for OpenSSL TLS support

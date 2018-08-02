@@ -10,12 +10,12 @@ Build-Depends: debhelper (>= 8),
                zlib1g-dev,
                libmysqlclient-dev,
                libpq-dev,
-	       libmongo-client-dev (>= 0.1.4),
+	       libmongoc-dev,
+	       libbson-dev,
                librelp-dev (>= 1.0.2),
                libestr-dev (>= 0.1.2),
-               liblognorm-dev (>= 2.0.3),
-	       libfastjson-dev,
-	       libmongo-client-dev, 
+               liblognorm-dev (>= 1.0.0),
+	       libfastjson-dev (>= 0.99.7),
 	       libglib2.0-dev,
                uuid-dev,
                libkrb5-dev,
@@ -27,9 +27,13 @@ Build-Depends: debhelper (>= 8),
 	       libgcrypt-dev,
 	       python-docutils,
 	       libsystemd-dev,
-	       librdkafka-dev,
-	       liblogging-stdlog-dev
 #	       libksi1-dev,
+	       liblogging-stdlog-dev,
+	       adisconhelperlrdk-dev,
+	       liblz4-dev,
+	       libsasl2-dev,
+	       libhiredis-dev,
+	       libssl-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -48,19 +52,23 @@ Depends: ${shlibs:Depends},
          initscripts (>= 2.88dsf-13.3),
          adduser,
          ucf,
-	 libfastjson,
+	 libfastjson4 (>= 0.99.7),
 	 liblogging-stdlog1
-#	 libgt0
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
-          rsyslog-gssapi,
+#          rsyslog-gssapi,
           rsyslog-relp,
           rsyslog-elasticsearch,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
+          rsyslog-gnutls,
+	  rsyslog-openssl,
+	  rsyslog-udpspoof,
+	  rsyslog-mmrm1stspace,
+	  rsyslog-mmutf8fix,
 	  rsyslog-kafka,
-	  rsyslog-pmnull,
+	  rsyslog-omstdout,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -127,7 +135,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 libmongo-client0
+	 libmongoc-1.0-0
 Recommends: mongodb-server
 Description: MongoDB output plugin for rsyslog
  This plugin allows rsyslog to write the syslog messages to MongoDB, a
@@ -174,7 +182,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 	 liblognorm5, 
-	 libfastjson
+	 libfastjson4 (>= 0.99.7)
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON
@@ -222,13 +230,35 @@ Depends: ${shlibs:Depends},
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
-Package: rsyslog-pmciscoios
+Package: rsyslog-mmutf8fix
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-Description: Parser module which supports various Cisco IOS formats. 
+Description: The mmutf8fix module permits to fix invalid UTF-8 sequences. Most often, such invalid sequences result from syslog sources sending in non-UTF character sets, e.g. ISO 8859. As syslog does not have a way to convey the character set information, these sequences are not properly handled.
+
+Package: rsyslog-gnutls
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: gnutls-bin
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
+
+Package: rsyslog-openssl
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: openssl
+Description: TLS protocol support for rsyslog
+ This netstream plugin allows rsyslog to send and receive encrypted syslog
+ messages via the upcoming syslog-transport-tls IETF standard protocol.
 
 Package: rsyslog-utils
 Architecture: any
@@ -252,22 +282,65 @@ Description: rsyslog utilities
 #Description: KSI (Keyless Signature Infrastructure) support for rsyslog
 # Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
-#Package: rsyslog-kafka
-#Architecture: any
-#Priority: extra
-#Depends: ${shlibs:Depends},
-#         ${misc:Depends},
-#         rsyslog (= ${binary:Version}),
-#         librdkafka-dev
-#Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
-
-Package: rsyslog-pmnull
+Package: rsyslog-mmrm1stspace
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         rsyslog (= ${binary:Version})
-Description: Parser module which populates property values with a NULL value. 
+         rsyslog (= ${binary:Version}),
+Description: The mmrm1stspace module permits to strip the leading space from
+ the msg property.
+
+Package: rsyslog-kafka
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+	 liblz4-1,
+	 libsasl2-2
+Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
+
+Package: rsyslog-redis
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libhiredis0.13
+Description: This module implements Redis support, permitting ryslog to write to redis.
+
+Package: rsyslog-omstdout
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: This module provides omstdout functionality.
+
+Package: rsyslog-fmhttp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Function module for rainerscript function http_request.
+
+Package: rsyslog-fmhash
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Function module for rainerscript function hash.
+
+Package: rsyslog-mmkubernetes
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Message modification module to add Kubernetes metadata to a messages.
 
 #Package: rsyslog-zmq
 #Architecture: any

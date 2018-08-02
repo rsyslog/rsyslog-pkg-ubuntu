@@ -11,7 +11,7 @@ Build-Depends: debhelper (>= 8),
                libmysqlclient-dev,
                libpq-dev,
 	       libmongoc-dev,
-               librelp-dev (>= 1.0.2),
+               librelp-dev (>= 1.2.17),
                libestr-dev (>= 0.1.2),
                liblognorm-dev (>= 1.0.0),
 	       libfastjson-dev (>= 0.99.7),
@@ -158,7 +158,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 librelp0 (>= 1.0.2)
+	 librelp0 (>= 1.2.17)
 Description: RELP protocol support for rsyslog
  These plugins allows rsyslog to send and receive syslog messages via the
  RELP protocol. RELP ensures reliable transport over the network even on
