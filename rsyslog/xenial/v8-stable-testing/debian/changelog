@@ -1,14 +1,15 @@
-rsyslog (8.36.0-0adiscon6xenial1) xenial; urgency=medium
+rsyslog (8.37.0-0adiscon1xenial1) xenial; urgency=medium
 
   * Test build
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 10:36:58 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 03 Aug 2018 07:45:46 +0000
 
 rsyslog (8.36.0-0adiscon5xenial1) xenial; urgency=medium
 
-  * Test build
+  * Updated librelp dependency
+  * Updated Kafka dependency
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 08:08:51 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 13:02:48 +0000
 
 rsyslog (8.36.0-0adiscon4xenial1) xenial; urgency=medium
 
