@@ -1,19 +1,25 @@
-!#/bin/sh
-TARGZFILES=`ls *.tar.gz`
+#!/bin/bash
+echo download tar to be released: $1
+
+rm -v *.tar.gz
+wget $1
+
+TARGZFILE=`ls *.tar.gz`
+
+if [ `echo $TARGZFILE | wc -l` -ne 1 ]; then 
+   echo only a single source tar file is supported
+   exit 1
+fi
 
 echo "-------------------------------------"
 echo "--- DEBMaker                      ---"
 echo "-------------------------------------"
 
-select szSourceFile in $TARGZFILES
-do
-        echo "Repacking '$szSourceFile'"
-        break;
-done
+echo "Repacking '$TARGZFILE'"
 
-szSourceBase=`basename $szSourceFile .tar.gz`
+szSourceBase=`basename $TARGZFILE .tar.gz`
 szReplaceFile=`echo $szSourceBase | sed 's/-/_/'`
 
-tar xfz $szSourceFile
-mv $szSourceFile $szReplaceFile.orig.tar.gz
+tar xfz $TARGZFILE
+mv $TARGZFILE $szReplaceFile.orig.tar.gz
 

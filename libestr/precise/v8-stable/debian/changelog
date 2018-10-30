@@ -1,3 +1,9 @@
+libestr (0.1.11-0adiscon1precise1) precise; urgency=medium
+
+  * Updated package to 0.1.11
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 10:30:10 +0000
+
 libestr (0.1.10-0adiscon1precise1) precise; urgency=medium
 
   * Updated package to 0.1.10

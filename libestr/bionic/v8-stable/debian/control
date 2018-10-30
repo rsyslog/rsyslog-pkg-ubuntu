@@ -2,8 +2,8 @@ Source: libestr
 Priority: extra
 Maintainer: Pierre Chifflier <pollux@debian.org>
 Build-Depends: debhelper (>= 7.0.50~),
-    autotools-dev,
-    hardening-wrapper
+    autotools-dev
+#    hardening-wrapper
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://libestr.sourceforge.net/

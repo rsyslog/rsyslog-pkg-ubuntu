@@ -1,3 +1,9 @@
+libestr (0.1.11-0adiscon1ixenial1) xenial; urgency=medium
+
+  * Updated package to 0.1.11
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 10:31:04 +0000
+
 libestr (0.1.10-0adiscon1ixenial1) xenial; urgency=medium
 
   * Initial Package for Xenial
