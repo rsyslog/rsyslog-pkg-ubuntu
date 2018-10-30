@@ -1,3 +1,15 @@
+rsyslog (8.39.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild without missing and unused files
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:33:50 +0000
+
+rsyslog (8.39.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.39.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:04:08 +0000
+
 rsyslog (8.38.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.38.0

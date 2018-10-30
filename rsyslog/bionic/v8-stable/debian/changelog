@@ -1,3 +1,15 @@
+rsyslog (8.39.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Rebuild without missing and unused files
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:34:46 +0000
+
+rsyslog (8.39.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.39.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:05:36 +0000
+
 rsyslog (8.38.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.38.0
