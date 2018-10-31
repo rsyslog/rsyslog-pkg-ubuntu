@@ -1,3 +1,9 @@
+rsyslog (8.39.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Rebuild for fixed Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 31 Oct 2018 09:44:34 +0000
+
 rsyslog (8.39.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Rebuild without missing and unused files

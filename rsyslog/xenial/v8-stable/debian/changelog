@@ -1,3 +1,9 @@
+rsyslog (8.39.0-0adiscon3xenial1) xenial; urgency=medium
+
+  * Rebuild for fixed Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 31 Oct 2018 09:45:16 +0000
+
 rsyslog (8.39.0-0adiscon2xenial1) xenial; urgency=medium
 
   * Rebuild without missing and unused files
