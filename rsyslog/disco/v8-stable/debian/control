@@ -259,6 +259,16 @@ Description: TLS protocol support for rsyslog
  This netstream plugin allows rsyslog to send and receive encrypted syslog
  messages via the upcoming syslog-transport-tls IETF standard protocol.
 
+Package: rsyslog-pmnormalize
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         liblognorm5
+Description: The rsyslog-pmnormalize package provides a parser module based
+ on log normalization using the liblognorm and its Rulebase format.
+
 Package: rsyslog-utils
 Architecture: any
 Priority: extra
