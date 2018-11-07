@@ -1,3 +1,9 @@
+liblognorm (2.0.6-0adiscon1xenial1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 07 Nov 2018 14:24:07 +0000
+
 liblognorm (2.0.4-0adiscon1xenial1) xenial; urgency=medium
 
   * new upstream release
