@@ -1,3 +1,10 @@
+rsyslog (8.39.0-0adiscon5trusty1) trusty; urgency=medium
+
+  * Added patch to fix imfile resend issue
+    Fixes: https://github.com/rsyslog/rsyslog/issues/3249
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 13 Nov 2018 11:44:03 +0000
+
 rsyslog (8.39.0-0adiscon4trusty1) trusty; urgency=medium
 
   * Rebuild for liblognorm 2.0.6
