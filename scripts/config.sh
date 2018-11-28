@@ -1,4 +1,4 @@
-PLATFORM="precise trusty xenial bionic"
+PLATFORM="precise trusty xenial bionic cosmic disco"
 ARCHTECT="amd64 i386"
 BRANCHES="v8-stable v8-stable-testing"
 # GPG KEY

@@ -1,0 +1,35 @@
+adisconhelperlrdk (0.11.6.2-0adiscon3bionic1) bionic; urgency=medium
+
+  * Rebuild
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 31 Oct 2018 09:12:14 +0000
+
+adisconhelperlrdk (0.11.6-0adiscon2bionic1) bionic; urgency=medium
+
+  * Rebuild
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 11:51:01 +0000
+
+adisconhelperlrdk (0.11.6-0adiscon1bionic1) bionic; urgency=medium
+
+  * Adiscon Helper Package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 11:39:53 +0000
+
+adisconhelperlrdk (0.11.5-0adiscon1bionic1) bionic; urgency=medium
+
+  * Adiscon Helper Package
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 12:29:07 +0000
+
+adisconhelperlrdk (0.11.4-0adiscon3bionic1) bionic; urgency=medium
+
+  * Rebuild for clean up of unsuccessful version upgrade
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 27 Jul 2018 12:54:39 +0000
+
+adisconhelperlrdk (0.11.4-0adiscon1bionic1) bionic; urgency=medium
+
+  * Initial helper package release for Ubuntu 18.04
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 May 2018 13:55:30 +0000

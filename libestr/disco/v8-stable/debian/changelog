@@ -1,0 +1,11 @@
+libestr (0.1.11-0adiscon2bionic1) bionic; urgency=medium
+
+  * Removed hardening-wrapper dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 11:02:25 +0000
+
+libestr (0.1.11-0adiscon1bionic1) bionic; urgency=medium
+
+  * Initial package for bionic. V 0.1.11
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 10:34:37 +0000
