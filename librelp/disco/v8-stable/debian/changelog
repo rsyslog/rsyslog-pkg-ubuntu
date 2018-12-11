@@ -1,23 +1,5 @@
-librelp (1.2.18-0adiscon1bionic1) bionic; urgency=medium
+librelp (1.3.0-0adiscon1disco1) disco; urgency=medium
 
-  * New upstream release for librelp 1.2.18
+  * Initial release for disco
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Sep 2018 09:59:03 +0000
-
-librelp (1.2.17-0adiscon1bionic1) bionic; urgency=medium
-
-  * New upstream release for librelp 1.2.17
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 12:25:28 +0000
-
-librelp (1.2.16-0adiscon2bionic1) bionic; urgency=medium
-
-  * Rebuild for ARM packages
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 20 Jul 2018 12:43:06 +0000
-
-librelp (1.2.16-0adiscon1bionic1) bionic; urgency=medium
-
-  * Initial build for Ubuntu 18.04
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 May 2018 14:05:00 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 11 Dec 2018 10:52:18 +0000
