@@ -85,6 +85,7 @@ Sub-packages for rsyslog to provide specific functionality:
 - rsyslog-mongodb (>=16.04)
 - rsyslog-mysql
 - rsyslog-pgsql
+- rsyslog-pmnormalize (>=16.04)
 - rsyslog-relp
 - rsyslog-utils
 
