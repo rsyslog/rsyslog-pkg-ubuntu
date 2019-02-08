@@ -1,3 +1,10 @@
+rsyslog (8.1901.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Removed dependency for liblogging-stdlog. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/is$
+  * Added sub-package for pmnormalize. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/pull/84
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 08 Feb 2019 11:08:19 +0000
+
 rsyslog (8.1901.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.1901.0

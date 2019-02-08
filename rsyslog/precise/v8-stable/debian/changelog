@@ -1,3 +1,9 @@
+rsyslog (8.1901.0-0adiscon2precise1) precise; urgency=medium
+
+  * Removed dependency for liblogging-stdlog. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/73
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 08 Feb 2019 10:45:43 +0000
+
 rsyslog (8.1901.0-0adiscon1precise1) precise; urgency=medium
 
   * Packages for 8.1901.0
