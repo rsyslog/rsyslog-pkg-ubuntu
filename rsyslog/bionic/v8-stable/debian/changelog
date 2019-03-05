@@ -1,3 +1,9 @@
+rsyslog (8.1903.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1903.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 05 Mar 2019 15:02:15 +0000
+
 rsyslog (8.1901.0-0adiscon2bionic1) bionic; urgency=medium
 
   * Removed dependency for liblogging-stdlog. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/is$

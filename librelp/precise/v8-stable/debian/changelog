@@ -1,3 +1,15 @@
+librelp (1.4.0-0adiscon2precise1) precise; urgency=medium
+
+  * Rebuild
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 05 Mar 2019 14:07:27 +0000
+
+librelp (1.4.0-0adiscon1precise1) precise; urgency=medium
+
+  * New upstream release for librelp 1.4.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 05 Mar 2019 14:01:23 +0000
+
 librelp (1.3.0-0adiscon1precise1) precise; urgency=medium
 
   * New upstream releaso for librelp 1.3.0
