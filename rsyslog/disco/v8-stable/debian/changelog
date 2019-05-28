@@ -1,3 +1,9 @@
+rsyslog (8.1905.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1905.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 May 2019 09:15:56 +0000
+
 rsyslog (8.1904.0-0adiscon1disco1) disco; urgency=medium
 
   * Packages for 8.1904.0
