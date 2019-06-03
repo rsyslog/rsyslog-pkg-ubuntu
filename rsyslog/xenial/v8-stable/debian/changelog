@@ -1,3 +1,10 @@
+rsyslog (8.1905.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Added patch for fix in queue subsystem
+    closes: https://github.com/rsyslog/rsyslog/issues/3681
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 03 Jun 2019 14:50:06 +0000
+
 rsyslog (8.1905.0-0adiscon1xenial1) xenial; urgency=medium
 
   * Packages for 8.1905.0

@@ -1,3 +1,10 @@
+rsyslog (8.1905.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Added patch for fix in queue subsystem
+    closes: https://github.com/rsyslog/rsyslog/issues/3681
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 03 Jun 2019 14:49:39 +0000
+
 rsyslog (8.1905.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.1905.0
