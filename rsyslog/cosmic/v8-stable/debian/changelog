@@ -1,3 +1,9 @@
+rsyslog (8.1907.0-0adiscon1cosmic1) cosmic; urgency=medium
+
+  * Packages for 8.1907.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 09 Jul 2019 10:16:22 +0000
+
 rsyslog (8.1905.0-0adiscon2cosmic1) cosmic; urgency=medium
 
   * Added patch for fix in queue subsystem
