@@ -1,0 +1,13 @@
+diff --git a/tools/rsyslogd.c b/tools/rsyslogd.c
+index ccc114b31..6354491af 100644
+--- a/tools/rsyslogd.c
++++ b/tools/rsyslogd.c
+@@ -1229,7 +1229,7 @@ hdlr_sighup(void)
+ 	 * So let's do it explicitely.
+ 	 */
+ 	dbgprintf("awaking mainthread on HUP\n");
+-	pthread_kill(mainthread, SIGTTIN);
++	//pthread_kill(mainthread, SIGTTIN);
+ }
+ 
+ static void
