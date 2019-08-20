@@ -1,6 +1,5 @@
 # Debian patches for rsyslog
 01-dont_create_db.patch
-rsyslog-8.1907-revert-BSD-HUP.patch
 # 0001-build-link-omelasticsearch-against-lm.patch
 # Ubuntu patches for rsyslog
 # 100-imuxsock-allow-missing-date.patch
