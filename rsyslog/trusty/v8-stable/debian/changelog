@@ -1,3 +1,9 @@
+rsyslog (8.1908.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1908.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Aug 2019 09:24:30 +0000
+
 rsyslog (8.1907.0-0adiscon2trusty1) trusty; urgency=medium
 
   * Added patch to revert BSD HUP fix
