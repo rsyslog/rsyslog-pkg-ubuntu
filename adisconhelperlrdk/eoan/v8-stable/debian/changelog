@@ -1,5 +1,5 @@
-adisconhelperlrdk (0.11.6.2-0adiscon1disco1) disco; urgency=medium
+adisconhelperlrdk (0.11.6.2-0adiscon1eoan1) eoan; urgency=medium
 
-  * Initial helper package for Ubuntu 19.04 Disco
+  * Initial build for Ubuntu 19.10
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 28 Nov 2018 14:57:22 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 18 Dec 2019 14:07:45 +0000
