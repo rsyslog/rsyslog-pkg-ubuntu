@@ -1,0 +1,6 @@
+libfastjson (0.99.5-0adiscon1zesty1) zesty; urgency=medium
+
+  * Initial package for zesty
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 May 2017 14:58:45 +0000
+

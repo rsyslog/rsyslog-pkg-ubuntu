@@ -1,0 +1,74 @@
+rsyslog (8.1911.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1911.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Nov 2019 09:42:50 +0000
+
+rsyslog (8.1910.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1910.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 01 Oct 2019 08:31:36 +0000
+
+rsyslog (8.1908.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1908.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Aug 2019 09:26:09 +0000
+
+rsyslog (8.1907.0-0adiscon2disco1) disco; urgency=medium
+
+  * Added patch to revert BSD HUP fix
+    Ref: https://github.com/rsyslog/rsyslog/issues/3760
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jul 2019 09:34:54 +0000
+
+rsyslog (8.1907.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1907.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 09 Jul 2019 10:17:51 +0000
+
+rsyslog (8.1905.0-0adiscon2disco1) disco; urgency=medium
+
+  * Added patch for fix in queue subsystem
+    closes: https://github.com/rsyslog/rsyslog/issues/3681
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 03 Jun 2019 14:51:42 +0000
+
+rsyslog (8.1905.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1905.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 May 2019 09:15:56 +0000
+
+rsyslog (8.1904.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1904.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 Apr 2019 10:21:51 +0000
+
+rsyslog (8.1903.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1903.0 
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 05 Mar 2019 15:03:21 +0000
+
+rsyslog (8.1901.0-0adiscon2disco1) disco; urgency=medium
+
+  * Removed dependency for liblogging-stdlog. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/is$
+  * Added sub-package for pmnormalize. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/pull/84
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 08 Feb 2019 11:09:30 +0000
+
+rsyslog (8.1901.0-0adiscon1disco1) disco; urgency=medium
+
+  * Packages for 8.1901.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 Jan 2019 11:14:20 +0000
+
+rsyslog (8.40.0-0adiscon1disco1) disco; urgency=medium
+
+  * Initial release for disco
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 11 Dec 2018 11:28:58 +0000
