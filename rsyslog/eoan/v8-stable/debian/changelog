@@ -1,3 +1,9 @@
+rsyslog (8.2001.0-0adiscon1eoan1) eoan; urgency=medium
+
+  * Packages for 8.2001.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 14 Jan 2020 16:13:50 +0000
+
 rsyslog (8.1911.0-0adiscon1eoan1) eoan; urgency=medium
 
   * Initial build for Ubuntu 19.10
