@@ -45,7 +45,6 @@ override_dh_auto_configure:
 		--enable-omkafka \
 		--enable-imkafka \
 		--enable-kafka-static \
-		--enable-omhiredis \
 		--enable-omstdout \
 		--enable-mmkubernetes \
 		--enable-openssl \
@@ -57,6 +56,7 @@ override_dh_auto_configure:
 #		--enable-guardtime \
 #		--enable-gt-ksi \ 
 #		              
+#		--enable-omhiredis \
 #		 --enable-jemalloc \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \
