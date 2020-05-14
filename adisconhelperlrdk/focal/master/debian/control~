@@ -1,0 +1,26 @@
+Source: adisconhelperlrdk
+Priority: extra
+Maintainer: Florian Riedl <friedl@adiscon.com>
+Build-Depends: cdbs, debhelper (>= 7), autotools-dev, pkg-config, dh-apparmor, dh-autoreconf, zlib, liblz4-dev, libsasl2-dev
+Standards-Version: 3.9.2
+Section: libs
+Homepage: https://github.com/edenhill/librdkafka
+#Vcs-Git: git://git.debian.org/collab-maint/libestr.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/libestr.git;a=summary
+
+Package: adisconhelperlrdk-dev
+Section: libdevel
+Architecture: any
+Depends: adisconhelperlrdk (= ${binary:Version}), ${misc:Depends}
+#Replaces: adisconbuild-librdkafka-dev  
+#Breaks: adisconbuild-librdkafka-dev 
+Description: Development files for the 'librdkafka' package
+
+Package: adisconhelperlrdk
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Adisconhelper_lrdk
+ This 'librdkafka' library is for package building only.
+ .
+ This package contains the shared library.

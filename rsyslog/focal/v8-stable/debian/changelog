@@ -1,0 +1,6 @@
+rsyslog (8.2004.0-0adiscon1eoan1) eoan; urgency=medium
+
+  * Packages for 8.2004.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Apr 2020 12:58:28 +0000
+

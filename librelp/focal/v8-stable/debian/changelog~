@@ -1,0 +1,17 @@
+librelp (1.6.0-0adiscon1eoan1) eoan; urgency=medium
+
+  * New upstream release for librelp 1.6.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 21 Apr 2020 15:44:58 +0000
+
+librelp (1.5.0-0adiscon1eoan1) eoan; urgency=medium
+
+  * New upstream release for librelp 1.5.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 14 Jan 2020 15:51:04 +0000
+
+librelp (1.4.0-0adiscon1eoan1) eoan; urgency=medium
+
+  * Initial build for Ubuntu 19.10
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 18 Dec 2019 14:13:26 +0000

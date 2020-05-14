@@ -1,0 +1,5 @@
+adisconhelperlrdk (0.11.6.2-0adiscon1eoan1) eoan; urgency=medium
+
+  * Initial build for Ubuntu 19.10
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 18 Dec 2019 14:07:45 +0000
