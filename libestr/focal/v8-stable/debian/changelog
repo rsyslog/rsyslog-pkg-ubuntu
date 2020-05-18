@@ -1,0 +1,6 @@
+libestr (0.1.11-0adiscon2bionic1) bionic; urgency=medium
+
+  * Removed hardening-wrapper dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 11:02:25 +0000
+
