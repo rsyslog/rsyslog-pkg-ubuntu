@@ -3,7 +3,7 @@ Section: admin
 Priority: important
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 XSBC-Original-Maintainer: Michael Biebl <biebl@debian.org>
-Build-Depends: debhelper (>= 8),
+Build-Depends: debhelper (>= 12),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
 	       dh-autoreconf,
@@ -25,9 +25,9 @@ Build-Depends: debhelper (>= 8),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       libgcrypt-dev,
-	       python-docutils,
+	       python3-docutils,
 	       libsystemd-dev  (>= 209) [linux-any],
-	       adisconhelperlrdk-dev,
+	       librdkafka-dev,
 	       liblz4-dev,
 	       libsasl2-dev,
 	       libssl-dev,

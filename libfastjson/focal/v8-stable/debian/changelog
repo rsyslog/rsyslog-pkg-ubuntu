@@ -1,5 +1,5 @@
-libfastjson (0.99.8-0adiscon1eoan1) eoan; urgency=medium
+libfastjson (0.99.8-0adiscon1focal1) focal; urgency=medium
 
-  * Initial package for Ubuntu 19.10
+  * Initial package for Ubuntu 20.04
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 18 Dec 2019 13:48:36 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 09:57:29 +0000
