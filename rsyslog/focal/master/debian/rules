@@ -13,6 +13,8 @@ unexport LDFLAGS
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+		--libdir=/usr/lib
+		--libexecdir=/usr/lib/rsyslog \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mail \
@@ -45,7 +47,6 @@ override_dh_auto_configure:
 		--enable-pmnull \
 		--enable-omkafka \
 		--enable-imkafka \
-		--enable-kafka-static \
 		--enable-omhiredis \
 		--enable-omstdout \
 		--enable-mmkubernetes \
@@ -55,6 +56,7 @@ override_dh_auto_configure:
 		--with-systemdsystemunitdir=/lib/systemd/system
 
 #
+#		--enable-kafka-static \
 #		--enable-omkafka \
 #		 --enable-guardtime \
 #		 --enable-gt-ksi \
