@@ -1,0 +1,11 @@
+liblognorm (2.0.6-0adiscon2focal1) focal; urgency=medium
+
+  * Fixed python-sphinx dependency to python3-sphinx
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 10:19:58 +0000
+
+liblognorm (2.0.6-0adiscon1focal1) focal; urgency=medium
+
+  * Initial build for Ubuntu 20.04
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 09:59:24 +0000

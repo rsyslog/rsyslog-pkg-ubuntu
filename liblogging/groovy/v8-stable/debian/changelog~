@@ -1,0 +1,17 @@
+liblogging (1.0.6-0adiscon2zesty1) zesty; urgency=medium
+
+  * Fixed dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Apr 2017 10:26:07 +0000
+
+liblogging (1.0.6-0adiscon1zesty1) zesty; urgency=medium
+
+  * New debs for 1.0.6
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Mar 2017 11:44:47 +0000
+
+liblogging (1.0.5-0adiscon1yakkety1) yakkety; urgency=medium
+
+  * Initial release for yakkety
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 08:23:16 +0000

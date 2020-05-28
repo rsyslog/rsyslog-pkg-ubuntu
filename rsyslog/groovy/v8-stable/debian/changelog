@@ -1,0 +1,6 @@
+rsyslog (8.2004.0-0adiscon1focal1) focal; urgency=medium
+
+  * Initial package for Ubuntu 20.04
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 10:38:08 +0000
+

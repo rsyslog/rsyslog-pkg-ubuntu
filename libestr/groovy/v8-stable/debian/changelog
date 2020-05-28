@@ -1,0 +1,6 @@
+libestr (0.1.11-0adiscon1focal1) focal; urgency=medium
+
+  * Initial libestr package for Ubuntu 20.04
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 09:50:56 +0000
+

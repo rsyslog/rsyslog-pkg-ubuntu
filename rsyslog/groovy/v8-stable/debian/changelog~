@@ -1,0 +1,72 @@
+rsyslog (8.2004.0-0adiscon12focal1) focal; urgency=medium
+
+  * libdir and libexecdir absolute paths
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 10:37:03 +0000
+
+rsyslog (8.2004.0-0adiscon11focal1) focal; urgency=medium
+
+  * Set libdir and libexecdir in rules
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 10:24:28 +0000
+
+rsyslog (8.2004.0-0adiscon10focal1) focal; urgency=medium
+
+  * Fix test for rules file
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 09:03:06 +0000
+
+rsyslog (8.2004.0-0adiscon9focal1) focal; urgency=medium
+
+  * Fix test for rules file
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 08:36:30 +0000
+
+rsyslog (8.2004.0-0adiscon8focal1) focal; urgency=medium
+
+  * Upped debhelper required version to 12
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 15:10:28 +0000
+
+rsyslog (8.2004.0-0adiscon7focal1) focal; urgency=medium
+
+  * Removed debhelper compat, instead set compatibility mode
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 14:42:18 +0000
+
+rsyslog (8.2004.0-0adiscon6focal1) focal; urgency=medium
+
+  * Set debhelper-compat in Builddepends
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 14:37:57 +0000
+
+rsyslog (8.2004.0-0adiscon5focal1) focal; urgency=medium
+
+  * Changed debhelper level
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 14:17:17 +0000
+
+rsyslog (8.2004.0-0adiscon4focal1) focal; urgency=medium
+
+  * Disabled mmkubernetes
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 13:47:33 +0000
+
+rsyslog (8.2004.0-0adiscon3focal1) focal; urgency=medium
+
+  * Re-upload
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 13:34:04 +0000
+
+rsyslog (8.2004.0-0adiscon2focal1) focal; urgency=medium
+
+  * Re-Upload
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 13:18:09 +0000
+
+rsyslog (8.2004.0-0adiscon1focal1) focal; urgency=medium
+
+  * Initial package for Ubuntu 20.04
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 10:38:08 +0000
+
