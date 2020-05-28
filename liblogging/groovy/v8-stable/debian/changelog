@@ -1,5 +1,5 @@
-liblogging (1.0.6-0adiscon1focal1) focal; urgency=medium
+liblogging (1.0.6-0adiscon1groovy1) groovy; urgency=medium
 
-  * Initial package for Ubuntu 20.04
+  * Initial build for Ubuntu 20.10
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 09:55:37 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 28 May 2020 15:06:18 +0000

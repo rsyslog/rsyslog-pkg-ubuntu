@@ -1,6 +1,6 @@
-libestr (0.1.11-0adiscon1focal1) focal; urgency=medium
+libestr (0.1.11-0adiscon1groovy1) groovy; urgency=medium
 
-  * Initial libestr package for Ubuntu 20.04
+  * Initial build for Ubuntu 20.10
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 09:50:56 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 28 May 2020 15:02:11 +0000
 
