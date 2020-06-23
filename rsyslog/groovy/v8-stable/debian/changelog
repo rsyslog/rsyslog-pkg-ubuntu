@@ -1,3 +1,9 @@
+rsyslog (8.2006.0-0adiscon1groovy1) groovy; urgency=medium
+
+  * Packages for 8.2006.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Jun 2020 13:58:54 +0000
+
 rsyslog (8.2004.0-0adiscon1groovy1) groovy; urgency=medium
 
   * Initial build for Ubuntu 20.10
