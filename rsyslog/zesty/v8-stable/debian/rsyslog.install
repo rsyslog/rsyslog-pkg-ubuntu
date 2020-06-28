@@ -1,4 +1,5 @@
 debian/rsyslog.conf /etc/
+debian/00rsyslog.conf  usr/lib/tmpfiles.d/
 debian/50-default.conf /usr/share/rsyslog
 debian/tmp/usr/sbin/
 debian/tmp/usr/share/man/
