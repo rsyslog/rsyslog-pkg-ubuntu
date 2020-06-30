@@ -46,7 +46,6 @@ librelp.so.0 librelp0 #MINVER#
  relpSendbufSetData@Base 0.1.1
  relpSendqAddBuf@Base 0.1.1
  relpSendqConstruct@Base 0.1.1
- relpSendqDelFirstBuf@Base 0.1.1
  relpSendqDestruct@Base 0.1.1
  relpSendqIsEmpty@Base 0.1.1
  relpSendqSend@Base 0.1.1
