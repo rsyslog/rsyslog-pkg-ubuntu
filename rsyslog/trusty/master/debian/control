@@ -29,7 +29,6 @@ Build-Depends: debhelper (>= 8),
 	       libsasl2-dev,
 	       libssl-dev,
 	       libnet-dev,
-	       libhiredis-dev,
 	       adisconhelperlrdk-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -303,15 +302,6 @@ Depends: ${shlibs:Depends},
 	 liblz4-1,
  	 libsasl2-2	
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
-
-Package: rsyslog-redis
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-         libhiredis0.10
-Description: This module implements Redis support, permitting ryslog to write to redis.
 
 Package: rsyslog-omstdout
 Architecture: any

@@ -24,6 +24,6 @@ debian/tmp/usr/lib/rsyslog/mmsequence.so
 debian/tmp/usr/lib/rsyslog/mmexternal.so
 debian/tmp/usr/lib/rsyslog/lmcry_gcry.so
 debian/tmp/usr/lib/rsyslog/pm*.so
-debian/tmp/lib/systemd/system/rsyslog.service
+debian/rsyslog.service lib/systemd/system/
 debian/usr.sbin.rsyslogd etc/apparmor.d/
 #debian/tmp/usr/lib/rsyslog/lmsig_gt.so

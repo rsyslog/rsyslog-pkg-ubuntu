@@ -13,7 +13,7 @@ unexport LDFLAGS
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--libdir=/usr/lib
+		--libdir=/usr/lib \
 		--libexecdir=/usr/lib/rsyslog \
 		--enable-mysql \
 		--enable-pgsql \
