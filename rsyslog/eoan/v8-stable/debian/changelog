@@ -1,3 +1,9 @@
+rsyslog (8.2006.0-0adiscon2eoan1) eoan; urgency=medium
+
+  * Rebuilt packages to apply patch for rsyslog.service
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 01 Jul 2020 15:53:22 +0000
+
 rsyslog (8.2006.0-0adiscon1eoan1) eoan; urgency=medium
 
   * Packages for 8.2006.0

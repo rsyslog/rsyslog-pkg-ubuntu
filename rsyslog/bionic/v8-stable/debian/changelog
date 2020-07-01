@@ -1,3 +1,9 @@
+rsyslog (8.2006.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Rebuilt packages to apply patch for rsyslog.service
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 01 Jul 2020 15:52:52 +0000
+
 rsyslog (8.2006.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.2006.0
