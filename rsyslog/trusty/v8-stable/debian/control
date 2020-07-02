@@ -7,6 +7,7 @@ Build-Depends: debhelper (>= 8),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
 	       dh-autoreconf,
+	       libpcap-dev,
                librabbitmq-dev,
                librabbitmq1,
                zlib1g-dev,
@@ -259,6 +260,15 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Provides the imkmsg rsyslog plugin which can be used to read structured
  kernel logs.
+
+Package: rsyslog-impcap
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+ 	 libpcap
+Description: This module provides the impcap contributed module.
 
 Package: rsyslog-mmutf8fix
 Architecture: any

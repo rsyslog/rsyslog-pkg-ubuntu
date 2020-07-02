@@ -21,6 +21,7 @@ Build-Depends: debhelper (>= 8),
                liblognorm-dev (>= 1.0.0),
 	       libfastjson-dev (>= 0.99.7),
 	       libglib2.0-dev,
+	       libpcap-dev,
                uuid-dev,
                libkrb5-dev,
                libgnutls28-dev,
@@ -102,6 +103,15 @@ Description: documentation for rsyslog
  It describes the general configuration file syntax for filters, actions,
  templates, etc, and has detailed information for all available configuration
  directives.
+
+Package: rsyslog-impcap
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+ 	 libpcap
+Description: This module provides the impcap contributed module.
 
 Package: rsyslog-mysql
 Architecture: any
