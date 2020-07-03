@@ -1,0 +1,271 @@
+rsyslog (8.2006.0-2) xenial; urgency=medium
+
+  * fix missing rsyslog.service file
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Sun, 28 Jun 2020 13:16:00 +0000
+
+rsyslog (8.2006.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Tue, 23 May 2020 13:16:00 +0000
+
+rsyslog (8.2004.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Fri, 08 May 2020 13:16:00 +0000
+
+rsyslog (8.2001.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Tue, 14 Jan 2020 13:16:00 +0000
+
+rsyslog (8.1911.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <rgerhards@adiscon.com>  Tue, 12 Nov 2019 13:16:00 +0000
+
+rsyslog (8.1910.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Tue, 19 Aug 2019 10:45:00 +0000
+
+rsyslog (8.1908.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Tue, 19 Aug 2019 10:45:00 +0000
+
+rsyslog (8.1907.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Tue, 18 Jul 2019 10:45:00 +0000
+
+rsyslog (8.1905.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Tue, 25 May 2019 17:13:00 +0000
+
+rsyslog (8.1904.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Mon, 15 Apr 2019 17:13:00 +0000
+
+rsyslog (8.1903.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Tue, 05 Mar 2019 17:13:00 +0000
+
+rsyslog (8.1901.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Sun, 16 Dec 2018 17:13:00 +0000
+
+rsyslog (8.40.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Sun, 16 Dec 2018 17:13:00 +0000
+
+rsyslog (8.39.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Tue, 30 Oct 2018 14:44:44 +0000
+
+rsyslog (8.38.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Mon, 24 Sep 2018 12:49:00 +0000
+
+rsyslog (8.37.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Jan Gerhards <jgerhards@adiscon.com>  Mon, 20 Aug 2018 11:34:00 +0000
+
+rsyslog (8.31.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Updated Kafka library
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 10:24:40 +0000
+
+rsyslog (8.31.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.31.0
+  * Changed dependency for MongoDB
+  * Enabled Redis package
+  * Changed logrotate script postrotate command
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 09:47:10 +0000
+
+rsyslog (8.30.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Dependency fix
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 18 Oct 2017 14:41:18 +0000
+
+rsyslog (8.30.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.30.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 17 Oct 2017 09:54:23 +0000
+
+rsyslog (8.29.0-0adiscon3xenial1) xenial; urgency=medium
+
+  * Repack for new liblognorm version
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 15:00:18 +0000
+
+rsyslog (8.29.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Re-enabled mmutf8fix
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 21 Aug 2017 12:35:07 +0000
+
+rsyslog (8.29.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.29.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 09 Aug 2017 08:49:53 +0000
+
+rsyslog (8.28.0-0adiscon8xenial1) xenial; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 09:02:50 +0000
+
+rsyslog (8.28.0-0adiscon7xenial1) xenial; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:30:39 +0000
+
+rsyslog (8.28.0-0adiscon6xenial1) xenial; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:22:18 +0000
+
+rsyslog (8.28.0-0adiscon5xenial1) xenial; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 08:19:31 +0000
+
+rsyslog (8.28.0-0adiscon4xenial1) xenial; urgency=medium
+
+  * Enabled omkafka/imkafka module
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 13:04:17 +0000
+
+rsyslog (8.28.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Package for 8.28.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 11:20:24 +0000
+
+rsyslog (8.27.0-0adiscon4xenial1) xenial; urgency=medium
+
+  * Repack
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 14:28:27 +0000
+
+rsyslog (8.27.0-0adiscon3xenial1) xenial; urgency=medium
+
+  * Re-enabled omkafka
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 10:28:11 +0000
+
+rsyslog (8.27.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Fixed disabled rules
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:56:06 +0000
+
+rsyslog (8.27.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.27.0
+  * Removed Kafka package for re-work
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:38:33 +0000
+
+rsyslog (8.26.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Added modules pmnull and omkafka to the packages
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 13 Apr 2017 14:19:18 +0000
+
+rsyslog (8.26.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.26.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Apr 2017 13:09:09 +0000
+
+rsyslog (8.25.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.25.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 21 Feb 2017 16:00:31 +0000
+
+rsyslog (8.24.0-0adiscon2xenial1) xenial; urgency=medium
+
+  * Added separate package for new module mmrm1stspace
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Feb 2017 16:43:15 +0000
+
+rsyslog (8.24.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.24.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 10 Jan 2017 13:29:29 +0000
+
+rsyslog (8.23.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Packages for 8.23.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 16:50:47 +0000
+
+rsyslog (8.22.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * New packages for 8.22.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Oct 2016 15:02:30 +0000
+
+rsyslog (8.21.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * new upstream release
+  * disable liblogging-stdlog
+    We currently want to log by default by the syslog() API
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Aug 2016 14:42:49 +0000
+
+rsyslog (8.20.0-0adiscon7xenial1) xenial; urgency=medium
+
+  * fix apparmor rules which prevented rsyslog startup
+    see also https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/48
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 06:29:55 +0000
+
+rsyslog (8.20.0-0adiscon6xenial1) xenial; urgency=medium
+
+  * new upstream release
+  * add support for libfastjson 0.99.3, liblognorm 2.0.1 packages 
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 12:14:09 +0000
+
+rsyslog (8.18.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * Initial package for Xenial
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 May 2016 14:52:12 +0000

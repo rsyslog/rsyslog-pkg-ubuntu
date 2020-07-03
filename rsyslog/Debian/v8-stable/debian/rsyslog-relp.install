@@ -1,0 +1,3 @@
+#!/usr/bin/dh-exec
+usr/lib/rsyslog/omrelp.so
+usr/lib/rsyslog/imrelp.so
