@@ -13,6 +13,7 @@ unexport LDFLAGS
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+		--enable-kmsg \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mail \

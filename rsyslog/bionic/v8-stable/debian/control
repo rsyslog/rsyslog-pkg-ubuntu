@@ -226,6 +226,15 @@ Depends: ${shlibs:Depends},
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
+Package: rsyslog-imkmsg
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Provides the imkmsg rsyslog plugin which can be used to read structured
+ kernel logs.
+
 Package: rsyslog-mmutf8fix
 Architecture: any
 Priority: extra

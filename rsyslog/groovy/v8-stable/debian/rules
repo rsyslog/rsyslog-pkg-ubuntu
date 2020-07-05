@@ -41,6 +41,7 @@ override_dh_auto_configure:
 		--enable-pmciscoios \
 		--enable-pmnormalize \
 		--enable-usertools \
+		--enable-kmsg \
 		--enable-imjournal \
 		--enable-omjournal \
 		--enable-mmrm1stspace \
