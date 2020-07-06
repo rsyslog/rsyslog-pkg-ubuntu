@@ -17,6 +17,8 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/rsyslog \
 		--libdir=/usr/lib \
 		--enable-omrabbitmq \
+		--enable-imczmq \
+		--enable-omczmq \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mail \

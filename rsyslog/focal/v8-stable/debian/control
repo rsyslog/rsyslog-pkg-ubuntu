@@ -6,6 +6,7 @@ XSBC-Original-Maintainer: Michael Biebl <biebl@debian.org>
 Build-Depends: debhelper (>= 12),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
+               libczmq-dev (>= 4.0.0),
 	       dh-autoreconf,
                librabbitmq-dev,
                librabbitmq4,
@@ -152,6 +153,16 @@ Description: MongoDB output plugin for rsyslog
 # These plugins allow rsyslog to write and/or receive GSSAPI authenticated and
 # encrypted syslog messages. GSSAPI is commonly used for Kerberos
 # authentication.
+
+Package: rsyslog-czmq
+Architecture: any
+Priority: optional
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: ZeroMQ protocol support for rsyslog via CZMQ
+ These plugins allows rsyslog to send and receive ZeroMQ syslog
+ messages via the CZMQ library.
 
 Package: rsyslog-relp
 Architecture: any

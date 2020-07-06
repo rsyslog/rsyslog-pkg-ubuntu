@@ -7,6 +7,7 @@ Build-Depends: debhelper (>= 8),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
 	       dh-autoreconf,
+               libczmq-dev (>= 4.0.0),
                zlib1g-dev,
                librabbitmq-dev,
                librabbitmq4,
@@ -164,6 +165,16 @@ Description: RELP protocol support for rsyslog
  These plugins allows rsyslog to send and receive syslog messages via the
  RELP protocol. RELP ensures reliable transport over the network even on
  connection loss or if a peer becomes unavailable.
+
+Package: rsyslog-czmq
+Architecture: any
+Priority: optional
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: ZeroMQ protocol support for rsyslog via CZMQ
+ These plugins allows rsyslog to send and receive ZeroMQ syslog
+ messages via the CZMQ library.
 
 Package: rsyslog-elasticsearch
 Architecture: any
