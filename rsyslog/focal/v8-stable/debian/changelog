@@ -1,3 +1,9 @@
+rsyslog (8.2006.0-0adiscon2focal1) focal; urgency=medium
+
+  * new subpackages
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
 rsyslog (8.2006.0-0adiscon1focal1) focal; urgency=medium
 
   * Packages for 8.2006.0
