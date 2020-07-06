@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 DPKG_EXPORT_BUILDFLAGS = 1
+export DEB_BUILD_OPTIONS="parallel=4"
 include /usr/share/dpkg/buildflags.mk
 
 # the default LDFLAGS="-Wl,-Bsymbolic-functions" caused rsyslog to
@@ -8,7 +9,7 @@ include /usr/share/dpkg/buildflags.mk
 unexport LDFLAGS
 
 %:
-	dh $@ --with autoreconf
+	dh $@ --parallel --with autoreconf
 #org	dh $@ --with autotools_dev
 
 override_dh_auto_configure:
