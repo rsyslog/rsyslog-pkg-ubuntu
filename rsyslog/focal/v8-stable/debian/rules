@@ -18,6 +18,8 @@ override_dh_auto_configure:
 		--libdir=/usr/lib \
 		--enable-kmsg \
 		--enable-omrabbitmq \
+		--enable-imczmq \
+		--enable-omczmq \
 		--enable-mmgrok \
 		--enable-omuxsock \
 		--enable-mysql \
