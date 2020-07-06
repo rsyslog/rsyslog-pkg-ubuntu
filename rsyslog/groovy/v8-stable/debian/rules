@@ -42,6 +42,7 @@ override_dh_auto_configure:
 		--enable-pmnormalize \
 		--enable-usertools \
 		--enable-kmsg \
+		--enable-mmgrok \
 		--enable-omuxsock \
 		--enable-imjournal \
 		--enable-omjournal \

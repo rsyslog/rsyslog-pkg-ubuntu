@@ -8,6 +8,10 @@ Build-Depends: debhelper (>= 8),
                autotools-dev (>= 20100122.1),
 	       dh-autoreconf,
                zlib1g-dev,
+               libgrok-dev,
+               libgrok1,
+               libtokyocabinet-dev,
+               libtokyocabinet9,
                libmysqlclient-dev,
                libpq-dev,
 	       libmongoc-dev,
@@ -226,6 +230,16 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
+
+Package: rsyslog-mmgrok
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libgrok1,
+         libtokyocabinet9,
+         rsyslog (= ${binary:Version}),
+Description: Provides the mmgrok rsyslog plugin
 
 Package: rsyslog-imkmsg
 Architecture: any
