@@ -7,6 +7,8 @@ Build-Depends: debhelper (>= 8),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
 	       dh-autoreconf,
+               librabbitmq-dev,
+               librabbitmq1,
                zlib1g-dev,
                libmysqlclient-dev,
                libpq-dev,
@@ -223,6 +225,15 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
+
+Package: rsyslog-omrabbitmq
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         librabbitmq1,
+         rsyslog (= ${binary:Version}),
+Description: Provides the omrabbitmq rsyslog plugin
 
 Package: rsyslog-imkmsg
 Architecture: any

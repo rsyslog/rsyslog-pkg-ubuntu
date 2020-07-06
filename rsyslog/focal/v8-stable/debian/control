@@ -7,6 +7,8 @@ Build-Depends: debhelper (>= 12),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
 	       dh-autoreconf,
+               librabbitmq-dev,
+               librabbitmq4,
                zlib1g-dev,
                libgrok-dev,
                libgrok1,
@@ -236,6 +238,15 @@ Depends: ${shlibs:Depends},
          libgrok1,
          rsyslog (= ${binary:Version}),
 Description: Provides the mmgrok rsyslog plugin
+
+Package: rsyslog-omrabbitmq
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         librabbitmq4,
+         rsyslog (= ${binary:Version}),
+Description: Provides the omrabbitmq rsyslog plugin
 
 Package: rsyslog-imkmsg
 Architecture: any

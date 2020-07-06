@@ -17,6 +17,7 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/rsyslog \
 		--libdir=/usr/lib \
 		--enable-kmsg \
+		--enable-omrabbitmq \
 		--enable-mmgrok \
 		--enable-omuxsock \
 		--enable-mysql \
