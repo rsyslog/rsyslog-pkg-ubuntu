@@ -28,6 +28,7 @@ override_dh_auto_configure:
 		--enable-impstats \
 		--enable-gnutls \
 		--enable-relp \
+		--enable-clickhouse \
 		--enable-pmaixforwardedfrom \
 		--enable-pmcisconames \
 		--enable-pmlastmsg \

@@ -164,6 +164,14 @@ Description: ZeroMQ protocol support for rsyslog via CZMQ
  These plugins allows rsyslog to send and receive ZeroMQ syslog
  messages via the CZMQ library.
 
+Package: rsyslog-omclickhouse
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Provides the omclickhouse rsyslog plugin
+
 Package: rsyslog-relp
 Architecture: any
 Priority: extra
