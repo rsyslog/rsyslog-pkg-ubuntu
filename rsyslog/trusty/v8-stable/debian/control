@@ -149,6 +149,14 @@ Description: PostgreSQL output plugin for rsyslog
 # encrypted syslog messages. GSSAPI is commonly used for Kerberos
 # authentication.
 
+Package: rsyslog-omclickhouse
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Provides the omclickhouse rsyslog plugin
+
 Package: rsyslog-relp
 Architecture: any
 Priority: extra
