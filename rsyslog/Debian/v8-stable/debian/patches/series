@@ -1,0 +1,5 @@
+#mmdblookup.patch -p1
+#exp-kafka.patch -p1
+#libdbi.patch -p1
+remove-rsyslog.service.patch -p1
+imjournal-optional.patch -p1

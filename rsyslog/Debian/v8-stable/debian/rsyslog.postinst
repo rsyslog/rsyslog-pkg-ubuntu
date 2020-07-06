@@ -1,0 +1,43 @@
+#!/bin/sh
+
+set -e
+
+# summary of how this script can be called:
+#        * <postinst> `configure' <most-recently-configured-version>
+#        * <old-postinst> `abort-upgrade' <new version>
+#        * <conflictor's-postinst> `abort-remove' `in-favour' <package>
+#          <new-version>
+#        * <postinst> `abort-remove'
+#        * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
+#          <failed-install-package> <version> `removing'
+#          <conflicting-package> <version>
+# for details, see http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+
+case "$1" in
+    configure)
+	# Fix permissions of the spool/work directory (Bug: #693099)
+	chmod 700 /var/spool/rsyslog
+
+	# Clean up temporary syslog.service symlink
+	if [ -d /run/systemd/system ] &&  dpkg --compare-versions "$2" lt-nl "7.4.1-2" ; then
+		rm -f /run/systemd/system/syslog.service
+	fi
+    ;;
+
+    triggered)
+	# Try to restart rsyslog
+	invoke-rc.d rsyslog try-restart || true
+	exit 0
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+	echo "postinst called with unknown argument \`$1'" >&2
+	exit 1
+    ;;
+esac
+
+#DEBHELPER#

@@ -1,0 +1,28 @@
+From: Michael Biebl <biebl@debian.org>
+Date: Wed, 31 Oct 2018 10:44:06 +0100
+Subject: Run queue-encryption-* tests only if gcrypt support is enabled
+
+https://github.com/rsyslog/rsyslog/issues/3228
+---
+ tests/Makefile.am | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/tests/Makefile.am b/tests/Makefile.am
+index 769459a..b72e0b6 100644
+--- a/tests/Makefile.am
++++ b/tests/Makefile.am
+@@ -448,6 +448,14 @@ endif # ENABLE_LIBGCRYPT
+ endif # HAVE_VALGRIND
+ endif # ENABLE_DEFAULT_TESTS
+ 
++if ENABLE_LIBGCRYPT
++TESTS +=  \
++	queue-encryption-disk.sh \
++	queue-encryption-disk_keyfile.sh \
++	queue-encryption-disk_keyprog.sh \
++	queue-encryption-da.sh
++endif # ENABLE_LIBGCRYPT
++
+ if ENABLE_SNMP
+ TESTS +=  \
+ 	omsnmp_errmsg_no_params.sh
