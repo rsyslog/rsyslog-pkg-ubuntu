@@ -148,5 +148,56 @@ jobs:
       - name: Install rsyslog-mmjsonparse
         run: sudo apt-get install rsyslog-mmjsonparse
 
+      - name: Install rsyslog-imkmsg
+        run: sudo apt-get install rsyslog-imkmsg
+
+      - name: Install rsyslog-improg
+        run: sudo apt-get install rsyslog-improg
+
+      - name: Install rsyslog-mongodb
+        run: sudo apt-get install rsyslog-mongodb
+
+      - name: Install rsyslog-omclickhouse
+        run: sudo apt-get install rsyslog-omclickhouse
+
+      - name: Install rsyslog-imdocker
+        run: sudo apt-get install rsyslog-imdocker
+
+      - name: Install rsyslog-omrabbitmq
+        run: sudo apt-get install rsyslog-omrabbitmq
+
+      - name: Install rsyslog-czmq
+        run: sudo apt-get install rsyslog-czmq
+
+      - name: Install rsyslog-mmgrok
+        run: sudo apt-get install rsyslog-mmgrok
+
+      - name: Install rsyslog-gnutls
+        run: sudo apt-get install rsyslog-gnutls
+
+      - name: Install rsyslog-openssl
+        run: sudo apt-get install rsyslog-openssl
+
+      - name: Install rsyslog-pmnormalize
+        run: sudo apt-get install rsyslog-pmnormalize
+
+      - name: Install rsyslog-redis
+        run: sudo apt-get install rsyslog-redis
+
+      - name: Install rsyslog-omstdout
+        run: sudo apt-get install rsyslog-omstdout
+
+      - name: Install rsyslog-fmhttp
+        run: sudo apt-get install rsyslog-fmhttp
+
+      - name: Install rsyslog-fmhash
+        run: sudo apt-get install rsyslog-fmhash
+
+      - name: Install rsyslog-mmkubernetes
+        run: sudo apt-get install rsyslog-mmkubernetes
+
+      - name: Install rsyslog-impcap
+        run: sudo apt-get install rsyslog-impcap
+
       - name: Display installed rsyslog packages
         run: dpkg -l | grep -E 'rsyslog|adiscon'
