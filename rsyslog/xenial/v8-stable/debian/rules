@@ -14,6 +14,7 @@ unexport LDFLAGS
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		--enable-kmsg \
+		--enable-improg \
 		--enable-imdocker \
 		--enable-omrabbitmq \
 		--enable-mmgrok \
