@@ -276,6 +276,14 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Provides the imdocker rsyslog plugin
 
+Package: rsyslog-improg
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Provides the improg rsyslog plugin
+
 Package: rsyslog-imkmsg
 Architecture: any
 Priority: extra
