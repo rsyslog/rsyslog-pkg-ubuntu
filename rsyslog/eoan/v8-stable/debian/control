@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 8),
                libczmq-dev (>= 4.0.0),
 	       dh-autoreconf,
                librabbitmq-dev,
-               librabbitmq1,
+               librabbitmq4,
                zlib1g-dev,
                libmysqlclient-dev,
                libpq-dev,
@@ -263,7 +263,7 @@ Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         librabbitmq1,
+         librabbitmq4,
          rsyslog (= ${binary:Version}),
 Description: Provides the omrabbitmq rsyslog plugin
 
@@ -406,14 +406,3 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 Description: Message modification module to add Kubernetes metadata to a messages.
-
-#Package: rsyslog-zmq
-#Architecture: any
-#Priority: extra
-#Depends: ${shlibs:Depends},
-#         ${misc:Depends},
-#         rsyslog (= ${binary:Version}),
-# 	  libzmq1
-#Description: zmq3 support for RSyslog. 
-# These plugins allows you to push data from and into rsyslog from a 
-# zeromq socket.
