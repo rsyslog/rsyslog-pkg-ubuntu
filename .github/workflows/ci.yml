@@ -139,7 +139,7 @@ jobs:
         run: |
           docker run --rm -v $GITHUB_WORKSPACE/debs-14.04:/debs ubuntu:14.04 bash -c \
           '
-          echo "deb [trusted=yes] file:///debs ./" >> /etc/apt/sources.list
+          echo "deb file:///debs ./" >> /etc/apt/sources.list
           apt-get update
           apt-get install -y rsyslog rsyslog-improg rsyslog-imkmsg
           '
@@ -181,7 +181,13 @@ jobs:
 
       - name: install test new version
         run: |
-          echo "deb [trusted=yes] file://$GITHUB_WORKSPACE/debs-${{ matrix.release }} ./" | sudo tee /etc/apt/sources.list
+          curl -fsSL https://download.opensuse.org/repositories/home:rgerhards/xUbuntu_${{ matrix.release }}/Release.key \
+            | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home:rgerhards.gpg > /dev/null
+          echo after key import, key data:
+          sudo ls -l /etc/apt/trusted.gpg.d/home:rgerhards.gpg
+          sudo cat /etc/apt/trusted.gpg.d/home:rgerhards.gpg
+          echo "deb file://$GITHUB_WORKSPACE/debs-${{ matrix.release }} ./" | sudo tee /etc/apt/sources.list.d/home:rgerhards.list
+          #echo "deb file://$GITHUB_WORKSPACE/debs-${{ matrix.release }} ./" | sudo tee /etc/apt/sources.list
           sudo apt-get update
           sudo apt-get install -y rsyslog rsyslog-improg rsyslog-imkmsg
           rsyslogd -v
