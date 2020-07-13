@@ -23,6 +23,7 @@ override_dh_auto_configure:
 		--enable-pgsql \
 		--enable-mail \
 		--enable-imfile \
+		--enable-impcap \
 		--enable-impstats \
 		--enable-gnutls \
 		--enable-relp \
