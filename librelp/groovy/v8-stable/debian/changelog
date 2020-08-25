@@ -1,3 +1,9 @@
+librelp (1.7.0-0adiscon1groovy1) groovy; urgency=medium
+
+  * New upstream release for librelp 1.7.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 25 Aug 2020 13:44:20 +0000
+
 librelp (1.6.0-0adiscon1groovy1) groovy; urgency=medium
 
   * Initial build for Ubuntu 20.10
