@@ -1,12 +1,9 @@
 rsyslog-pkg-ubuntu
 ==================
 
-<!--
-  FIXME: Reference the upstream repo instead of this forked/testing repo when submitting upstream
- -->
-![Install rsyslog packages from OBS](https://github.com/atc0005/rsyslog-pkg-ubuntu/workflows/Install%20rsyslog%20packages%20from%20OBS/badge.svg?branch=master)
-![Install rsyslog packages from PPA](https://github.com/atc0005/rsyslog-pkg-ubuntu/workflows/Install%20rsyslog%20packages%20from%20PPA/badge.svg)
-
+[![CI PR runner](https://github.com/rsyslog/rsyslog-pkg-ubuntu/workflows/CI%20PR%20runner/badge.svg)](https://github.com/rsyslog/rsyslog-pkg-ubuntu/actions?query=workflow%3A%22CI+PR+runner%22)
+[![Install rsyslog packages from OBS](https://github.com/rsyslog/rsyslog-pkg-ubuntu/workflows/Install%20rsyslog%20packages%20from%20OBS/badge.svg?branch=master)](https://github.com/rsyslog/rsyslog-pkg-ubuntu/actions?query=workflow%3A%22Install+rsyslog+packages+from+OBS%22)
+[![Install rsyslog packages from PPA](https://github.com/rsyslog/rsyslog-pkg-ubuntu/workflows/Install%20rsyslog%20packages%20from%20PPA/badge.svg)](https://github.com/rsyslog/rsyslog-pkg-ubuntu/actions?query=workflow%3A%22Install+rsyslog+packages+from+PPA%22)
 
 This respository contains the sources needed to build Ubuntu rsyslog
 packages. It is our goal to create the best possible packages for
