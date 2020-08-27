@@ -18,6 +18,10 @@ override_dh_auto_configure:
 		--enable-elasticsearch \
 		--enable-imkafka=optional \
 		--enable-omkafka=optional \
+		--enable-mysql \
+		--enable-pgsql \
+		--enable-mmrm1stspace \
+		--enable-mmfields \
 		--enable-fmhash \
 		--enable-fmhttp \
 		--enable-gnutls \
