@@ -1,3 +1,9 @@
+rsyslog (8.2008.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2008.0
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
 rsyslog (8.2006.0-0adiscon2trusty1) trusty; urgency=medium
 
   * new subpackages

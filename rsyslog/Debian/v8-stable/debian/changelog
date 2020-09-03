@@ -1,3 +1,9 @@
+rsyslog (8.2008.0-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Thu, 27 Aug 2020 13:16:00 +0000
+
 rsyslog (8.2006.0-2) xenial; urgency=medium
 
   * fix missing rsyslog.service file
