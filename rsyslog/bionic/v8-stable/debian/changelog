@@ -1,3 +1,9 @@
+rsyslog (8.2010.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2010.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 10 Oct 2020 09:24:57 +0000
+
 rsyslog (8.2008.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.2008.0
