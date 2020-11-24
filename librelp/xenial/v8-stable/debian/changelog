@@ -1,3 +1,9 @@
+librelp (1.8.0-0adiscon1xenial1) xenial; urgency=medium
+
+  * New upstream release for librelp 1.8.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Sep 2020 14:12:23 +0000
+
 librelp (1.7.0-0adiscon1xenial1) xenial; urgency=medium
 
   * New upstream release for librelp 1.7.0

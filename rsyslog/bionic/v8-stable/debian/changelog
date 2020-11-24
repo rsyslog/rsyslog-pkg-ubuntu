@@ -4,6 +4,12 @@ rsyslog (8.2010.0-0adiscon1bionic1) bionic; urgency=medium
 
  -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Oct 2020 09:29:05 +0000
 
+rsyslog (8.2008.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Rebuild for librelp 1.8.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Sep 2020 20:37:01 +0000
+
 rsyslog (8.2008.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.2008.0
