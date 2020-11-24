@@ -1,3 +1,9 @@
+rsyslog (8.2008.0-0adiscon2groovy1) groovy; urgency=medium
+
+  * Rebuild for librelp 1.8.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Sep 2020 20:38:07 +0000
+
 rsyslog (8.2008.0-0adiscon1groovy1) groovy; urgency=medium
 
   * Packages for 8.2008.0
