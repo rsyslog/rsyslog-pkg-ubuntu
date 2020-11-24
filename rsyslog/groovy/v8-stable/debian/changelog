@@ -1,3 +1,9 @@
+rsyslog (8.2010.0-0adiscon3groovy1) groovy; urgency=medium
+
+  * Rebuild for librelp 1.9.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 24 Nov 2020 15:54:22 +0000
+
 rsyslog (8.2010.0-0adiscon2groovy1) groovy; urgency=medium
 
   * Disabled mmgrok
