@@ -259,14 +259,14 @@ Depends: ${shlibs:Depends},
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
-Package: rsyslog-mmgrok
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         libgrok1,
-         rsyslog (= ${binary:Version}),
-Description: Provides the mmgrok rsyslog plugin
+#Package: rsyslog-mmgrok
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         libgrok1,
+#         rsyslog (= ${binary:Version}),
+#Description: Provides the mmgrok rsyslog plugin
 
 Package: rsyslog-omrabbitmq
 Architecture: any
