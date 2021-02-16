@@ -1,3 +1,9 @@
+rsyslog (8.2102.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2102.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 Feb 2021 11:13:01 +0000
+
 rsyslog (8.2012.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.2012.0

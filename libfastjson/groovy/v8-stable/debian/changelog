@@ -1,3 +1,9 @@
+libfastjson (0.99.9-0adiscon1groovy1) groovy; urgency=medium
+
+  * New upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 15 Feb 2021 13:54:03 +0000
+
 libfastjson (0.99.8-0adiscon1groovy1) groovy; urgency=medium
 
   * Initial build for Ubuntu 20.10

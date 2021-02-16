@@ -1,3 +1,9 @@
+libfastjson (0.99.9-0adiscon1focal1) focal; urgency=medium
+
+  * New upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 15 Feb 2021 13:53:34 +0000
+
 libfastjson (0.99.8-0adiscon1focal1) focal; urgency=medium
 
   * Initial package for Ubuntu 20.04

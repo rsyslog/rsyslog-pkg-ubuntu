@@ -1,3 +1,9 @@
+libfastjson (0.99.9-0adiscon1bionic1) bionic; urgency=medium
+
+  * New upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 15 Feb 2021 13:51:06 +0000
+
 libfastjson (0.99.8-0adiscon1bionic1) bionic; urgency=medium
 
   * Initial build for Ubuntu 18.04

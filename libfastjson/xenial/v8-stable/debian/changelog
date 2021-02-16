@@ -1,3 +1,9 @@
+libfastjson (0.99.9-0adiscon1xenial1) xenial; urgency=medium
+
+  * New upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 15 Feb 2021 13:50:16 +0000
+
 libfastjson (0.99.8-0adiscon1xenial1) xenial; urgency=medium
 
   * New upstream release

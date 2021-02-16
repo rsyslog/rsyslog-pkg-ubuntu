@@ -1,3 +1,9 @@
+rsyslog (8.2102.0-0adiscon1focal1) focal; urgency=medium
+
+  * Packages for 8.2102.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 Feb 2021 11:14:56 +0000
+
 rsyslog (8.2012.0-0adiscon3focal1) focal; urgency=medium
 
   * Rebuild for redis dependency fix
