@@ -1,3 +1,9 @@
+rsyslog (8.2104.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2104.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 08 Dec 2020 10:17:34 +0000
+
 rsyslog (8.2012.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.2012.0

@@ -1,3 +1,9 @@
+rsyslog (8.2104.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2104.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 19 Apr 2021 10:18:50 +0000
+
 rsyslog (8.2012.0-0adiscon1trusty1) trusty; urgency=medium
 
   * Packages for 8.2012.0
