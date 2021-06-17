@@ -1,3 +1,9 @@
+rsyslog (8.2106.0-0adiscon1groovy1) groovy; urgency=medium
+
+  * Packages for 8.2106.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 15 Jun 2021 10:18:50 +0000
+
 rsyslog (8.2104.0-0adiscon1groovy1) groovy; urgency=medium
 
   * Packages for 8.2104.0

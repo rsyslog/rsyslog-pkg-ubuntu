@@ -1,3 +1,9 @@
+rsyslog (8.2106.0-0adiscon1focal1) focal; urgency=medium
+
+  * Packages for 8.2106.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Jun 2021 10:18:09 +0000
+
 rsyslog (8.2104.0-0adiscon1focal1) focal; urgency=medium
 
   * Packages for 8.2104.0
