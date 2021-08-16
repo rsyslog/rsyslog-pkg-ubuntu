@@ -1,72 +1,65 @@
-rsyslog (8.2004.0-0adiscon12focal1) focal; urgency=medium
+rsyslog (8.2106.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * libdir and libexecdir absolute paths
+  * Packages for 8.2106.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 10:37:03 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Jun 2021 10:18:50 +0000
 
-rsyslog (8.2004.0-0adiscon11focal1) focal; urgency=medium
+rsyslog (8.2104.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Set libdir and libexecdir in rules
+  * Packages for 8.2104.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 10:24:28 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 19 Apr 2021 10:18:50 +0000
 
-rsyslog (8.2004.0-0adiscon10focal1) focal; urgency=medium
+rsyslog (8.2012.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Fix test for rules file
+  * Packages for 8.2012.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 09:03:06 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 08 Dec 2020 10:18:50 +0000
 
-rsyslog (8.2004.0-0adiscon9focal1) focal; urgency=medium
+rsyslog (8.2010.0-0adiscon3groovy1) groovy; urgency=medium
 
-  * Fix test for rules file
+  * Rebuild for librelp 1.9.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 25 May 2020 08:36:30 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 24 Nov 2020 15:54:22 +0000
 
-rsyslog (8.2004.0-0adiscon8focal1) focal; urgency=medium
+rsyslog (8.2010.0-0adiscon2groovy1) groovy; urgency=medium
 
-  * Upped debhelper required version to 12
+  * Disabled mmgrok
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 15:10:28 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Oct 2020 12:35:58 +0000
 
-rsyslog (8.2004.0-0adiscon7focal1) focal; urgency=medium
+rsyslog (8.2010.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Removed debhelper compat, instead set compatibility mode
+  * Packages for 8.2010.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 14:42:18 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Oct 2020 09:30:13 +0000
 
-rsyslog (8.2004.0-0adiscon6focal1) focal; urgency=medium
+rsyslog (8.2008.0-0adiscon2groovy1) groovy; urgency=medium
 
-  * Set debhelper-compat in Builddepends
+  * Rebuild for librelp 1.8.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 14:37:57 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Sep 2020 20:38:07 +0000
 
-rsyslog (8.2004.0-0adiscon5focal1) focal; urgency=medium
+rsyslog (8.2008.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Changed debhelper level
+  * Packages for 8.2008.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 14:17:17 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
 
-rsyslog (8.2004.0-0adiscon4focal1) focal; urgency=medium
+rsyslog (8.2006.0-0adiscon2groovy1) groovy; urgency=medium
 
-  * Disabled mmkubernetes
+  * new subpackages
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 13:47:33 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
 
-rsyslog (8.2004.0-0adiscon3focal1) focal; urgency=medium
+rsyslog (8.2006.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Re-upload
+  * Packages for 8.2006.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 20 May 2020 13:34:04 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Jun 2020 13:58:54 +0000
 
-rsyslog (8.2004.0-0adiscon2focal1) focal; urgency=medium
+rsyslog (8.2004.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Re-Upload
+  * Initial build for Ubuntu 20.10
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 13:18:09 +0000
-
-rsyslog (8.2004.0-0adiscon1focal1) focal; urgency=medium
-
-  * Initial package for Ubuntu 20.04
-
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 10:38:08 +0000
-
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 28 May 2020 15:31:27 +0000
