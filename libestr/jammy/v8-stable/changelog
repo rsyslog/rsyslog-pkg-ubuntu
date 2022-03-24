@@ -1,0 +1,5 @@
+libestr (0.1.9-0adiscon1jammy1) jammy; urgency=low
+
+  * Initial build for Ubuntu 22.04 Jammy
+
+ -- Andre Lorbach <alorbach@adiscon.com>  Fri, 25 Apr 2014 15:19:34 +0200

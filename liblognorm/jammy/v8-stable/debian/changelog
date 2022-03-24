@@ -1,0 +1,5 @@
+liblognorm (2.0.6-0adiscon1jammy1) jammy; urgency=medium
+
+  * Initial build for Ubuntu 22.04 Jammy
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 09:59:24 +0000

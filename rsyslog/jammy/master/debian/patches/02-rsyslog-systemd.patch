@@ -1,0 +1,13 @@
+diff --git a/rsyslog.service.in b/rsyslog.service.in
+--- a/rsyslog.service.in
++++ b/rsyslog.service.in
+@@ -6,7 +6,9 @@ 
+
+ [Service]
+ Type=notify
+-ExecStart=@sbindir@/rsyslogd -n -iNONE
++EnvironmentFile=-/etc/default/rsyslog
++ExecStart=@sbindir@/rsyslogd -n -i/var/run/rsyslogd.pid $SYSLOGD_OPTIONS
++UMask=0066
+ StandardOutput=null
+ Restart=on-failure

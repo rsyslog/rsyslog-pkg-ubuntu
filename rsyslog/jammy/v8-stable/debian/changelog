@@ -1,0 +1,6 @@
+rsyslog (8.2202.0-0adiscon1jammy1) jammy; urgency=medium
+
+  * Initial Packages for Ubuntu 22.04 Jammy
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 15 Feb 2022 13:29:59 +0000
+
