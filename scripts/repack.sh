@@ -2,7 +2,7 @@
 echo download tar to be released: $1
 
 rm -v *.tar.gz
-wget $1
+wget --no-check-certificate $1
 
 TARGZFILE=`ls *.tar.gz`
 

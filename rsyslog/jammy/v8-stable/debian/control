@@ -11,9 +11,9 @@ Build-Depends: debhelper (>= 12),
                librabbitmq-dev,
                librabbitmq4,
                zlib1g-dev,
-               libgrok-dev,
-               libgrok1,
                libmysqlclient-dev,
+               libgrok1,
+               libgrok-dev,
                libpq-dev,
 	       libmongoc-dev,
                librelp-dev (>= 1.2.17),
@@ -27,7 +27,6 @@ Build-Depends: debhelper (>= 12),
                libgnutls28-dev,
                pkg-config,
                dh-apparmor,
-               dh-systemd (>= 1.4),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       libgcrypt-dev,
@@ -38,6 +37,7 @@ Build-Depends: debhelper (>= 12),
 	       libsasl2-dev,
 	       libssl-dev,
 	       libhiredis-dev
+#              dh-systemd (>= 1.4),
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -250,14 +250,14 @@ Depends: ${shlibs:Depends},
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
-Package: rsyslog-mmgrok
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         libgrok1,
-         rsyslog (= ${binary:Version}),
-Description: Provides the mmgrok rsyslog plugin
+#Package: rsyslog-mmgrok
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#        ${misc:Depends},
+#        libgrok1,
+#        rsyslog (= ${binary:Version}),
+#escription: Provides the mmgrok rsyslog plugin
 
 Package: rsyslog-omrabbitmq
 Architecture: any
