@@ -20,7 +20,7 @@ rsyslog (8.2110.0-0adiscon1focal1) focal; urgency=medium
 
   * Packages for 8.2110.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Sep 2021 10:17:34 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Oct 2021 10:17:34 +0000
 
 rsyslog (8.2108.0-0adiscon1focal1) focal; urgency=medium
 
