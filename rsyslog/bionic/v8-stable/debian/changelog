@@ -2,7 +2,7 @@ rsyslog (8.2204.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.2204.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Apr 2022 13:14:04 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 19 Apr 2022 13:29:59 +0000
 
 rsyslog (8.2202.0-0adiscon1bionic1) bionic; urgency=medium
 
@@ -20,7 +20,7 @@ rsyslog (8.2110.0-0adiscon1bionic1) bionic; urgency=medium
 
   * Packages for 8.2110.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Sep 2021 10:17:34 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Oct 2021 10:17:34 +0000
 
 rsyslog (8.2108.0-0adiscon1bionic1) bionic; urgency=medium
 
