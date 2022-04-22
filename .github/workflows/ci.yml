@@ -74,6 +74,8 @@ jobs:
           echo repair OBS wc
           osc repairwc .
           echo packaging ubuntu package defs for OBS
+          cat /usr/src/packages/SOURCES/rsyslog-xUbuntu_14.04.dsc
+          rm *xz *orig*
           source ./build-ubuntu.sh
           "
 
