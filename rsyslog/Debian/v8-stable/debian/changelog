@@ -1,3 +1,9 @@
+rsyslog (8.2206.0-1) xenial; urgency=medium
+
+  * Packages for 8.2206.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 14 Jun 2022 13:29:59 +0000
+
 rsyslog (8.2204.1-1) xenial; urgency=medium
 
   * Packages for 8.2204.1
