@@ -4,6 +4,12 @@ rsyslog (8.2204.1-0adiscon3jammy1) jammy; urgency=medium
 
  -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 05 May 2022 13:29:59 +0000
 
+rsyslog (8.2204.0-0adiscon1jammy1) jammy; urgency=medium
+
+  * Packages for 8.2204.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Apr 2022 13:15:02 +0000
+
 rsyslog (8.2202.0-0adiscon3jammy1) jammy; urgency=medium
 
   * Disabled mmgrok for Jammy due to build error
