@@ -37,6 +37,7 @@ Build-Depends: debhelper (>= 12),
 	       libsasl2-dev,
 	       libssl-dev,
 	       libhiredis-dev
+	       util-linux
 #              dh-systemd (>= 1.4),
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
