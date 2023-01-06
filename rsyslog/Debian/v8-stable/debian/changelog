@@ -1,8 +1,16 @@
+rsyslog (8.2212.0-2) xenial; urgency=medium
+
+  * enable [im|om]kafka
+    This was previously not possible due to missing librdkafka
+    in some Debian versions
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 05 Jan 2023 13:29:59 +0000
+
 rsyslog (8.2212.0-1) xenial; urgency=medium
 
   * Packages for 8.2212.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 06 Dec 2022 13:29:59 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 06 Dec 2022 13:29:59 +0000
 
 rsyslog (8.2210.0-1) xenial; urgency=medium
 

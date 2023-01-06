@@ -16,8 +16,8 @@ override_dh_auto_configure:
 		--disable-libgcrypt \
 		--disable-liblogging-stdlog \
 		--enable-elasticsearch \
-		--enable-imkafka=optional \
-		--enable-omkafka=optional \
+		--enable-imkafka=yes \
+		--enable-omkafka=yes \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mmrm1stspace \
@@ -29,6 +29,7 @@ override_dh_auto_configure:
 		--enable-imfile \
 		--enable-impstats \
 		--enable-imjournal=optional \
+		--enable-omjournal \
 		--enable-imptcp \
 		--enable-mail \
 		--enable-clickhouse \

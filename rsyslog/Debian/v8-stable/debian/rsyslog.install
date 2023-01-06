@@ -28,6 +28,7 @@ usr/lib/rsyslog/ommail.so
 usr/lib/rsyslog/omprog.so
 usr/lib/rsyslog/omuxsock.so
 usr/lib/rsyslog/imjournal.so
+usr/lib/rsyslog/omjournal.so
 #usr/lib/rsyslog/pm*.so
 #[linux-any] usr/lib/rsyslog/imkmsg.so
 #[linux-any] usr/lib/rsyslog/imptcp.so
