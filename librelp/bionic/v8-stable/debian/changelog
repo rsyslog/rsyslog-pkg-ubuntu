@@ -1,3 +1,15 @@
+librelp (1.11.0-0adiscon1bionic1ubuntu1) bionic; urgency=medium
+
+  * New upstream release for librelp 1.11.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 10 Jan 2023 11:06:30 +0000
+
+librelp (1.10.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * New upstream release for librelp 1.10.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 Feb 2021 09:50:56 +0000
+
 librelp (1.9.0-0adiscon1bionic1) bionic; urgency=medium
 
   * New upstream release for librelp 1.9.0

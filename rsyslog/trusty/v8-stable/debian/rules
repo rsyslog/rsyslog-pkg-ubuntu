@@ -50,7 +50,6 @@ override_dh_auto_configure:
 		--enable-mmrm1stspace \
 		--enable-omkafka \
 		--enable-imkafka \
-		--enable-kafka-static \
 		--enable-omstdout \
 		--enable-mmkubernetes \
 		--enable-openssl \
@@ -71,6 +70,7 @@ override_dh_auto_configure:
 #                --enable-imzmq3 \
 #                --enable-omzmq3 \
 
+#		--enable-kafka-static \
 override_dh_auto_install:
 	dh_auto_install
 	install --mode=644 -D plugins/ommysql/createDB.sql debian/rsyslog-mysql/usr/share/dbconfig-common/data/rsyslog-mysql/install/mysql
