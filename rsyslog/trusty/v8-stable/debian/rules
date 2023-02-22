@@ -50,7 +50,6 @@ override_dh_auto_configure:
 		--enable-mmrm1stspace \
 		--enable-omkafka \
 		--enable-imkafka \
-		--enable-kafka-static \
 		--enable-omstdout \
 		--enable-mmkubernetes \
 		--enable-openssl \
@@ -59,6 +58,7 @@ override_dh_auto_configure:
                 --with-systemdsystemunitdir=/lib/systemd/system
 
 # unstable	
+#		--enable-kafka-static \
 #		--enable-guardtime \
 #		--enable-gt-ksi \ 
 #		              
