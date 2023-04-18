@@ -37,7 +37,8 @@ Build-Depends: debhelper (>= 12),
 	       libsasl2-dev,
 	       libssl-dev,
 	       libhiredis-dev,
-	       util-linux
+	       util-linux,
+	       libnet-dev
 #              dh-systemd (>= 1.4),
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
@@ -314,6 +315,15 @@ Suggests: gnutls-bin
 Description: TLS protocol support for rsyslog
  This netstream plugin allows rsyslog to send and receive encrypted syslog
  messages via the upcoming syslog-transport-tls IETF standard protocol.
+
+Package: rsyslog-udpspoof
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libnet-dev
+Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
 
 Package: rsyslog-openssl
 Architecture: any
