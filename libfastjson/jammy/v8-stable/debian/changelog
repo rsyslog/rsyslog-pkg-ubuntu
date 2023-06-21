@@ -1,3 +1,9 @@
+libfastjson (1.2304.0-0adiscon1jammy1) jammy; urgency=medium
+
+  * New upstream release
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Apr 2023 10:35:10 +0000
+
 libfastjson (0.99.9-0adiscon1jammy1) jammy; urgency=medium
 
   * Initial package for Ubuntu 22.04 Jammy
