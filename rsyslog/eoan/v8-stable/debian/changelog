@@ -1,3 +1,9 @@
+rsyslog (8.2312.0-0adiscon1eoan1) eoan; urgency=medium
+
+  * Packages for 8.2312.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 12 Dec 2023 13:29:59 +0000
+
 rsyslog (8.2310.0-0adiscon1eoan1) eoan; urgency=medium
 
   * Packages for 8.2310.0
