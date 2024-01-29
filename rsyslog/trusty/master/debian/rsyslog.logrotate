@@ -7,7 +7,7 @@
 	delaycompress
 	compress
 	postrotate
-		/etc/init.d/rsyslog rotate > /dev/null
+		/etc/init.d/rsyslog rotate > /dev/null	
 	endscript
 }
 
@@ -33,6 +33,6 @@
 	delaycompress
 	sharedscripts
 	postrotate
-		/etc/init.d/rsyslog rotate > /dev/null
+		/etc/init.d/rsyslog rotate > /dev/null	
 	endscript
 }

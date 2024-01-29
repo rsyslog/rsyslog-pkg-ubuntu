@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 DPKG_EXPORT_BUILDFLAGS = 1
+export DEB_BUILD_OPTIONS="parallel=4"
 include /usr/share/dpkg/buildflags.mk
 
 # the default LDFLAGS="-Wl,-Bsymbolic-functions" caused rsyslog to
@@ -8,20 +9,29 @@ include /usr/share/dpkg/buildflags.mk
 unexport LDFLAGS
 
 %:
-	dh $@ --with autoreconf
+	dh $@ --parallel --with autoreconf
 #org	dh $@ --with autotools_dev
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--libdir=/usr/lib \
 		--libexecdir=/usr/lib/rsyslog \
+		--libdir=/usr/lib \
+		--enable-kmsg \
+		--enable-improg \
+		--enable-imdocker \
+		--enable-omrabbitmq \
+		--enable-imczmq \
+		--enable-omczmq \
+		--enable-omuxsock \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mail \
 		--enable-imfile \
+		--enable-impcap \
 		--enable-impstats \
 		--enable-gnutls \
 		--enable-relp \
+		--enable-clickhouse \
 		--enable-pmaixforwardedfrom \
 		--enable-pmcisconames \
 		--enable-pmlastmsg \
@@ -41,6 +51,7 @@ override_dh_auto_configure:
 		--enable-pmciscoios \
 		--enable-pmnormalize \
 		--enable-usertools \
+		--enable-omudpspoof \
 		--enable-imjournal \
 		--enable-omjournal \
 		--enable-mmrm1stspace \
@@ -49,14 +60,13 @@ override_dh_auto_configure:
 		--enable-imkafka \
 		--enable-omhiredis \
 		--enable-omstdout \
-		--enable-mmkubernetes \
 		--enable-openssl \
+		--enable-mmkubernetes \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
 
 #
-#		--enable-kafka-static \
 #		--enable-omkafka \
 #		 --enable-guardtime \
 #		 --enable-gt-ksi \
@@ -66,6 +76,8 @@ override_dh_auto_configure:
 #                --enable-mmnormalize \
 #                --enable-imzmq3 \
 #                --enable-omzmq3 \
+#		--enable-kafka-static \
+#		--enable-mmgrok \
 
 override_dh_auto_install:
 	dh_auto_install

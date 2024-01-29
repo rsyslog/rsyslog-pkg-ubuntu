@@ -1,120 +1,149 @@
-rsyslog (8.28.0-0adiscon4zesty1) zesty; urgency=medium
+rsyslog (8.2312.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Repack
+  * Packages for 8.2312.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 09:04:54 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 12 Dec 2023 13:29:59 +0000
 
-rsyslog (8.28.0-0adiscon3zesty1) zesty; urgency=medium
+rsyslog (8.2310.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Repack
+  * Packages for 8.2310.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 10:49:43 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 10 Oct 2023 13:29:59 +0000
 
-rsyslog (8.28.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2308.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Enabled imkafka/omkafka
+  * Packages for 8.2308.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 08:07:15 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 15 Aug 2023 13:29:59 +0000
 
-rsyslog (8.28.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2306.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * package for 8.28.0
+  * Packages for 8.2306.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 12:31:57 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jun 2023 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon4zesty1) zesty; urgency=medium
+rsyslog (8.2304.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Repack
+  * Packages for 8.2304.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 14:55:48 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 18 Apr 2023 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon3zesty1) zesty; urgency=medium
+rsyslog (8.2302.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Re-enabled omkafka
+  * Packages for 8.2302.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 10:29:27 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 21 Feb 2023 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2212.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Fixed disabled rules
+  * Packages for 8.2212.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:57:45 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 06 Dec 2022 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2210.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Packages for 8.27.0
-  * Removed Kafka package for re-work
+  * Packages for 8.2210.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:43:33 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 18 Oct 2022 13:29:59 +0000
 
-rsyslog (8.26.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2206.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Added modules pmnull and omkafka to the packages
+  * Packages for 8.2206.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 13 Apr 2017 14:20:49 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 14 Jun 2022 13:29:59 +0000
 
-rsyslog (8.26.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2204.1-0adiscon1groovy1) groovy; urgency=medium
 
-  * Packages for 8.26.0
+  * Packages for 8.2204.1
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Apr 2017 13:10:26 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 05 May 2022 13:29:59 +0000
 
-rsyslog (8.25.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2204.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Packages for 8.25.0
+  * Packages for 8.2204.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 21 Feb 2017 16:01:58 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 19 Apr 2022 13:29:59 +0000
 
-rsyslog (8.24.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2202.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Added separate package for new module mmrm1stspace
+  * Packages for 8.2202.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Feb 2017 16:44:25 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 15 Feb 2022 13:29:59 +0000
 
-rsyslog (8.24.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2110.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Packages for 8.24.0
+  * Packages for 8.2110.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 10 Jan 2017 13:31:00 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Oct 2021 10:17:34 +0000
 
-rsyslog (8.23.0-0adiscon1yakkety1) yakkety; urgency=medium
+rsyslog (8.2108.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * Packages for 8.23.0
+  * Packages for 8.2108.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 16:51:21 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 17 Aug 2021 10:17:34 +0000
 
-rsyslog (8.22.0-0adiscon1yakkety1) yakkety; urgency=medium
+rsyslog (8.2106.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * New packages for 8.22.0
+  * Packages for 8.2106.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Oct 2016 15:03:04 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Jun 2021 12:55:50 +0000
 
-rsyslog (8.21.0-0adiscon1yakkety1) yakkety; urgency=medium
+rsyslog (8.2104.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * new upstream release
-  * disable liblogging-stdlog
-    We currently want to log by default by the syslog() API
+  * Packages for 8.2104.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Aug 2016 14:44:38 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 19 Apr 2021 10:18:50 +0000
 
-rsyslog (8.20.0-0adiscon5yakkety1) yakkety; urgency=medium
+rsyslog (8.2012.0-0adiscon1groovy1) groovy; urgency=medium
 
-  * fix dependencies
+  * Packages for 8.2012.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 08:20:34 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 08 Dec 2020 10:18:50 +0000
 
-rsyslog (8.20.0-0adiscon4yakkety1) yakkety; urgency=medium
+rsyslog (8.2010.0-0adiscon3groovy1) groovy; urgency=medium
 
-  * fix apparmor rules that could prevent startup
-    see also https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/48
-  * yakkety seems to no longer provide libgnutls-dev but libgnutls28-dev
-    instead. Adjusted build dependency.
+  * Rebuild for librelp 1.9.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 06:38:34 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 24 Nov 2020 15:54:22 +0000
 
-rsyslog (8.20.0-0adiscon3yakket1) yakkety; urgency=medium
+rsyslog (8.2010.0-0adiscon2groovy1) groovy; urgency=medium
 
-  * initial release for yakkety
-  * add support for libfastjson 0.99.3, liblognorm 2.0.1 packages 
+  * Disabled mmgrok
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 12:14:09 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Oct 2020 12:35:58 +0000
+
+rsyslog (8.2010.0-0adiscon1groovy1) groovy; urgency=medium
+
+  * Packages for 8.2010.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Oct 2020 09:30:13 +0000
+
+rsyslog (8.2008.0-0adiscon2groovy1) groovy; urgency=medium
+
+  * Rebuild for librelp 1.8.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Sep 2020 20:38:07 +0000
+
+rsyslog (8.2008.0-0adiscon1groovy1) groovy; urgency=medium
+
+  * Packages for 8.2008.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
+rsyslog (8.2006.0-0adiscon2groovy1) groovy; urgency=medium
+
+  * new subpackages
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
+rsyslog (8.2006.0-0adiscon1groovy1) groovy; urgency=medium
+
+  * Packages for 8.2006.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Jun 2020 13:58:54 +0000
+
+rsyslog (8.2004.0-0adiscon1groovy1) groovy; urgency=medium
+
+  * Initial build for Ubuntu 20.10
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 28 May 2020 15:31:27 +0000

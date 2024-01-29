@@ -1,3 +1,461 @@
+rsyslog (8.2312.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2312.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 12 Dec 2023 13:29:59 +0000
+
+rsyslog (8.2310.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2310.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 10 Oct 2023 13:29:59 +0000
+
+rsyslog (8.2308.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2308.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 15 Aug 2023 13:29:59 +0000
+
+rsyslog (8.2306.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2306.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jun 2023 13:29:59 +0000
+
+rsyslog (8.2304.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2304.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 18 Apr 2023 13:29:59 +0000
+
+rsyslog (8.2302.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2302.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 21 Feb 2023 13:29:59 +0000
+
+rsyslog (8.2212.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2212.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 06 Dec 2022 13:29:59 +0000
+
+rsyslog (8.2210.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2210.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 18 Oct 2022 13:29:59 +0000
+
+rsyslog (8.2206.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2206.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 14 Jun 2022 13:29:59 +0000
+
+rsyslog (8.2204.1-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2204.1
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 05 May 2022 13:29:59 +0000
+
+rsyslog (8.2204.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2204.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 19 Apr 2022 13:29:59 +0000
+
+rsyslog (8.2202.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2202.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 15 Feb 2022 13:29:59 +0000
+
+rsyslog (8.2112.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2112.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 16 Dec 2021 13:28:18 +0000
+
+rsyslog (8.2110.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2110.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Oct 2021 10:17:34 +0000
+
+rsyslog (8.2108.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2108.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 17 Aug 2021 10:17:34 +0000
+
+rsyslog (8.2106.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2106.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Jun 2021 10:18:50 +0000
+
+rsyslog (8.2104.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2104.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 19 Apr 2021 10:18:50 +0000
+
+rsyslog (8.2012.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2012.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 08 Dec 2020 10:11:37 +0000
+
+rsyslog (8.2010.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild for librelp 1.9.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 24 Nov 2020 15:52:03 +0000
+
+rsyslog (8.2010.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2010.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Oct 2020 09:27:33 +0000
+
+rsyslog (8.2008.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild for librelp 1.8.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Sep 2020 20:35:46 +0000
+
+rsyslog (8.2008.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2008.0
+
+ -- Rainer Gerhards <rgerhards@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
+rsyslog (8.2006.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * new subpackages
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
+rsyslog (8.2006.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2006.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Jun 2020 13:55:31 +0000
+
+rsyslog (8.2004.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2004.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Apr 2020 12:56:45 +0000
+
+rsyslog (8.2002.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Disabled redis support because of inability to build
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 25 Feb 2020 15:34:17 +0000
+
+rsyslog (8.2002.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Repack of 8.2002.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 25 Feb 2020 15:14:47 +0000
+
+rsyslog (8.2002.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2002.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 25 Feb 2020 14:39:33 +0000
+
+rsyslog (8.2001.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Repack of 8.2001.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 15 Jan 2020 08:55:20 +0000
+
+rsyslog (8.2001.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.2001.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 14 Jan 2020 16:11:56 +0000
+
+rsyslog (8.1911.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1911.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Nov 2019 09:41:15 +0000
+
+rsyslog (8.1910.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1910.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 01 Oct 2019 08:30:03 +0000
+
+rsyslog (8.1908.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1908.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Aug 2019 09:24:30 +0000
+
+rsyslog (8.1907.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Added patch to revert BSD HUP fix
+    Ref: https://github.com/rsyslog/rsyslog/issues/3760
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jul 2019 09:33:12 +0000
+
+rsyslog (8.1907.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1907.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 09 Jul 2019 10:14:34 +0000
+
+rsyslog (8.1905.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Added patch for fix in queue subsystem
+    closes: https://github.com/rsyslog/rsyslog/issues/3681
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 03 Jun 2019 14:49:39 +0000
+
+rsyslog (8.1905.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1905.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 May 2019 09:14:02 +0000
+
+rsyslog (8.1904.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1904.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 Apr 2019 10:19:57 +0000
+
+rsyslog (8.1903.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1903.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 05 Mar 2019 15:01:15 +0000
+
+rsyslog (8.1901.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Removed dependency for liblogging-stdlog. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/is$
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 08 Feb 2019 10:55:44 +0000
+
+rsyslog (8.1901.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.1901.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 Jan 2019 11:12:06 +0000
+
+rsyslog (8.40.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.40.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 11 Dec 2018 11:26:38 +0000
+
+rsyslog (8.39.0-0adiscon5trusty1) trusty; urgency=medium
+
+  * Added patch to fix imfile resend issue
+    Fixes: https://github.com/rsyslog/rsyslog/issues/3249
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 13 Nov 2018 11:44:03 +0000
+
+rsyslog (8.39.0-0adiscon4trusty1) trusty; urgency=medium
+
+  * Rebuild for liblognorm 2.0.6
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 07 Nov 2018 14:42:15 +0000
+
+rsyslog (8.39.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Rebuild for fixed Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 31 Oct 2018 09:44:34 +0000
+
+rsyslog (8.39.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild without missing and unused files
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:33:50 +0000
+
+rsyslog (8.39.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.39.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:04:08 +0000
+
+rsyslog (8.38.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.38.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Sep 2018 10:24:37 +0000
+
+rsyslog (8.37.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.37.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 07 Aug 2018 10:29:38 +0000
+
+rsyslog (8.36.0-0adiscon5trusty1) trusty; urgency=medium
+
+  * Updated librelp dependency
+  * Updated Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 13:01:59 +0000
+
+rsyslog (8.36.0-0adiscon4trusty1) trusty; urgency=medium
+
+  * Rebuilt packages to undo new Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 27 Jul 2018 13:08:24 +0000
+
+rsyslog (8.36.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Rebuilt packages for updated Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 25 Jul 2018 08:46:44 +0000
+
+rsyslog (8.36.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Added sub-package rsyslog-openssl for OpenSSL TLS support
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 27 Jun 2018 14:34:53 +0000
+
+rsyslog (8.36.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.36.0
+  * Removed imrelp patch
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 26 Jun 2018 10:55:55 +0000
+
+rsyslog (8.35.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Rebuild for imrelp patch
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 18 May 2018 14:40:39 +0000
+
+rsyslog (8.35.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild for missing control information
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 May 2018 10:43:22 +0000
+
+rsyslog (8.35.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.35.0
+  * Added package rsyslog-fmhash
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 May 2018 10:40:20 +0000
+
+rsyslog (8.34.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Rebuild of rsyslog 8.34.0 for updated Kafka support library
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Apr 2018 12:15:59 +0000
+
+rsyslog (8.34.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Rebuild
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 03 Apr 2018 15:15:52 +0000
+
+rsyslog (8.34.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.34.0
+  * Added package rsyslog-mmkubernetes
+  * Added package rsyslog-fmhttp
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 03 Apr 2018 15:12:28 +0000
+
+rsyslog (8.33.1-0adiscon2trusty1) trusty; urgency=medium
+
+  * New librelp dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 21 Mar 2018 15:43:32 +0000
+
+rsyslog (8.33.1-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.33.1
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 06 Mar 2018 11:39:13 +0000
+
+rsyslog (8.33.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.33.0
+  * Removed patches from previous build
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Feb 2018 12:44:57 +0000
+
+rsyslog (8.32.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Added patch for external cmd parser
+    ref: https://github.com/rsyslog/rsyslog/pull/2410
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 19 Jan 2018 12:00:46 +0000
+
+rsyslog (8.32.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Added patches for json processing in rainerscript and jsonmesg
+    fixes: https://github.com/rsyslog/rsyslog/issues/2391
+    fixes: https://github.com/rsyslog/rsyslog/issues/2396
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 Jan 2018 16:41:49 +0000
+
+rsyslog (8.32.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.32.0
+  * New sub-package for omstdout
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 12 Jan 2018 11:29:12 +0000
+
+rsyslog (8.31.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Fixed error in logrotate script
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 29 Nov 2017 16:35:31 +0000
+
+rsyslog (8.31.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Updated Kafka library
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 10:24:03 +0000
+
+rsyslog (8.31.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.31.0
+  * Disabled MongoDB package because of dependency change
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Nov 2017 09:45:09 +0000
+
+rsyslog (8.30.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Dependency fix
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 18 Oct 2017 14:40:37 +0000
+
+rsyslog (8.30.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.30.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 17 Oct 2017 09:52:24 +0000
+
+rsyslog (8.29.0-0adiscon3trusty1) trusty; urgency=medium
+
+  * Repack for new liblognorm version
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 04 Oct 2017 14:58:41 +0000
+
+rsyslog (8.29.0-0adiscon2trusty1) trusty; urgency=medium
+
+  * Re-enabled mmutf8fix
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 21 Aug 2017 12:34:28 +0000
+
+rsyslog (8.29.0-0adiscon1trusty1) trusty; urgency=medium
+
+  * Packages for 8.29.0
+ 
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 09 Aug 2017 08:48:12 +0000
+
 rsyslog (8.28.0-0adiscon11trusty1) trusty; urgency=medium
 
   * Repack

@@ -8,16 +8,21 @@ date
 set -v
 set -x
 
+source $RSI_SCRIPTS/config.sh
 
-#libfastjson
-for PROJECT in libfastjson libestr liblogging \
-               librelp liblognorm libgt libksi rsyslog
+PPADAILY=daily-stable
+PPABRANCH=master
+PROJECTS=${1:-"libestr liblogging libfastjson liblognorm librelp rsyslog"}
+CUSTOMBUILD=${2}
+
+for PROJECT in $PROJECTS
 do
-	for PLATFORM in trusty xenial bionic eoan focal groovy
+	# Ubuntu (bionic 18.04, ) 20.04 and 22.04
+	for PLATFORM in focal jammy
 	do
 		cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/$PROJECT
 		rm -fv *.tar.gz
 		cp -v $INFRAHOME/repo/$PROJECT/*.tar.gz .
-		$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh $PLATFORM v8-devel master
+		$INFRAHOME/repo/rsyslog-pkg-ubuntu/scripts/auto_daily_project.sh $PLATFORM $PPADAILY $PPABRANCH $CUSTOMBUILD
 	done
 done
