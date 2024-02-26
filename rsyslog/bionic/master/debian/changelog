@@ -1,120 +1,326 @@
-rsyslog (8.28.0-0adiscon4zesty1) zesty; urgency=medium
+rsyslog (8.2312.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Repack
+  * Packages for 8.2312.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jul 2017 09:04:54 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 12 Dec 2023 13:29:59 +0000
 
-rsyslog (8.28.0-0adiscon3zesty1) zesty; urgency=medium
+rsyslog (8.2310.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Repack
+  * Packages for 8.2310.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 10:49:43 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 10 Oct 2023 13:29:59 +0000
 
-rsyslog (8.28.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2308.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Enabled imkafka/omkafka
+  * Packages for 8.2308.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 19 Jul 2017 08:07:15 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 15 Aug 2023 13:29:59 +0000
 
-rsyslog (8.28.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2306.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * package for 8.28.0
+  * Packages for 8.2306.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Jul 2017 12:31:57 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 20 Jun 2023 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon4zesty1) zesty; urgency=medium
+rsyslog (8.2304.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Repack
+  * Packages for 8.2304.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 14:55:48 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 18 Apr 2023 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon3zesty1) zesty; urgency=medium
+rsyslog (8.2302.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Re-enabled omkafka
+  * Packages for 8.2302.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 May 2017 10:29:27 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 21 Feb 2023 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2212.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Fixed disabled rules
+  * Packages for 8.2212.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:57:45 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 06 Dec 2022 13:29:59 +0000
 
-rsyslog (8.27.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2210.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Packages for 8.27.0
-  * Removed Kafka package for re-work
+  * Packages for 8.2210.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 16 May 2017 15:43:33 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 18 Oct 2022 13:29:59 +0000
 
-rsyslog (8.26.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2206.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Added modules pmnull and omkafka to the packages
+  * Packages for 8.2206.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 13 Apr 2017 14:20:49 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 14 Jun 2022 13:29:59 +0000
 
-rsyslog (8.26.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2204.1-0adiscon1bionic1) bionic; urgency=medium
 
-  * Packages for 8.26.0
+  * Packages for 8.2204.1
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Apr 2017 13:10:26 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 05 May 2022 13:29:59 +0000
 
-rsyslog (8.25.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2204.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Packages for 8.25.0
+  * Packages for 8.2204.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 21 Feb 2017 16:01:58 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 19 Apr 2022 13:29:59 +0000
 
-rsyslog (8.24.0-0adiscon2zesty1) zesty; urgency=medium
+rsyslog (8.2202.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Added separate package for new module mmrm1stspace
+  * Packages for 8.2202.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Feb 2017 16:44:25 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Thu, 15 Feb 2022 13:29:59 +0000
 
-rsyslog (8.24.0-0adiscon1zesty1) zesty; urgency=medium
+rsyslog (8.2112.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Packages for 8.24.0
+  * Packages for 8.2112.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 10 Jan 2017 13:31:00 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 16 Dec 2021 13:29:59 +0000
 
-rsyslog (8.23.0-0adiscon1yakkety1) yakkety; urgency=medium
+rsyslog (8.2110.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * Packages for 8.23.0
+  * Packages for 8.2110.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Nov 2016 16:51:21 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 19 Oct 2021 10:17:34 +0000
 
-rsyslog (8.22.0-0adiscon1yakkety1) yakkety; urgency=medium
+rsyslog (8.2108.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * New packages for 8.22.0
+  * Packages for 8.2108.0
 
- -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 04 Oct 2016 15:03:04 +0000
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 17 Aug 2021 10:17:34 +0000
 
-rsyslog (8.21.0-0adiscon1yakkety1) yakkety; urgency=medium
+rsyslog (8.2106.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * new upstream release
-  * disable liblogging-stdlog
-    We currently want to log by default by the syslog() API
+  * Packages for 8.2106.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Aug 2016 14:44:38 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 15 Jun 2021 10:17:34 +0000
 
-rsyslog (8.20.0-0adiscon5yakkety1) yakkety; urgency=medium
+rsyslog (8.2104.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * fix dependencies
+  * Packages for 8.2104.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 08:20:34 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 08 Dec 2020 10:17:34 +0000
 
-rsyslog (8.20.0-0adiscon4yakkety1) yakkety; urgency=medium
+rsyslog (8.2012.0-0adiscon1bionic1) bionic; urgency=medium
 
-  * fix apparmor rules that could prevent startup
-    see also https://github.com/rsyslog/rsyslog-pkg-ubuntu/issues/48
-  * yakkety seems to no longer provide libgnutls-dev but libgnutls28-dev
-    instead. Adjusted build dependency.
+  * Packages for 8.2012.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Wed, 03 Aug 2016 06:38:34 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 08 Dec 2020 10:17:34 +0000
 
-rsyslog (8.20.0-0adiscon3yakket1) yakkety; urgency=medium
+rsyslog (8.2010.0-0adiscon2bionic1) bionic; urgency=medium
 
-  * initial release for yakkety
-  * add support for libfastjson 0.99.3, liblognorm 2.0.1 packages 
+  * Rebuild for librelp 1.9.0
 
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Tue, 02 Aug 2016 12:14:09 +0000
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 24 Nov 2020 15:53:25 +0000
+
+rsyslog (8.2010.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2010.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Oct 2020 09:29:05 +0000
+
+rsyslog (8.2008.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Rebuild for librelp 1.8.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Sep 2020 20:37:01 +0000
+
+rsyslog (8.2008.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2008.0
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
+rsyslog (8.2006.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * new subpackages
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Mon, 06 Jul 2020 09:24:57 +0000
+
+rsyslog (8.2006.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2006.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Jun 2020 13:56:57 +0000
+
+rsyslog (8.2004.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2004.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 Apr 2020 12:57:57 +0000
+
+rsyslog (8.2002.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2002.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 25 Feb 2020 14:40:32 +0000
+
+rsyslog (8.2001.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.2001.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 14 Jan 2020 16:12:54 +0000
+
+rsyslog (8.1911.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1911.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 12 Nov 2019 09:42:10 +0000
+
+rsyslog (8.1910.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1910.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 01 Oct 2019 08:31:05 +0000
+
+rsyslog (8.1908.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1908.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 20 Aug 2019 09:25:33 +0000
+
+rsyslog (8.1907.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Added patch to revert BSD HUP fix
+    Ref: https://github.com/rsyslog/rsyslog/issues/3760
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jul 2019 09:34:02 +0000
+
+rsyslog (8.1907.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1907.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 09 Jul 2019 10:15:47 +0000
+
+rsyslog (8.1905.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Added patch for fix in queue subsystem
+    closes: https://github.com/rsyslog/rsyslog/issues/3681
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 03 Jun 2019 14:50:49 +0000
+
+rsyslog (8.1905.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1905.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 28 May 2019 09:14:59 +0000
+
+rsyslog (8.1904.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1904.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 Apr 2019 10:20:54 +0000
+
+rsyslog (8.1903.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1903.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 05 Mar 2019 15:02:15 +0000
+
+rsyslog (8.1901.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Removed dependency for liblogging-stdlog. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/is$
+  * Added sub-package for pmnormalize. Ref: https://github.com/rsyslog/rsyslog-pkg-ubuntu/pull/84
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 08 Feb 2019 11:08:19 +0000
+
+rsyslog (8.1901.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.1901.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 Jan 2019 11:13:11 +0000
+
+rsyslog (8.40.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.40.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 11 Dec 2018 11:27:39 +0000
+
+rsyslog (8.39.0-0adiscon5bionic1) bionic; urgency=medium
+
+  * Added patch to fix imfile resend issue
+    Fixes: https://github.com/rsyslog/rsyslog/issues/3249
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 13 Nov 2018 11:45:00 +0000
+
+rsyslog (8.39.0-0adiscon4bionic1) bionic; urgency=medium
+
+  * Rebuild for liblognorm 2.0.6
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 07 Nov 2018 14:43:28 +0000
+
+rsyslog (8.39.0-0adiscon3bionic1) bionic; urgency=medium
+
+  * Rebuild for fixed Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 31 Oct 2018 09:45:41 +0000
+
+rsyslog (8.39.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Rebuild without missing and unused files
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:34:46 +0000
+
+rsyslog (8.39.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.39.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Oct 2018 14:05:36 +0000
+
+rsyslog (8.38.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.38.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Sep 2018 10:25:59 +0000
+
+rsyslog (8.37.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.37.0
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 07 Aug 2018 10:31:27 +0000
+
+rsyslog (8.36.0-0adiscon5bionic1) bionic; urgency=medium
+
+  * Updated librelp dependency
+  * Updated Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Thu, 02 Aug 2018 13:03:15 +0000
+
+rsyslog (8.36.0-0adiscon4bionic1) bionic; urgency=medium
+
+  * Rebuilt packages to undo new Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 27 Jul 2018 13:12:29 +0000
+
+rsyslog (8.36.0-0adiscon3bionic1) bionic; urgency=medium
+
+  * Rebuilt packages for updated Kafka dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 25 Jul 2018 08:48:10 +0000
+
+rsyslog (8.36.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Added sub-package rsyslog-openssl for OpenSSL TLS support
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Wed, 27 Jun 2018 14:36:21 +0000
+
+rsyslog (8.36.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Packages for 8.36.0
+  * Removed imrelp patch
+  * Fixed systemd patch. ref: #81
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 26 Jun 2018 10:58:24 +0000
+
+rsyslog (8.35.0-0adiscon2bionic1) bionic; urgency=medium
+
+  * Added patch for systemd, so a pid file will be generated again
+    ref: #79
+  * Fixed libmongoc dependency
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Fri, 15 Jun 2018 09:09:08 +0000
+
+rsyslog (8.35.0-0adiscon1bionic1) bionic; urgency=medium
+
+  * Initial build for Ubuntu 18.04
+
+ -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Tue, 22 May 2018 14:38:21 +0000

@@ -13,6 +13,14 @@ unexport LDFLAGS
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+		--enable-kmsg \
+		--enable-improg \
+		--enable-imdocker \
+		--enable-omrabbitmq \
+		--enable-imczmq \
+		--enable-omczmq \
+		--enable-mmgrok \
+		--enable-omuxsock \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mail \
@@ -20,6 +28,8 @@ override_dh_auto_configure:
 		--enable-impstats \
 		--enable-gnutls \
 		--enable-relp \
+		--enable-clickhouse \
+		--enable-impcap \
 		--enable-pmaixforwardedfrom \
 		--enable-pmcisconames \
 		--enable-pmlastmsg \

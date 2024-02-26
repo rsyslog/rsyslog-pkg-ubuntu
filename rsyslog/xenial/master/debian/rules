@@ -13,13 +13,21 @@ unexport LDFLAGS
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+		--enable-kmsg \
+		--enable-improg \
+		--enable-imdocker \
+		--enable-omrabbitmq \
+		--enable-mmgrok \
+		--enable-omuxsock \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mail \
 		--enable-imfile \
+		--enable-impcap \
 		--enable-impstats \
 		--enable-gnutls \
 		--enable-relp \
+		--enable-clickhouse \
 		--enable-pmaixforwardedfrom \
 		--enable-pmcisconames \
 		--enable-pmlastmsg \
@@ -39,13 +47,13 @@ override_dh_auto_configure:
 		--enable-pmciscoios \
 		--enable-pmnormalize \
 		--enable-usertools \
+		--enable-omudpspoof \
 		--enable-imjournal \
 		--enable-omjournal \
 		--enable-mmrm1stspace \
 		--enable-pmnull \
 		--enable-omkafka \
 		--enable-imkafka \
-		--enable-kafka-static \
 		--enable-omhiredis \
 		--enable-omstdout \
 		--enable-mmkubernetes \
@@ -55,6 +63,7 @@ override_dh_auto_configure:
 		--with-systemdsystemunitdir=/lib/systemd/system
 
 #
+#		--enable-kafka-static \
 #		 --enable-guardtime \
 #		 --enable-gt-ksi \
 #                --enable-gssapi-krb5 \

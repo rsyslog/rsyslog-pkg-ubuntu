@@ -28,7 +28,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     # Default: 360 minutes
     timeout-minutes: 60
 
@@ -36,7 +36,7 @@ jobs:
       # When set to true, cancel all in-progress jobs if any matrix job fails.
       fail-fast: false
       matrix:
-        release: [14.04, 16.04, 18.04, 20.04]
+        release: [18.04, 20.04] # , 22.04]
 
     steps:
       - name: git checkout packging project
@@ -104,40 +104,40 @@ jobs:
           name: debs-${{ matrix.release }}
           path: debs-${{ matrix.release }}
 
-  check_14_04:
-    runs-on: ubuntu-18.04
+  check_20_04:
+    runs-on: ubuntu-22.04
     needs: build
     timeout-minutes: 30
 
     steps:
-      - name: Download 14.04 debs
+      - name: Download 20.04 debs
         uses: actions/download-artifact@v1
         with:
-          name: debs-14.04
+          name: debs-20.04
 
       - name: merge support libraries from OBS
         run: |
           mkdir tt
           cd tt
-          wget -q http://download.opensuse.org/repositories/home:/rgerhards/xUbuntu_14.04/Packages
-          grep Filename: Packages |grep amd64 | grep -v rsyslog \
-             |sed 's~Filename: ./~wget -q http://download.opensuse.org/repositories/home:/rgerhards/xUbuntu_14.04/~' \
+          wget -q http://download.opensuse.org/repositories/home:/rgerhards/xUbuntu_20.04/Packages
+          grep Filename: Packages | grep amd64 | grep -v rsyslog \
+             | sed 's/Filename: /wget -q http:\/\/download.opensuse.org\/repositories\/home:\/rgerhards\/xUbuntu_20.04\//' \
              > tmp
           source tmp # get .deb files
           ls -l
-          mv *deb $GITHUB_WORKSPACE/debs-14.04
+          mv *deb $GITHUB_WORKSPACE/debs-20.04
           cd ..
           rm -rf tt
 
       - name: prepare local repository
         run: |
-          cd debs-14.04
+          cd debs-20.04
           dpkg-scanpackages . /dev/null >Packages
           cd $GITHUB_WORKSPACE
 
       - name: check package install
         run: |
-          docker run --rm -v $GITHUB_WORKSPACE/debs-14.04:/debs ubuntu:14.04 bash -c \
+          docker run --rm -v $GITHUB_WORKSPACE/debs-20.04:/debs ubuntu:20.04 bash -c \
           '
           echo "deb [trusted=yes] file:///debs ./" >> /etc/apt/sources.list
           apt-get update
@@ -150,8 +150,9 @@ jobs:
     # Default: 360 minutes
     timeout-minutes: 10
     strategy:
+      fail-fast: false
       matrix:
-        release: [16.04, 18.04, 20.04]
+        release: [20.04] #22.04
 
     steps:
       - name: Download ${{ matrix.release }} debs
@@ -165,6 +166,10 @@ jobs:
           sudo apt-get install -y apache2 devscripts debsigs apt-utils
           sudo mkdir /var/www/html/repo
           sudo chmod o+rw /var/www/html/repo
+
+      - name: start local web server
+        run: |
+          sudo service apache2 start
 
       - name: get support libraries from OBS
         run: |
@@ -257,9 +262,12 @@ jobs:
           # Perform apt update and install rsyslog packages
           sudo apt-get clean
           sudo apt-get update
+          sudo apt-cache search rsyslog
+          sudo apt-cache show rsyslog
           sudo apt-get install -y rsyslog rsyslog-improg rsyslog-imkmsg
           rsyslogd -v
           sudo systemctl restart rsyslog
           sudo systemctl status rsyslog
           logger test1
           tail -n20 /var/log/syslog
+          grep "test1" /var/log/syslog --count || { echo "test1 not logged into /var/log/syslog" >&2; exit 1; }

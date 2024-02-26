@@ -1,8 +1,6 @@
 #!/usr/bin/make -f
 
-#export DEB_CFLAGS_MAINT_APPEND = -std=c99
-export DEB_CFLAGS_MAINT_APPEND = -std=c99 -g -fsanitize=address
-#export CC=clang
+export DEB_CFLAGS_MAINT_APPEND = -std=c99
 
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
@@ -17,6 +15,11 @@ unexport LDFLAGS
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
+		--enable-kmsg \
+		--enable-improg \
+		--enable-impcap \
+		--enable-omrabbitmq \
+		--enable-omuxsock \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-mail \
@@ -24,6 +27,7 @@ override_dh_auto_configure:
 		--enable-impstats \
 		--enable-gnutls \
 		--enable-relp \
+		--enable-clickhouse \
 		--enable-pmaixforwardedfrom \
 		--enable-pmcisconames \
 		--enable-pmlastmsg \
@@ -46,8 +50,6 @@ override_dh_auto_configure:
 		--enable-mmrm1stspace \
 		--enable-omkafka \
 		--enable-imkafka \
-		--enable-kafka-static \
-		--disable-omhiredis \
 		--enable-omstdout \
 		--enable-mmkubernetes \
 		--enable-openssl \
@@ -56,9 +58,11 @@ override_dh_auto_configure:
                 --with-systemdsystemunitdir=/lib/systemd/system
 
 # unstable	
+#		--enable-kafka-static \
 #		--enable-guardtime \
 #		--enable-gt-ksi \ 
 #		              
+#		--enable-omhiredis \
 #		 --enable-jemalloc \
 #                --enable-gssapi-krb5 \
 #                --enable-guardtime \

@@ -7,14 +7,17 @@ Build-Depends: debhelper (>= 8),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
 	       dh-autoreconf,
+	       libpcap-dev,
+               librabbitmq-dev,
+               librabbitmq1,
                zlib1g-dev,
                libmysqlclient-dev,
                libpq-dev,
 #	       libmongo-client-dev (>= 0.1.4),
-               librelp-dev (>= 1.0.2),
+               librelp-dev (>= 1.2.17),
                libestr-dev (>= 0.1.2),
                liblognorm-dev (>= 1.0.0),
-	       libfastjson-dev,
+	       libfastjson-dev (>= 0.99.7),
 #	       libmongo-client-dev, 
 	       libglib2.0-dev,
                uuid-dev,
@@ -25,11 +28,12 @@ Build-Depends: debhelper (>= 8),
 	       libcurl4-gnutls-dev,
 	       bison,
 	       python-docutils,
+	       adisconhelperlrdk-dev,
 	       liblz4-dev,
 	       libsasl2-dev,
 	       libssl-dev,
-	       libnet-dev,
-	       adisconhelperlrdk-dev
+	       libnet-dev
+#	       libhiredis-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -47,7 +51,7 @@ Depends: ${shlibs:Depends},
          lsb-base (>= 3.2-14),
          adduser,
          ucf,
-	 libfastjson4
+	 libfastjson4 (>= 0.99.7)
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
@@ -146,13 +150,21 @@ Description: PostgreSQL output plugin for rsyslog
 # encrypted syslog messages. GSSAPI is commonly used for Kerberos
 # authentication.
 
+Package: rsyslog-omclickhouse
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Provides the omclickhouse rsyslog plugin
+
 Package: rsyslog-relp
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 librelp0 (>= 1.0.2)
+	 librelp0 (>= 1.2.17)
 Description: RELP protocol support for rsyslog
  These plugins allows rsyslog to send and receive syslog messages via the
  RELP protocol. RELP ensures reliable transport over the network even on
@@ -175,7 +187,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
 	 liblognorm5, 
-         libfastjson4
+         libfastjson4 (>= 0.99.7)
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON
@@ -223,6 +235,41 @@ Depends: ${shlibs:Depends},
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
+Package: rsyslog-omrabbitmq
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         librabbitmq1,
+         rsyslog (= ${binary:Version}),
+Description: Provides the omrabbitmq rsyslog plugin
+
+Package: rsyslog-improg
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Provides the improg rsyslog plugin
+
+Package: rsyslog-imkmsg
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+Description: Provides the imkmsg rsyslog plugin which can be used to read structured
+ kernel logs.
+
+Package: rsyslog-impcap
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+ 	 libpcap
+Description: This module provides the impcap contributed module.
+
 Package: rsyslog-mmutf8fix
 Architecture: any
 Priority: extra
@@ -242,6 +289,15 @@ Description: TLS protocol support for rsyslog
  This netstream plugin allows rsyslog to send and receive encrypted syslog
  messages via the upcoming syslog-transport-tls IETF standard protocol.
 
+Package: rsyslog-udpspoof
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libnet-dev
+Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
+
 Package: rsyslog-openssl
 Architecture: any
 Priority: extra
@@ -252,15 +308,6 @@ Suggests: openssl
 Description: TLS protocol support for rsyslog
  This netstream plugin allows rsyslog to send and receive encrypted syslog
  messages via the upcoming syslog-transport-tls IETF standard protocol.
-
-Package: rsyslog-udpspoof
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-         libnet-dev
-Description: This module is similar to the regular UDP forwarder, but permits to spoof the sender address.
 
 Package: rsyslog-utils
 Architecture: any
@@ -302,6 +349,15 @@ Depends: ${shlibs:Depends},
 	 liblz4-1,
  	 libsasl2-2	
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
+
+#Package: rsyslog-redis
+#Architecture: any
+#Priority: extra
+#Depends: ${shlibs:Depends},
+#         ${misc:Depends},
+#         rsyslog (= ${binary:Version}),
+#         libhiredis0.11
+#Description: This module implements Redis support, permitting ryslog to write to redis
 
 Package: rsyslog-omstdout
 Architecture: any
