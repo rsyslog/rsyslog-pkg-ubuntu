@@ -4,6 +4,9 @@ DPKG_EXPORT_BUILDFLAGS = 1
 export DEB_BUILD_OPTIONS="parallel=4"
 include /usr/share/dpkg/buildflags.mk
 
+# Build Debug Symbols
+export DEB_CFLAGS_MAINT_APPEND ="-g"
+
 # the default LDFLAGS="-Wl,-Bsymbolic-functions" caused rsyslog to
 # segfault on receipt of first message (see LP: #794230)
 unexport LDFLAGS
@@ -63,6 +66,8 @@ override_dh_auto_configure:
 		--enable-omstdout \
 		--enable-openssl \
 		--enable-mmkubernetes \
+		--enable-mmdblookup \
+		--enable-debug-symbols \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
@@ -78,6 +83,9 @@ override_dh_auto_configure:
 #                --enable-imzmq3 \
 #                --enable-omzmq3 \
 #		--enable-kafka-static \
+
+#override_dh_strip:
+#	dh_strip --dbg-package=rsyslog-debug
 
 override_dh_auto_install:
 	dh_auto_install
