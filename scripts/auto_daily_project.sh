@@ -15,17 +15,20 @@
 echo package build for `pwd` $1/$2/$3
 date
 
-
 # params
-szPlatform=$1	# trusty, vivid, ...
-UPLOAD_PPA=$2	# path of the ppa (e.g. v8-devel)
-BRANCH=$3	# branch to use (e.g. master)
-		# Note: this must match the tarball branch
-CUSTOMBUILD=$4	# Use if set, needed for rebuilds to make unique upload files
-CUSTOMBUILD=$4
-if [ -z "$CUSTOMBUILD" ]; then
-    CUSTOMBUILD=$(date +%Y%m%d%H%M%S)
+szPlatform=$1		# trusty, vivid, ...
+UPLOAD_PPA=$2		# path of the ppa (e.g. v8-devel)
+BRANCH=$3		# branch to use (e.g. master)
+			# Note: this must match the tarball branch
+CUSTOMBUILD=${4:-""}	# Use if set, needed for rebuilds to make unique upload files
+# Append an underscore if CUSTOMBUILD is not empty
+if [ -n "$CUSTOMBUILD" ]; then
+    CUSTOMBUILD="-$CUSTOMBUILD"
+else
+    CUSTOMBUILD="-$(date +%Y%m%d%H%M%S)"
 fi
+#if [ -z "$CUSTOMBUILD" ]; then
+#fi
 
 rm -fv *.orig.tar.gz # clean up if left over, temporary work file!
 # only a single .tar.gz must exist at any time
@@ -33,20 +36,31 @@ ls -l *.tar.gz # debug output
 szSourceFile=`ls *.tar.gz`
 szSourceBase=`basename $szSourceFile .tar.gz`
 VERSION=`echo $szSourceBase|cut -d- -f2`
-CUSTOMBUILD=$CUSTOMBUILD
-LAUNCHPAD_VERSION=`echo $VERSION|cut -d. -f1-3`'-'`echo $CUSTOMBUILD`
+PURE_VERSION=`echo $VERSION|cut -d. -f1-3`
+# Check if VERSION contains _x and create VERSION_RAW by removing _x
+if [[ "$VERSION" =~ _[0-9]+$ ]]; then
+    VERSION_TAR_GZ=$(echo "$VERSION" | sed 's/_[0-9]\+$//')
+else
+    VERSION_TAR_GZ=$VERSION
+fi
+LAUNCHPAD_VERSION=`echo $VERSION | cut -d. -f1-3`${CUSTOMBUILD}
 PROJECT=`echo $szSourceBase | cut -d- -f1`
 PROJECT_SONAME=$PROJECT`cat CURR_LIBSONAME`
-szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
 VERSION_FILE="LAST_VERSION.$BRANCH.$szPlatform"
+szReplaceFile="${PROJECT}_$LAUNCHPAD_VERSION"
 
 echo PROJECT $PROJECT
 echo PROJECT_SONAME $PROJECT_SONAME
 echo VERSION $VERSION
+echo PURE_VERSION $PURE_VERSION
+echo VERSION_TAR_GZ: $VERSION_TAR_GZ
 echo LAUNCHPAD_VERSION $LAUNCHPAD_VERSION
 echo Platform $szPlatform
 echo PPA $PPA
 echo UPLOAD_PPA $UPLOAD_PPA
+echo VERSION_FILE $VERSION_FILE
+echo szSourceFile $szSourceFile
+echo ReplaceFile $szReplaceFile
 
 if [ -z "$PROJECT" ]; then
 	echo "variable PROJECT is unset" | mutt -s "$0 script error" $RS_NOTIFY_EMAIL
@@ -108,12 +122,17 @@ cp -rv ../$szPlatform/$BRANCH/debian .
 pwd
 ls -l
 
-# create dummy changelog entry
-echo "$PROJECT ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low" > debian/changelog
-echo "" >> debian/changelog
-echo "  * daily build" >> debian/changelog
-echo "" >> debian/changelog
-echo " -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  `date -R`" >> debian/changelog 
+# create new dummy changelog entry
+NEW_ENTRY="$PROJECT ($LAUNCHPAD_VERSION-0adiscon1$szPlatform) $szPlatform; urgency=low
+
+  * Packages for ${VERSION} on ${szPlatform}
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  $(date -R)
+"
+# Prepend the new changelog entry to the file
+echo -e "$NEW_ENTRY\n$(cat debian/changelog)" > debian/changelog
+echo " OUTPUT debian/changelog:" 
+cat debian/changelog
 
 # Build Source package now!
 if [ -v PACKAGE_SIGNING_KEY_ID ]; then

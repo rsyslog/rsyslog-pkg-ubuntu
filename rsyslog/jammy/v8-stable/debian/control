@@ -7,38 +7,39 @@ Build-Depends: debhelper (>= 12),
                dpkg-dev (>= 1.6.1),
                autotools-dev (>= 20100122.1),
                libczmq-dev (>= 4.0.0),
-	       dh-autoreconf,
+               dh-autoreconf,
                librabbitmq-dev,
                librabbitmq4,
                zlib1g-dev,
-               libmysqlclient-dev,
-               libgrok1,
                libgrok-dev,
+               libtirpc-dev,
+               libmysqlclient-dev,
                libpq-dev,
-	       libmongoc-dev,
+               libmongoc-dev,
                librelp-dev (>= 1.2.17),
                libestr-dev (>= 0.1.2),
                liblognorm-dev (>= 1.0.0),
-	       libfastjson-dev (>= 0.99.7),
-	       libglib2.0-dev,
-	       libpcap-dev,
+               libfastjson-dev (>= 0.99.7),
+               libglib2.0-dev,
+               libpcap-dev,
                uuid-dev,
                libkrb5-dev,
                libgnutls28-dev,
                pkg-config,
                dh-apparmor,
-	       libcurl4-gnutls-dev,
-	       bison,
-	       libgcrypt-dev,
-	       python3-docutils,
-	       libsystemd-dev  (>= 209) [linux-any],
-	       librdkafka-dev,
-	       liblz4-dev,
-	       libsasl2-dev,
-	       libssl-dev,
-	       libhiredis-dev,
-	       util-linux,
-	       libnet-dev
+               libcurl4-gnutls-dev,
+               bison,
+               libgcrypt-dev,
+               python3-docutils,
+               libsystemd-dev  (>= 209) [linux-any],
+               librdkafka-dev,
+               liblz4-dev,
+               libsasl2-dev,
+               libssl-dev,
+               libhiredis-dev,
+               util-linux,
+               libnet-dev,
+               libmaxminddb-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -56,7 +57,7 @@ Depends: ${shlibs:Depends},
          lsb-base (>= 3.2-14),
          adduser,
          ucf,
-	 libfastjson4 (>= 0.99.7)
+         libfastjson4 (>= 0.99.7)
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
@@ -66,12 +67,12 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-mmjsonparse,
           rsyslog-imptcp,
           rsyslog-gnutls,
-	  rsyslog-openssl,
-	  rsyslog-udpspoof,
-	  rsyslog-mmrm1stspace,
-	  rsyslog-mmutf8fix,
-	  rsyslog-kafka,
-	  rsyslog-omstdout,
+          rsyslog-openssl,
+          rsyslog-udpspoof,
+          rsyslog-mmrm1stspace,
+          rsyslog-mmutf8fix,
+          rsyslog-kafka,
+          rsyslog-omstdout,
           apparmor (>= 2.3)
 Description: a rocket-fast system for log processing
  Rsyslog is a multi-threaded implementation of syslogd (a system utility
@@ -138,7 +139,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 libmongoc-1.0-0
+         libmongoc-1.0-0
 Recommends: mongodb-server
 Description: MongoDB output plugin for rsyslog
  This plugin allows rsyslog to write the syslog messages to MongoDB, a
@@ -180,7 +181,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 librelp0 (>= 1.2.17)
+         librelp0 (>= 1.2.17)
 Description: RELP protocol support for rsyslog
  These plugins allows rsyslog to send and receive syslog messages via the
  RELP protocol. RELP ensures reliable transport over the network even on
@@ -202,8 +203,8 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 liblognorm5, 
-	 libfastjson4 (>= 0.99.7)
+         liblognorm5, 
+         libfastjson4 (>= 0.99.7)
 Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON
@@ -251,15 +252,15 @@ Depends: ${shlibs:Depends},
          liblognorm5
 Description: Parse all fields of the message into structured data inside the JSON tree.
 
-#Package: rsyslog-mmgrok
-#Architecture: any
-#Priority: extra
-#Depends: ${shlibs:Depends},
-#         ${misc:Depends},
-#         libgrok1,
-#         rsyslog (= ${binary:Version}),
-#Description: Provides the mmgrok rsyslog plugin
-
+Package: rsyslog-mmgrok
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libgrok1,
+         libtirpc3,
+         rsyslog (= ${binary:Version}),
+Description: Provides the mmgrok rsyslog plugin
 
 Package: rsyslog-omrabbitmq
 Architecture: any
@@ -351,21 +352,9 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}), 
-#         rsyslog-ksi, 
-	 rsyslog-gnutls
+         rsyslog-gnutls
 Description: rsyslog utilities
  Installs rsyslog tools like logctl, rsgtutil or rscryutil. 
-
-#Package: rsyslog-ksi
-#Architecture: any
-#Priority: extra
-#Depends: ${shlibs:Depends},
-#         ${misc:Depends},
-#         rsyslog (= ${binary:Version}), 
-#         libksi1
-#Suggests: gnutls-bin
-#Description: KSI (Keyless Signature Infrastructure) support for rsyslog
-# Allows signing log records using guardtime Keyless Signature Infrastructure. 
 
 Package: rsyslog-mmrm1stspace
 Architecture: any
@@ -382,8 +371,8 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 liblz4-1,
- 	 libsasl2-2	
+         liblz4-1,
+         libsasl2-2	
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-impcap
@@ -392,7 +381,7 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
- 	 libpcap
+         libpcap
 Description: This module provides the impcap contributed module.
 
 Package: rsyslog-redis
@@ -436,13 +425,22 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Message modification module to add Kubernetes metadata to a messages.
 
+Package: rsyslog-mmdblookup
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libmaxminddb0
+Description: Fast geoip lookups straight from Rsyslog using libmaxminddb library.
+
 #Package: rsyslog-zmq
 #Architecture: any
 #Priority: extra
 #Depends: ${shlibs:Depends},
 #         ${misc:Depends},
 #         rsyslog (= ${binary:Version}),
-# 	  libzmq1
+#           libzmq1
 #Description: zmq3 support for RSyslog. 
 # These plugins allows you to push data from and into rsyslog from a 
 # zeromq socket.
