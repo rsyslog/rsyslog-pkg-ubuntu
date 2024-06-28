@@ -1,0 +1,98 @@
+#!/usr/bin/make -f
+
+DPKG_EXPORT_BUILDFLAGS = 1
+export DEB_BUILD_OPTIONS="parallel=4"
+include /usr/share/dpkg/buildflags.mk
+
+# the default LDFLAGS="-Wl,-Bsymbolic-functions" caused rsyslog to
+# segfault on receipt of first message (see LP: #794230)
+unexport LDFLAGS
+
+%:
+	dh $@ --parallel --with autoreconf
+#org	dh $@ --with autotools_dev
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--libexecdir=/usr/lib/rsyslog \
+		--libdir=/usr/lib \
+		--enable-kmsg \
+		--enable-improg \
+		--enable-imdocker \
+		--enable-omrabbitmq \
+		--enable-imczmq \
+		--enable-omczmq \
+		--enable-omuxsock \
+		--enable-mysql \
+		--enable-pgsql \
+		--enable-mail \
+		--enable-imfile \
+		--enable-impcap \
+		--enable-impstats \
+		--enable-gnutls \
+		--enable-relp \
+		--enable-clickhouse \
+		--enable-pmaixforwardedfrom \
+		--enable-pmcisconames \
+		--enable-pmlastmsg \
+		--enable-pmrfc3164sd \
+		--enable-pmsnare \
+		--enable-omprog \
+		--enable-elasticsearch \
+		--enable-mmjsonparse \
+		--enable-imptcp \
+		--enable-mmnormalize \
+		--enable-mmanon \
+		--enable-ommongodb \
+		--enable-mmfields \
+		--enable-mmpstrucdata \
+		--enable-mmsequence \
+		--enable-mmutf8fix \
+		--enable-pmciscoios \
+		--enable-pmnormalize \
+		--enable-usertools \
+		--enable-omudpspoof \
+		--enable-imjournal \
+		--enable-omjournal \
+		--enable-mmrm1stspace \
+		--enable-pmnull \
+		--enable-omkafka \
+		--enable-imkafka \
+		--enable-omhiredis \
+		--enable-omstdout \
+		--enable-openssl \
+		--enable-mmkubernetes \
+		--disable-testbench \
+		--disable-liblogging-stdlog \
+		--with-systemdsystemunitdir=/lib/systemd/system
+
+#
+#		--enable-omkafka \
+#		 --enable-guardtime \
+#		 --enable-gt-ksi \
+#                --enable-gssapi-krb5 \
+#                --enable-guardtime \
+#                --enable-ommongodb \
+#                --enable-mmnormalize \
+#                --enable-imzmq3 \
+#                --enable-omzmq3 \
+#		--enable-kafka-static \
+#		--enable-mmgrok \
+
+override_dh_auto_install:
+	dh_auto_install
+	install --mode=644 -D plugins/ommysql/createDB.sql debian/rsyslog-mysql/usr/share/dbconfig-common/data/rsyslog-mysql/install/mysql
+	install --mode=644 -D plugins/ompgsql/createDB.sql debian/rsyslog-pgsql/usr/share/dbconfig-common/data/rsyslog-pgsql/install/pgsql
+
+override_dh_compress:
+	dh_compress -X rsyslog-example.conf
+
+override_dh_installinit:
+	dh_apparmor --profile-name=usr.sbin.rsyslogd -prsyslog
+	dh_installinit -R
+
+override_dh_auto_test:
+ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	make check || ( cat tests/test-suite.log; exit 1; )
+endif
+

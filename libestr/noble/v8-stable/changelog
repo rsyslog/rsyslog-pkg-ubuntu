@@ -1,0 +1,5 @@
+libestr (0.1.9-0adiscon1noble1) noble; urgency=low
+
+  * Initial build for Ubuntu 24.04 Noble
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Fri, 28 Jun 2024 15:29:59 +0000

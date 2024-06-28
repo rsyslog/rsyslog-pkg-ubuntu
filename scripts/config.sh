@@ -1,4 +1,4 @@
-PLATFORM="precise trusty xenial bionic eoan focal groovy jammy"
+PLATFORM="precise trusty xenial bionic eoan focal groovy jammy noble"
 ARCHTECT="amd64 i386"
 BRANCHES="v8-stable v8-stable-testing daily-stable"
 # OLD GPG KEY	AEF0CF8E
