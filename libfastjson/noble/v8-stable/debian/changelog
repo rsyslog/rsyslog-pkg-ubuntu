@@ -1,5 +1,5 @@
 libfastjson (1.2304.0-0adiscon1noble1) noble; urgency=medium
 
   * Initial Packages for Ubuntu 24.04 Noble
-  
- -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Fri, 28 Jun 2024 15:29:59 +0000
+
+ -- Rainer Gerhards <adiscon-pkg-maintainers@adiscon.com>  Fri, 28 Jun 2024 14:57:39 +0000

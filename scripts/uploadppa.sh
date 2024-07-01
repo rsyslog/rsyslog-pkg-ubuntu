@@ -1,7 +1,8 @@
 #!/bin/bash
 # Definitions common to these scripts
+echo load config from $(dirname "$0")/config.sh
+
 source $(dirname "$0")/config.sh
-export DEBEMAIL="adiscon-pkg-maintainers@adiscon.com"
 
 #set -o xtrace  # use for debugging
 
@@ -51,12 +52,26 @@ if [ "$RESULT" == "y" ]; then
 fi
 
 # Build Source package now!
-debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+if [ -v PACKAGE_SIGNING_KEY_ID ]; then
+	echo "RUN debuild -S -sa -rfakeroot -k $PACKAGE_SIGNING_KEY_ID
+	debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+else
+	echo "RUN WITHOUT KEY debuild -S -sa -rfakeroot -us -uc
+    debuild -S -sa -rfakeroot -us -uc
+fi
+if [ $? -ne 0 ]; then
+	echo "FAIL in debuild for $PACKAGENAME $VERSION on $szPlatform"
+    exit 1
+fi
+
+# Fix filepermissions
 chmod -f g+w *
 
+# we now need to climb out of the working tree, all distributable
+# files are generated in the home directory.
+cd ..
+
 if [ "$RESULT" == "y" ]; then
-	# Save Changes back now
-	cd ..
 	szDebian="debian"
 	echo    # (optional) move to a new line
 	read -p "Copy $szPrepareDir$szDebian folder back to $szPlatform/$szBranch/$szDebian (y/n)? " RESULT
@@ -67,21 +82,39 @@ if [ "$RESULT" == "y" ]; then
 	fi
 fi
 
-CHANGESFILES=`ls *.changes`
+echo "-------------------------------------"
+echo "--- ls *.changes ---"
+ls -al 
+ls *.changes
 
 echo "-------------------------------------"
 echo "--- Select change file for upload ---"
 echo "-------------------------------------"
+CHANGESFILES=`ls *.changes`
+
+if [ -z "$CHANGESFILES" ]; then
+	echo "FAILED: ls *.changes No changefiles found"
+	exit 1
+fi
 
 echo "Select Changefile:"
 select szChangeFile in $CHANGESFILES
 do
-        break;
+	break;
 done
 
 # Upload changes to PPA now!
+echo "Sign $szChangeFile"
+debsign -k $PACKAGE_SIGNING_KEY_ID $szChangeFile
+echo "Upload to ppa:adiscon/$szBranch"
 dput -f ppa:adiscon/$szBranch $szChangeFile
+if [ $? -ne 0 ]; then
+	echo "FAILED dput, PPA upload to Launchpad ppa:adiscon/$szBranch for $PACKAGENAME failed"
+	exit 1
+fi
 
 # cleanup
-rm -v *.changes *.debian.tar.gz
+rm -v *.changes
+rm -v *.debian.tar.gz
+# Fix filepermissions
 chmod -f g+w *
