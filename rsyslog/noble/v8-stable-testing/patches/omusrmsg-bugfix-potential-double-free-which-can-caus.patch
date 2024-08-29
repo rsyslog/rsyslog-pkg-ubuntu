@@ -1,0 +1,69 @@
+From c7c16b935c4b3fb740eacbd5dbb043f5cd457acd Mon Sep 17 00:00:00 2001
+From: Rainer Gerhards <rgerhards@adiscon.com>
+Date: Thu, 14 Dec 2023 12:57:00 +0100
+Subject: [PATCH 1/1] omusrmsg bugfix: potential double free, which can cause
+ segfault
+
+omusrmsg frees a string which points to OS/system library memory. When
+the os/libs clean up, it frees the memory as well. This results in a
+double free. This bug interestingly seems to go unnoticed in many cases.
+But it can cause a segfault or hard-to-trace memory corruptions which
+could lead to other problems later on. The outcome of this bug most
+probably depdns on os/library versions.
+
+closes https://github.com/rsyslog/rsyslog/issues/5294
+
+Author: Rainer Gerhards <rgerhards@adiscon.com>
+Origin: https://github.com/rgerhards/rsyslog/commit/c7c16b935c4b3fb740eacbd5dbb043f5cd457acd
+---
+ tools/omusrmsg.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+diff --git a/tools/omusrmsg.c b/tools/omusrmsg.c
+index aaa36d9e5..479db5bbc 100644
+--- a/tools/omusrmsg.c
++++ b/tools/omusrmsg.c
+@@ -272,14 +272,15 @@ static rsRetVal wallmsg(uchar* pMsg, instanceData *pData)
+ 
+ 		for (j = 0; j < sessions; j++) {
+ 	                uchar szErr[512];
+-			char *user = NULL, *tty;
++			char *tty;
++			const char *user = NULL;
+ 			uid_t uid;
+ 			struct passwd *pws;
+ 
+ 			sdRet = sd_session_get_uid(sessions_list[j], &uid);
+ 			if (sdRet >= 0) {
+ 				pws = getpwuid(uid);
+-				user = pws->pw_name;
++				user = pws->pw_name; /* DO NOT FREE, OS/LIB internal memory! */
+ 
+ 				if (user == NULL) {
+ 					dbgprintf("failed to get username for userid '%d'\n", uid);
+@@ -303,7 +304,6 @@ static rsRetVal wallmsg(uchar* pMsg, instanceData *pData)
+ 					        break;
+ 				}
+ 				if(i == MAXUNAMES) { /* user not found? */
+-				        free(user);
+ 					free(sessions_list[j]);
+ 					continue; /* on to next user! */
+ 				}
+@@ -313,14 +313,12 @@ static rsRetVal wallmsg(uchar* pMsg, instanceData *pData)
+ 		                rs_strerror_r(-sdRet, (char*)szErr, sizeof(szErr));
+ 				dbgprintf("get tty for session '%s' failed with [%d]:%s\n",
+ 					  sessions_list[j], -sdRet, szErr);
+-				free(user);
+ 				free(sessions_list[j]);
+ 				continue; /* try next session */
+ 			}
+ 
+ 			sendwallmsg(tty, pMsg);
+ 
+-			free(user);
+ 			free(tty);
+ 			free(sessions_list[j]);
+ 		}
+-- 
+2.40.1
+

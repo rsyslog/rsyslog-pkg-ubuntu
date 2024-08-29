@@ -1,0 +1,5 @@
+Don-t-create-a-database.patch
+Increase-timeouts-in-imfile-basic-2GB-file-and-imfile-tru.patch
+omusrmsg-bugfix-potential-double-free-which-can-caus.patch
+plugins-FromHost-must-be-63-characters-long.patch
+rsyslog-time64-fix.patch
