@@ -111,7 +111,7 @@ jobs:
 
     steps:
       - name: Download 20.04 debs
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: debs-20.04
 
@@ -156,7 +156,7 @@ jobs:
 
     steps:
       - name: Download ${{ matrix.release }} debs
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: debs-${{ matrix.release }}
 
