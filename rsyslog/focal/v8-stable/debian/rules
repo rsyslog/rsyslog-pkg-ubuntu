@@ -25,7 +25,6 @@ override_dh_auto_configure:
 		--enable-omrabbitmq \
 		--enable-imczmq \
 		--enable-omczmq \
-		--enable-mmgrok \
 		--enable-omuxsock \
 		--enable-mysql \
 		--enable-pgsql \
@@ -73,6 +72,7 @@ override_dh_auto_configure:
 		--with-systemdsystemunitdir=/lib/systemd/system
 
 #
+#		--enable-mmgrok \
 #		--enable-omkafka \
 #		 --enable-guardtime \
 #		 --enable-gt-ksi \

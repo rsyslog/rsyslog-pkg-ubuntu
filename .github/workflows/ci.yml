@@ -99,7 +99,7 @@ jobs:
           ls -l
 
       - name: save ${{ matrix.release }} DEBs
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: debs-${{ matrix.release }}
           path: debs-${{ matrix.release }}
@@ -111,7 +111,7 @@ jobs:
 
     steps:
       - name: Download 20.04 debs
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: debs-20.04
 
@@ -156,7 +156,7 @@ jobs:
 
     steps:
       - name: Download ${{ matrix.release }} debs
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: debs-${{ matrix.release }}
 
@@ -246,7 +246,7 @@ jobs:
           cd $GITHUB_WORKSPACE
 
       - name: save ${{ matrix.release }} DEB Repo
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: repo-${{ matrix.release }}
           path: /var/www/html/repo
