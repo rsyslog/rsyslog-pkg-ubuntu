@@ -1,1 +1,1 @@
-debian/tmp/usr/lib/rsyslog/mmnormalize.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmnormalize.so

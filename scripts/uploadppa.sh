@@ -60,8 +60,13 @@ echo "Using PPA: $UPLOAD_PPA"
 echo "Using Debian branch: $szBranch"
 echo "Detected VERSION: $VERSION"
 
-read -p "Generate Changelog entry for $szPlatform/$szBranch automatically (y/n)? " GEN_CHANGELOG
+echo "REMOVE / CLEANUP Existing $szPrepareDir/debian"
+rm -r $szPrepareDir/debian
+
+echo "COPY $szPlatform/$szBranch/debian to $szPrepareDir/debian"
 cp -r $szPlatform/$szBranch/debian $szPrepareDir || exit 1
+
+read -p "Generate Changelog entry for $szPlatform/$szBranch automatically (y/n)? " GEN_CHANGELOG
 cd $szPrepareDir
 if [ "$GEN_CHANGELOG" == "y" ]; then
     read -p "Enter SUBVERSION number (default is 1): " SUBVERSION
@@ -137,7 +142,7 @@ done
 
 # Upload changes to PPA now!
 echo "Sign $szChangeFile"
-debsign -k $PACKAGE_SIGNING_KEY_ID $szChangeFile
+debsign --no-re-sign -k $PACKAGE_SIGNING_KEY_ID $szChangeFile
 echo "Upload to $UPLOAD_PPA"
 dput -f ppa:adiscon/$UPLOAD_PPA $szChangeFile
 if [ $? -ne 0 ]; then

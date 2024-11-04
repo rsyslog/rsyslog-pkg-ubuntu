@@ -1,107 +1,99 @@
 #!/usr/bin/make -f
 
-DPKG_EXPORT_BUILDFLAGS = 1
-export DEB_BUILD_OPTIONS="parallel=4"
-include /usr/share/dpkg/buildflags.mk
+include /usr/share/dpkg/architecture.mk
 
-# Build Debug Symbols | Append /usr/include/tirpc from libtirpc-dev which is needed 
-# for mmgrok since glibc >=2.32 because they dropped "--enable-obsolete-rpc"
-export DEB_CFLAGS_MAINT_APPEND = -g -I/usr/include/tirpc
+# export DEB_HOST_MULTIARCH=$(dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CPPFLAGS_MAINT_APPEND = -DPATH_PIDFILE=\"/run/rsyslogd.pid\"
+export PYTHON=/usr/bin/python3
 
 # the default LDFLAGS="-Wl,-Bsymbolic-functions" caused rsyslog to
 # segfault on receipt of first message (see LP: #794230)
-unexport LDFLAGS
+export DEB_LDFLAGS_MAINT_STRIP = -Wl,-Bsymbolic-functions
 
 %:
-	dh $@ --parallel --with autoreconf
-#org	dh $@ --with autotools_dev
+	dh $@
+
+ifeq ($(DEB_HOST_ARCH_OS), linux)
+confflags += 	--enable-imptcp \
+		--enable-imjournal \
+		--enable-omjournal \
+		--enable-kmsg
+endif
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		--libexecdir=/usr/lib/rsyslog \
-		--libdir=/usr/lib \
-		--enable-kmsg \
-		--enable-improg \
-		--enable-imdocker \
-		--enable-omrabbitmq \
-		--enable-imczmq \
-		--enable-omczmq \
-		--enable-omuxsock \
+		$(confflags) \
 		--enable-mysql \
 		--enable-pgsql \
+		--enable-ommongodb \
+		--enable-elasticsearch \
+		--enable-imkafka \
+		--enable-omkafka \
 		--enable-mail \
 		--enable-imfile \
-		--enable-impcap \
+		--enable-imfile-tests \
 		--enable-impstats \
+		--enable-klog \
+		--enable-gssapi-krb5 \
 		--enable-gnutls \
+		--enable-openssl \
 		--enable-relp \
-		--enable-clickhouse \
+		--enable-snmp \
 		--enable-pmaixforwardedfrom \
+		--enable-pmciscoios \
 		--enable-pmcisconames \
 		--enable-pmlastmsg \
-		--enable-pmrfc3164sd \
 		--enable-pmsnare \
+		--enable-omstdout \
 		--enable-omprog \
-		--enable-elasticsearch \
-		--enable-mmjsonparse \
-		--enable-imptcp \
-		--enable-mmnormalize \
+		--enable-omuxsock \
 		--enable-mmanon \
-		--enable-ommongodb \
-		--enable-mmfields \
+		--enable-mmjsonparse \
+		--enable-mmutf8fix \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
-		--enable-mmutf8fix \
-		--enable-pmciscoios \
-		--enable-pmnormalize \
-		--enable-usertools \
-		--enable-omudpspoof \
-		--enable-imjournal \
-		--enable-omjournal \
+		--enable-mmfields \
 		--enable-mmrm1stspace \
-		--enable-pmnull \
-		--enable-omkafka \
-		--enable-imkafka \
-		--enable-omhiredis \
-		--enable-omstdout \
-		--enable-openssl \
 		--enable-mmkubernetes \
+		--enable-imczmq \
+		--enable-omczmq \
+		--enable-omhiredis \
+		--enable-fmhash \
+		--enable-testbench \
+		--enable-extended-tests \
+		--enable-imdiag \
+		--enable-libzstd \
+		--enable-impcap \
+		--enable-omhiredis \
 		--enable-mmdblookup \
-		--enable-debug-symbols \
-		--disable-testbench \
+		--enable-improg \
+		--enable-clickhouse \
+		--enable-omudpspoof \
+		--enable-mmnormalize \
+		--disable-libgcrypt \
+		--disable-generate-man-pages \
+		--disable-fmhttp \
 		--disable-liblogging-stdlog \
-		--with-systemdsystemunitdir=/lib/systemd/system
-
-#
-#		--enable-mmgrok \
-#		--enable-omkafka \
-#		 --enable-guardtime \
-#		 --enable-gt-ksi \
-#                --enable-gssapi-krb5 \
-#                --enable-guardtime \
-#                --enable-ommongodb \
-#                --enable-mmnormalize \
-#                --enable-imzmq3 \
-#                --enable-omzmq3 \
-#		--enable-kafka-static \
-
-#override_dh_strip:
-#	dh_strip --dbg-package=rsyslog-debug
+		--without-valgrind-testbench
 
 override_dh_auto_install:
 	dh_auto_install
-	install --mode=644 -D plugins/ommysql/createDB.sql debian/rsyslog-mysql/usr/share/dbconfig-common/data/rsyslog-mysql/install/mysql
-	install --mode=644 -D plugins/ompgsql/createDB.sql debian/rsyslog-pgsql/usr/share/dbconfig-common/data/rsyslog-pgsql/install/pgsql
+	install --mode=644 -D plugins/ommysql/createDB.sql \
+		debian/rsyslog-mysql/usr/share/dbconfig-common/data/rsyslog-mysql/install/mysql
+	install --mode=644 -D plugins/ompgsql/createDB.sql \
+		debian/rsyslog-pgsql/usr/share/dbconfig-common/data/rsyslog-pgsql/install/pgsql
 
-override_dh_compress:
-	dh_compress -X rsyslog-example.conf
+override_dh_install:
+	find debian/tmp -name '*.la' -print -delete
+	dh_install
 
 override_dh_installinit:
 	dh_apparmor --profile-name=usr.sbin.rsyslogd -prsyslog
-	dh_installinit -R
+	dh_installinit
 
 override_dh_auto_test:
-ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
-	make check || ( cat tests/test-suite.log; exit 1; )
+ifeq (, $(filter nocheck, $(DEB_BUILD_OPTIONS)))
+	PATH=$$PATH:/usr/sbin dh_auto_test -- -j3 || ( cat tests/test-suite.log; exit 1 ) && ( cat tests/test-suite.log )
 endif
-

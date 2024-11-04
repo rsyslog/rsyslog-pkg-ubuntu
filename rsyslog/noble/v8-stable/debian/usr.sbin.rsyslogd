@@ -6,7 +6,7 @@
 # following:
 # watch -n 1 'dmesg | tail -5'
 
-/usr/sbin/rsyslogd {
+profile rsyslogd /usr/sbin/rsyslogd {
   #include <abstractions/base>
   #include <abstractions/nameservice>
 
@@ -18,6 +18,9 @@
   capability sys_nice,
   capability syslog,
 
+  unix (receive) type=dgram,
+  unix (receive) type=stream,
+
   # rsyslog configuration
   /etc/rsyslog.conf r,
   /etc/rsyslog.d/ r,
@@ -26,27 +29,26 @@
   /var/spool/rsyslog/ r,
   /var/spool/rsyslog/** rwk,
 
-  /usr/lib{,32,64}/rsyslog/*.so mr,
+  /usr/sbin/rsyslogd mr,
+  /usr/lib{,32,64}/{,@{multiarch}/}rsyslog/*.so mr,
 
   /dev/tty*                     rw,
   /dev/xconsole                 rw,
   @{PROC}/kmsg                  r,
+  # allow access to console (LP: #2009230)
+  /dev/console                  rw,
 
-  /dev/log                      wl,
-  /var/lib/*/dev/log            wl,
-  /var/spool/postfix/dev/log    wl,
+  /dev/log                      rwl,
+  /{,var/}run/utmp              rk,
+  /var/lib/*/dev/log            rwl,
+  /var/spool/postfix/dev/log    rwl,
+  /{,var/}run/systemd/notify    w,
 
   # 'r' is needed when using imfile
   /var/log/**                   rw,
 
-  # Add these for mysql support
-  #/etc/mysql/my.cnf r,
-  #/{,var/}run/mysqld/mysqld.sock rw,
-
-  # Add thes for postgresql support
-  ##include <abstractions/openssl>
-  ##include <abstractions/ssl_certs>
-  #/{,var/}run/postgresql/.s.PGSQL.*[0-9] rw,
+  # apparmor snippets for rsyslog from other packages
+  include if exists <rsyslog.d>
 
   # Site-specific additions and overrides. See local/README for details.
   #include <local/usr.sbin.rsyslogd>

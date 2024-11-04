@@ -19,15 +19,8 @@ if [ "$1" = "purge" ]; then
 	fi
 fi
 
-if [ "$1" = "purge" -o "$1" = "disappear" ]; then
+if [ "$1" = "purge" ] || [ "$1" = "disappear" ]; then
 	[ -f /etc/logrotate.d/rsyslog.disabled ] && rm -f /etc/logrotate.d/rsyslog.disabled
 fi
 
-if [ "$1" = "remove" ]; then
-	# Cleanup sendsigs omit file to avoid false positives from piuparts
-	rm -f /run/sendsigs.omit.d/rsyslog
-fi
-
 #DEBHELPER#
-
-exit 0

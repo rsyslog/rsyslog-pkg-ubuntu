@@ -1,3 +1,0 @@
-/etc/rsyslog.d/
-/var/spool/rsyslog/
-/etc/apparmor.d/rsyslog.d/

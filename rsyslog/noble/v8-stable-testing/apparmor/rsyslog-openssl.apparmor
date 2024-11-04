@@ -1,3 +1,0 @@
-# OpenSSL library rules
-
-  /etc/ssl/openssl.cnf r,

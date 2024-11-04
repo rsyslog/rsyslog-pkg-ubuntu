@@ -8,5 +8,3 @@ set -e
 dbc_go rsyslog-mysql $@
 
 #DEBHELPER#
-
-exit 0

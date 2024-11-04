@@ -1,33 +1,44 @@
-debian/rsyslog.conf /etc/
+#!/usr/bin/dh-exec
+debian/rsyslog.conf  etc/
+debian/00rsyslog.conf  usr/lib/tmpfiles.d/
 debian/50-default.conf /usr/share/rsyslog
-debian/tmp/usr/sbin/
-debian/tmp/usr/share/man/
-debian/tmp/usr/lib/rsyslog/imfile.so
-debian/tmp/usr/lib/rsyslog/imklog.so
-debian/tmp/usr/lib/rsyslog/immark.so
-debian/tmp/usr/lib/rsyslog/impstats.so
-debian/tmp/usr/lib/rsyslog/imtcp.so
-debian/tmp/usr/lib/rsyslog/imudp.so
-debian/tmp/usr/lib/rsyslog/imuxsock.so
-debian/tmp/usr/lib/rsyslog/omuxsock.so
-debian/tmp/usr/lib/rsyslog/imjournal.so
-debian/tmp/usr/lib/rsyslog/lmnet.so
-debian/tmp/usr/lib/rsyslog/lmnetstrms.so
-debian/tmp/usr/lib/rsyslog/lmnsd_ptcp.so
-debian/tmp/usr/lib/rsyslog/lmregexp.so
-debian/tmp/usr/lib/rsyslog/lmtcpclt.so
-debian/tmp/usr/lib/rsyslog/lmtcpsrv.so
-debian/tmp/usr/lib/rsyslog/lmzlibw.so
-debian/tmp/usr/lib/rsyslog/ommail.so
-debian/tmp/usr/lib/rsyslog/omprog.so
-debian/tmp/usr/lib/rsyslog/omjournal.so
-# debian/tmp/usr/lib/rsyslog/omruleset.so
-debian/tmp/usr/lib/rsyslog/mmpstrucdata.so
-debian/tmp/usr/lib/rsyslog/mmsequence.so
-debian/tmp/usr/lib/rsyslog/mmexternal.so
-#debian/tmp/usr/lib/rsyslog/lmnsd_gtls.so
-debian/tmp/usr/lib/rsyslog/lmcry_gcry.so
-#debian/tmp/usr/lib/rsyslog/lmsig_gt.so
-debian/tmp/usr/lib/rsyslog/pm*.so
-debian/rsyslog.service lib/systemd/system/
+debian/rsyslog-rotate usr/lib/rsyslog/
+debian/reload-apparmor-profile usr/lib/rsyslog/
+usr/sbin/
+usr/share/man/man5/
+usr/share/man/man8/
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/fmhash.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imfile.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imklog.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/immark.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/impstats.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imtcp.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imudp.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imuxsock.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmnet.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmnetstrms.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmnsd_ptcp.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmregexp.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmtcpclt.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmtcpsrv.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmzlibw.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmzstdw.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmanon.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmexternal.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmjsonparse.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmutf8fix.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmpstrucdata.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmsequence.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmfields.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmrm1stspace.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/ommail.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omprog.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omuxsock.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/pm*.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imkmsg.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imptcp.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imjournal.so
+[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omjournal.so
 debian/usr.sbin.rsyslogd etc/apparmor.d/
+debian/README.apparmor.rsyslog.d => etc/apparmor.d/rsyslog.d/README
+debian/dmesg.service lib/systemd/system

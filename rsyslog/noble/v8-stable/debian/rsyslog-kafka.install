@@ -1,2 +1,2 @@
-debian/tmp/usr/lib/rsyslog/omkafka.so
-debian/tmp/usr/lib/rsyslog/imkafka.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imkafka.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omkafka.so

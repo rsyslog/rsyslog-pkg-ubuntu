@@ -1,3 +1,8 @@
+rsyslog (8.2410.0-0adiscon1focal1) focal; urgency=low
+
+  * Packages for 8.2410.0 on focal
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 29 Oct 2024 11:53:47 +0000
 rsyslog (8.2408.0-0adiscon1focal1) focal; urgency=medium
 
   * Packages for 8.2408.0
@@ -237,4 +242,3 @@ rsyslog (8.2004.0-0adiscon1focal1) focal; urgency=medium
   * Initial package for Ubuntu 20.04
 
  -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 10:38:08 +0000
-
