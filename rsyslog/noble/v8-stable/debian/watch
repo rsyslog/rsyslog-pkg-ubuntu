@@ -1,2 +1,2 @@
-version=3
-http://download.rsyslog.com/rsyslog/rsyslog-([\d]+\.[\d]*[02468]\.[\d]+)\.tar\.gz
+version=4
+https://www.rsyslog.com/downloads/download-v8-stable/ .*/@PACKAGE@@ANY_VERSION@@ARCHIVE_EXT@

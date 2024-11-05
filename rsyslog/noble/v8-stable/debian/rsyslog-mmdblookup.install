@@ -1,1 +1,1 @@
-debian/tmp/usr/lib/rsyslog/mmdblookup.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmdblookup.so

@@ -1,3 +1,0 @@
-usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imgssapi.so
-usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmgssutil.so
-usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omgssapi.so

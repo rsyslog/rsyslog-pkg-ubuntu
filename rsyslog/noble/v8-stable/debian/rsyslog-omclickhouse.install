@@ -1,1 +1,1 @@
-debian/tmp/usr/lib/rsyslog/omclickhouse.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omclickhouse.so
