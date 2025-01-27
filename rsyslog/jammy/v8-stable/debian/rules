@@ -26,7 +26,6 @@ override_dh_auto_configure:
 		--enable-omrabbitmq \
 		--enable-imczmq \
 		--enable-omczmq \
-		--enable-mmgrok \
 		--enable-omuxsock \
 		--enable-mysql \
 		--enable-pgsql \
@@ -84,7 +83,7 @@ override_dh_auto_configure:
 #                --enable-imzmq3 \
 #                --enable-omzmq3 \
 #		--enable-kafka-static \
-
+#		--enable-mmgrok \
 #override_dh_strip:
 #	dh_strip --dbg-package=rsyslog-debug
 

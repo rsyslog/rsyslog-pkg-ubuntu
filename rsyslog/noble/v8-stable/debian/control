@@ -55,12 +55,14 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          adduser,
-         ucf
+         ucf,
+         libfastjson4 (>= 0.99.8)
 Recommends: logrotate
 Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-mongodb,
           rsyslog-doc,
           rsyslog-openssl | rsyslog-gnutls,
+          rsyslog-mmjsonparse,
           rsyslog-gssapi,
           rsyslog-relp,
           apparmor (>= 2.8.96~2541-0ubuntu4~)
@@ -124,6 +126,19 @@ Description: Elasticsearch output plugin for rsyslog
  This plugin allows rsyslog to write syslog messages to Elasticsearch, a
  distributed, multitenant-capable full-text search engine with a RESTful web
  interface and schema-free JSON documents.
+
+Package: rsyslog-mmjsonparse
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         liblognorm5,
+         libfastjson4 (>= 0.99.7)
+Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
+ This plugin parses the message part of syslog. If there's a CEE cookie
+ "@cee:" followed by a valid JSON, you can use properties from that JSON
+ to build custom templates.
 
 Package: rsyslog-kafka
 Architecture: any
