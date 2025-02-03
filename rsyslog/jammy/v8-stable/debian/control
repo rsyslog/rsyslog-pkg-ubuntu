@@ -10,6 +10,9 @@ Build-Depends: debhelper (>= 12),
                dh-autoreconf,
                librabbitmq-dev,
                librabbitmq4,
+               cmake,
+               git,
+               build-essential,
                zlib1g-dev,
                libtirpc-dev,
                libmysqlclient-dev,
@@ -38,8 +41,12 @@ Build-Depends: debhelper (>= 12),
                libhiredis-dev,
                util-linux,
                libnet-dev,
-               libmaxminddb-dev
-#               libgrok-dev,
+               libmaxminddb-dev,
+               python3-dev,
+               python3-cffi-backend,
+               python3-pip,
+               python3-setuptools,
+               python3-wheel
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -434,13 +441,11 @@ Depends: ${shlibs:Depends},
          libmaxminddb0
 Description: Fast geoip lookups straight from Rsyslog using libmaxminddb library.
 
-#Package: rsyslog-zmq
-#Architecture: any
-#Priority: extra
-#Depends: ${shlibs:Depends},
-#         ${misc:Depends},
-#         rsyslog (= ${binary:Version}),
-#           libzmq1
-#Description: zmq3 support for RSyslog. 
-# These plugins allows you to push data from and into rsyslog from a 
-# zeromq socket.
+Package: rsyslog-omazureeventhubs
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: omazureeventhubs is using the Apache qpid proton C library implementation of the
+ AMQP 1.0 which is recommend method to access Azure EventHubs.

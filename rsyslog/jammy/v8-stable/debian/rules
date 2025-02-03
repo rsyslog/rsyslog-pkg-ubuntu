@@ -16,7 +16,9 @@ unexport LDFLAGS
 	dh $@ --parallel --with autoreconf
 #org	dh $@ --with autotools_dev
 
-override_dh_auto_configure:
+override_dh_auto_configure: build-qpid-proton
+	PKG_CONFIG_PATH="$(CURDIR)/build-qpid/usr/lib/pkgconfig" \
+	LDFLAGS="-L$(CURDIR)/build-qpid/usr/lib" \
 	dh_auto_configure -- \
 		--libexecdir=/usr/lib/rsyslog \
 		--libdir=/usr/lib \
@@ -67,6 +69,8 @@ override_dh_auto_configure:
 		--enable-openssl \
 		--enable-mmkubernetes \
 		--enable-mmdblookup \
+		--enable-omazureeventhubs \
+		--enable-qpidproton_static \
 		--enable-debug-symbols \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
@@ -104,3 +108,9 @@ ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
 	make check || ( cat tests/test-suite.log; exit 1; )
 endif
 
+build-qpid-proton:
+	chmod +x debian/build-qpid-proton.sh
+	# Ensure pkg-config can find the locally built proton
+	export PKG_CONFIG_PATH="$(CURDIR)/build-qpid/qpid-proton/lib/pkgconfig:$$PKG_CONFIG_PATH"
+	# Set DESTDIR to a local build directory for configure-time access
+	DESTDIR="$(CURDIR)/build-qpid" debian/build-qpid-proton.sh
