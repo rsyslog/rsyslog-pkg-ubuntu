@@ -7,6 +7,9 @@ Build-Depends: debhelper-compat (= 13),
                dh-exec,
                dh-apparmor,
                autoconf-archive,
+               cmake,
+               git,
+               build-essential,
                zlib1g-dev,
                libzstd-dev (>= 1.4.0),
                libhiredis-dev,
@@ -32,6 +35,13 @@ Build-Depends: debhelper-compat (= 13),
                libpcap-dev,
                libnet-dev,
                libmaxminddb-dev,
+               libsasl2-dev,
+               python3-dev,
+               python3-cffi-backend,
+               python3-pip,
+               python3-setuptools,
+               python3-wheel,
+               python3.12-venv,
                procps <!nocheck>,
                python3 <!nocheck>,
                libfaketime <!nocheck>,
@@ -296,3 +306,12 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          libmaxminddb0
 Description: Fast geoip lookups straight from Rsyslog using libmaxminddb library.
+
+Package: rsyslog-omazureeventhubs
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: omazureeventhubs is using the Apache qpid proton C library implementation of the
+ AMQP 1.0 which is recommend method to access Azure EventHubs.

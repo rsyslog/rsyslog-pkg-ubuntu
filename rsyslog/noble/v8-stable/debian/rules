@@ -22,14 +22,16 @@ confflags += 	--enable-imptcp \
 		--enable-kmsg
 endif
 
-override_dh_auto_configure:
+override_dh_auto_configure: build-qpid-proton
+	PKG_CONFIG_PATH="$(CURDIR)/build-qpid/usr/lib/pkgconfig" \
+	LDFLAGS="-L$(CURDIR)/build-qpid/usr/lib" \
 	dh_auto_configure -- \
 		$(confflags) \
 		--enable-mysql \
 		--enable-pgsql \
 		--enable-ommongodb \
 		--enable-elasticsearch \
-                --enable-mmjsonparse \
+		--enable-mmjsonparse \
 		--enable-imkafka \
 		--enable-omkafka \
 		--enable-mail \
@@ -73,6 +75,8 @@ override_dh_auto_configure:
 		--enable-clickhouse \
 		--enable-omudpspoof \
 		--enable-mmnormalize \
+		--enable-omazureeventhubs \
+		--enable-qpidproton_static \
 		--disable-libgcrypt \
 		--disable-generate-man-pages \
 		--disable-fmhttp \
@@ -98,3 +102,10 @@ override_dh_auto_test:
 ifeq (, $(filter nocheck, $(DEB_BUILD_OPTIONS)))
 	PATH=$$PATH:/usr/sbin dh_auto_test -- -j3 || ( cat tests/test-suite.log; exit 1 ) && ( cat tests/test-suite.log )
 endif
+
+build-qpid-proton:
+	chmod +x debian/build-qpid-proton.sh
+	# Ensure pkg-config can find the locally built proton
+	export PKG_CONFIG_PATH="$(CURDIR)/build-qpid/qpid-proton/lib/pkgconfig:$$PKG_CONFIG_PATH"
+	# Set DESTDIR to a local build directory for configure-time access
+	DESTDIR="$(CURDIR)/build-qpid" debian/build-qpid-proton.sh
