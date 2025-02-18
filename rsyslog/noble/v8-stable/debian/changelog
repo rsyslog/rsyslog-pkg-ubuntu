@@ -1,3 +1,8 @@
+rsyslog (8.2502.0-0adiscon1noble2) noble; urgency=low
+
+  * Packages for 8.2502.0 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Feb 2025 16:57:32 +0000
 rsyslog (8.2502.0-0adiscon1noble1) noble; urgency=low
 
   * Packages for 8.2502.0 on noble

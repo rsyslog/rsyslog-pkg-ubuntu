@@ -1,1 +1,1 @@
-debian/tmp/usr/lib/rsyslog/imptcp.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imptcp.so
