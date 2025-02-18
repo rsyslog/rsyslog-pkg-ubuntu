@@ -1,3 +1,8 @@
+rsyslog (8.2502.0-0adiscon1focal1) focal; urgency=low
+
+  * Packages for 8.2502.0 on focal
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Feb 2025 16:14:29 +0000
 rsyslog (8.2412.0-0adiscon1focal1) focal; urgency=low
 
   * Packages for 8.2412.0 on focal
