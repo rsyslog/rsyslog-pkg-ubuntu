@@ -32,6 +32,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-ommongodb \
 		--enable-elasticsearch \
 		--enable-mmjsonparse \
+		--enable-imptcp \
 		--enable-imkafka \
 		--enable-omkafka \
 		--enable-mail \

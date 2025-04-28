@@ -1,3 +1,18 @@
+rsyslog (8.2502.0-0adiscon1jammy1) jammy; urgency=low
+
+  * Packages for 8.2502.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 18 Feb 2025 16:15:13 +0000
+rsyslog (8.2412.0-0adiscon1jammy5) jammy; urgency=low
+
+  * Packages for 8.2412.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Mon, 10 Feb 2025 11:29:44 +0000
+rsyslog (8.2412.0-0adiscon1jammy2) jammy; urgency=low
+
+  * Packages for 8.2412.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Mon, 10 Feb 2025 09:32:35 +0000
 rsyslog (8.2412.0-0adiscon1jammy1) jammy; urgency=low
 
   * Packages for 8.2412.0 on jammy

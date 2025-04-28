@@ -73,6 +73,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
           rsyslog-openssl | rsyslog-gnutls,
           rsyslog-mmjsonparse,
+	  rsyslog-imptcp,
           rsyslog-gssapi,
           rsyslog-relp,
           apparmor (>= 2.8.96~2541-0ubuntu4~)
@@ -149,6 +150,17 @@ Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
  This plugin parses the message part of syslog. If there's a CEE cookie
  "@cee:" followed by a valid JSON, you can use properties from that JSON
  to build custom templates.
+
+Package: rsyslog-imptcp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: High-performance, threaded TCP input module for rsyslog
+ This is a plugin which offers similar functionality to imtcp,
+ only it's optimized for performance and you can configure multiple
+ threads.
 
 Package: rsyslog-kafka
 Architecture: any
