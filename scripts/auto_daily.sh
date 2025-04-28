@@ -27,7 +27,7 @@ date
 for PROJECT in $PROJECTS
 do
 	# Ubuntu (bionic 18.04, ) 20.04 and 22.04
-	for PLATFORM in focal jammy
+	for PLATFORM in focal jammy noble
 	do
 		echo BUILD $PROJECT for $PLATFORM
 		cd $INFRAHOME/repo/rsyslog-pkg-ubuntu/$PROJECT
