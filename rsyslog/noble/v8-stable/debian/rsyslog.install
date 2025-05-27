@@ -36,7 +36,6 @@ usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omprog.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omuxsock.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/pm*.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imkmsg.so
-[linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imptcp.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/imjournal.so
 [linux-any] usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omjournal.so
 debian/usr.sbin.rsyslogd etc/apparmor.d/

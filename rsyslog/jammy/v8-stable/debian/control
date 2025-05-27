@@ -284,8 +284,9 @@ Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libgrok1,
-         rsyslog (= ${binary:Version}),
-Description: Provides the imdocker rsyslog plugin
+         rsyslog (= ${binary:Version})
+Description: Provides seamless integration between rsyslog and Docker,
+ enabling centralized logging of container output.
 
 Package: rsyslog-improg
 Architecture: any
