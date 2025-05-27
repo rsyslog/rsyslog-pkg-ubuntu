@@ -258,6 +258,15 @@ Depends: ${shlibs:Depends},
          libpcap
 Description: This module provides the impcap contributed module.
 
+Package: rsyslog-imdocker
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: Provides seamless integration between rsyslog and Docker,
+ enabling centralized logging of container output.
+
 Package: rsyslog-redis
 Architecture: any
 Priority: extra

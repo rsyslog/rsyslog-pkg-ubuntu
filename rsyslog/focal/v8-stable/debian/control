@@ -269,15 +269,6 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
 Description: Provides the omrabbitmq rsyslog plugin
 
-Package: rsyslog-imdocker
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-Description: Provides the imdocker rsyslog plugin
-#         libgrok1,
-
 Package: rsyslog-improg
 Architecture: any
 Priority: extra
@@ -381,6 +372,15 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version}),
          libpcap
 Description: This module provides the impcap contributed module.
+
+Package: rsyslog-imdocker
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: Provides seamless integration between rsyslog and Docker,
+ enabling centralized logging of container output.
 
 Package: rsyslog-redis
 Architecture: any
