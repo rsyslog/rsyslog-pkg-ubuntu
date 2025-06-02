@@ -1,3 +1,8 @@
+rsyslog (8.2504.0-0adiscon1jammy2) jammy; urgency=low
+
+  * Packages for 8.2504.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Mon, 02 Jun 2025 13:20:50 +0000
 rsyslog (8.2504.0-0adiscon1jammy1) jammy; urgency=low
 
   * Packages for 8.2504.0 on jammy

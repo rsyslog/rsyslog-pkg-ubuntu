@@ -432,6 +432,15 @@ Depends: ${shlibs:Depends},
          libmaxminddb0
 Description: Fast geoip lookups straight from Rsyslog using libmaxminddb library.
 
+Package: rsyslog-omhttp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libcurl-dev
+Description: omhttp provides the ability to send messages over an HTTP REST interface.
+
 #Package: rsyslog-zmq
 #Architecture: any
 #Priority: extra
