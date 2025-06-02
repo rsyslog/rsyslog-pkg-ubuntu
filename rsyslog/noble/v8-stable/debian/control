@@ -336,3 +336,12 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version})
 Description: omazureeventhubs is using the Apache qpid proton C library implementation of the
  AMQP 1.0 which is recommend method to access Azure EventHubs.
+
+Package: rsyslog-omhttp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+	 libcurl-dev
+Description: omhttp provides the ability to send messages over an HTTP REST interface.

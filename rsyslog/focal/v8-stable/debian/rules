@@ -67,6 +67,7 @@ override_dh_auto_configure:
 		--enable-openssl \
 		--enable-mmkubernetes \
 		--enable-mmdblookup \
+		--enable-omhttp \
 		--enable-debug-symbols \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
