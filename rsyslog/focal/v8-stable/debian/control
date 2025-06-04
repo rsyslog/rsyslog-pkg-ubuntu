@@ -361,7 +361,7 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
          rsyslog (= ${binary:Version}),
          liblz4-1,
-         libsasl2-2	
+         libsasl2-2
 Description: This module implements an Apache Kafka producer, permitting rsyslog to write data to Kafka.
 
 Package: rsyslog-impcap
@@ -432,13 +432,12 @@ Depends: ${shlibs:Depends},
          libmaxminddb0
 Description: Fast geoip lookups straight from Rsyslog using libmaxminddb library.
 
-#Package: rsyslog-zmq
-#Architecture: any
-#Priority: extra
-#Depends: ${shlibs:Depends},
-#         ${misc:Depends},
-#         rsyslog (= ${binary:Version}),
-#         libzmq1
-#Description: zmq3 support for RSyslog. 
-# These plugins allows you to push data from and into rsyslog from a 
-# zeromq socket.
+Package: rsyslog-omsendertrack
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: Rsyslog output module for tracking message senders which enables tracking of 
+ message senders across all input sources. It records per-sender statistics such as hostname,
+ message count, and last event time, and stores the data in a JSON-formatted state file.

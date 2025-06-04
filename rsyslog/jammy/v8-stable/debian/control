@@ -46,7 +46,9 @@ Build-Depends: debhelper (>= 12),
                python3-cffi-backend,
                python3-pip,
                python3-setuptools,
-               python3-wheel
+               python3-wheel,
+               libaprutil1-dev,
+               libcivetweb-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
@@ -450,3 +452,27 @@ Depends: ${shlibs:Depends},
          rsyslog (= ${binary:Version})
 Description: omazureeventhubs is using the Apache qpid proton C library implementation of the
  AMQP 1.0 which is recommend method to access Azure EventHubs.
+
+Package: rsyslog-omsendertrack
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: Rsyslog output module for tracking message senders which enables tracking of 
+ message senders across all input sources. It records per-sender statistics such as hostname,
+ message count, and last event time, and stores the data in a JSON-formatted state file.
+
+Package: rsyslog-imhttp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         libcivetweb1,
+         libaprutil1t64
+Description: HTTP input module for rsyslog
+ This package provides the `imhttp` input module for rsyslog, which allows
+ receiving log messages via HTTP POST requests. It enables rsyslog to act
+ as a lightweight HTTP server, accepting logs from applications or services
+ that communicate over HTTP instead of traditional syslog protocols.

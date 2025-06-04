@@ -71,7 +71,9 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-mmdblookup \
 		--enable-omazureeventhubs \
 		--enable-qpidproton_static \
+		--enable-omsendertrack \
 		--enable-debug-symbols \
+		--enable-imhttp \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
