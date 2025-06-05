@@ -349,6 +349,17 @@ Description: Rsyslog output module for tracking message senders which enables tr
  message senders across all input sources. It records per-sender statistics such as hostname,
  message count, and last event time, and stores the data in a JSON-formatted state file.
 
+Package: rsyslog-omhttp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: HTTP output plugin for rsyslog
+ This package provides the omhttp module, enabling rsyslog to transmit log messages
+ to remote HTTP or HTTPS endpoints. It facilitates integration with web services,
+ APIs, and modern centralized log management platforms that accept logs over HTTP.
+
 Package: rsyslog-imhttp
 Architecture: any
 Priority: extra
