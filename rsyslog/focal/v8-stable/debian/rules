@@ -69,6 +69,7 @@ override_dh_auto_configure:
 		--enable-mmdblookup \
 		--enable-debug-symbols \
 		--enable-omsendertrack \
+		--enable-omhttp \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system
