@@ -1,5 +1,5 @@
 PLATFORM="precise trusty xenial bionic eoan focal groovy jammy noble"
-ARCHTECT="amd64 i386"
+ARCHTECT="amd64 i386 arm64 armhf"
 BRANCHES="v8-stable v8-stable-testing daily-stable"
 # OLD GPG KEY	AEF0CF8E
 export PACKAGE_SIGNING_KEY_ID=60A6DC05CFD77E25BFB74F0F8B4ED6BFE8EDD305
