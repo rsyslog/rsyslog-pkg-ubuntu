@@ -70,6 +70,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-mmkubernetes \
 		--enable-mmdblookup \
 		--enable-omazureeventhubs \
+		--enable-omhttp \
 		--enable-qpidproton_static \
 		--enable-omsendertrack \
 		--enable-debug-symbols \

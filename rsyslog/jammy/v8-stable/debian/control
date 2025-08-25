@@ -487,3 +487,4 @@ Description: HTTP input module for rsyslog
  receiving log messages via HTTP POST requests. It enables rsyslog to act
  as a lightweight HTTP server, accepting logs from applications or services
  that communicate over HTTP instead of traditional syslog protocols.
+

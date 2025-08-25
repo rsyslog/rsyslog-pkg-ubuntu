@@ -78,6 +78,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-omudpspoof \
 		--enable-mmnormalize \
 		--enable-omazureeventhubs \
+		--enable-omhttp \
 		--enable-qpidproton_static \
 		--enable-omsendertrack \
 		--enable-omhttp \
