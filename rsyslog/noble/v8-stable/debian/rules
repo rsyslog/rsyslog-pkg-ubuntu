@@ -80,6 +80,9 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-omazureeventhubs \
 		--enable-omhttp \
 		--enable-qpidproton_static \
+		--enable-omsendertrack \
+		--enable-omhttp \
+		--enable-imhttp \
 		--disable-libgcrypt \
 		--disable-generate-man-pages \
 		--disable-fmhttp \

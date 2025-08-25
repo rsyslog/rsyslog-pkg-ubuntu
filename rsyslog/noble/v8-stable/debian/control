@@ -42,13 +42,15 @@ Build-Depends: debhelper-compat (= 13),
                python3-setuptools,
                python3-wheel,
                python3.12-venv,
+               libaprutil1-dev,
+               libcivetweb-dev,
                procps <!nocheck>,
                python3 <!nocheck>,
                libfaketime <!nocheck>,
                lsof [linux-any] <!nocheck>,
                logrotate <!nocheck>,
                iproute2 [linux-any] <!nocheck>,
-               curl <!nocheck>,
+               curl <!nocheck>       
 Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/debian/rsyslog.git
@@ -73,7 +75,7 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-doc,
           rsyslog-openssl | rsyslog-gnutls,
           rsyslog-mmjsonparse,
-	  rsyslog-imptcp,
+          rsyslog-imptcp,
           rsyslog-gssapi,
           rsyslog-relp,
           apparmor (>= 2.8.96~2541-0ubuntu4~)
@@ -337,11 +339,37 @@ Depends: ${shlibs:Depends},
 Description: omazureeventhubs is using the Apache qpid proton C library implementation of the
  AMQP 1.0 which is recommend method to access Azure EventHubs.
 
+Package: rsyslog-omsendertrack
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: Rsyslog output module for tracking message senders which enables tracking of 
+ message senders across all input sources. It records per-sender statistics such as hostname,
+ message count, and last event time, and stores the data in a JSON-formatted state file.
+
 Package: rsyslog-omhttp
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends},
          ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: HTTP output plugin for rsyslog
+ This package provides the omhttp module, enabling rsyslog to transmit log messages
+ to remote HTTP or HTTPS endpoints. It facilitates integration with web services,
+ APIs, and modern centralized log management platforms that accept logs over HTTP.
+
+Package: rsyslog-imhttp
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
          rsyslog (= ${binary:Version}),
-	 libcurl-dev
-Description: omhttp provides the ability to send messages over an HTTP REST interface.
+         libcivetweb1,
+         libaprutil1t64
+Description: HTTP input module for rsyslog
+ This package provides the `imhttp` input module for rsyslog, which allows
+ receiving log messages via HTTP POST requests. It enables rsyslog to act
+ as a lightweight HTTP server, accepting logs from applications or services
+ that communicate over HTTP instead of traditional syslog protocols.
