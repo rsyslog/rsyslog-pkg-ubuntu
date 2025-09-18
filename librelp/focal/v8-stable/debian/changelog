@@ -1,3 +1,8 @@
+librelp (1.12.0-0adiscon1focal1) focal; urgency=low
+
+  * Packages for 1.12.0 on focal
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Mon, 08 Sep 2025 14:32:21 +0000
 librelp (1.9.0-0adiscon1ifocal1) focal; urgency=medium
 
   * New upstream release for librelp 1.9.0
@@ -21,4 +26,3 @@ librelp (1.6.0-0adiscon1focal1) focal; urgency=medium
   * Initial upstream release of librelp 1.6.0 for Ubuntu 20.04
 
  -- Florian Riedl <adiscon-pkg-maintainers@adiscon.com>  Mon, 18 May 2020 09:53:24 +0000
-
