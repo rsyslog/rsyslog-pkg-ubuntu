@@ -1,3 +1,8 @@
+librelp (1.12.0-0adiscon1jammy1) jammy; urgency=low
+
+  * Packages for 1.12.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Mon, 08 Sep 2025 14:33:51 +0000
 librelp (1.10.0-0adiscon1jammy1) jammy; urgency=medium
 
   * Initial upstream release for Ubuntu 22.04 Jammy
