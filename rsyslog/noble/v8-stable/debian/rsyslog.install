@@ -30,6 +30,7 @@ usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmutf8fix.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmpstrucdata.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmsequence.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmfields.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmleefparse.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmrm1stspace.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/ommail.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/omprog.so
