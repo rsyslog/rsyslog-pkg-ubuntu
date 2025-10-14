@@ -1,3 +1,8 @@
+liblognorm (2.0.7-0adiscon1jammy1) jammy; urgency=low
+
+  * Packages for 2.0.7 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 14 Oct 2025 10:41:04 +0000
 liblognorm (2.0.6-0adiscon1jammy1) jammy; urgency=medium
 
   * Initial build for Ubuntu 22.04 Jammy
