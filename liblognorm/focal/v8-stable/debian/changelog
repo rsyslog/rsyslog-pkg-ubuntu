@@ -1,3 +1,8 @@
+liblognorm (2.0.8-0adiscon1focal1) focal; urgency=low
+
+  * Packages for 2.0.8 on focal
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Thu, 04 Dec 2025 14:52:23 +0000
 liblognorm (2.0.7-0adiscon1focal1) focal; urgency=low
 
   * Packages for 2.0.7 on focal
