@@ -321,6 +321,24 @@ Depends: ${shlibs:Depends},
 Description: The rsyslog-mmnormalize package provides log normalization 
  by using the liblognorm and it's Rulebase format. 
 
+Package: rsyslog-mmleefparse
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         liblognorm5
+Description: The rsyslog-mmleefparse package provides a parser module for extracting structured fields from LEEF (Log Event Extended Format) messages used by IBM QRadar and other security appliances.
+
+Package: rsyslog-mmsnareparse
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version}),
+         liblognorm5
+Description: The rsyslog-mmsnareparse package provides a parser module for extracting structured Windows Security Event data from logs sent in SNARE format.
+
 Package: rsyslog-mmdblookup
 Architecture: any
 Priority: extra
