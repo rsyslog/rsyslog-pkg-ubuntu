@@ -1,3 +1,8 @@
+liblogging (1.0.8-0adiscon1noble1) noble; urgency=low
+
+  * Packages for 1.0.8 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 Dec 2025 17:54:16 +0000
 liblogging (1.0.6-0adiscon1noble1) noble; urgency=medium
 
   * Initial package for Ubuntu 24.04 Noble

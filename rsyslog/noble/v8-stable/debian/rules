@@ -89,7 +89,7 @@ override_dh_auto_configure: build-qpid-proton
 		--disable-fmhttp \
 		--disable-liblogging-stdlog \
 		--without-valgrind-testbench
-# NEEDS make dist fix first --enable-mmsnarewinsec
+# NEEDS make dist fix first --enable-mmsnareparse
 
 override_dh_auto_install:
 	dh_auto_install

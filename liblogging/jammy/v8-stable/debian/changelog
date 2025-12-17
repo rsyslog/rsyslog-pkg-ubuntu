@@ -1,3 +1,8 @@
+liblogging (1.0.8-0adiscon1jammy1) jammy; urgency=low
+
+  * Packages for 1.0.8 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 17 Dec 2025 17:53:45 +0000
 liblogging (1.0.6-0adiscon1jammy1) jammy; urgency=medium
 
   * Initial package for Ubuntu 22.04 Jammy
