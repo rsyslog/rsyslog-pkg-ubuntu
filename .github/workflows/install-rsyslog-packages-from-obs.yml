@@ -56,10 +56,9 @@ jobs:
       # When set to true, cancel all in-progress jobs if any matrix job fails.
       fail-fast: false
       matrix:
-        # Explicitly list supported LTS versions
-        # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
-        # Note: As of 2020-06 ubuntu-latest' maps to 'ubuntu-18.04', not ubuntu-20.04
-        os: [ubuntu-16.04, ubuntu-18.04, ubuntu-20.04]
+        # LTS runners (ubuntu-24.04 = Noble)
+        # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+        os: [ubuntu-22.04, ubuntu-24.04]
 
     steps:
       - name: Install stock Ubuntu-provided rsyslog
