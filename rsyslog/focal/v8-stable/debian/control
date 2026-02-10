@@ -37,7 +37,11 @@ Build-Depends: debhelper (>= 12),
                libhiredis-dev,
                util-linux,
                libnet-dev,
-               libmaxminddb-dev
+               libmaxminddb-dev,
+               libprotobuf-c-dev,
+               libsnappy-dev,
+               protobuf-c-compiler,
+               libyaml-dev
 Standards-Version: 3.9.2
 XSBC-Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 XSBC-Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
