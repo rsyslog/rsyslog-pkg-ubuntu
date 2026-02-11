@@ -14,18 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# CI runs without OBS: builds source packages only from upstream tarball
-# + this repo's debian/ for each Ubuntu suite (jammy, noble).
+# CI runs without OBS: builds source packages from upstream tarball + this repo's
+# debian/ for each Ubuntu suite (focal, jammy, noble), then optionally builds
+# binary packages in a suite-matching environment to simulate Launchpad/PPA builds.
 
 ---
 name: CI PR runner
 
 on:
   pull_request:
-
-# Upstream version used for source-package build (must match tarball and changelog)
-env:
-  RSYSLOG_UPSTREAM_VERSION: "8.2512.0"
 
 jobs:
   build_source_package:
@@ -36,11 +33,30 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        suite: [jammy, noble]
+        suite: [focal, jammy, noble]
 
     steps:
       - name: Checkout packaging repo
         uses: actions/checkout@v4
+
+      - name: Get latest rsyslog version
+        id: get_version
+        run: |
+          set -e
+          # Prefer releases/latest; fall back to tags API if no Release is published
+          TAG=$(curl -sL "https://api.github.com/repos/rsyslog/rsyslog/releases/latest" | jq -r .tag_name)
+          if [ -z "$TAG" ] || [ "$TAG" = "null" ]; then
+            JSON=$(curl -sL "https://api.github.com/repos/rsyslog/rsyslog/tags?per_page=5")
+            TAG=$(echo "$JSON" | jq -r '.[0].name')
+          fi
+          if [ -z "$TAG" ] || [ "$TAG" = "null" ]; then
+            echo "::error::Could not get latest tag (releases/latest or tags API failed/empty)"
+            exit 1
+          fi
+          VERSION="${TAG#v}"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Using upstream version: $VERSION (tag: $TAG)"
 
       - name: Install dpkg-dev
         run: sudo apt-get update && sudo apt-get install -y dpkg-dev
@@ -48,22 +64,22 @@ jobs:
       - name: Download upstream tarball
         run: |
           # Upstream tags use 'v' prefix (e.g. v8.2512.0)
-          wget -q "https://github.com/rsyslog/rsyslog/archive/refs/tags/v${{ env.RSYSLOG_UPSTREAM_VERSION }}.tar.gz" \
-            -O "rsyslog_${{ env.RSYSLOG_UPSTREAM_VERSION }}.orig.tar.gz"
+          wget -q "https://github.com/rsyslog/rsyslog/archive/refs/tags/${{ steps.get_version.outputs.tag }}.tar.gz" \
+            -O "rsyslog_${{ steps.get_version.outputs.version }}.orig.tar.gz"
 
       - name: Prepare source tree
         run: |
-          tar xf "rsyslog_${{ env.RSYSLOG_UPSTREAM_VERSION }}.orig.tar.gz"
+          tar xf "rsyslog_${{ steps.get_version.outputs.version }}.orig.tar.gz"
           # GitHub archive may extract to rsyslog-refs-tags-X.Y.Z; ensure dir is rsyslog-X.Y.Z
-          if [ ! -d "rsyslog-${{ env.RSYSLOG_UPSTREAM_VERSION }}" ]; then
-            mv rsyslog-* "rsyslog-${{ env.RSYSLOG_UPSTREAM_VERSION }}"
+          if [ ! -d "rsyslog-${{ steps.get_version.outputs.version }}" ]; then
+            mv rsyslog-* "rsyslog-${{ steps.get_version.outputs.version }}"
           fi
-          rm -rf "rsyslog-${{ env.RSYSLOG_UPSTREAM_VERSION }}/debian"
-          cp -r "rsyslog/${{ matrix.suite }}/v8-stable/debian" "rsyslog-${{ env.RSYSLOG_UPSTREAM_VERSION }}/"
+          rm -rf "rsyslog-${{ steps.get_version.outputs.version }}/debian"
+          cp -r "rsyslog/${{ matrix.suite }}/v8-stable/debian" "rsyslog-${{ steps.get_version.outputs.version }}/"
 
       - name: Build source package (dpkg-source -b)
         run: |
-          cd "rsyslog-${{ env.RSYSLOG_UPSTREAM_VERSION }}"
+          cd "rsyslog-${{ steps.get_version.outputs.version }}"
           dpkg-source -b .
 
       - name: List built artifacts
@@ -77,7 +93,7 @@ jobs:
           path: |
             rsyslog_*.dsc
             rsyslog_*.debian.tar.*
-            rsyslog_${{ env.RSYSLOG_UPSTREAM_VERSION }}.orig.tar.gz
+            rsyslog_${{ steps.get_version.outputs.version }}.orig.tar.gz
 
   lint_source_package:
     name: Lint source package (${{ matrix.suite }})
@@ -87,7 +103,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        suite: [jammy, noble]
+        suite: [focal, jammy, noble]
 
     steps:
       - name: Download source package artifacts
@@ -101,3 +117,71 @@ jobs:
       - name: Lint .dsc
         run: |
           for dsc in *.dsc; do lintian --no-tag-display-limit "$dsc" 2>/dev/null || true; done
+
+  # Simulate Launchpad/PPA: build binary packages from the source package in a
+  # clean, suite-matching environment (same as PPA build would use).
+  build_binary_package:
+    name: Build binary packages (${{ matrix.suite }})
+    runs-on: ubuntu-24.04
+    needs: build_source_package
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: bash
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - suite: focal
+            image: ubuntu:20.04
+          - suite: jammy
+            image: ubuntu:22.04
+          - suite: noble
+            image: ubuntu:24.04
+
+    container:
+      image: ${{ matrix.image }}
+
+    steps:
+      - name: Install APT and PPA support
+        run: |
+          apt-get update
+          apt-get install -y software-properties-common
+          add-apt-repository -y universe
+          add-apt-repository --yes --update ppa:adiscon/v8-stable
+          apt-get update
+
+      - name: Install build tools and satisfy Build-Depends
+        run: |
+          apt-get install -y dpkg-dev devscripts build-essential fakeroot equivs flex
+        env:
+          DEBIAN_FRONTEND: noninteractive
+
+      - name: Download source package artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: source-pkg-${{ matrix.suite }}
+
+      - name: Extract source package
+        run: dpkg-source -x *.dsc
+
+      - name: Verify build tools and source tree
+        run: |
+          set -e
+          command -v mk-build-deps || (echo "mk-build-deps not found"; apt-get install -y devscripts; command -v mk-build-deps)
+          command -v debuild || (echo "debuild not found"; exit 1)
+          SRCDIR=$(ls -d rsyslog-*/ 2>/dev/null | head -1)
+          test -n "$SRCDIR" && test -d "$SRCDIR" || (echo "No rsyslog-* directory"; ls -la; exit 1)
+          echo "Building in $SRCDIR"
+
+      - name: Install build dependencies and build binary packages
+        run: |
+          set -e
+          SRCDIR=$(ls -d rsyslog-*/ 2>/dev/null | head -1)
+          cd "$SRCDIR"
+          mk-build-deps -i -r -t "apt-get -y --no-install-recommends"
+          debuild -b -us -uc
+
+      - name: List built binary packages
+        run: |
+          find . -maxdepth 2 -name "*.deb" -type f -exec ls -la {} \;
