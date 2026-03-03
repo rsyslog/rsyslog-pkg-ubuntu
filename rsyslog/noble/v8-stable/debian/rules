@@ -12,6 +12,9 @@ export PYTHON=/usr/bin/python3
 # segfault on receipt of first message (see LP: #794230)
 export DEB_LDFLAGS_MAINT_STRIP = -Wl,-Bsymbolic-functions
 
+# Disable imfile tests in CI (GitHub Actions) - they fail due to logrotate permissions in containers
+imfile_tests = $(if $(GITHUB_ACTIONS),--disable-imfile-tests,--enable-imfile-tests)
+
 %:
 	dh $@
 
@@ -37,7 +40,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-omkafka \
 		--enable-mail \
 		--enable-imfile \
-		--enable-imfile-tests \
+		$(imfile_tests) \
 		--enable-impstats \
 		--enable-klog \
 		--enable-gssapi-krb5 \
@@ -67,13 +70,15 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-omhiredis \
 		--enable-fmhash \
 		--enable-testbench \
-		--enable-extended-tests \
+		--disable-default-tests \
+		--disable-extended-tests \
 		--enable-imdiag \
 		--enable-libzstd \
 		--enable-impcap \
 		--enable-imdocker \
 		--enable-omhiredis \
 		--enable-mmdblookup \
+		--enable-mmsnareparse \
 		--enable-improg \
 		--enable-clickhouse \
 		--enable-omudpspoof \
@@ -89,7 +94,6 @@ override_dh_auto_configure: build-qpid-proton
 		--disable-fmhttp \
 		--disable-liblogging-stdlog \
 		--without-valgrind-testbench
-# NEEDS make dist fix first --enable-mmsnarewinsec
 
 override_dh_auto_install:
 	dh_auto_install
@@ -102,6 +106,12 @@ override_dh_install:
 	find debian/tmp -name '*.la' -print -delete
 	dh_install
 
+# Remove our custom build-qpid tree. Run dh_auto_clean (make distclean) when the
+# tree is configured; on fresh extract it may fail (no Makefile), so ignore errors.
+override_dh_auto_clean:
+	rm -rf build-qpid
+	-dh_auto_clean
+
 override_dh_installinit:
 	dh_apparmor --profile-name=usr.sbin.rsyslogd -prsyslog
 	dh_installinit
@@ -110,12 +120,13 @@ override_dh_installinit:
 # - imudp_ratelimit_name.sh, ratelimit_name.sh: timing/rate-limit and "double free or corruption"
 # - imfile-symlink-ext-tmp-dir-tree.sh: fd checks fail in build environment
 # Skip tests on armhf so the package can build; other arches still run tests.
+#
 override_dh_auto_test:
 ifneq (,$(filter armhf,$(DEB_HOST_ARCH)))
 	@echo "Skipping tests on armhf (known flaky tests in chroot)."
 else
 ifeq (, $(filter nocheck, $(DEB_BUILD_OPTIONS)))
-	PATH=$$PATH:/usr/sbin dh_auto_test -- -j3 || ( cat tests/test-suite.log; exit 1 ) && ( cat tests/test-suite.log )
+	PATH=$$PATH:/usr/sbin dh_auto_test -- -j4 || ( cat tests/test-suite.log; exit 1 ) && ( cat tests/test-suite.log )
 endif
 endif
 

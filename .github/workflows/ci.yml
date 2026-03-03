@@ -76,6 +76,23 @@ jobs:
           fi
           rm -rf "rsyslog-${{ steps.get_version.outputs.version }}/debian"
           cp -r "rsyslog/${{ matrix.suite }}/v8-stable/debian" "rsyslog-${{ steps.get_version.outputs.version }}/"
+          # debian config files must not be executable (debhelper treats exec as script)
+          # Exception: rsyslog.install uses dh-exec (shebang) and MUST stay executable
+          chmod -x "rsyslog-${{ steps.get_version.outputs.version }}/debian/clean" "rsyslog-${{ steps.get_version.outputs.version }}/debian/not-installed" 2>/dev/null || true
+          find "rsyslog-${{ steps.get_version.outputs.version }}/debian" -type f \( -name '*.dirs' -o -name '*.install.*' -o -name '*.config' -o -name '*.conf.template' -o -name '*.apparmor' -o -name '*.docs' -o -name '*.examples' -o -name '*.logrotate' -o -name '*.triggers' -o -name '*.maintscript' -o -name '*.logcheck.ignore.*' \) -exec chmod -x {} \; 2>/dev/null || true
+          find "rsyslog-${{ steps.get_version.outputs.version }}/debian" -type f -name '*.install' ! -name 'rsyslog.install' -exec chmod -x {} \; 2>/dev/null || true
+          # dh-exec shebang must be LF; CRLF causes "No such file or directory" (kernel execs /usr/bin/dh-exec\r)
+          find "rsyslog-${{ steps.get_version.outputs.version }}/debian" -type f -name '*.install' -exec sed -i 's/\r$//' {} \;
+
+      - name: Update changelog version to match upstream
+        run: |
+          VERSION="${{ steps.get_version.outputs.version }}"
+          CHANGELOG_VER=$(dpkg-parsechangelog -l "rsyslog-${VERSION}/debian/changelog" -S Version)
+          CHANGELOG_UPSTREAM="${CHANGELOG_VER%%-*}"
+          if [ "$CHANGELOG_UPSTREAM" != "$VERSION" ]; then
+            echo "Updating changelog version: $CHANGELOG_UPSTREAM -> $VERSION"
+            sed -i "1s/${CHANGELOG_UPSTREAM}/${VERSION}/" "rsyslog-${VERSION}/debian/changelog"
+          fi
 
       - name: Build source package (dpkg-source -b)
         run: |
@@ -175,6 +192,8 @@ jobs:
           echo "Building in $SRCDIR"
 
       - name: Install build dependencies and build binary packages
+        env:
+          GITHUB_ACTIONS: "true"
         run: |
           set -e
           SRCDIR=$(ls -d rsyslog-*/ 2>/dev/null | head -1)

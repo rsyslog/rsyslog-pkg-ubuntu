@@ -36,6 +36,14 @@ Scripts for building and publishing Debian/Ubuntu packages for rsyslog and relat
 
 ---
 
+## CI lokal (Ubuntu 24.04)
+
+| Script | Purpose |
+|--------|--------|
+| **ci_local.sh** | Simuliert die GitHub-Actions-CI lokal: Source-Paket-Build plus optional Binary-Build in Docker. **Args:** `[--suite noble] [--source-only|--full]`. Run from repo root. Siehe `docs/CI-LOCAL.md`. |
+
+---
+
 ## Build and install (pbuilder / local)
 
 | Script | Purpose |
