@@ -26,7 +26,7 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr \
          -DBUILD_GO=OFF
 
 # Build using all available cores
-make -j8
+make -j3
 
 # Install to specified DESTDIR
 make install DESTDIR="${DESTDIR}"

@@ -1,0 +1,7 @@
+# Debian packaging files must use LF (CRLF breaks make/rules, dh-exec shebang, path parsing)
+# Covers rsyslog, adisconhelperlrdk, librelp, liblognorm, libfastjson, etc.
+**/debian/** text eol=lf
+# Binary tarballs must NOT get text conversion (corrupts gzip; causes "tar: A lone zero block")
+**/debian/**/*.tar.gz binary
+**/debian/**/*.tar.xz binary
+*.sh text eol=lf

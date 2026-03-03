@@ -67,6 +67,8 @@ override_dh_auto_configure:
 		--enable-openssl \
 		--enable-mmkubernetes \
 		--enable-mmdblookup \
+		--enable-mmsnareparse \
+		--enable-mmleefparse \
 		--enable-omhttp \
 		--enable-debug-symbols \
 		--enable-omsendertrack \
@@ -105,6 +107,6 @@ override_dh_installinit:
 
 override_dh_auto_test:
 ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
-	PATH=$$PATH:/usr/sbin make check -j3 || ( cat tests/test-suite.log; exit 1; )
+	PATH=$$PATH:/usr/sbin make check -j4 || ( cat tests/test-suite.log; exit 1; )
 endif
 
