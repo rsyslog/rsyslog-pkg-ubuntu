@@ -474,3 +474,15 @@ Description: HTTP output plugin for rsyslog
  This package provides the omhttp module, enabling rsyslog to transmit log messages
  to remote HTTP or HTTPS endpoints. It facilitates integration with web services,
  APIs, and modern centralized log management platforms that accept logs over HTTP.
+
+Package: rsyslog-imbeats
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: rsyslog-openssl | rsyslog-gnutls
+Description: Elastic Beats / Elastic Agent input for rsyslog
+ This package provides the `imbeats` input module, which receives events from
+ Elastic Beats and Elastic Agent using the Lumberjack v2 protocol over TCP or
+ TLS (via the same stream drivers as other rsyslog network inputs).

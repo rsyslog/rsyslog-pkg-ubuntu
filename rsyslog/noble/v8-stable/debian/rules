@@ -89,6 +89,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-omsendertrack \
 		--enable-omhttp \
 		--enable-imhttp \
+		--enable-imbeats \
 		--disable-libgcrypt \
 		--disable-generate-man-pages \
 		--disable-fmhttp \

@@ -198,5 +198,8 @@ jobs:
       - name: Install rsyslog-impcap
         run: sudo apt-get install rsyslog-impcap
 
+      - name: Install rsyslog-imbeats
+        run: sudo apt-get install rsyslog-imbeats
+
       - name: Display installed rsyslog packages
         run: dpkg -l | grep -E 'rsyslog|adiscon'
