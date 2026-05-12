@@ -79,6 +79,7 @@ Sub-packages for rsyslog to provide specific functionality:
 - rsyslog-doc
 - rsyslog-elasticsearch
 - rsyslog-imptcp
+- rsyslog-imbeats
 - rsyslog-kafka (>=14.04)
 - rsyslog-mmanon
 - rsyslog-mmfields

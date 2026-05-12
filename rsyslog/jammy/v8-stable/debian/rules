@@ -78,6 +78,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-debug-symbols \
 		--enable-omhttp \
 		--enable-imhttp \
+		--enable-imbeats \
 		--disable-testbench \
 		--disable-liblogging-stdlog \
 		--with-systemdsystemunitdir=/lib/systemd/system

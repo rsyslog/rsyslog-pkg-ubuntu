@@ -395,3 +395,15 @@ Description: HTTP input module for rsyslog
  receiving log messages via HTTP POST requests. It enables rsyslog to act
  as a lightweight HTTP server, accepting logs from applications or services
  that communicate over HTTP instead of traditional syslog protocols.
+
+Package: rsyslog-imbeats
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Suggests: rsyslog-openssl | rsyslog-gnutls
+Description: Elastic Beats / Elastic Agent input for rsyslog
+ This package provides the `imbeats` input module, which receives events from
+ Elastic Beats and Elastic Agent using the Lumberjack v2 protocol over TCP or
+ TLS (via the same stream drivers as other rsyslog network inputs).
