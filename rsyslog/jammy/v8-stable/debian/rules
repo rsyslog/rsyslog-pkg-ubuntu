@@ -73,6 +73,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-mmleefparse \
 		--enable-omazureeventhubs \
 		--enable-omhttp \
+		--enable-omotel \
 		--enable-qpidproton_static \
 		--enable-omsendertrack \
 		--enable-debug-symbols \
