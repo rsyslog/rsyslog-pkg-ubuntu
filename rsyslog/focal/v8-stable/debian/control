@@ -475,6 +475,16 @@ Description: HTTP output plugin for rsyslog
  to remote HTTP or HTTPS endpoints. It facilitates integration with web services,
  APIs, and modern centralized log management platforms that accept logs over HTTP.
 
+Package: rsyslog-omotel
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: OpenTelemetry output plugin for rsyslog
+ This package provides the omotel module, enabling rsyslog to export logs to
+ OpenTelemetry collector endpoints over HTTP.
+
 Package: rsyslog-imbeats
 Architecture: any
 Priority: extra

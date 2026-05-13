@@ -71,6 +71,7 @@ override_dh_auto_configure:
 		--enable-mmsnareparse \
 		--enable-mmleefparse \
 		--enable-omhttp \
+		--enable-omotel \
 		--enable-debug-symbols \
 		--enable-omsendertrack \
 		--enable-omhttp \
@@ -110,4 +111,3 @@ override_dh_auto_test:
 ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
 	PATH=$$PATH:/usr/sbin make check -j4 || ( cat tests/test-suite.log; exit 1; )
 endif
-
