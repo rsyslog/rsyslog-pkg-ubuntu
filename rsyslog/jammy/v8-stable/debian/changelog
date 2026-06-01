@@ -1,3 +1,9 @@
+rsyslog (8.2604.0-0adiscon1jammy4) jammy; urgency=low
+
+  * Add Build-Depends on autoconf-archive for AX_* configure macros (dh_autoreconf).
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Mon, 01 Jun 2026 12:00:00 +0000
+
 rsyslog (8.2604.0-0adiscon1jammy3) jammy; urgency=low
 
   * Add rsyslog-omotel package (omotel output module, --enable-omotel).
