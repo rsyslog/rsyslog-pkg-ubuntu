@@ -20,13 +20,19 @@ szPlatform=$1		# trusty, vivid, ...
 UPLOAD_PPA=$2		# path of the ppa (e.g. v8-devel)
 BRANCH=$3		# branch to use (e.g. master)
 			# Note: this must match the tarball branch
-CUSTOMBUILD=${4:-""}	# Use if set, needed for rebuilds to make unique upload files
-# Append an underscore if CUSTOMBUILD is not empty
-if [ -n "$CUSTOMBUILD" ]; then
-    CUSTOMBUILD="-$CUSTOMBUILD"
+CUSTOMBUILD_ARG=${4:-""}
+DEBUILD_ARG=${5:-""}
+if [ -n "$CUSTOMBUILD_ARG" ]; then
+    CUSTOMBUILD="-$CUSTOMBUILD_ARG"
 else
     CUSTOMBUILD="-$(date +%Y%m%d%H%M%S)"
 fi
+# Always -sa by default: CUSTOMBUILD is part of upstream version (new .orig name each time).
+# Opt in to -sd only for packaging-only re-uploads when orig is already on the PPA.
+DEBUILD_MODE="-sa"
+case "$DEBUILD_ARG" in
+    -sd|sd) DEBUILD_MODE="-sd" ;;
+esac
 #if [ -z "$CUSTOMBUILD" ]; then
 #fi
 
@@ -98,10 +104,15 @@ rm -f $PROJECT_*.dsc
 rm -f $PROJECT_*.build
 rm -f $PROJECT_*.debian.tar.gz
 rm -f $PROJECT_*.orig.tar.gz
-# Delete LAUNCHPAD_VERSION Dir if it exists and is in the current working directory
+# Delete work dirs from previous runs (pre-vendor and vendor-suffixed names)
 if [[ -d "./$LAUNCHPAD_VERSION" ]]; then
 	echo "REMOVE existing directory $LAUNCHPAD_VERSION !"
 	rm -rf "./$LAUNCHPAD_VERSION"
+fi
+VENDOR_WORKDIR="${PROJECT}-${PURE_VERSION}+adiscon1${CUSTOMBUILD}"
+if [[ -d "./$VENDOR_WORKDIR" ]]; then
+	echo "REMOVE existing directory $VENDOR_WORKDIR !"
+	rm -rf "./$VENDOR_WORKDIR"
 fi
 
 # BEGIN ACTUAL BUILD PROCESS
@@ -112,8 +123,35 @@ if [ $? -ne 0 ]; then
 fi
 mv $szSourceFile $szReplaceFile.orig.tar.gz
 
-mv $szSourceBase $LAUNCHPAD_VERSION
-cd $LAUNCHPAD_VERSION
+# Vendor suffix when plain upstream version conflicts with Ubuntu primary archive
+VENDOR_SUFFIX=""
+SCRIPT_DIR=$(dirname "$(readlink -f "${BASH_SOURCE[0]}" 2>/dev/null || echo "$0")")
+if [ -f "$SCRIPT_DIR/ubuntu_orig_conflict.sh" ]; then
+    if bash "$SCRIPT_DIR/ubuntu_orig_conflict.sh" "$PROJECT" "$PURE_VERSION" "$szReplaceFile.orig.tar.gz"; then
+        VENDOR_SUFFIX="+adiscon1"
+        echo "Applying vendor suffix $VENDOR_SUFFIX (Ubuntu primary orig conflict)"
+        LAUNCHPAD_VERSION="${PURE_VERSION}${VENDOR_SUFFIX}${CUSTOMBUILD}"
+        szReplaceFile="${PROJECT}_${LAUNCHPAD_VERSION}"
+        VENDOR_ORIG="${szReplaceFile}.orig.tar.gz"
+        VENDOR_DIR="${PROJECT}-${LAUNCHPAD_VERSION}"
+        if [ -d "$szSourceBase" ]; then
+            mv "$szSourceBase" "$VENDOR_DIR" || { echo "Error: failed to rename source directory"; exit 1; }
+            szSourceBase="$VENDOR_DIR"
+        fi
+        tar czf "$VENDOR_ORIG" "$VENDOR_DIR" || { echo "Error: failed to create vendor orig tarball"; exit 1; }
+        rm -f "${PROJECT}_${PURE_VERSION}${CUSTOMBUILD}.orig.tar.gz"
+    fi
+fi
+
+if [ -n "$VENDOR_SUFFIX" ]; then
+    # Keep ${PROJECT}-${LAUNCHPAD_VERSION}/ — same top-level dir as in VENDOR_ORIG
+    SOURCE_WORKDIR="$szSourceBase"
+    cd "$SOURCE_WORKDIR"
+else
+    mv "$szSourceBase" "$LAUNCHPAD_VERSION"
+    SOURCE_WORKDIR="$LAUNCHPAD_VERSION"
+    cd "$SOURCE_WORKDIR"
+fi
 ls -l ..
 ls -l ../$szPlatform
 ls -l ../$szPlatform/$BRANCH
@@ -136,11 +174,11 @@ cat debian/changelog
 
 # Build Source package now!
 if [ -v PACKAGE_SIGNING_KEY_ID ]; then
-	echo "RUN debuild -S -sa -rfakeroot -k $PACKAGE_SIGNING_KEY_ID
-	debuild -S -sa -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
+	echo "RUN debuild -S $DEBUILD_MODE -rfakeroot -k $PACKAGE_SIGNING_KEY_ID"
+	debuild -S $DEBUILD_MODE -rfakeroot -k"$PACKAGE_SIGNING_KEY_ID"
 else
-	echo "RUN debuild -S -sa -rfakeroot -us -uc
-        debuild -S -sa -rfakeroot -us -uc
+	echo "RUN debuild -S $DEBUILD_MODE -rfakeroot -us -uc"
+	debuild -S $DEBUILD_MODE -rfakeroot -us -uc
 fi
 if [ $? -ne 0 ]; then
 	echo "fail in debuild for $PROJECT_SONAME $VERSION on $szPlatform - check cron mail for details" | mutt -s "$PROJECT_SONAME daily build failed!" $RS_NOTIFY_EMAIL
@@ -164,6 +202,6 @@ if [ -v PACKAGE_SIGNING_KEY_ID ]; then
 	#cleanup
 	echo $VERSION >$VERSION_FILE
 	#exit # do this for testing
-	rm -rf $LAUNCHPAD_VERSION
+	rm -rf "$SOURCE_WORKDIR"
 	rm -v $szReplaceFile*.dsc $szReplaceFile*.build $szReplaceFile*.changes $szReplaceFile*.upload *.tar.gz
 fi

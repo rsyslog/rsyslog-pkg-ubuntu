@@ -1,3 +1,28 @@
+liblognorm (2.1.0+adiscon1-0adiscon1noble5) noble; urgency=low
+
+  * Packages for 2.1.0+adiscon1 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 01 Jul 2026 10:27:54 +0000
+liblognorm (2.1.0+adiscon1-0adiscon1noble4) noble; urgency=low
+
+  * Packages for 2.1.0+adiscon1 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 01 Jul 2026 10:21:09 +0000
+liblognorm (2.1.0-0adiscon1noble3) noble; urgency=low
+
+  * Packages for 2.1.0 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 15:07:06 +0000
+liblognorm (2.1.0-0adiscon1noble2) noble; urgency=low
+
+  * Packages for 2.1.0 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 12:14:15 +0000
+liblognorm (2.1.0-0adiscon1noble1) noble; urgency=low
+
+  * Packages for 2.1.0 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Thu, 25 Jun 2026 14:59:25 +0000
 liblognorm (2.0.7-0adiscon1noble1) noble; urgency=low
 
   * Packages for 2.0.7 on noble
