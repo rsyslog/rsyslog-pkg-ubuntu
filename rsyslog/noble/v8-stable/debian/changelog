@@ -1,3 +1,8 @@
+rsyslog (8.2606.0-0adiscon1noble1) noble; urgency=low
+
+  * Packages for 8.2606.0 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 23 Jun 2026 14:19:22 +0000
 rsyslog (8.2604.0-0adiscon1noble3) noble; urgency=low
 
   * Add rsyslog-omotel package (omotel output module, --enable-omotel).
