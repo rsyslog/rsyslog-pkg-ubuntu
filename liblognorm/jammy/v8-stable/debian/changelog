@@ -1,3 +1,8 @@
+liblognorm (2.1.0-0adiscon1jammy1) jammy; urgency=low
+
+  * Packages for 2.1.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Thu, 25 Jun 2026 14:58:59 +0000
 liblognorm (2.0.8-0adiscon1jammy1) jammy; urgency=low
 
   * Packages for 2.0.8 on jammy

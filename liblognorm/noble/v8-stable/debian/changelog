@@ -1,3 +1,8 @@
+liblognorm (2.1.0-0adiscon1noble1) noble; urgency=low
+
+  * Packages for 2.1.0 on noble
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Thu, 25 Jun 2026 14:59:25 +0000
 liblognorm (2.0.7-0adiscon1noble1) noble; urgency=low
 
   * Packages for 2.0.7 on noble
