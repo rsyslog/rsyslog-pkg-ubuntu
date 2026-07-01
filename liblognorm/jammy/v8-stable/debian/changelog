@@ -1,3 +1,23 @@
+liblognorm (2.1.0+adiscon1-0adiscon1jammy5) jammy; urgency=low
+
+  * Packages for 2.1.0+adiscon1 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 01 Jul 2026 10:47:03 +0000
+liblognorm (2.1.0-0adiscon1jammy3) jammy; urgency=low
+
+  * Packages for 2.1.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 15:06:41 +0000
+liblognorm (2.1.0-0adiscon1jammy2) jammy; urgency=low
+
+  * Packages for 2.1.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 12:13:54 +0000
+liblognorm (2.1.0-0adiscon1jammy1) jammy; urgency=low
+
+  * Packages for 2.1.0 on jammy
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 11:04:22 +0000
 liblognorm (2.0.8-0adiscon1jammy1) jammy; urgency=low
 
   * Packages for 2.0.8 on jammy

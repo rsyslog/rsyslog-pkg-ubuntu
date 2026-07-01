@@ -1,3 +1,18 @@
+liblognorm (2.1.0-0adiscon1focal3) focal; urgency=low
+
+  * Packages for 2.1.0 on focal
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 15:06:23 +0000
+liblognorm (2.1.0-0adiscon1focal2) focal; urgency=low
+
+  * Packages for 2.1.0 on focal
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 12:13:29 +0000
+liblognorm (2.1.0-0adiscon1focal1) focal; urgency=low
+
+  * Packages for 2.1.0 on focal
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Tue, 30 Jun 2026 11:04:01 +0000
 liblognorm (2.0.8-0adiscon1focal1) focal; urgency=low
 
   * Packages for 2.0.8 on focal
