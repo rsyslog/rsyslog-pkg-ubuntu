@@ -46,6 +46,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-omprog \
 		--enable-elasticsearch \
 		--enable-mmjsonparse \
+		--enable-mmjsontransform \
 		--enable-imptcp \
 		--enable-mmnormalize \
 		--enable-mmanon \

@@ -193,7 +193,9 @@ jobs:
 
       - name: Install build dependencies and build binary packages
         env:
-          GITHUB_ACTIONS: "true"
+          # Passed through debuild/dpkg-buildpackage (unlike GITHUB_ACTIONS).
+          # Used by noble debian/rules to skip known-bad CI-only tests.
+          DEB_BUILD_OPTIONS: rsyslog_ci
         run: |
           set -e
           SRCDIR=$(ls -d rsyslog-*/ 2>/dev/null | head -1)

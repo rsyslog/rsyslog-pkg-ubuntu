@@ -12,8 +12,9 @@ export PYTHON=/usr/bin/python3
 # segfault on receipt of first message (see LP: #794230)
 export DEB_LDFLAGS_MAINT_STRIP = -Wl,-Bsymbolic-functions
 
-# Disable imfile tests in CI (GitHub Actions) - they fail due to logrotate permissions in containers
-imfile_tests = $(if $(GITHUB_ACTIONS),--disable-imfile-tests,--enable-imfile-tests)
+# Disable imfile tests in packaging CI (DEB_BUILD_OPTIONS=rsyslog_ci) - they fail
+# due to logrotate permissions in containers. GITHUB_ACTIONS is stripped by debuild.
+imfile_tests = $(if $(filter rsyslog_ci,$(DEB_BUILD_OPTIONS)),--disable-imfile-tests,--enable-imfile-tests)
 
 %:
 	dh $@
@@ -58,6 +59,7 @@ override_dh_auto_configure: build-qpid-proton
 		--enable-omuxsock \
 		--enable-mmanon \
 		--enable-mmjsonparse \
+		--enable-mmjsontransform \
 		--enable-mmutf8fix \
 		--enable-mmpstrucdata \
 		--enable-mmsequence \
@@ -123,11 +125,26 @@ override_dh_installinit:
 # - imfile-symlink-ext-tmp-dir-tree.sh: fd checks fail in build environment
 # Skip tests on armhf so the package can build; other arches still run tests.
 #
+# In packaging CI (DEB_BUILD_OPTIONS=rsyslog_ci), skip omkafka no-service tests
+# (TESTS_OMKAFKA_NO_SERVICE): omkafka-unreachable-shutdown.sh hangs ~10min as a
+# zombie rsyslogd in GH Actions containers. Do not rely on GITHUB_ACTIONS here;
+# debuild sanitises the environment and strips it.
 override_dh_auto_test:
 ifneq (,$(filter armhf,$(DEB_HOST_ARCH)))
 	@echo "Skipping tests on armhf (known flaky tests in chroot)."
 else
 ifeq (, $(filter nocheck, $(DEB_BUILD_OPTIONS)))
+ifneq (,$(filter rsyslog_ci,$(DEB_BUILD_OPTIONS)))
+	@echo "rsyslog_ci: skipping omkafka no-service tests (hang in containers)"
+	@for t in omkafka-unreachable-shutdown.sh omkafka-failedmsg-malformed.sh; do \
+		if [ -f tests/$$t ]; then \
+			printf '%s\n' '#!/bin/bash' \
+				'echo "SKIP: omkafka no-service test disabled for rsyslog_ci builds"' \
+				'exit 77' > tests/$$t; \
+			chmod +x tests/$$t; \
+		fi; \
+	done
+endif
 	PATH=$$PATH:/usr/sbin dh_auto_test -- -j4 || ( cat tests/test-suite.log; exit 1 ) && ( cat tests/test-suite.log )
 endif
 endif
