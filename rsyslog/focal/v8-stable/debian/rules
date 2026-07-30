@@ -44,6 +44,7 @@ override_dh_auto_configure:
 		--enable-omprog \
 		--enable-elasticsearch \
 		--enable-mmjsonparse \
+		--enable-mmjsontransform \
 		--enable-imptcp \
 		--enable-mmnormalize \
 		--enable-mmanon \

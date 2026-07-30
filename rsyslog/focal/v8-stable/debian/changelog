@@ -1,3 +1,8 @@
+rsyslog (8.2606.0-0adiscon1focal2) focal; urgency=low
+
+  * Enable and ship mmjsontransform in the base rsyslog package (parity with RPM).
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Thu, 30 Jul 2026 08:01:27 +0000
 rsyslog (8.2606.0-0adiscon1focal1) focal; urgency=low
 
   * Packages for 8.2606.0 on focal

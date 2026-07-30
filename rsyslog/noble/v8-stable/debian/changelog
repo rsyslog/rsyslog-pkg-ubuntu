@@ -1,3 +1,9 @@
+rsyslog (8.2606.0-0adiscon1noble2) noble; urgency=low
+
+  * Enable and ship mmjsontransform in the base rsyslog package (parity with RPM).
+  * Skip omkafka no-service tests when DEB_BUILD_OPTIONS=rsyslog_ci (GH Actions).
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Thu, 30 Jul 2026 09:32:00 +0000
 rsyslog (8.2606.0-0adiscon1noble1) noble; urgency=low
 
   * Packages for 8.2606.0 on noble

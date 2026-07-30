@@ -26,6 +26,7 @@ usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/lmzstdw.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmanon.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmexternal.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmjsonparse.so
+usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmjsontransform.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmutf8fix.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmpstrucdata.so
 usr/lib/${DEB_HOST_MULTIARCH}/rsyslog/mmsequence.so
