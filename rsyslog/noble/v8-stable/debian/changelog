@@ -1,3 +1,11 @@
+rsyslog (8.2606.0-0adiscon1noble3) noble; urgency=low
+
+  * Temporarily skip dh_auto_test on noble: 8.2606.0 dist tarball is missing
+    testsuites/qradar_json-with-dots (make dist / EXTRA_DIST), which breaks
+    data_pipeline-qradar.sh. Revert after a fixed upstream tarball.
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Thu, 30 Jul 2026 13:39:16 +0000
+
 rsyslog (8.2606.0-0adiscon1noble2) noble; urgency=low
 
   * Enable and ship mmjsontransform in the base rsyslog package (parity with RPM).
