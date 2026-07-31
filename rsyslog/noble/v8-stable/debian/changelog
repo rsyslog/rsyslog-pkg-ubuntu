@@ -1,3 +1,13 @@
+rsyslog (8.2606.0-0adiscon1noble4) noble; urgency=low
+
+  * Ship mmjsonparse only in the base rsyslog package (Distro parity).
+  * Convert rsyslog-mmjsonparse into an empty transitional package.
+  * Add Breaks/Replaces on rsyslog for older rsyslog-mmjsonparse that
+    still shipped mmjsonparse.so (clean upgrades).
+  * Closes: https://github.com/rsyslog/rsyslog/issues/7453
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Fri, 31 Jul 2026 08:47:18 +0000
+
 rsyslog (8.2606.0-0adiscon1noble3) noble; urgency=low
 
   * Temporarily skip dh_auto_test on noble: 8.2606.0 dist tarball is missing

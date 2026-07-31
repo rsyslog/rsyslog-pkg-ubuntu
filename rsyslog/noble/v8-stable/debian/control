@@ -67,6 +67,8 @@ Conflicts: system-log-daemon,
            linux-kernel-log-daemon
 Provides: system-log-daemon,
           linux-kernel-log-daemon
+Replaces: rsyslog-mmjsonparse (<< 8.2606.0-0adiscon1noble4)
+Breaks: rsyslog-mmjsonparse (<< 8.2606.0-0adiscon1noble4)
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -78,7 +80,6 @@ Suggests: rsyslog-mysql | rsyslog-pgsql,
           rsyslog-mongodb,
           rsyslog-doc,
           rsyslog-openssl | rsyslog-gnutls,
-          rsyslog-mmjsonparse,
           rsyslog-imptcp,
           rsyslog-gssapi,
           rsyslog-relp,
@@ -145,17 +146,17 @@ Description: Elasticsearch output plugin for rsyslog
  interface and schema-free JSON documents.
 
 Package: rsyslog-mmjsonparse
-Architecture: any
-Priority: extra
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         rsyslog (= ${binary:Version}),
-         liblognorm5,
-         libfastjson4 (>= 0.99.7)
-Description: Parsing/handling of CEE/Lumberjack JSON messages in rsyslog
- This plugin parses the message part of syslog. If there's a CEE cookie
- "@cee:" followed by a valid JSON, you can use properties from that JSON
- to build custom templates.
+Architecture: all
+Section: oldlibs
+Priority: optional
+Depends: ${misc:Depends},
+         rsyslog (>= 8.2606.0-0adiscon1noble4)
+Description: transitional package for rsyslog-mmjsonparse
+ mmjsonparse is now included in the base rsyslog package (Distro parity).
+ .
+ This is a transitional package to ensure clean upgrades from older
+ releases that still shipped a separate rsyslog-mmjsonparse. It can be
+ safely removed.
 
 Package: rsyslog-imptcp
 Architecture: any
