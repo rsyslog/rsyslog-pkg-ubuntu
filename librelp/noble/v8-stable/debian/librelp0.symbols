@@ -35,9 +35,13 @@ librelp.so.0 librelp0 #MINVER#
  relpEngineSetOnAuthErr
  relpEngineSetOnErr
  relpEngineSetOnGenericErr
+ relpEngineSetOnSessClose
+ relpEngineSetOnSessOpen
+ relpEngineSetOnSessOpenFail
  relpEngineSetShutdownImmdtPtr
  relpEngineSetStop
  relpEngineSetSyslogRcv2
+ relpEngineSetSyslogRcv3
  relpEngineSetSyslogRcv
  relpEngineSetTLSLib
  relpEngineSetTLSLibByName

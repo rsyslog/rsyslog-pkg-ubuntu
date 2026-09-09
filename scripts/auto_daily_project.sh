@@ -193,7 +193,8 @@ if [ -v PACKAGE_SIGNING_KEY_ID ]; then
 	# This only works on bash >4.2 note no $ before the variable name
 	# If there is a key defined, upload changes to PPA now!
 	echo "Upload to $PPA/$UPLOAD_PPA"
-	debsign -k $PACKAGE_SIGNING_KEY_ID `ls *.changes`
+	# debuild -k already signed; without --no-re-sign debsign prompts [Yn]
+	debsign --no-re-sign -k $PACKAGE_SIGNING_KEY_ID `ls *.changes`
 	dput -f $PPA/$UPLOAD_PPA `ls *.changes`
 	if [ $? -ne 0 ]; then
 	         echo "fail in dput, PPA upload to Launchpad failed" | mutt -s "$PROJECT_SONAME daily build failed!" $RS_NOTIFY_EMAIL
