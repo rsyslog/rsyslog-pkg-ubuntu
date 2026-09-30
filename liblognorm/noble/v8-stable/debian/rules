@@ -15,7 +15,7 @@ export DEB_BUILD_HARDENING=1
 	dh $@ 
 
 override_dh_auto_configure:
-	dh_auto_configure -- --disable-silent-rules
+	dh_auto_configure -- --disable-silent-rules --enable-turbo
 
 override_dh_auto_test:
 ifeq (, $(findstring nocheck, $(DEB_BUILD_OPTIONS)))
