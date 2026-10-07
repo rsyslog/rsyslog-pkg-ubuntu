@@ -1,3 +1,11 @@
+rsyslog (8.2606.0-0adiscon1jammy3) jammy; urgency=low
+
+  * Package omkinesis.so as rsyslog-omkinesis so the built module is shipped.
+  * Pass --enable-omkinesis so the module stays on if the upstream default
+    changes.
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 07 Oct 2026 06:45:00 +0000
+
 rsyslog (8.2606.0-0adiscon1jammy2) jammy; urgency=low
 
   * Enable and ship mmjsontransform in the base rsyslog package (parity with RPM).

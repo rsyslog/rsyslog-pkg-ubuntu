@@ -1,3 +1,12 @@
+rsyslog (8.2606.0-0adiscon1noble5) noble; urgency=low
+
+  * Package omkinesis.so as rsyslog-omkinesis so dh_missing does not abort
+    the noble build.
+  * Pass --enable-omkinesis so the module stays on if the upstream default
+    changes.
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 07 Oct 2026 06:45:00 +0000
+
 rsyslog (8.2606.0-0adiscon1noble4) noble; urgency=low
 
   * Ship mmjsonparse only in the base rsyslog package (Distro parity).

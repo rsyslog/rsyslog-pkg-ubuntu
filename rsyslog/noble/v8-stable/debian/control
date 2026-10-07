@@ -393,6 +393,16 @@ Description: OpenTelemetry output plugin for rsyslog
  This package provides the omotel module, enabling rsyslog to export logs to
  OpenTelemetry collector endpoints over HTTP.
 
+Package: rsyslog-omkinesis
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         rsyslog (= ${binary:Version})
+Description: Amazon Kinesis Data Streams output plugin for rsyslog
+ This package provides the omkinesis module for sending log messages to
+ Amazon Kinesis Data Streams with AWS Signature Version 4 authentication.
+
 Package: rsyslog-imhttp
 Architecture: any
 Priority: extra
