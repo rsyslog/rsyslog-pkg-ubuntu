@@ -8,7 +8,7 @@ Index: rsyslog/plugins/ommysql/createDB.sql
 -CREATE TABLE SystemEvents
 +CREATE TABLE IF NOT EXISTS SystemEvents
  (
-         ID int unsigned not null auto_increment primary key,
+         ID bigint unsigned not null auto_increment primary key,
          CustomerID bigint,
 @@ -28,7 +26,7 @@
          SystemID int NULL
@@ -17,8 +17,8 @@ Index: rsyslog/plugins/ommysql/createDB.sql
 -CREATE TABLE SystemEventsProperties
 +CREATE TABLE IF NOT EXISTS SystemEventsProperties
  (
-         ID int unsigned not null auto_increment primary key,
-         SystemEventID int NULL ,
+         ID bigint unsigned not null auto_increment primary key,
+         SystemEventID bigint unsigned NULL ,
 Index: rsyslog/plugins/ompgsql/createDB.sql
 ===================================================================
 --- rsyslog.orig/plugins/ompgsql/createDB.sql	2007-12-12 18:18:29.000000000 +0100
