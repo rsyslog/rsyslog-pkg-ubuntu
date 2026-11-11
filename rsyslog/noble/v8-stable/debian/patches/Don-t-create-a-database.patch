@@ -19,7 +19,7 @@ index 211cfb0..1dc6f5c 100644
 -CREATE TABLE SystemEvents
 +CREATE TABLE IF NOT EXISTS SystemEvents
  (
-         ID int unsigned not null auto_increment primary key,
+         ID bigint unsigned not null auto_increment primary key,
          CustomerID bigint,
 @@ -28,7 +26,7 @@ CREATE TABLE SystemEvents
          SystemID int NULL
@@ -28,8 +28,8 @@ index 211cfb0..1dc6f5c 100644
 -CREATE TABLE SystemEventsProperties
 +CREATE TABLE IF NOT EXISTS SystemEventsProperties
  (
-         ID int unsigned not null auto_increment primary key,
-         SystemEventID int NULL ,
+         ID bigint unsigned not null auto_increment primary key,
+         SystemEventID bigint unsigned NULL ,
 diff --git a/plugins/ompgsql/createDB.sql b/plugins/ompgsql/createDB.sql
 index 0c0f7e1..5dab0dd 100644
 --- a/plugins/ompgsql/createDB.sql
