@@ -1,3 +1,9 @@
+rsyslog (8.2606.0-0adiscon1focal3) focal; urgency=low
+
+  * Ship COPYING.BSD-3-Clause so dh_missing does not abort.
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 25 Nov 2026 09:55:22 +0000
+
 rsyslog (8.2606.0-0adiscon1focal2) focal; urgency=low
 
   * Enable and ship mmjsontransform in the base rsyslog package (parity with RPM).

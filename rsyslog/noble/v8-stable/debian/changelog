@@ -1,3 +1,9 @@
+rsyslog (8.2606.0-0adiscon1noble6) noble; urgency=low
+
+  * Ship COPYING.BSD-3-Clause so dh_missing does not abort.
+
+ -- Adiscon package maintainers <adiscon-pkg-maintainers@adiscon.com>  Wed, 25 Nov 2026 09:55:22 +0000
+
 rsyslog (8.2606.0-0adiscon1noble5) noble; urgency=low
 
   * Package omkinesis.so as rsyslog-omkinesis so dh_missing does not abort
