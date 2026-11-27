@@ -9,8 +9,9 @@ This respository contains the sources needed to build Ubuntu rsyslog
 packages. It is our goal to create the best possible packages for
 the current releases of this platform.
 
-Packages are available as PPAs.
-See: http://www.rsyslog.com/ubuntu-repository/
+Ubuntu packages are available from the [v8-stable PPA](https://launchpad.net/~adiscon/+archive/ubuntu/v8-stable)
+and the [daily-stable PPA](https://launchpad.net/~adiscon/+archive/ubuntu/daily-stable).
+Check each PPA for the Ubuntu releases it currently supports.
 
 Contributors and co-maintainers are welcome.
 
@@ -24,31 +25,20 @@ Project Goals
 - learn how to collaborate on package development
 - gain experience
 
-This project is currently kind of a pilot project for other collaboration
-and packaging efforts. Among others, we would like to build packages for
-other platforms. We also want to create a better (and easier to manage)
-extended testbench system. We will consider Buildbot and SuSE OBS at a
-later stage. But before going into this larger projects, we want to gain
-experience in this packaging project.
-
 PPA Structure
 -------------
-We intend to maintain two different sets of PPAs:
+The primary user-facing PPA channels are:
 
-1. regular release builds (v8-stable)
-2. daily builds (v8-devel)
+1. regular release builds (`ppa:adiscon/v8-stable`)
+2. daily builds (`ppa:adiscon/daily-stable`)
 
 The regular release builds are just that: for each release, we want
-to create packages for all current Ubuntu platforms very close to the
+to create packages for supported Ubuntu releases very close to the
 rsyslog release.
 
-In order to facilitate "leading edge users" daily builds shall
-provide the most current available rsyslog software. They base on
-the project's git master branch. They will be built automatically
-once a day if there has been change since the previous build.
-
-All other branches are explicitely to be considered experimental and
-are not to be used for productive environments.
+Daily builds provide development snapshots. The daily build scripts
+package supplied source tarballs; the configured daily-stable run
+uploads them to `ppa:adiscon/daily-stable`.
 
 Packages Provided
 -----------------
